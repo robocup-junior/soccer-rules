@@ -1,0 +1,46 @@
+% caption.tex - Examples of how Latex handles captions within floats
+
+% Andrew Roberts - September 2003
+
+\documentclass[english]{article}
+
+\usepackage{times}
+\usepackage{babel}
+\usepackage{graphicx}
+
+\begin{document}
+
+\title{Latex Tutorial 6 (Floats, Figures and Captions) Examples}
+\author{Andrew Roberts}
+\maketitle
+
+\begin{figure}[!htp]
+  \caption{A picture of a toucan.}
+  \begin{center}
+    \includegraphics{toucan.eps}
+  \end{center}
+\end{figure}
+
+\begin{figure}[hbp]
+  \begin{center}
+    \reflectbox{\includegraphics{toucan.eps}}
+  \end{center}
+  \caption{A picture of the same toucan looking the other way!}
+\end{figure}
+
+\begin{table}[htp]
+  \begin{center}
+    \begin{tabular}{| l c r |}
+    \hline
+    1 & 2 & 3 \\
+    4 & 5 & 6 \\
+    7 & 8 & 9 \\
+    \hline
+    \end{tabular}
+  \end{center}
+  \caption{A simple table}
+\end{table}
+
+Notice how the tables and figures have independent counters.
+
+\end{document}
