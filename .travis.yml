@@ -1,14 +1,11 @@
-before_install:
-- sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended
-  texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng
-script:
-- mkdir _build
-- pdflatex -output-directory _build tex/sample.tex
-deploy:
-  provider: releases
-  api_key:
-    secure: NIyM9HchaLwYDEZiN8SFVShbXCgOfUF7kbgZXITGyxK0r7WT7UHze1QUamvL1tCSWFNr37ZJAKTACWz44bKDa6lsgvAhoJ2uVoqEfb4dUkwanzTq9oxuq/0ZyAp1xLdzqeNc8XYNN+CLcpjJLmGARnk/dFp8FbxQrHufl+jUhagbFCeFID7fW1olCCRlBgiAHpBHrzSQ2/eknrx7kGm+qOGZqiApHJ1o8m3vCeso0qQkJsdV91iebnvZb+XxSi8a6jVVoz6RGERtuTEqtIfc2crm2SGGn71ZRn+jWfeeKbmZcW4ZXJJhQ219+b0QppXeoyz+ufrjhb3O7O8QkbyJ2ge8yUC73kZg8kdLxUXxFgKXBO5xfvz0RBW7z4RbT3/Euzz8tIu9N19BFqurJltWFRfdeon7A+2D3v/CDtzzW9fusEZV3LXEepBWsj4xfwQcf90JopoLXwzwHdCeYPOxotIJxho/oGMgL5VMV0ij2R3ffxYmqFPYPa85KGdoGRsBCQ8HXmuyDf6/dBHf8gmt/Twh/ZE8La1NDMEVhJLEzrRleJ0KOEbCu4TOwbB8zRvSxGU3O+ba2uyCG5QjZaFGvwPMeYUmWgNFjG3N9Kt/d9PjURU0xu54vWlMuxRJoziNPwEZE9r8BHwuAXciWZdFdEorQyOzYNmDJhSmWISAQHs=
-  file: _build/sample.pdf
-  skip_cleanup: true
-  on:
-    repo: RoboCupJuniorTC/soccer-rules
+sudo: false
+language: generic
+matrix:
+  include:
+    - os: linux
+      env: TEST_LANG='paper'
+script: |
+  if [[ $TEST_LANG == paper ]]
+  then
+    source .ci/build.sh
+  fi
