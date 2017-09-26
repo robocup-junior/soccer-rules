@@ -15,6 +15,7 @@ if ! [[ $TRAVIS_COMMIT_RANGE == *..* ]]; then
   TRAVIS_COMMIT_RANGE="origin/master..HEAD"
 fi
 
+echo $(git branch -a)
 echo $TRAVIS_COMMIT_RANGE
 echo $(git diff --name-only $TRAVIS_COMMIT_RANGE)
 
