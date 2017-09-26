@@ -12,6 +12,9 @@ if ! [[ $TRAVIS_COMMIT_RANGE == *..* ]]; then
   TRAVIS_COMMIT_RANGE="master..HEAD"
 fi
 
+echo $TRAVIS_COMMIT_RANGE
+echo $(git diff --name-only $TRAVIS_COMMIT_RANGE)
+
 if git diff --name-only $TRAVIS_COMMIT_RANGE | grep $TEX_DIRECTORY | grep '.tex$'
 then
   # Install tectonic using conda
