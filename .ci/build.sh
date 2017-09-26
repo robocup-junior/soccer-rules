@@ -6,7 +6,11 @@ TEX_DIRECTORY='tex/'
 COMMIT_USERNAME='Travis the TeX builer'
 COMMIT_EMAIL='travis@travis.ai'
 
-echo $(git diff --name-only $TRAVIS_COMMIT_RANGE)
+# If the commit range does not contain two commits (with '..' in between them),
+# assume master as the comparison point.
+if ! [[ $TRAVIS_COMMIT_RANGE == *..* ]]; then
+  TRAVIS_COMMIT_RANGE="master..$TRAVIS_COMMIT_RANGE"
+fi
 
 if git diff --name-only $TRAVIS_COMMIT_RANGE | grep $TEX_DIRECTORY | grep '.tex$'
 then
