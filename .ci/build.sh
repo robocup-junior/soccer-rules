@@ -28,6 +28,8 @@ then
   cd $TRAVIS_BUILD_DIR
   git checkout $TRAVIS_BRANCH
   git add $TEX_DIRECTORY/*.tex
-  git -c user.name=$COMMIT_USERNAME -c user.email=$COMMIT_EMAIL commit -m "Built the tex from $TRAVIS_COMMIT_RANGE"
+  git -c user.name="$COMMIT_USERNAME"\
+      -c user.email="$COMMIT_EMAIL"\
+      commit -m "Built the tex from $TRAVIS_COMMIT_RANGE"
   git push -q -f https://$GITHUB_USERNAME:$GITHUB_API_KEY@github.com/$TRAVIS_REPO_SLUG $TRAVIS_BRANCH
 fi
