@@ -2,6 +2,9 @@
 # Taken from:
 # https://dfm.io/downloads/notebooks/travis-latex.ipynb
 
+# Exit on non-zero return codes
+set -e
+
 TEX_DIRECTORY='tex/'
 COMMIT_USERNAME='Travis the TeX builer'
 COMMIT_EMAIL='travis@travis.ai'
