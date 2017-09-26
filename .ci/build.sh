@@ -6,6 +6,8 @@ TEX_DIRECTORY='tex/'
 COMMIT_USERNAME='Travis the TeX builer'
 COMMIT_EMAIL='travis@travis.ai'
 
+echo $(git diff --name-only $TRAVIS_COMMIT_RANGE)
+
 if git diff --name-only $TRAVIS_COMMIT_RANGE | grep $TEX_DIRECTORY | grep '.tex$'
 then
   # Install tectonic using conda
