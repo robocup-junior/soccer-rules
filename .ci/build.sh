@@ -3,10 +3,8 @@
 # https://dfm.io/downloads/notebooks/travis-latex.ipynb
 
 TEX_DIRECTORY='tex/'
-echo "TEX_DIRECTORY: $TEX_DIRECTORY"
-echo $(git diff --name-only $TRAVIS_COMMIT_RANGE | grep $TEX_DIRECTORY)
 
-if git diff --name-only $TRAVIS_COMMIT_RANGE | grep $TEX_DIRECTORY
+if git diff --name-only $TRAVIS_COMMIT_RANGE | grep $TEX_DIRECTORY | grep '.tex$'
 then
   # Install tectonic using conda
   wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
