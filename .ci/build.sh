@@ -12,8 +12,11 @@ COMMIT_EMAIL='travis@travis.ai'
 # If the commit range does not contain two commits (with '..' in between them),
 # assume master as the comparison point.
 if ! [[ $TRAVIS_COMMIT_RANGE == *..* ]]; then
-  TRAVIS_COMMIT_RANGE="master..HEAD"
+  TRAVIS_COMMIT_RANGE="origin/master..HEAD"
 fi
+
+echo $TRAVIS_COMMIT_RANGE
+echo $(git diff --name-only $TRAVIS_COMMIT_RANGE)
 
 if git diff --name-only $TRAVIS_COMMIT_RANGE | grep $TEX_DIRECTORY | grep '.tex$'
 then
