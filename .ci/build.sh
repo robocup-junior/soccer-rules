@@ -8,7 +8,7 @@ COMMIT_EMAIL='travis@travis.ai'
 
 # If the commit range does not contain two commits (with '..' in between them),
 # assume master as the comparison point.
-if ! [[ $TRAVIS_COMMIT_RANGE == *..* ]];
+if ! [[ $TRAVIS_COMMIT_RANGE == *..* ]]; then
   TRAVIS_COMMIT_RANGE="master..$TRAVIS_COMMIT_RANGE"
 fi
 
