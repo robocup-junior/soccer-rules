@@ -3,6 +3,8 @@
 # https://dfm.io/downloads/notebooks/travis-latex.ipynb
 
 TEX_DIRECTORY='tex/'
+echo "TEX_DIRECTORY: $TEX_DIRECTORY"
+echo $(git diff --name-only $TRAVIS_COMMIT_RANGE | grep $TEX_DIRECTORY)
 
 if git diff --name-only $TRAVIS_COMMIT_RANGE | grep $TEX_DIRECTORY
 then
