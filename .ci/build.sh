@@ -3,6 +3,8 @@
 # https://dfm.io/downloads/notebooks/travis-latex.ipynb
 
 TEX_DIRECTORY='tex/'
+COMMIT_USERNAME='Travis the TeX builer'
+COMMIT_EMAIL='travis@travis.ai'
 
 if git diff --name-only $TRAVIS_COMMIT_RANGE | grep $TEX_DIRECTORY | grep '.tex$'
 then
@@ -26,6 +28,6 @@ then
   cd $TRAVIS_BUILD_DIR
   git checkout $TRAVIS_BRANCH
   git add -f $TEX_DIRECTORY/*.tex
-  git -c user.name='travis' -c user.email='travis' commit -m "Built the tex from $TRAVIS_COMMIT_RANGE"
+  git -c user.name=$COMMIT_USERNAME -c user.email=$COMMIT_EMAIL commit -m "Built the tex from $TRAVIS_COMMIT_RANGE"
   git push -q -f https://$GITHUB_USERNAME:$GITHUB_API_KEY@github.com/$TRAVIS_REPO_SLUG $TRAVIS_BRANCH
 fi
