@@ -30,6 +30,6 @@ then
   git add $TEX_DIRECTORY/*.tex
   git -c user.name="$COMMIT_USERNAME"\
       -c user.email="$COMMIT_EMAIL"\
-      commit -m "Built the tex from $TRAVIS_COMMIT_RANGE"
+      commit -am "Built the tex from $TRAVIS_COMMIT_RANGE"
   git push -q -f https://$GITHUB_USERNAME:$GITHUB_API_KEY@github.com/$TRAVIS_REPO_SLUG $TRAVIS_BRANCH
 fi
