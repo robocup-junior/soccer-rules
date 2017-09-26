@@ -4,7 +4,7 @@
 
 TEX_DIRECTORY='tex/'
 
-if git diff --name-only $TRAVIS_COMMIT_RANGE | grep $TEX_DIRECTORY
+if git diff --name-only $TRAVIS_COMMIT_RANGE | grep $TEX_DIRECTORY | grep '.tex$'
 then
   # Install tectonic using conda
   wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
@@ -25,6 +25,7 @@ then
   # Force push the paper to GitHub
   cd $TRAVIS_BUILD_DIR
   git checkout $TRAVIS_BRANCH
-  git -c user.name='travis' -c user.email='travis' commit -m "building the tex" -a
-  git push -q -f https://$GITHUB_USER:$GITHUB_API_KEY@github.com/$TRAVIS_REPO_SLUG $TRAVIS_BRANCH-pdf
+  git add -f $TEX_DIRECTORY/*
+  git -c user.name='travis' -c user.email='travis' commit -m "building the tex"
+  git push -q -f https://$GITHUB_USERNAME:$GITHUB_API_KEY@github.com/$TRAVIS_REPO_SLUG $TRAVIS_BRANCH
 fi
