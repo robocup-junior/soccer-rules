@@ -10,14 +10,10 @@ COMMIT_USERNAME='Travis the TeX builer'
 COMMIT_EMAIL='travis@travis.ai'
 
 # If the commit range does not contain two commits (with '..' in between them),
-# assume master as the comparison point.
+# do the diff against the previous commit in the history line.
 if ! [[ $TRAVIS_COMMIT_RANGE == *..* ]]; then
   TRAVIS_COMMIT_RANGE="HEAD~1"
 fi
-
-echo $(git branch -a)
-echo $TRAVIS_COMMIT_RANGE
-echo $(git diff --name-only $TRAVIS_COMMIT_RANGE)
 
 if git diff --name-only $TRAVIS_COMMIT_RANGE | grep $TEX_DIRECTORY | grep '.tex$'
 then
