@@ -31,6 +31,7 @@ then
   conda create --yes -n paper
   source activate paper
   conda install -c conda-forge -c pkgw-forge tectonic
+  conda install pip
 
   # Build the paper using tectonic
   cd $TEX_DIRECTORY
