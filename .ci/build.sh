@@ -12,7 +12,9 @@ COMMIT_EMAIL='travis@travis.ai'
 # If the commit range does not contain two commits (with '..' in between them),
 # do the diff against the previous commit in the history line.
 if ! [[ $TRAVIS_COMMIT_RANGE == *..* ]]; then
-  TRAVIS_COMMIT_RANGE="HEAD~1"
+  TRAVIS_START_COMMIT=$(git rev-parse HEAD~1)
+  TRAVIS_FINISH_COMMIT=$(git rev-parse HEAD)
+  TRAVIS_COMMIT_RANGE="$TRAVIS_START_COMMIT..$TRAVIS_FINISH_COMMIT"
 fi
 
 if git diff --name-only $TRAVIS_COMMIT_RANGE | grep $TEX_DIRECTORY | grep '.tex$'
