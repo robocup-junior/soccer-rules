@@ -10,12 +10,22 @@ TEX_FILENAME='sample'
 COMMIT_USERNAME='Travis the TeX builer'
 COMMIT_EMAIL='travis@travis.ai'
 
-# If the commit range does not contain two commits (with '..' in between them),
-# do the diff against the previous commit in the history line.
-if ! [[ $TRAVIS_COMMIT_RANGE == *..* ]]; then
-  TRAVIS_START_COMMIT=$(git rev-parse HEAD~1)
-  TRAVIS_FINISH_COMMIT=$(git rev-parse HEAD)
-  TRAVIS_COMMIT_RANGE="$TRAVIS_START_COMMIT..$TRAVIS_FINISH_COMMIT"
+# # If the commit range does not contain two commits (with '..' in between them),
+# # do the diff against the previous commit in the history line.
+# if ! [[ $TRAVIS_COMMIT_RANGE == *..* ]]; then
+#   TRAVIS_START_COMMIT=$(git rev-parse HEAD~1)
+#   TRAVIS_FINISH_COMMIT=$(git rev-parse HEAD)
+#   TRAVIS_COMMIT_RANGE="$TRAVIS_START_COMMIT..$TRAVIS_FINISH_COMMIT"
+# fi
+
+if [[ $TRAVIS_PULL_REQUEST == "false" ]]; then
+  if ! [[ $TRAVIS_BRANCH == "master" ]]; then
+     echo "We do not build on pushes for any other branch than 'master'."
+     exit 0;
+  fi
+else
+  # override the TRAIVS_BRANCH to the one from which the PR originates
+  export TRAVIS_BRANCH="$TRAVIS_PULL_REQUEST_BRANCH"
 fi
 
 if git diff --name-only $TRAVIS_COMMIT_RANGE | grep $TEX_DIRECTORY | grep '.tex$'
@@ -38,6 +48,7 @@ then
 
   # Force push the paper to GitHub
   cd $TRAVIS_BUILD_DIR
+
   git checkout --orphan $TRAVIS_BRANCH-pdf
   git add -f $TEX_DIRECTORY/$TEX_FILENAME.pdf
   git -c user.name="$COMMIT_USERNAME"\
