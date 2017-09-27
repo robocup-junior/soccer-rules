@@ -39,7 +39,6 @@ then
   # Force push the paper to GitHub
   cd $TRAVIS_BUILD_DIR
   git checkout --orphan $TRAVIS_BRANCH-pdf
-  git rm -rf .
   git add -f $TEX_DIRECTORY/$TEX_FILENAME.pdf
   git -c user.name="$COMMIT_USERNAME"\
       -c user.email="$COMMIT_EMAIL"\
