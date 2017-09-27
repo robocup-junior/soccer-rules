@@ -46,6 +46,8 @@ then
   git push -q -f https://$GITHUB_USERNAME:$GITHUB_API_KEY@github.com/$TRAVIS_REPO_SLUG $TRAVIS_BRANCH-pdf
 
   pip install requests travis_bot
+  echo "Check the latest version of the built PDF at https://github.com/$TRAVIS_REPO_SLUG/blob/$TRAVIS_BRANCH-pdf/$TEX_FILENAME.pdf"
 
   echo "Check the latest version of the built PDF at https://github.com/$TRAVIS_REPO_SLUG/blob/$TRAVIS_BRANCH-pdf/$TEX_FILENAME.pdf" | travis_bot.py
+
 fi
