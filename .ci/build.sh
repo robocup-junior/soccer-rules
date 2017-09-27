@@ -64,6 +64,6 @@ then
   echo "TRAVIS_PULL_REQUEST: $TRAVIS_PULL_REQUEST"
   echo $TRAVIS_BOT_NO_RESULTS_MSG;
 
-  echo "" | travis_bot.py
+  echo -e "\n" | travis_bot.py
 
 fi
