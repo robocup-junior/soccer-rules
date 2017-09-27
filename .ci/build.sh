@@ -30,8 +30,7 @@ then
   conda info -a
   conda create --yes -n paper
   source activate paper
-  conda install -c conda-forge -c pkgw-forge tectonic
-  conda install pip
+  conda install -c conda-forge -c pkgw-forge tectonic pip
 
   # Build the paper using tectonic
   cd $TEX_DIRECTORY
@@ -46,7 +45,7 @@ then
       commit -am "Built the tex from $TRAVIS_COMMIT_RANGE"
   git push -q -f https://$GITHUB_USERNAME:$GITHUB_API_KEY@github.com/$TRAVIS_REPO_SLUG $TRAVIS_BRANCH-pdf
 
-  pip install travis_bot
+  pip install requests travis_bot
 
-  echo "Check the latest version of the built PDF at https://github.com/$TRAVIS_REPO_SLUG/blob/$TRAVIS_BRANCH-pdf/$TEX_FILENAME.pdf" | travis_bot
+  echo "Check the latest version of the built PDF at https://github.com/$TRAVIS_REPO_SLUG/blob/$TRAVIS_BRANCH-pdf/$TEX_FILENAME.pdf" | travis_bot.py
 fi
