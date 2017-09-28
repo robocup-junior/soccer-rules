@@ -53,7 +53,7 @@ if __name__ == '__main__':
                   "Make sure you run travis_bot.py on a pull request build.")
             sys.exit(0)
 
-        if results:
+        if output:
             comment_on_pull_request(PR_NUMBER, REPO_SLUG, TOKEN, comment)
         elif MESSAGE:
             comment_on_pull_request(PR_NUMBER, REPO_SLUG, TOKEN, MESSAGE)
