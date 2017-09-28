@@ -56,7 +56,7 @@ then
       commit -am "Built the tex from $TRAVIS_COMMIT_RANGE"
   git push -q -f https://$GITHUB_USERNAME:$GITHUB_API_KEY@github.com/$TRAVIS_REPO_SLUG $TRAVIS_BRANCH-pdf
 
-  pip install requests travis_bot
+  pip install requests
 
   export TRAVIS_BOT_NO_RESULTS_MSG="Check the latest version of the built PDF at https://github.com/$TRAVIS_REPO_SLUG/blob/$TRAVIS_BRANCH-pdf/$TEX_FILENAME.pdf"
 
@@ -64,6 +64,6 @@ then
   echo "TRAVIS_PULL_REQUEST: $TRAVIS_PULL_REQUEST"
   echo $TRAVIS_BOT_NO_RESULTS_MSG;
 
-  echo $TRAVIS_BOT_NO_RESULTS_MSG | travis_bot.py
+  echo $TRAVIS_BOT_NO_RESULTS_MSG | .ci/travis_bot.py
 
 fi
