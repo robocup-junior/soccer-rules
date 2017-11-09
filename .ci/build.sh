@@ -6,7 +6,7 @@
 set -e
 
 TEX_DIRECTORY='tex/'
-TEX_FILENAME='sample'
+TEX_FILENAME='rules'
 COMMIT_USERNAME='Travis the TeX builer'
 COMMIT_EMAIL='travis@travis.ai'
 
