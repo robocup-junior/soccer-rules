@@ -2,7 +2,8 @@
 
 # RoboCupJunior Soccer rules
 
-Welcome to the RoboCupJunior Soccer rules repository for the 2018 season.
+Welcome to the [RoboCupJunior Soccer](http://rcj.robocup.org/soccer.html) rules
+repository for the 2018 season.
 
 For this season the RoboCupJunior Soccer Technical Committee (TC) would like to
 invite the RoboCupJunior Soccer community to suggest any changes that would be
