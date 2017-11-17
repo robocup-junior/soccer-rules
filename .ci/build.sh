@@ -24,6 +24,10 @@ if [[ $TRAVIS_PULL_REQUEST == "false" ]]; then
      exit 0;
   fi
 else
+  if [[ $GITHUB_USERNAME == "" ]]; then
+     echo "Seems like this PR came from a fork. For security reasons no code will be executed."
+     exit 0;
+  fi
   # override the TRAIVS_BRANCH to the one from which the PR originates
   export TRAVIS_BRANCH="$TRAVIS_PULL_REQUEST_BRANCH"
 fi
