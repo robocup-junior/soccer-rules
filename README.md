@@ -23,6 +23,8 @@ challenging from the technical point of view.
 Changes that would improve formatting of the rules or their clarity are most
 definitely welcome.
 
+We accept proposals until the **11th of December, 2017**.
+
 ## How do I suggest a change?
 
 Please edit the [`tex/rules.tex`](tex/rules.tex) file. The easiest way of doing
