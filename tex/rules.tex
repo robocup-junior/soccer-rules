@@ -376,11 +376,15 @@ of the opponent team violating the rules.
 
 Multiple defense occurs if more than one robot from the defending team enters
 its penalty area with some part and substantially affects the game. The robot
-farther from the ball will be moved to the nearest neutral spot. The referee
-could take this action at any time when both robots linger in their penalty
-area.
+farther from the ball will be moved to the nearest neutral spot.
+\added[id=TC]{Only} the referee can take this action at any time when both
+robots linger in their penalty area.
 
-If multiple defense happens repeatedly, the robot will be deemed damaged.
+\added[id=TC]{If multiple defense happens repeatedly in a short amount of time,
+the offending robot will be moved to an unoccupied neutral spot on the other
+side of the field, not facing towards the ball.}
+\replaced[id=TC]{If the robot needs to be moved out repeatedly, it}{If multiple
+defense happens repeatedly, the robot} will be deemed damaged.
 
 \subsection{Interruption of Game \label{ref-014}}
 
@@ -488,7 +492,7 @@ communicates using the 802.15.4 protocol (e.g., ZigBee and XBee). Teams are
 responsible for their communication. The availability of frequencies cannot be
 guaranteed.
 
-\subsection{ Agility \label{ref-023}}
+\subsection{Agility \label{ref-023}}
 
 Robots must be constructed and programmed in a way that their movement is not
 limited to only one dimension (that means one axis). They must move in all
