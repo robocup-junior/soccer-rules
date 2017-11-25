@@ -26,6 +26,7 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{incgraph}
+\usepackage{changes}
 
 \usepackage[letterpaper, margin=1in, headheight=47pt]{geometry}
 
@@ -49,12 +50,16 @@
 \lfoot{\textit{Draft as of \today}}
 \cfoot{}
 
+% First page
 \fancypagestyle{firststyle}{%
   \fancyhf{}
   \fancyfoot[L]{\textit{Draft as of \today}}
   \fancyfoot[R]{Page \textbf{\thepage} of \textbf{\pageref{LastPage}}}
 }
 
+\definechangesauthor[color=red]{TC}
+\setdeletedmarkup{\footnote{In previous version of the rules this was ''\emph{#1}''}}
+\setauthormarkup{}
 
 \title{\vspace{-5ex}RoboCupJunior Soccer Rules 2018\vspace{-5ex}}
 \date{\vspace{-2ex}}
@@ -112,6 +117,8 @@ Participants of this challenge are required to give the best of their abilities 
 The changes determined by the Technical Committee for this year's rules aim to fix some organizational loopholes which have been identified in the past few years, further standardize the playing field, bring more transparency to the process of inspections and interviews, and bridging the gap between the Junior and Major competitions by providing more opportunities for incorporating more computer vision and artificial intelligence methods in the construction and programming of competitor's robots.
 
 Robocup Junior Soccer consist of two sub-leagues. These sub-leagues are called \textbf{``Soccer Open''} and \textbf{``Soccer Lightweight'',} These rules apply for the 2 sub-leagues, the main difference is that the matches in the Soccer Lightweight sub-league are played using the IR ball, whereas Soccer Open sub-league are conducted using a passive ball. There are also some differences on robots specifications (see 5. Ball, for balls specifications and 8. League Regulations, for more details for specifications/regulations).
+
+\listofchanges
 
 \section*{Construction and Programming have to be performed exclusively by the students}
 
@@ -246,7 +253,9 @@ When the referee has stopped the game, all robots must be stopped and remain on 
 
 \subsection{ Regulations \label{ref-016}}
 
-A team must have more than one member to form a RoboCupJunior team to participate in the International event. A team member(s) and/or robot(s) cannot be shared between teams. \textbf{Maximum team size is 5 members for RoboCupJunior 2018.} Each team member needs to carry a technical role.
+A team must have more than one member to form a RoboCupJunior team to participate in the International event. A team member(s) and/or robot(s) cannot be shared between teams.
+\replaced[id=TC]{Maximum team size is 4 members for RoboCupJunior 2018.}{Maximum team size is 5 members for RoboCupJunior 2017.}
+Each team member needs to carry a technical role.
 
 Starting in 2017, Soccer Lightweight team members can participate in the World Championship only twice. After their second participation, they need to move to Soccer Open.
 
