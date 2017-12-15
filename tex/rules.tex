@@ -301,11 +301,13 @@ so, as described in 1.11.
 
 After the penalty time has passed, robot will be placed on the unoccupied
 neutral spot nearest to where it has been taken off, and not directly aiming
-towards the ball.
+towards the ball. \added[id=TC]{Alternatively, the referee may instruct the
+team to place the robot on the neutral spot on the side of the field
+currently farthest from the ball, oriented towards the closest wall. }
 
 A referee can waive the penalty if the robot was accidentally pushed out of
-bounds by any other robot. In such a case, the referee may have to slightly
-push the robot back onto the field.
+bounds by \replaced[id=TC]{an opposing}{any other} robot. In such a case, the
+referee may have to slightly push the robot back onto the field.
 
 The ball can leave and bounce back into the playing field. The referee calls
 ``out of reach'', and will move the ball to the nearest unoccupied neutral spot
@@ -363,24 +365,37 @@ with the game as if the robot had not been returned.
 Only the referee decides whether a robot is damaged. A robot can only be taken
 off or returned with the referee's permission.
 
+\replaced[id=TC]
+{
+If both robots from the same team are deemed damaged at kickoff,
+gameplay will be paused and the remaining team will be awarded 1 goal for
+every 30 seconds that their oppent's robots remain damaged.
+}
+{
 If both robots from the same team are deemed damaged during gameplay, the clock
 continues and the remaining team gets one initial goal and rests while waiting
 for the opponent's return to play. The remaining team will also get one
 additional goal for each elapsed 30 seconds the opponent's robots remain
 damaged. Once a 10 goal difference occurs or the remaining time finishes, the
-team with no functional robots forfeits the game. However, these rules only
-apply when none of the two robots from the same team were damaged as the result
-of the opponent team violating the rules.
+team with no functional robots forfeits the game.
+}
+
+However, these rules only apply when none of the two robots from the same team
+were damaged as the result of the opponent team violating the rules.
 
 \subsection{Multiple defense \label{ref-013}}
 
 Multiple defense occurs if more than one robot from the defending team enters
 its penalty area with some part and substantially affects the game. The robot
-farther from the ball will be moved to the nearest neutral spot. The referee
-could take this action at any time when both robots linger in their penalty
-area.
+farther from the ball will be moved to the nearest neutral spot.
+\added[id=TC]{Only} the referee can take this action at any time when both
+robots linger in their penalty area.
 
-If multiple defense happens repeatedly, the robot will be deemed damaged.
+\added[id=TC]{If multiple defense happens repeatedly in a short amount of time,
+the offending robot will be moved to an unoccupied neutral spot on the other
+side of the field, orientated towards the nearest wall.}
+\replaced[id=TC]{If the robot needs to be moved out \textbf(three times), it}{If multiple
+defense happens repeatedly, the robot} will be deemed damaged.
 
 \subsection{Interruption of Game \label{ref-014}}
 
@@ -403,13 +418,8 @@ A team must have more than one member to form a RoboCupJunior team to
 participate in the International event. A team member(s) and/or robot(s) cannot
 be shared between teams.
 
-\replaced[id=TC]{Maximum team size is 4 members for RoboCupJunior 2018.}{Maximum team size is 5 members for RoboCupJunior 2017.}
-
 Each team member needs to carry a technical role.
 
-Starting in 2017, Soccer Lightweight team members can participate in the World
-Championship only twice. After their second participation, they need to move to
-Soccer Open. Note that counting starts with the 2017 World Championship.
 
 Each team must have a \textbf{captain}. The captain is the person responsible
 for communication with referees. The team can replace its captain during the
@@ -488,7 +498,7 @@ communicates using the 802.15.4 protocol (e.g., ZigBee and XBee). Teams are
 responsible for their communication. The availability of frequencies cannot be
 guaranteed.
 
-\subsection{ Agility \label{ref-023}}
+\subsection{Agility \label{ref-023}}
 
 Robots must be constructed and programmed in a way that their movement is not
 limited to only one dimension (that means one axis). They must move in all
@@ -497,13 +507,14 @@ forward movement. For example, it is not enough to basically just move left and
 right in front of their own goal, but also to move directly towards the ball in
 a forward movement. At least one team robot must be able to seek and approach
 the ball anywhere on the field, unless the team has only one robot on the field
-at that time.
+at that time. \added[id=TC]{Goalie has to approach the ball in the whole
+penalty area.}
 
-Robots must be constructed or programmed in a way that they do not enter the
-goal. Robots are allowed to use the cross-bar in order to avoid entering the
-goal. This rule applies to all the robots on the field. Any robot that moves
-into the goal 3 times during a period of 20 seconds is deemed to be damaged
-(see \hyperref[ref-012]{1.11}).
+Robots must be constructed \deleted[id=TC]{or programmed }in a way that they do
+not enter the goal. Robots are allowed to use the cross-bar in order to avoid
+entering the goal. This rule applies to all the robots on the field. Any robot
+that moves into the goal 3 times during a period of 20 seconds is deemed to be
+damaged (see \hyperref[ref-012]{1.11}).
 
 \begin{figure}[H]
     \centering
@@ -615,10 +626,10 @@ diagrams).
 
 \subsection{ Floor \label{ref-033}}
 
-The floor consists of dark green carpet on top of a hard level surface. The
-carpet should be of a quality that will resist the wear and tear of spinning
-wheels. All straight lines on the field should be painted and have a width of
-20 mm.
+The floor consists of dark green carpet on top of a hard level surface.
+\deleted[id=TC]{The carpet should be of a quality that will resist the wear and
+tear of spinning wheels.} All straight lines on the field should be painted and
+have a width of 20 mm.
 
 \subsection{ Neutral spots \label{ref-034}}
 
@@ -681,6 +692,9 @@ robots during normal game play.
 
 Robots are not allowed to cause damage to the field or to the ball during
 normal game play.
+
+\added[id=TC]{A robot that causes damage may be disqualified from a specific
+match at the referee's discretion. The OC will also be informed.}
 
 Humans are not allowed to cause deliberate interference with robots or damage
 to the field or the ball.
@@ -816,13 +830,13 @@ voltage & 15.0 V\textcolor{red}{***} & 12.0 V\textcolor{red}{***} \\
 
 * The handle and the top markers of a robot may exceed the height.
 
-** The weight of the robot includes that of the handle and does not include the top Markers.
+** The weight of the robot includes that of the handle.
 
 *** We encourage teams to include protection circuits for Lithium-based
 batteries
 
-*** Voltage limits relate to the nominal values, deviations at the power pack
-due to the fact that charged will be tolerated
+*** Voltage limits relate to the \textbf{nominal values}, deviations at the power pack
+due to the fact that charged will be tolerated.
 
 Ball-capturing zone is defined as any internal space created when a straight
 edge is placed on the protruding points of a robot. This means the ball must
@@ -924,7 +938,18 @@ Appendix V - Inspections Sheet Example. Note that the sheet will be updated by
 OC members before the competition to match this year's rules, but the important
 aspects which are checked will stay the same.
 
-\subsubsection{Interviews \label{ref-060}}
+
+\section{International Competition}
+
+\subsection{Team}
+
+\replaced[id=TC]{Maximum team size is 4 members for RoboCupJunior 2018.}{Maximum team size is 5 members for RoboCupJunior 2017.}
+
+Starting in 2017, Soccer Lightweight team members can participate in the World
+Championship only twice. After their second participation, they need to move to
+Soccer Open. Note that counting starts with the 2017 World Championship.
+
+\subsection{Interviews \label{ref-060}}
 
 During the international competition, the Organizing Committee will arrange to
 interview teams during the Setup Day of the event. This means that the teams
@@ -947,7 +972,7 @@ rules.
 The Technical Committee recommends the implementation of interviews in regional
 competitions as well, but this is not mandatory.
 
-\subsubsection{International Competition \label{ref-061}}
+\subsection{Further information on International Competition \label{ref-061}}
 
 All teams qualified to the international competition \textbf{must} share their
 designs, both hardware and software, with all present and future participants.
