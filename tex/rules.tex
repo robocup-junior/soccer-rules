@@ -27,6 +27,7 @@
 \usepackage{lastpage}
 \usepackage{incgraph}
 \usepackage{changes}
+\usepackage{subcaption}
 
 \usepackage[letterpaper, margin=1in, headheight=47pt]{geometry}
 
@@ -996,8 +997,115 @@ place for testing new ideas that may make it to the future rules, or otherwise
 shape the competition.}
 
 \textcolor{red}{Any RoboCupJunior Soccer team will be eligible to try to tackle these
-challenges. The exact definition of technical challenges will be released with
-the final rules.}
+challenges. Unless otherwise stated, any robot taking part in these
+challenges needs to abide by these rules in order to successfully complete it.}
+
+\subsubsection{\added[id=TC]{Precision shooter}}
+
+\textcolor{red}{\textit{The results in soccer are evaluated by the number of
+scored goals. History usually does not care how they were scored. For
+the spectators, however, this usually makes all the difference.}}
+
+\textcolor{red}{This challenge consists of six rounds. In each round, the robot
+starts from its own penalty area oriented towards the goal. The ball is
+placed randomly (by rolling a die) inside this half of the field on one of
+the following spots:}
+
+\begin{enumerate}
+    \item \textcolor{red}{Left neutral spot}
+    \item \textcolor{red}{Right neutral spot}
+    \item \textcolor{red}{Left corner of the penalty area}
+    \item \textcolor{red}{Right corner of the penalty area}
+    \item \textcolor{red}{Left corner of the field}
+    \item \textcolor{red}{Right corner of the field}
+\end{enumerate}
+
+\textcolor{red}{The robot needs to locate the ball and score a goal while
+staying on its own half of the field. Each round takes at most 20 seconds.}
+
+\begin{itemize}
+    \item \textcolor{red}{The team is free to pick which side to kick from.}
+    \item \textcolor{red}{The same robot must  be used for all rounds.}
+    \item \textcolor{red}{The robot must stay on its half of the field for the
+            goal to count, but ''out of bounds'' rules do not apply.}
+\end{itemize}
+
+\textcolor{red}{Initially, the opposite goal is completely open (see Figure
+\ref{fig:goal_parts}). After each
+scored goal a member of the team rolls a die and the part of the goal that
+corresponds to the number on the dice will be covered with a black box. If
+this part of the goal is already covered, the die will be rolled again (see
+Figure \ref{fig:goal_parts_filled}).}
+
+\textcolor{red}{The result of this challenge is the number of scored goals.}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=.9\linewidth]{media/goal_parts}
+  \caption{Partitioning of the goal into 6 parts.}
+  \label{fig:goal_parts}
+\end{figure}%
+\begin{figure}
+  \centering
+  \includegraphics[width=.9\linewidth]{media/goal_parts_filled}
+  \caption{State of the goal after two rounds, where the number 3 and number 5
+      were rolled on a die after each round and the respective parts of the
+      goal are covered. Note that if number 3 or 5 will get rolled in the next
+      rounds, a new roll of a die will follow.}
+  \label{fig:goal_parts_filled}
+\end{figure}
+
+\subsubsection{\added[id=TC]{Landmark localization}}
+
+\textcolor{red}{\textit{With the inclusion of landmarks on the field, the
+question of “where am I” that each soccer robot normally asks itself is
+one that can be answered in a pretty simple manner.}}
+
+\textcolor{red}{In this challenge the robot is tasked with visiting the
+    following points of interest on the field that includes the 2017 version of
+    landmarks:}
+
+\begin{enumerate}
+    \item \textcolor{red}{Yellow goal}
+    \item \textcolor{red}{Cyan landmark}
+    \item \textcolor{red}{Cyan-red landmark}
+    \item \textcolor{red}{Red landmark}
+    \item \textcolor{red}{Blue goal}
+    \item \textcolor{red}{Green landmark}
+    \item \textcolor{red}{Green-magenta landmark}
+    \item \textcolor{red}{Magenta landmark}
+\end{enumerate}
+
+\textcolor{red}{A point of interest is considered visited when a part of the
+    robot is located in a 10cm radius from a given point of interest.
+    Furthermore, the robot is required to signal that it visited a given
+    landmark in some way (visually, audibly, or in any other way that can be
+    easily distinguished from normal operation by a referee).}
+
+\textcolor{red}{While the order of points of interests mentioned above stays
+    fixed, before each start of the challenge their position on the field will
+    be randomly changed.}
+
+\textcolor{red}{The result of this challenge is the number of points of
+    interests visited in correct order.}
+
+\subsubsection{\added[id=TC]{Innovative usage of landmarks}}
+
+\textcolor{red}{The six landmarks on the field were introduced in the previous
+    version of the rules in an attempt to provide more opportunities for
+    experimentation with localization on the field. However, the change has
+    shown to be quite disruptive (in many cases it caused more harm than good)
+    and so a new version of landmarks has been designed for this year in order
+    to fix this.}
+
+\textcolor{red}{Since these landmarks have been in the rules for quite some
+    time now and some teams may have invested into using them, this challenge
+    has been designed to give them an opportunity to present their work and
+    receive some bonus points for it as well.}
+
+\textcolor{red}{The result of this challenge is a binary decision: a set of
+    bonus points awarded to a team which manages to persuade the OC that they
+    use the landmarks in an innovative way.}
 
 \subsection{Further information on International Competition \label{ref-061}}
 
