@@ -1,0 +1,20 @@
+\documentclass[a4paper, landscape]{article}
+\usepackage{tikz}
+\usepackage[a4paper,left=3in, top=2.5in]{geometry}
+\begin{document}
+\definecolor{magenta}{RGB}{217,1,122}
+\pagestyle{empty}
+
+\begin{tikzpicture}[remember picture,overlay]
+\filldraw [color=magenta] (0mm, 0mm) circle (35mm);
+\filldraw [color=magenta] (132.66mm, -70mm) circle (35mm);
+\end{tikzpicture}
+
+\newpage
+
+\begin{tikzpicture}[remember picture,overlay]
+\filldraw [color=magenta] (132.66mm, 0mm) circle (35mm);
+\filldraw [color=magenta] (0mm, -70mm) circle (35mm);
+\end{tikzpicture}
+
+\end{document}
