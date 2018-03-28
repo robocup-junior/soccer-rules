@@ -410,8 +410,13 @@ robots linger in their penalty area.
 \added[id=TC]{If multiple defense happens repeatedly in a short amount of time,
 the offending robot will be moved to an unoccupied neutral spot on the other
 side of the field, orientated towards the nearest wall.}
-\replaced[id=TC]{If the robot needs to be moved out \textbf(three times), it}{If multiple
-defense happens repeatedly, the robot} will be deemed damaged.
+\replaced[id=TC]{If any robot needs to be moved to an unoccupied neutral spot
+more than \textbf{three times} during its single uninterrupted time chunk on the
+field, it}{If multiple defense happens repeatedly, the robot}
+will be deemed damaged\footnote{For the purpose of this rule a time chunk is
+defined as time between two events when the robot is taken off the field for
+some reason (e.g. at the end of the first half of the game, when it is deemed
+damaged or out of bounds).}.
 
 \subsection{Interruption of Game \label{ref-014}}
 
@@ -790,13 +795,17 @@ the procedure of the tournament (for example the SuperTeam system, game modes,
 the inspection of robots, interviews, schedules, etc.). Regulatory statutes
 become a part of this rule.
 
-\textbf{Field diagrams}
+\section{FIELD DIAGRAMS}
 
-\includegraphics[width=1\textwidth]{media/image5_new.jpeg}
+\begin{center}
 
-\includegraphics[width=1\textwidth]{media/image6_new.jpeg}
+\includegraphics[width=0.9\textwidth]{media/image5_new.jpeg}
 
-\includegraphics[width=1\textwidth]{media/image7_new.jpeg}
+\includegraphics[width=0.9\textwidth]{media/image6_new.jpeg}
+
+\includegraphics[width=0.8\textwidth]{media/image7_new.jpeg}
+
+\end{center}
 
 \section{LEAGUE REGULATIONS \label{ref-052}}
 
@@ -955,6 +964,8 @@ Appendix V - Inspections Sheet Example. Note that the sheet will be updated by
 OC members before the competition to match this year's rules, but the important
 aspects which are checked will stay the same.
 
+
+\newpage
 
 \section{International Competition}
 
