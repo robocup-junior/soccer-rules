@@ -27,6 +27,8 @@
 \usepackage{lastpage}
 \usepackage{incgraph}
 \usepackage{changes}
+\usepackage{pdfpages}
+
 
 \usepackage[letterpaper, margin=1in, headheight=47pt]{geometry}
 
@@ -105,13 +107,13 @@ rules prior to competition.
 
 In the RoboCupJunior soccer challenge, teams of young engineers design, build,
 and program two fully autonomous mobile robots to compete against another team
-in matches. The robots must detect a ball and score into a color-coded goal on 
+in matches. The robots must detect a ball and score into a color-coded goal on
 a special field that resembles a human soccer field.
 
-To be sucessessful, participants must demonstrate skill in programming, robotics, 
+To be sucessessful, participants must demonstrate skill in programming, robotics,
 electronics and mechatronics.  Teams are also expected to contribute to the
 the advancement of the community as a whole by sharing their discoveries with other
-participants and by engaging in good sportsmanship,regardless of culture, age or 
+participants and by engaging in good sportsmanship,regardless of culture, age or
 result in the competition. \textbf{All are expected to compete,
 learn, have fun, and grow.}
 
@@ -122,18 +124,18 @@ for both sub-leagues. There are two main differences between the two leagues.
 
 \textbf{``Soccer Lightweight''} is played using a special ball that emits an IR
 signal ball. Robots may weigh up to 1.1 kg, may have a ball-capturing zone of
-up to 2.5 cm, and may use batteries up to 15.0 nominal voltage.  
+up to 2.5 cm, and may use batteries up to 15.0 nominal voltage.
 
 \textbf{``Soccer Open''} is played using a passive, brighly colored orange
 ball. Robots may weigh up to 2.4 kg, may have a ball-capturing zone of up to
-3.0 cm, and may use batteries up to 12.0 nominal voltage.  
+3.0 cm, and may use batteries up to 12.0 nominal voltage.
 
 \textit{Please see 5. Ball, for balls specifications and 8. League
 Regulations, for more details for specifications/regulations}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{media/image1.jpeg}
+    \includegraphics[width=0.7\textwidth]{media/image1_new.jpeg}
     \caption{Two teams of two robots with an orange ball on a RoboCupJunior
         Soccer field.}
     \label{fig:name}
@@ -183,8 +185,8 @@ referee assistant).
 
 Teams are expected to be on the field 5 minutes before their game
 starts. Being at the inspection table does not count in favor of this time
-limit. Teams that are late for the start of the game can be penalized one goal per 
-30 seconds at the referee's discretion. In this (and any) situation, when the goal 
+limit. Teams that are late for the start of the game can be penalized one goal per
+30 seconds at the referee's discretion. In this (and any) situation, when the goal
 differential reaches 10 the game finishes regardless of the state of the game clock.
 
 \subsection{Pre-match meeting \label{ref-003}}
@@ -192,7 +194,7 @@ differential reaches 10 the game finishes regardless of the state of the game cl
 At the start of the first half of the game, a referee will toss a coin. The
 team mentioned first in the draw shall call the coin. The winner of the toss
 can choose either which end to kick towards, or to kick off first. The loser of the
-toss chooses the other option. After the first half, teams switch sides. 
+toss chooses the other option. After the first half, teams switch sides.
 The team not kicking off in the first half of the game will kick off to
 begin the second half of the game.
 
@@ -233,21 +235,21 @@ referee. Violating team/team member(s) can be disqualified from the game.
 
 The referee or a referee assistant can help robots get unstuck if the ball
 is not being disputed near them and if the situation was created from normal
-interaction between robots (i.e. it was not a design or programming flaw of 
-the robot alone). The referee or a referee assistant will pull back the robots 
+interaction between robots (i.e. it was not a design or programming flaw of
+the robot alone). The referee or a referee assistant will pull back the robots
 just enough for them to be able to move freely again.
 
 \subsection{Ball movement \label{ref-006}}
 
-A robot cannot hold a ball. Holding a ball is defined as taking full control 
+A robot cannot hold a ball. Holding a ball is defined as taking full control
 of the ball by removing all of degrees of freedom. Examples for ball holding
 include fixing a ball to the robot's body, surrounding a ball using the robot's
 body to prevent access by others, encircling the ball or somehow trapping the
-ball with any part of the robot's body. If a ball does not roll while a robot is 
+ball with any part of the robot's body. If a ball does not roll while a robot is
 moving, it is a good indication that the ball is trapped.
 
-The only exception to holding is the use of a rotating drum (a "dribbler") that 
-imparts dynamic back spin on the ball to keep the ball on its surface. 
+The only exception to holding is the use of a rotating drum (a "dribbler") that
+imparts dynamic back spin on the ball to keep the ball on its surface.
 
 Other players must be able to access the ball.
 
@@ -255,7 +257,7 @@ Other players must be able to access the ball.
 
 A goal is scored when the ball strikes or touches the back wall of the goal.
 Goals scored either by an attacking or defending robot have the same end
-result: they give one goal to the team on the opposite side. After a goal, the 
+result: they give one goal to the team on the opposite side. After a goal, the
 game will be restarted with a kick-off from the team who was scored against.
 Before a kick-off, all damaged or out-of-bounds robots are allowed to return to
 the playing field immediately if they are ready and fully functional.
@@ -295,10 +297,10 @@ different neutral spot.
 
 \subsection{Out of bounds \label{ref-011}}
 
-If a robot's entire body moves out beyond the white line of the field, it 
-will be called for being out of bounds. When this situation arises, the robot 
-is given a one-minute penalty, and the team is asked to remove the robot from 
-the field. There is no time stoppage for the game itself. The robot is allowed 
+If a robot's entire body moves out beyond the white line of the field, it
+will be called for being out of bounds. When this situation arises, the robot
+is given a one-minute penalty, and the team is asked to remove the robot from
+the field. There is no time stoppage for the game itself. The robot is allowed
 to return if a kickoff occurs before the penalty has elapsed.
 
 The one-minute penalty starts when the robot is removed from play. Furthermore,
@@ -383,7 +385,7 @@ be taken off or returned with the referee's permission.
 {
 If both robots from the same team are deemed damaged at kickoff,
 gameplay will be paused and the remaining team will be awarded 1 goal for
-every 30 seconds that their oppent's robots remain damaged.
+every 30 seconds that their opponent's robots remain damaged.
 }
 {
 If both robots from the same team are deemed damaged during gameplay, the clock
@@ -598,32 +600,34 @@ It is recommended that the field be positioned 70 to 90 cm off the ground.
 Walls are placed all around the field, including behind the goals and the
 out-area. The height of the walls is 22 cm. The walls are painted matte black.
 
-There are colored landmarks positioned on each wall. They are 12 cm in height
-and 21 cm in width. The colors used for landmarks are:
+There are colored landmarks positioned on each wall. \added[id=TC]{They consist
+of two magenta circles printed on letter paper (A4, 210mm x 297mm). They
+measure 70mm in diameter and their centers are 150mm apart from each other.
+Their position within the landmark as well as the position of the
+respective landmarks on the field can be seen in Figure
+\ref{fig:landmarks_blueprint}. Note that these landmarks are always positioned
+in the middle of the wall.}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{media/landmarks_blueprint.png}
+    \caption{Position of magenta circles on each of the two landmarks, as well
+        as the position of each of the two landmarks on the field. Note that in
+        this case ''blue goal to the left/right'' here to the situation when
+        one is looking directly at the blue goal from the center of the field.
+        For more information on the position of landmarks please consult the
+        Field diagrams section.}
+    \label{fig:landmarks_blueprint}
+\end{figure}
+
+\added[id=TC]{The color used for these landmarks (magenta) is defined (for the
+    purpose of this section) to be one of the following:}
 
 \begin{itemize}
-\item Green - RGB (0, 255, 0)
-
-\item Red - RGB (255, 0, 0)
-
-\item Cyan - RGB (0, 255, 255)
-
-\item Magenta - RGB (255, 0, 255)
-
+    \item \texttt{RGB (217, 1, 2)}
+    \item \texttt{CMYK (0, 255, 0, 0)}
+    \item PANTONE Process Magenta C (\url{https://www.pantone.com/color-finder/Process-Magenta-C})
 \end{itemize}
-
-Note that the colors were chosen so that they would be as distant from the
-colors already used on the field as possible, specifically yellow and blue
-which are used for goals. While both the carpet and one landmark use green as
-their main color, the green used for the floor's carpet should be much darker
-than the one used for the landmark.
-
-They are positioned as follows: the green and the red one fill in the left and
-the right corner behind the blue goal, while the cyan and the magenta landmarks
-fill in the left and the right corner behind the yellow goal. Out of the four
-walls, each of the longer ones has a combination of the landmarks used on its
-edges placed in its center. See the Field Diagrams section for more
-information.
 
 \subsection{ Goals \label{ref-032}}
 
@@ -788,11 +792,11 @@ become a part of this rule.
 
 \textbf{Field diagrams}
 
-\includegraphics[width=1\textwidth]{media/image5.jpeg}
+\includegraphics[width=1\textwidth]{media/image5_new.jpeg}
 
-\includegraphics[width=1\textwidth]{media/image6.jpeg}
+\includegraphics[width=1\textwidth]{media/image6_new.jpeg}
 
-\includegraphics[width=1\textwidth]{media/image7.jpeg}
+\includegraphics[width=1\textwidth]{media/image7_new.jpeg}
 
 \section{LEAGUE REGULATIONS \label{ref-052}}
 
@@ -998,8 +1002,115 @@ place for testing new ideas that may make it to the future rules, or otherwise
 shape the competition.}
 
 \textcolor{red}{Any RoboCupJunior Soccer team will be eligible to try to tackle these
-challenges. The exact definition of technical challenges will be released with
-the final rules.}
+challenges. Unless otherwise stated, any robot taking part in these
+challenges needs to abide by these rules in order to successfully complete it.}
+
+\subsubsection{\added[id=TC]{Precision shooter}}
+
+\textcolor{red}{\textit{The results in soccer are evaluated by the number of
+scored goals. History usually does not care how they were scored. For
+the spectators, however, this usually makes all the difference.}}
+
+\textcolor{red}{This challenge consists of six rounds. In each round, the robot
+starts from its own penalty area oriented towards the goal. The ball is
+placed randomly (by rolling a die) inside this half of the field on one of
+the following spots:}
+
+\begin{enumerate}
+    \item \textcolor{red}{Left neutral spot}
+    \item \textcolor{red}{Right neutral spot}
+    \item \textcolor{red}{Left corner of the penalty area}
+    \item \textcolor{red}{Right corner of the penalty area}
+    \item \textcolor{red}{Left corner of the field}
+    \item \textcolor{red}{Right corner of the field}
+\end{enumerate}
+
+\textcolor{red}{The robot needs to locate the ball and score a goal while
+staying on its own half of the field. Each round takes at most 20 seconds.}
+
+\begin{itemize}
+    \item \textcolor{red}{The team is free to pick which side to kick from.}
+    \item \textcolor{red}{The same robot must  be used for all rounds.}
+    \item \textcolor{red}{The robot must stay on its half of the field for the
+            goal to count, but ''out of bounds'' rules do not apply.}
+\end{itemize}
+
+\textcolor{red}{Initially, the opposite goal is completely open (see Figure
+\ref{fig:goal_parts}). After each
+scored goal a member of the team rolls a die and the part of the goal that
+corresponds to the number on the dice will be covered with a black box. If
+this part of the goal is already covered, the die will be rolled again (see
+Figure \ref{fig:goal_parts_filled}).}
+
+\textcolor{red}{The result of this challenge is the number of scored goals.}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=.9\linewidth]{media/goal_parts}
+  \caption{Partitioning of the goal into 6 parts.}
+  \label{fig:goal_parts}
+\end{figure}%
+\begin{figure}
+  \centering
+  \includegraphics[width=.9\linewidth]{media/goal_parts_filled}
+  \caption{State of the goal after two rounds, where the number 3 and number 5
+      were rolled on a die after each round and the respective parts of the
+      goal are covered. Note that if number 3 or 5 will get rolled in the next
+      rounds, a new roll of a die will follow.}
+  \label{fig:goal_parts_filled}
+\end{figure}
+
+\subsubsection{\added[id=TC]{Landmark localization}}
+
+\textcolor{red}{\textit{With the inclusion of landmarks on the field, the
+question of “where am I” that each soccer robot normally asks itself is
+one that can be answered in a pretty simple manner.}}
+
+\textcolor{red}{In this challenge the robot is tasked with visiting the
+    following points of interest on the field that includes the 2017 version of
+    landmarks:}
+
+\begin{enumerate}
+    \item \textcolor{red}{Yellow goal}
+    \item \textcolor{red}{Cyan landmark}
+    \item \textcolor{red}{Cyan-red landmark}
+    \item \textcolor{red}{Red landmark}
+    \item \textcolor{red}{Blue goal}
+    \item \textcolor{red}{Green landmark}
+    \item \textcolor{red}{Green-magenta landmark}
+    \item \textcolor{red}{Magenta landmark}
+\end{enumerate}
+
+\textcolor{red}{A point of interest is considered visited when a part of the
+    robot is located in a 10cm radius from a given point of interest.
+    Furthermore, the robot is required to signal that it visited a given
+    landmark in some way (visually, audibly, or in any other way that can be
+    easily distinguished from normal operation by a referee).}
+
+\textcolor{red}{While the order of points of interests mentioned above stays
+    fixed, before each start of the challenge their position on the field will
+    be randomly changed.}
+
+\textcolor{red}{The result of this challenge is the number of points of
+    interests visited in correct order.}
+
+\subsubsection{\added[id=TC]{Innovative usage of landmarks}}
+
+\textcolor{red}{The six landmarks on the field were introduced in the previous
+    version of the rules in an attempt to provide more opportunities for
+    experimentation with localization on the field. However, the change has
+    shown to be quite disruptive (in many cases it caused more harm than good)
+    and so a new version of landmarks has been designed for this year in order
+    to fix this.}
+
+\textcolor{red}{Since these landmarks have been in the rules for quite some
+    time now and some teams may have invested into using them, this challenge
+    has been designed to give them an opportunity to present their work and
+    receive some bonus points for it as well.}
+
+\textcolor{red}{The result of this challenge is a binary decision: a set of
+    bonus points awarded to a team which manages to persuade the OC that they
+    use the landmarks in an innovative way.}
 
 \subsection{Further information on International Competition \label{ref-061}}
 
@@ -1090,7 +1201,11 @@ Currently, there is one ball that has been approved by the RoboCupJunior Soccer
 Technical Committee:
 
 \begin{enumerate}
-    \item RoboSoccer RCJ-05 ball operating in MODE A (pulsed) made by EK Japan/Elekit (www.elekit.co.jp)
+    \item RoboSoccer ball operating in MODE A (pulsed) made by EK Japan/Elekit (www.elekit.co.jp)
+        \added[id=TC]{Note that this ball was previously called RCJ-05. While
+            you may not be able to find a ball with this name anymore, any IR
+            ball produced by EK Japan/Elekit is considered to be approved by
+            the TC.}
 \end{enumerate}
 
 \section{Technical Specification for passive Soccer Ball\label{ref-passive-spec}}
@@ -1115,6 +1230,10 @@ ball will not be much different. These balls are:
 \begin{enumerate}
 
 \item \underline{\href{http://schweikert-shop.he-hosting.de/index.php?cat=2259&lang=ENG&product=93011}{http://schweikert-shop.he-hosting.de/index.php?cat=2259\&lang=ENG\&product=93011}}
+
+    \added[id=TC]{Note that since the e-shop may also send you a semi-glossy ball
+        by mistake, it is safer to mention that you would like to receive a
+        matte ball when finishing your order or in an email after you finish it.}
 
 \item \underline{\href{https://www.amazon.com/Mylec-Weather-Bounce-Hockey-Orange/dp/B002LBDA30}{https://www.amazon.com/Mylec-Weather-Bounce-Hockey-Orange/dp/B002LBDA30}}
 
@@ -1222,9 +1341,58 @@ the attached device schematic is simple enough for quick construction.
 
 \includegraphics[width=1\textwidth]{media/image10.png}
 
-\section{Landmarks Template\label{ref-066}}
+\section{Landmarks Template (2018 version)\label{landmarks}}
 
-The following four pages contain a template for the landmarks that are to be put on the walls of the field. When printed on ordinary A4 paper, they should have the measures described by these rules. While the color on the printed papers will differ from printer to printer, printing these pages using the sRGB ``printer profile'' (color scheme) produces the best results.
+The following four pages contain a template for the landmarks that are to be
+put on the walls of the field. When printed on ordinary A4 paper, they should
+have the measures described by these rules. While the color on the printed
+papers will differ from printer to printer, printing these pages using the sRGB
+``printer profile'' (color scheme) produces the best results.
+
+\includepdf[pages=-,landscape=true]{landmarks.pdf}
+
+
+\section{Landmarks Template (2017 version)\label{ref-066}}
+
+There are colored landmarks positioned on each wall. They are 12 cm in height
+and 21 cm in width. The colors used for landmarks are:
+
+\begin{itemize}
+\item Green - RGB (0, 255, 0)
+
+\item Red - RGB (255, 0, 0)
+
+\item Cyan - RGB (0, 255, 255)
+
+\item Magenta - RGB (255, 0, 255)
+
+\end{itemize}
+
+Note that the colors were chosen so that they would be as distant from the
+colors already used on the field as possible, specifically yellow and blue
+which are used for goals. While both the carpet and one landmark use green as
+their main color, the green used for the floor's carpet should be much darker
+than the one used for the landmark.
+
+They are positioned as follows: the green and the red one fill in the left and
+the right corner behind the blue goal, while the cyan and the magenta landmarks
+fill in the left and the right corner behind the yellow goal. Out of the four
+walls, each of the longer ones has a combination of the landmarks used on its
+edges placed in its center. See the field diagrams below for more
+information.
+
+\includegraphics[width=1\textwidth]{media/image5.jpeg}
+\includegraphics[width=1\textwidth]{media/image6.jpeg}
+\includegraphics[width=1\textwidth]{media/image7.jpeg}
+
+The following four pages contain a template for the \added[id=TC]{2017 version
+    of} landmarks that are to be put on the walls of the field. When printed on
+ordinary A4 paper, they should have the measures described by these rules.
+While the color on the printed papers will differ from printer to printer,
+printing these pages using the sRGB ``printer profile'' (color scheme) produces
+the best results.
+
+\newpage
 
 \includegraphics[width=1\textwidth]{media/image11.png}
 
