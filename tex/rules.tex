@@ -27,6 +27,7 @@
 \usepackage{lastpage}
 \usepackage{incgraph}
 \usepackage{changes}
+\usepackage{pdfpages}
 
 \usepackage[letterpaper, margin=1in, headheight=47pt]{geometry}
 
@@ -133,7 +134,7 @@ Regulations, for more details for specifications/regulations}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{media/image1.jpeg}
+    \includegraphics[width=0.7\textwidth]{media/image1_new.jpeg}
     \caption{Two teams of two robots with an orange ball on a RoboCupJunior
         Soccer field.}
     \label{fig:name}
@@ -381,7 +382,7 @@ be taken off or returned with the referee's permission.
 {
 If both robots from the same team are deemed damaged at kickoff,
 gameplay will be paused and the remaining team will be awarded 1 goal for
-every 30 seconds that their oppent's robots remain damaged.
+every 30 seconds that their opponent's robots remain damaged.
 }
 {
 If both robots from the same team are deemed damaged during gameplay, the clock
@@ -596,32 +597,34 @@ It is recommended that the field be positioned 70 to 90 cm off the ground.
 Walls are placed all around the field, including behind the goals and the
 out-area. The height of the walls is 22 cm. The walls are painted matte black.
 
-There are colored landmarks positioned on each wall. They are 12 cm in height
-and 21 cm in width. The colors used for landmarks are:
+There are colored landmarks positioned on each wall. \added[id=TC]{They consist
+of two magenta circles printed on letter paper (A4, 210mm x 297mm). They
+measure 70mm in diameter and their centers are 150mm apart from each other.
+Their position within the landmark as well as the position of the
+respective landmarks on the field can be seen in Figure
+\ref{fig:landmarks_blueprint}. Note that these landmarks are always positioned
+in the middle of the wall.}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{media/landmarks_blueprint.png}
+    \caption{Position of magenta circles on each of the two landmarks, as well
+        as the position of each of the two landmarks on the field. Note that in
+        this case ''blue goal to the left/right'' here to the situation when
+        one is looking directly at the blue goal from the center of the field.
+        For more information on the position of landmarks please consult the
+        Field diagrams section.}
+    \label{fig:landmarks_blueprint}
+\end{figure}
+
+\added[id=TC]{The color used for these landmarks (magenta) is defined (for the
+    purpose of this section) to be one of the following:}
 
 \begin{itemize}
-\item Green - RGB (0, 255, 0)
-
-\item Red - RGB (255, 0, 0)
-
-\item Cyan - RGB (0, 255, 255)
-
-\item Magenta - RGB (255, 0, 255)
-
+    \item \texttt{RGB (217, 1, 2)}
+    \item \texttt{CMYK (0, 255, 0, 0)}
+    \item PANTONE Process Magenta C (\url{https://www.pantone.com/color-finder/Process-Magenta-C})
 \end{itemize}
-
-Note that the colors were chosen so that they would be as distant from the
-colors already used on the field as possible, specifically yellow and blue
-which are used for goals. While both the carpet and one landmark use green as
-their main color, the green used for the floor's carpet should be much darker
-than the one used for the landmark.
-
-They are positioned as follows: the green and the red one fill in the left and
-the right corner behind the blue goal, while the cyan and the magenta landmarks
-fill in the left and the right corner behind the yellow goal. Out of the four
-walls, each of the longer ones has a combination of the landmarks used on its
-edges placed in its center. See the Field Diagrams section for more
-information.
 
 \subsection{ Goals \label{ref-032}}
 
@@ -786,11 +789,11 @@ become a part of this rule.
 
 \textbf{Field diagrams}
 
-\includegraphics[width=1\textwidth]{media/image5.jpeg}
+\includegraphics[width=1\textwidth]{media/image5_new.jpeg}
 
-\includegraphics[width=1\textwidth]{media/image6.jpeg}
+\includegraphics[width=1\textwidth]{media/image6_new.jpeg}
 
-\includegraphics[width=1\textwidth]{media/image7.jpeg}
+\includegraphics[width=1\textwidth]{media/image7_new.jpeg}
 
 \section{LEAGUE REGULATIONS \label{ref-052}}
 
@@ -1228,9 +1231,58 @@ the attached device schematic is simple enough for quick construction.
 
 \includegraphics[width=1\textwidth]{media/image10.png}
 
-\section{Landmarks Template\label{ref-066}}
+\section{Landmarks Template (2018 version)\label{landmarks}}
 
-The following four pages contain a template for the landmarks that are to be put on the walls of the field. When printed on ordinary A4 paper, they should have the measures described by these rules. While the color on the printed papers will differ from printer to printer, printing these pages using the sRGB ``printer profile'' (color scheme) produces the best results.
+The following four pages contain a template for the landmarks that are to be
+put on the walls of the field. When printed on ordinary A4 paper, they should
+have the measures described by these rules. While the color on the printed
+papers will differ from printer to printer, printing these pages using the sRGB
+``printer profile'' (color scheme) produces the best results.
+
+\includepdf[pages=-,landscape=true]{landmarks.pdf}
+
+
+\section{Landmarks Template (2017 version)\label{ref-066}}
+
+There are colored landmarks positioned on each wall. They are 12 cm in height
+and 21 cm in width. The colors used for landmarks are:
+
+\begin{itemize}
+\item Green - RGB (0, 255, 0)
+
+\item Red - RGB (255, 0, 0)
+
+\item Cyan - RGB (0, 255, 255)
+
+\item Magenta - RGB (255, 0, 255)
+
+\end{itemize}
+
+Note that the colors were chosen so that they would be as distant from the
+colors already used on the field as possible, specifically yellow and blue
+which are used for goals. While both the carpet and one landmark use green as
+their main color, the green used for the floor's carpet should be much darker
+than the one used for the landmark.
+
+They are positioned as follows: the green and the red one fill in the left and
+the right corner behind the blue goal, while the cyan and the magenta landmarks
+fill in the left and the right corner behind the yellow goal. Out of the four
+walls, each of the longer ones has a combination of the landmarks used on its
+edges placed in its center. See the field diagrams below for more
+information.
+
+\includegraphics[width=1\textwidth]{media/image5.jpeg}
+\includegraphics[width=1\textwidth]{media/image6.jpeg}
+\includegraphics[width=1\textwidth]{media/image7.jpeg}
+
+The following four pages contain a template for the \added[id=TC]{2017 version
+    of} landmarks that are to be put on the walls of the field. When printed on
+ordinary A4 paper, they should have the measures described by these rules.
+While the color on the printed papers will differ from printer to printer,
+printing these pages using the sRGB ``printer profile'' (color scheme) produces
+the best results.
+
+\newpage
 
 \includegraphics[width=1\textwidth]{media/image11.png}
 
