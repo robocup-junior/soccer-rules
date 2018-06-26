@@ -51,3 +51,13 @@ issue](https://guides.github.com/features/issues/) by filling a form
 [here](https://github.com/RoboCupJuniorTC/soccer-rules/issues/new). We can
 discuss your suggestion there, and if it makes sense someone will certainly
 put it into the actual `rules.tex` document.
+
+## For LaTeX dummies: How to build PDF from TEX
+
+If you use Ubuntu Linux for instance, the following commands could be used:
+
+1. git clone https://github.com/RoboCupJuniorTC/soccer-rules.git
+2. cd soccer-rules/tex
+3. sudo apt install texlive-latex-base texlive-latex-extra texlive-math-extra
+4. pdflatex rules.tex
+
