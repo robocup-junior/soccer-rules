@@ -270,15 +270,31 @@ leaves the penalty area.
 
 \subsection{Pushing \label{ref-pushing}}
 
-Within the penalty area, the goalie has priority. Attacking robots are not
-supposed to push the goalie in any way.
-
-If the attacker and the goalie touch each other and at least one of them has
-physical contact with the ball, the ball will be moved to the nearest
-unoccupied neutral spot immediately.
+Robots are not allowed to push each other at any time and at any place.
+This applies to two robots of the same team as well as two robots of the competing opponents.
+The robots may use vision, touch sensors attached to avoidance rings, or any other method
+to detect the avoidance rings of other robots, see section \ref{ref-avoidance}.
+A robot is allowed to play only if it can reliably detect touching or coming close to 
+another robot in all directions of its own movement. When the robot detects another
+robot in any particular direction, it must stop all movement in that direction immediately.
+If any robot happens to push any other robot because it has failed to detect the other robot,
+it is removed from play for 30 seconds by a referee.
 
 If a goal is scored as a result of this pushed-situation, it will not be
 granted.
+
+\subsection{Pushing with ball\label{ref-pushing-with-ball}}
+
+Robots are not allowed to push each other while both pushing the same ball in the opposite directions
+even without touching each other.
+Whenever the robot comes in contact with the ball, it is allowed to push it forward as long as 
+there is no force working in the opposite direction. If a robot tries to push a ball forward, 
+but the ball is not rolling freely, it must stop moving in the direction of the ball within 
+3 seconds for at least another 3 seconds. The referee notices this by counting alound: 1-2-3 ; 1-2-3.
+Robots failing to stop pushing a stuck ball within 3 seconds for the period of at least 3 seconds 
+will be removed from the field for 30 seconds by the referee.
+The robot is allowed to use its dribbler and back-up, or perform a side-kick in order to release 
+the ball from the locked-in situation.
 
 \subsection{Lack of progress \label{ref-lack-of-progress}}
 
@@ -542,6 +558,15 @@ damaged (see \hyperref[ref-012]{1.11}).
     \caption{Acceptable and unacceptable position of Goalie and Striker}
     \label{fig:robot_in_goal}
 \end{figure}
+
+\subsection{ Avoidance \label{ref-avoidance}}
+
+In order to be able to detect each other reliably, all robots must have 
+an avoidance ring. The avoidance ring is a 2.54 cm high hollow cylinder surrounding
+the robot. When viewed from top, this cylinder forms a convex hull of the robot shape.
+It is installed at the height of 12 cm  - 14.54 cm from the field floor.
+Its color must be the same as the color of the ball.
+See also section \ref{ref-pushing}.
 
 \subsection{ Handle \label{ref-handle}}
 
