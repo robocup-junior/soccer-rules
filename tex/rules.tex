@@ -44,8 +44,13 @@
 
 % Set paragraph numbers correctly (skip susubsection)
 \setcounter{secnumdepth}{4}
-\renewcommand\thesection{\arabic{section}}
-\renewcommand\thesubsubsection{\thesubsection}
+\renewcommand\thesubsection{\arabic{section}.\arabic{subsection}}
+\renewcommand\thesubsubsection{
+\ifnum \value{subsubsection}=0
+    \thesubsection
+\else
+    \thesubsection.\Alph{subsubsection}\relax
+\fi}
 
 \newcommand*{\p}{\paragraph{}}
 
@@ -1153,7 +1158,11 @@ design, team spirit and individual games. Note that as stated in rule 6.5
 ``\textbf{\textit{\textcolor{red}{It is not whether you win or lose, but how
 much you learn that counts!''.}}}
 
+\newpage
 \appendix
+\addcontentsline{toc}{section}{Appendices}
+\renewcommand\thesubsection{\Alph{section}.\arabic{subsection}}
+
 \section{Technical Specification for pulsed Soccer Ball\label{ref-pulsed-spec}}
 
 \subsection{Preamble}
