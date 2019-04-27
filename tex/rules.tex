@@ -74,13 +74,13 @@
 %\renewcommand{\topmargin}{-20pt}
 
 \rfoot{Page \textbf{\thepage} of \textbf{\pageref{LastPage}}}
-\lfoot{\textit{Final Rules as of \today}}
+\lfoot{\textit{Draft as of \today}}
 \cfoot{}
 
 % First page
 \fancypagestyle{firststyle}{%
   \fancyhf{}
-  \fancyfoot[L]{\textit{Final Rules as of \today}}
+  \fancyfoot[L]{\textit{Draft as of \today}}
   \fancyfoot[R]{Page \textbf{\thepage} of \textbf{\pageref{LastPage}}}
 }
 
@@ -132,7 +132,7 @@
 
 \vspace{20pt}
 
-These are the official Soccer rules for RoboCupJunior 2019. They are released
+These are the official Soccer rules for RoboCupJunior 2020. They are released
 by the RoboCupJunior Soccer Technical Committee. The English version of these
 rules has priority over any translations. \textcolor{red}{\textbf{Items in red
 represent changes introduced this year.}}
@@ -324,12 +324,12 @@ lack of progress situations are when the ball is stuck between robots, when
 there is no change in ball and robot's positions, or when the ball is beyond
 detection or reach capability of all robots on the field.
 
-\p After a visible and loud count\footnote{usually a count of
-\replaced[id=TC]{three}{five}, the length of the count could be decided by
-the OC before a competition as long as it's the same length within a
-sub-league}, a referee will call ``lack of progress'' and will move the ball
-to the nearest unoccupied neutral spot. If this does not solve the lack of
-progress, the referee can move the ball to a different neutral spot.
+\p After a visible and loud count\footnote{usually a count of three, the length
+of the count could be decided by the OC before a competition as long as it's
+the same length within a sub-league}, a referee will call ``lack of progress''
+and will move the ball to the nearest unoccupied neutral spot. If this does not
+solve the lack of progress, the referee can move the ball to a different
+neutral spot.
 
 \subsection{Out of bounds \label{ref-011}}
 
@@ -345,11 +345,7 @@ will not be granted. Out-of-bounds robots can be fixed if the team needs to do
 so, as described in \hyperref[ref-012]{\ref{ref-012}}.
 
 \p After the penalty time has passed, robot will be placed on the unoccupied
-neutral spot \replaced[id=TC]{furthest from the ball, facing its own goal.}
-{nearest to where it has been taken off, orientated towards the
-nearest wall.  Alternatively, the referee may instruct the team to place the
-robot on the neutral spot on the side of the field currently farthest from the
-ball, oriented towards the closest wall.}
+neutral spot furthest from the ball, facing its own goal.
 
 \p A referee can waive the penalty if the robot was accidentally pushed out of
 bounds by any other robot. In such a case, the
@@ -362,9 +358,9 @@ when one of the following condition occurs:
 \begin{enumerate}
     \item the ball remains outside the playing field too long,
         after a visible and loud count, (usually a count of
-        \replaced[id=TC]{three}{five}, the length of
-        the count can be decided by the OC before a competition as long as it
-        is the same length within a sub-league)
+        three, the length of the count can be decided by the OC 
+        before a competition as long as it is the same length 
+        within a sub-league)
 
     \item any of the robots are unable to return it into the playing field
         (without their whole body leaving the playing field), or
@@ -403,15 +399,12 @@ sensor calibration, computers and other tools in the playing area, only for the
 gameplay can only happen when they are out of game (i.e., damaged or out of
 bounds), or when explicitly allowed by the referee.
 
-\p After a robot has been fixed, it will be placed on the unoccupied neutral spot
-\replaced[id=TC]{furthest from the ball, facing its own goal.}{nearest to
-where it has been taken off, orientated towards the nearest wall.
-Alternatively, the referee may instruct the team to place the robot on the
-neutral spot on the side of the field currently farthest from the ball,
-orientated towards the nearest wall.} A robot can only be returned to the field
-if the damage has been repaired. If the referee notices that the robot was
-returned to the field with the same original problem, s/he may ask the robot to
-be removed, and proceed with the game as if the robot had not been returned.
+\p After a robot has been fixed, it will be placed on the unoccupied neutral
+spot furthest from the ball, facing its own goal. A robot can only be returned
+to the field if the damage has been repaired. If the referee notices that the
+robot was returned to the field with the same original problem, s/he may ask
+the robot to be removed, and proceed with the game as if the robot had not been
+returned.
 
 \p \textbf{Only the referee decides whether a robot is damaged.} A robot can only
 be taken off or returned with the referee's permission.
@@ -422,8 +415,7 @@ will be paused and the remaining team will be awarded 1 goal for each elapsed
 only apply when none of the two robots from the same team were damaged as the
 result of the opponent team violating the rules.
 
-\p \added[id=TC]{Whenever a robot is removed from play, its motors must be
-turned off.}
+\p Whenever a robot is removed from play, its motors must be turned off.
 
 \subsection{Multiple defense \label{ref-013}}
 
@@ -484,9 +476,9 @@ another team member if interference is suspected.
 spectators is suspected (color clothing, IR emitters, camera flashes, mobile
 phones, radios, computers, etc.).
 
-\p This needs to be \replaced[id=TC]{confirmed by}{proved to} an OC member if a
-claim is placed by the other team.  A team claiming that their robot is
-affected by colors has to show the proof/evidence of the interference.
+\p This needs to be confirmed by an OC member if a claim is placed by the other
+team.  A team claiming that their robot is affected by colors has to show the
+proof/evidence of the interference.
 
 \begin{figure}[H]
     \centering
@@ -507,11 +499,11 @@ teams is forbidden.
 
 \subsection{ Interference \label{ref-interference}}
 
-\p Robots are not allowed to be colored orange, yellow, blue, or any other color
-that can be confused with a landmark (see 4.3) in order to avoid interference.
-Orange, yellow, blue \deleted[id=TC]{or any landmark-like} colored parts used
-in the construction of the robot must either be occluded by other parts from
-the perception by other robots or be taped/painted with a neutral color.
+\p Robots are not allowed to be colored orange, yellow, blue, or any other
+color that can be confused with a landmark (see 4.3) in order to avoid
+interference.  Orange, yellow, blue colored parts used in the construction of
+the robot must either be occluded by other parts from the perception by other
+robots or be taped/painted with a neutral color.
 
 \p The robot must not emit infrared light. However, optical sensors (e.g.
 infrared-distance-sensors) may be used as long as they do not affect other
@@ -522,15 +514,14 @@ are painted, they must be painted matte. Minor parts that reflect infrared
 light could be used as long as other robots are not affected. Robots must not
 produce magnetic interference in other robots on the field.
 
-\p \added[id=TC]{Robots must not produce visible light that may prevent the
-opposing team from playing when placed on a flat surface. Any part of a
-robot that produces light that may interfere with the opposing robot's vision
-system must be covered.}
+\p Robots must not produce visible light that may prevent the opposing team
+from playing when placed on a flat surface. Any part of a robot that produces
+light that may interfere with the opposing robot's vision system must be
+covered.
 
-\p \added[id=TC]{A team claiming that their robot is affected by the other team's
-robot in any way must show the proof/evidence of the interference. Any
-interference needs to be confirmed by an OC member if a claim is placed by the
-other team.}
+\p A team claiming that their robot is affected by the other team's robot in
+any way must show the proof/evidence of the interference. Any interference
+needs to be confirmed by an OC member if a claim is placed by the other team.
 
 \subsection{ Control \label{ref-control}}
 
@@ -573,9 +564,9 @@ during a period of 20 seconds is deemed to be damaged (see
 
 \subsection{ Handle \label{ref-handle}}
 
-\p All robots must have a stable \added[id=TC]{and easily noticeable} handle to
-hold and to lift them. The handle must be easily accessible \added[id=TC]{and
-allow the robot to be picked up from 22 $\pm$ 2 cm of height.}
+\p All robots must have a stable and easily noticeable handle to hold and to
+lift them. The handle must be easily accessible and allow the robot to be
+picked up from 22 $\pm$ 2 cm of height.
 
 \p The dimensions of the handle may exceed the 22 cm height limitation, but the
 part of the handle that exceeds this 22 cm limit cannot be used to mount
@@ -627,7 +618,7 @@ can be disqualified from the tournament.
 which is part of the playing-field. Around the playing-field, beyond the white
 line, is an outer area of 30 cm width. The floor near the exterior wall
 includes a wedge, which is an incline with a 10 cm base and
-2 \added[id=TC]{$\pm$ 1 cm} rise for allowing the ball to roll back into play
+2 $\pm$ 1 cm rise for allowing the ball to roll back into play
 when it leaves the playing field.  Total dimensions of the field, including the
 outer area, are 182 cm by 243 cm.  It is recommended that the field be
 positioned 70 to 90 cm off the ground.
@@ -644,7 +635,7 @@ out-area. The height of the walls is 22 cm. The walls are painted matte black.
 field. The goal inner space is 60 cm width, 10 cm high and 74 mm deep, box
 shaped. It has a cross-bar on top (to prevent robots from entering the goal and
 to allow checking if the ball scored). The height of the cross-bar is 2
-\added[id=TC]{$\pm$ 1 cm}. The goal ``posts'' are positioned over the white
+$\pm$ 1 cm. The goal ``posts'' are positioned over the white
 line marking the limits of the field. The cross-bar is exactly over the white
 line. The interior walls and the cross-bar of each goal are painted, one goal
 yellow, the other goal blue. The exterior (including the goal post and frame)
@@ -821,7 +812,7 @@ become a part of this rule.
 \p According to rule 3.8 of the RoboCupJunior Soccer Rules, each league has its
 own additional regulations. They become a part of the rules.
 
-\p For RoboCupJunior 2019, there are two sub-leagues as follows
+\p For RoboCupJunior 2020, there are two sub-leagues as follows
 \footnote{biggest differences are described in 8.2.1 Dimensions}:
 
 \begin{itemize}
@@ -832,10 +823,9 @@ own additional regulations. They become a part of the rules.
 
 \end{itemize}
 
-\p \replaced[id=TC]{All team members need to be within the minimum and maximum
-age as specified in the RoboCupJunior General Rules which can be found at
-\url{http://junior.robocup.org/robocupjunior-general-rules/}.}
-{All team members between 12 and 19 years old on July 1st, 2019.}
+\p All team members need to be within the minimum and maximum age as specified
+in the RoboCupJunior General Rules which can be found at
+\url{http://junior.robocup.org/robocupjunior-general-rules/}.
 
 \p As described in sections 5.1 and 5.2, the matches in the Soccer Open sub-league
 are conducted using a passive ball, whereas the matches in the Soccer
@@ -931,12 +921,12 @@ parts of robots cannot be fully anticipated, robots must have all its active
 elements properly protected with resistant materials. For example, electrical
 circuits and pneumatic devices, such as pipelines and bottles, must be
 protected from all human contact and direct contact with other robots.
-\added[id=TC]{All driven dribbler gears must be covered with metal or hard plastic.}
+All driven dribbler gears must be covered with metal or hard plastic.
 
 \p When batteries are transported or moved, it is recommended that safety bags be
 used. Reasonable efforts should be made to make sure that in all circumstances
-robots avoid short-circuits and chemical or air leaks. \added[id=TC]{The use of
-swollen, tattered or otherwise dangerous battery is not allowed.}
+robots avoid short-circuits and chemical or air leaks. The use of
+swollen, tattered or otherwise dangerous battery is not allowed.
 
 
 \subsubsection{Programming \label{ref-058}}
@@ -985,7 +975,7 @@ aspects which are checked will stay the same.
 
 \subsection{Team}
 
-\p Maximum team size is 4 members for RoboCupJunior 2019.
+\p Maximum team size is 4 members for RoboCupJunior 2020.
 
 \p Starting in 2017, Soccer Lightweight team members can participate in the World
 Championship only twice. After their second participation, they need to move to
