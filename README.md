@@ -2,28 +2,24 @@
 
 # RoboCupJunior Soccer rules
 
-Welcome to the [RoboCupJunior Soccer](http://rcj.robocup.org/soccer.html) rules
-repository for the 2018 season.
+Welcome to the [RoboCupJunior Soccer](https://junior.robocup.org/) rules
+repository for the 2020 season.
 
 For this season the RoboCupJunior Soccer Technical Committee (TC) would like to
 invite the RoboCupJunior Soccer community to suggest any changes that would be
 worth making to the rules. Note that the Technical Committee will in the end
-approve or disapprove any suggested changes for the 2018 rules, but every
+approve or disapprove any suggested changes for the 2020 rules, but every
 suggested change (that is found to be reasonable by the TC) will be looked at,
 examined and considered.
 
 ## What changes are you looking for?
 
-Since the last year's rules changed quite dramatically, the changes for this
-year will most probably be on smaller scale and more game-related. The overall
-goal of the TC is to change the rules so that they make the game more
-interesting (for both competitors and spectators) while also keeping it
-challenging from the technical point of view.
+*TBD*
 
 Changes that would improve formatting of the rules or their clarity are most
 definitely welcome.
 
-We accept proposals until the **11th of December, 2017**.
+We accept proposals until the **24th of May, 2019**.
 
 ## How do I suggest a change?
 
