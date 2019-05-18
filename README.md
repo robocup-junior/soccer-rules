@@ -23,8 +23,9 @@ We accept proposals until the **1st of June, 2019**.
 
 ## How do I suggest a change?
 
-Please edit the [`rules.adoc`](rules.adoc) file. The easiest way of doing that
-seems to be following the [GitHub's instructions](https://help.github.com/articles/editing-files-in-another-user-s-repository/)
+Please edit the [`rules.adoc`](https://github.com/RoboCupJuniorTC/soccer-rules/edit/master/rules.adoc)
+file. The easiest way of doing that seems to be following the
+[GitHub's instructions](https://help.github.com/articles/editing-files-in-another-user-s-repository/)
 on how to edit files in another user's repository.
 
 In the end that should
