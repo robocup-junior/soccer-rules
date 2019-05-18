@@ -1,11 +1,29 @@
-sudo: false
-language: generic
-matrix:
-  include:
-    - os: linux
-      env: TEST_LANG='paper'
-script: |
-  if [[ $TEST_LANG == paper ]]
-  then
-    source .ci/build.sh
-  fi
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker pull asciidoctor/docker-asciidoctor
+
+script:
+  - docker run -v $TRAVIS_BUILD_DIR:/documents/ asciidoctor/docker-asciidoctor asciidoctor rules.adoc
+  - docker run -v $TRAVIS_BUILD_DIR:/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf rules.adoc
+
+after_error:
+  - docker logs asciidoc-to-html
+  - docker logs asciidoc-to-pdf
+
+after_failure:
+  - docker logs asciidoc-to-html
+  - docker logs asciidoc-to-pdf
+
+after_script:
+  - git checkout gh-pages
+  - mkdir $TRAVIS_BRANCH/
+  - cp -R media *.html *.pdf $TRAVIS_BRANCH/
+  - git config user.name "Travis the AsciiDoc builder"
+  - git config user.email "build-pipeline@travis-ci.org"
+  - git add $TRAVIS_BRANCH
+  - git commit -m "Update GitHub Pages $TRAVIS_COMMIT_RANGE"
+  - git push -q -f "https://$GITHUB_USERNAME:$GITHUB_API_KEY@github.com/$TRAVIS_REPO_SLUG" gh-pages
