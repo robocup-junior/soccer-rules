@@ -28,4 +28,4 @@ after_script:
   - git add -f $TRAVIS_BRANCH
   - git commit -m "Update GitHub Pages $TRAVIS_COMMIT_RANGE"
   - git push -q -f "https://$GITHUB_USERNAME:$GITHUB_API_KEY@github.com/$TRAVIS_REPO_SLUG" gh-pages
-  - echo "See what the rules would look like in [the last draft](https://robocupjuniortc.github.io/soccer-rules/$TRAVIS_BRANCH/rules.html)!" | python .ci/travis_bot.py
+  - echo "See what the rules would look like in [the last draft](https://robocupjuniortc.github.io/soccer-rules/$TRAVIS_BRANCH/rules.html)!" | python ../.ci/travis_bot.py
