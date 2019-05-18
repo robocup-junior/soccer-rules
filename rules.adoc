@@ -181,7 +181,7 @@ body to prevent access by others, encircling the ball or somehow trapping the
 ball with any part of the robot’s body. If a ball does not roll while a robot
 is moving, it is a good indication that the ball is trapped.
 
-The only exception to holding is the use of a rotating drum (a "dribbler") that
+The only exception to holding is the use of a rotating drum (a _"dribbler"_) that
 imparts dynamic back spin on the ball to keep the ball on its surface.
 
 Other players must be able to access the ball.
