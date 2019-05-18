@@ -78,7 +78,7 @@ embarrassment and possible disqualification, it is extremely important that
 teams abide by <<league-regulations>>, especially <<regulations-construction>>
 and <<regulations-programming>>, and all other competitor’s rules.
 
-If in doubt, please consult with your Regional Representative before
+If in doubt, please consult with your *Regional Representative* before
 registering your team.
 
 [[gameplay]]
