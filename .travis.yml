@@ -1,3 +1,5 @@
+language: python
+
 sudo: required
 
 services:
@@ -7,6 +9,8 @@ before_install:
   - docker pull asciidoctor/docker-asciidoctor
 
 script:
+  - cp rules.adoc _rules.adoc
+  - python .ci/criticmarkup_to_adoc.py _rules.adoc > rules.adoc
   - docker run -v $TRAVIS_BUILD_DIR:/documents/ asciidoctor/docker-asciidoctor asciidoctor rules.adoc
   - docker run -v $TRAVIS_BUILD_DIR:/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf rules.adoc
 
@@ -19,6 +23,7 @@ after_failure:
   - docker logs asciidoc-to-pdf
 
 after_script:
+  - [[ $TRAVIS_PULL_REQUEST == "false" ]] && export TRAVIS_BRANCH="$TRAVIS_PULL_REQUEST_BRANCH"
   - git clone https://github.com/$TRAVIS_REPO_SLUG.git --single-branch --branch gh-pages $TRAVIS_BUILD_DIR/gh-pages
   - cd $TRAVIS_BUILD_DIR/gh-pages
   - mkdir $TRAVIS_BRANCH/
