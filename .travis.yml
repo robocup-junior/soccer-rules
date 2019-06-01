@@ -23,6 +23,7 @@ after_failure:
   - docker logs asciidoc-to-pdf
 
 after_script:
+  - '[[ $TRAVIS_PULL_REQUEST == "true"  ]] && export TRAVIS_BRANCH="$TRAVIS_PULL_REQUEST_BRANCH"'
   - git clone https://github.com/$TRAVIS_REPO_SLUG.git --single-branch --branch gh-pages $TRAVIS_BUILD_DIR/gh-pages
   - cd $TRAVIS_BUILD_DIR/gh-pages
   - mkdir $TRAVIS_BRANCH/
