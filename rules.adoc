@@ -332,19 +332,44 @@ Whenever a robot is removed from play, its motors must be turned off.
 
 Multiple defense occurs if more than one robot from the defending team
 enters its penalty area with some part and substantially affects the
-game. The robot farther from the ball will be moved to the nearest
+game. {~~The robot farther from the ball will be moved to the nearest
 neutral spot. Only the referee can take this action at any time when
-both robots linger in their penalty area.
+both robots linger in their penalty area.~>Once this happens, a
+<<penalty-kick>> against the defending team will follow immediately.~~}
 
-If multiple defense happens repeatedly in a short amount of time, the
+{--If multiple defense happens repeatedly in a short amount of time, the
 offending robot will be moved to an unoccupied neutral spot on the other
 side of the field, orientated towards the nearest wall. If any robot
 needs to be moved to an unoccupied neutral spot more than *three times*
 during its single uninterrupted time chunk on the field, it will be
-deemed damaged footnote:[For the purpose of this rule a time chunk is
-defined as time between two events when the robot is taken off the field
-for some reason (e.g. at the end of the first half of the game, when it
-is deemed damaged or out of bounds).].
+deemed damaged.--}
+
+[[penalty-kick]]
+=== Penalty Kick
+
+{++A penalty kick takes place after a grave offense (such as
+<<multiple-defense>>) happens.++}
+
+{++The kicking procedure consists of the following steps:++}
+
+1. {++All robots as well as the ball are removed from the field.++}
+
+2. {++The offending ("kicking") team places a robot inside its own penalty area,
+    rotated towards its own goal. A ball is placed at the central neutral spot.++}
+
+3. {++The offending ("kicking") team turns their robot on. The robot needs to stay
+    still for the next 5 seconds.++}
+
+4. {++During these 5 seconds the defending team places a robot which is turned off
+    inside its own penalty area.++}
+
+5. {++In order to score a goal, the offending team's robot needs to move the ball
+    inside the opponents goal. It needs to do so in at most 15 seconds and while
+    staying within the center circle once it touches the ball.++}
+
+{++If the offending team's robot moves before the 5 seconds pass, the result is
+automatically no goal. Once the penalty kick finishes, the game continues with
+a <<kick-off>>, with the defending team kicking-off.++}
 
 [[interruption-of-game-ref-interruption]]
 === Interruption of Game
