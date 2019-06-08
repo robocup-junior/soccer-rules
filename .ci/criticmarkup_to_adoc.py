@@ -129,6 +129,6 @@ if __name__ == '__main__':
         deletion_note_fmt='Deleted "{PREVIOUS}"',
         deletion_replacement_fmt='footnote:[In previous version this said "{PREVIOUS}"]', # noqa
         substitution_note_fmt='Changed "{PREVIOUS}" to "{CURRENT}"',
-        substitution_replacement_fmt='[red]#*{CURRENT}*# footnote:[In previous version this said "{PREVIOUS}"]' # noqa
+        substitution_replacement_fmt='[red]#*{CURRENT}*#\nfootnote:[In previous version this said "{PREVIOUS}"]' # noqa
     )
     print(cmp.convert(sys.argv[1]))
