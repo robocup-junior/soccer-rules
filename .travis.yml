@@ -23,14 +23,4 @@ after_failure:
   - docker logs asciidoc-to-pdf
 
 after_script:
-  - '[[ $TRAVIS_PULL_REQUEST == "true"  ]] && export TRAVIS_BRANCH="$TRAVIS_PULL_REQUEST_BRANCH"'
-  - git clone https://github.com/$TRAVIS_REPO_SLUG.git --single-branch --branch gh-pages $TRAVIS_BUILD_DIR/gh-pages
-  - cd $TRAVIS_BUILD_DIR/gh-pages
-  - mkdir $TRAVIS_BRANCH/
-  - cp -R ../media ../*.html ../*.pdf $TRAVIS_BRANCH/
-  - git config user.name "Travis the AsciiDoc builder"
-  - git config user.email "build-pipeline@travis-ci.org"
-  - git add -f $TRAVIS_BRANCH
-  - git commit -m "Update GitHub Pages $TRAVIS_COMMIT_RANGE"
-  - git push -q -f "https://$GITHUB_USERNAME:$GITHUB_API_KEY@github.com/$TRAVIS_REPO_SLUG" gh-pages
-  - echo "See what the rules would look like in [the last draft](https://robocupjuniortc.github.io/soccer-rules/$TRAVIS_BRANCH/rules.html)!" | python ../.ci/travis_bot.py
+  - ./.ci/after_script.sh
