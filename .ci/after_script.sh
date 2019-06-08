@@ -32,23 +32,19 @@ else
   export TRAVIS_BRANCH="$TRAVIS_PULL_REQUEST_BRANCH"
 fi
 
-if git diff --name-only $TRAVIS_COMMIT_RANGE | grep '.adoc$'
-then
 
-  git clone https://github.com/$TRAVIS_REPO_SLUG.git --single-branch --branch gh-pages $TRAVIS_BUILD_DIR/gh-pages
+git clone https://github.com/$TRAVIS_REPO_SLUG.git --single-branch --branch gh-pages $TRAVIS_BUILD_DIR/gh-pages
 
-  cd $TRAVIS_BUILD_DIR/gh-pages
-  mkdir $TRAVIS_BRANCH/
-  cp -R ../media ../*.html ../*.pdf $TRAVIS_BRANCH/
+cd $TRAVIS_BUILD_DIR/gh-pages
+mkdir $TRAVIS_BRANCH/
+cp -R ../media ../*.html ../*.pdf $TRAVIS_BRANCH/
 
-  git config user.name "$COMMIT_USERNAME"
-  git config user.email "$COMMIT_EMAIL"
+git config user.name "$COMMIT_USERNAME"
+git config user.email "$COMMIT_EMAIL"
 
-  git add -f $TRAVIS_BRANCH
-  git commit -m "Update GitHub Pages $TRAVIS_COMMIT_RANGE"
-  git push -q -f "https://$GITHUB_USERNAME:$GITHUB_API_KEY@github.com/$TRAVIS_REPO_SLUG" gh-pages
+git add -f $TRAVIS_BRANCH
+git commit -m "Update GitHub Pages $TRAVIS_COMMIT_RANGE"
+git push -q -f "https://$GITHUB_USERNAME:$GITHUB_API_KEY@github.com/$TRAVIS_REPO_SLUG" gh-pages
 
-  pip install requests
-  echo "See what the rules would look like in [the last draft](https://robocupjuniortc.github.io/soccer-rules/$TRAVIS_BRANCH/rules.html)!" | python ../.ci/travis_bot.py
-
-fi
+pip install requests
+echo "See what the rules would look like in [the last draft](https://robocupjuniortc.github.io/soccer-rules/$TRAVIS_BRANCH/rules.html)!" | python ../.ci/travis_bot.py
