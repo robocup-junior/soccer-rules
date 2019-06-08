@@ -18,12 +18,12 @@ class Deletor:
         self.n_deletions += 1
 
         def callback(n_deletions, match):
-            m = match.group(1)
+            m = match.group(1).replace('\n', ' ')
             txt = self.replacement_fmt.replace('{PREVIOUS}', m)
             note = self.note_fmt.replace('{PREVIOUS}', m)
             change_id = f'deletion-{n_deletions}'
             self.changes.append(change_id)
-            return f'[[{change_id}, {note}]] {txt}'
+            return f'[[{change_id}, {note}]]\n{txt}'
 
         return callback(self.n_deletions, match)
 
@@ -40,12 +40,12 @@ class Additor:
         self.n_additions += 1
 
         def callback(n_additions, match):
-            m = match.group(1)
+            m = match.group(1).replace('\n', ' ')
             txt = self.replacement_fmt.replace('{CURRENT}', m)
             note = self.note_fmt.replace('{CURRENT}', m)
             change_id = f'addition-{n_additions}'
             self.changes.append(change_id)
-            return f'[[{change_id}, {note}]] {txt}'
+            return f'[[{change_id}, {note}]]\n{txt}'
 
         return callback(self.n_additions, match)
 
@@ -62,8 +62,8 @@ class Substituter:
         self.n_substitutions += 1
 
         def callback(n_substitutions, match):
-            previous = match.group(1)
-            current = match.group(2)
+            previous = match.group(1).replace('\n', ' ')
+            current = match.group(2).replace('\n', ' ')
             txt = self.replacement_fmt.replace('{CURRENT}', current) \
                                       .replace('{PREVIOUS}', previous)
             note = self.note_fmt.replace('{CURRENT}', current) \
@@ -71,7 +71,7 @@ class Substituter:
 
             change_id = f'substitution-{n_substitutions}'
             self.changes.append(change_id)
-            return f'[[{change_id}, {note}]] {txt}'
+            return f'[[{change_id}, {note}]]\n{txt}'
 
         return callback(self.n_substitutions, match)
 
