@@ -205,18 +205,24 @@ The robot moving first into the penalty area on a team’s defending side
 completely (with every part of it) is designated as goalie until a part of it
 leaves the penalty area.
 
-[[pushing]]
-=== Pushing
+[[inside-penalty-area]]
+=== Inside the Penalty Area
 
-Within the penalty area, the goalie has priority. Attacking robots are not
-supposed to push the goalie in any way.
+Within the penalty area, the goalie has priority. {~~Attacking robots are not
+supposed to push the goalie in any way.~>While inside this area, attacking robots
+are not supposed to touch the goalie nor the ball in any way.~~}
 
-If the attacker and the goalie touch each other and at least one of them has
+{++If the attacker and the goalie touch each other while the ball is also
+inside the penalty area, or the attacker touches the ball inside the penalty
+area, the ball will be moved to the _furthest_ unoccupied neutral spot
+immediately.++}
+
+{--If the attacker and the goalie touch each other and at least one of them has
 physical contact with the ball, the ball will be moved to the nearest
-unoccupied neutral spot immediately.
+unoccupied neutral spot immediately.--}
 
-If a goal is scored as a result of this pushed-situation, it will not be
-granted.
+If a goal is scored as a result of {~~this pushed-situation~>an attacker
+pushing the goalie and/or the ball~~}, it will not be granted.
 
 [[lack-of-progress]]
 === Lack of progress
@@ -326,19 +332,44 @@ Whenever a robot is removed from play, its motors must be turned off.
 
 Multiple defense occurs if more than one robot from the defending team
 enters its penalty area with some part and substantially affects the
-game. The robot farther from the ball will be moved to the nearest
+game. {~~The robot farther from the ball will be moved to the nearest
 neutral spot. Only the referee can take this action at any time when
-both robots linger in their penalty area.
+both robots linger in their penalty area.~>Once this happens, a
+<<penalty-kick>> against the defending team will follow immediately.~~}
 
-If multiple defense happens repeatedly in a short amount of time, the
+{--If multiple defense happens repeatedly in a short amount of time, the
 offending robot will be moved to an unoccupied neutral spot on the other
 side of the field, orientated towards the nearest wall. If any robot
 needs to be moved to an unoccupied neutral spot more than *three times*
 during its single uninterrupted time chunk on the field, it will be
-deemed damaged footnote:[For the purpose of this rule a time chunk is
-defined as time between two events when the robot is taken off the field
-for some reason (e.g. at the end of the first half of the game, when it
-is deemed damaged or out of bounds).].
+deemed damaged.--}
+
+[[penalty-kick]]
+=== Penalty Kick
+
+{++A penalty kick takes place after a grave offense (such as
+<<multiple-defense>>) happens.++}
+
+{++The kicking procedure consists of the following steps:++}
+
+1. {++All robots as well as the ball are removed from the field.++}
+
+2. {++The offending ("kicking") team places a robot inside its own penalty area,
+    rotated towards its own goal. A ball is placed at the central neutral spot.++}
+
+3. {++The offending ("kicking") team turns their robot on. The robot needs to stay
+    still for the next 5 seconds.++}
+
+4. {++During these 5 seconds the defending team places a robot which is turned off
+    inside its own penalty area.++}
+
+5. {++In order to score a goal, the offending team's robot needs to move the ball
+    inside the opponents goal. It needs to do so in at most 15 seconds and while
+    staying within the center circle once it touches the ball.++}
+
+{++If the offending team's robot moves before the 5 seconds pass, the result is
+automatically no goal. Once the penalty kick finishes, the game continues with
+a <<kick-off>>, with the defending team kicking-off.++}
 
 [[interruption-of-game-ref-interruption]]
 === Interruption of Game
@@ -478,7 +509,7 @@ image::media/image3.png[scaledwidth=80.0%]
 
 All robots must have a stable and easily noticeable handle to hold and to lift
 them. The handle must be easily accessible and allow the robot to be picked up
-from 22 +/- 2 cm of height.
+from {~~22 +/- 2 cm of height~>at least 5 cm above the highest structure of the robot~~}.
 
 The dimensions of the handle may exceed the 22 cm height limitation, but the
 part of the handle that exceeds this 22 cm limit cannot be used to mount
