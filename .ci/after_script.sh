@@ -36,7 +36,7 @@ fi
 git clone https://github.com/$TRAVIS_REPO_SLUG.git --single-branch --branch gh-pages $TRAVIS_BUILD_DIR/gh-pages
 
 cd $TRAVIS_BUILD_DIR/gh-pages
-mkdir $TRAVIS_BRANCH/
+mkdir -p $TRAVIS_BRANCH/
 cp -R ../media ../*.html ../*.pdf $TRAVIS_BRANCH/
 
 git config user.name "$COMMIT_USERNAME"
