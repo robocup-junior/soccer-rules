@@ -64,8 +64,9 @@ image::media/image1_new.jpeg[]
 
 === Changes from 2019 RoboCupJunior Soccer Rules
 
-The changes determined by the Technical Committee for this year’s rules
-aim to make small improvements while keeping most of the rules intact.
+The changes determined by the Technical Committee for this year’s rules aim to
+reduce the amount of "sumo-like" gameplay while making it more interesting by
+introducing new challenges and standard situations.
 
 {+-~TOC-CHANGES~-+}
 
