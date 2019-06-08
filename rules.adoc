@@ -562,7 +562,7 @@ field. The cross-bar is exactly over the white line. The interior walls and the
 cross-bar of each goal are painted, one goal yellow, the other goal blue. The
 exterior (including the goal post and frame) are painted black (see
 <<field-diagrams>>). {++It is recommended that the blue be of a brighter shade
-so that there is large enough difference from the black exterior.++}
+so that it is different enough from the black exterior.++}
 
 [[floor]]
 === Floor
