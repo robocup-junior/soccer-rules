@@ -478,7 +478,7 @@ image::media/image3.png[scaledwidth=80.0%]
 
 All robots must have a stable and easily noticeable handle to hold and to lift
 them. The handle must be easily accessible and allow the robot to be picked up
-from 22 +/- 2 cm of height.
+from {~~22 +/- 2 cm of height~>at least 5 cm above the highest structure of the robot~~}.
 
 The dimensions of the handle may exceed the 22 cm height limitation, but the
 part of the handle that exceeds this 22 cm limit cannot be used to mount
