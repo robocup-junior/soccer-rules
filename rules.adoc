@@ -205,18 +205,24 @@ The robot moving first into the penalty area on a team’s defending side
 completely (with every part of it) is designated as goalie until a part of it
 leaves the penalty area.
 
-[[pushing]]
-=== Pushing
+[[inside-penalty-area]]
+=== Inside the Penalty Area
 
-Within the penalty area, the goalie has priority. Attacking robots are not
-supposed to push the goalie in any way.
+Within the penalty area, the goalie has priority. {~~Attacking robots are not
+supposed to push the goalie in any way.~>While inside this area, attacking robots
+are not supposed to touch the goalie nor the ball in any way.~~}
 
-If the attacker and the goalie touch each other and at least one of them has
+{++If the attacker and the goalie touch each other while the ball is also
+inside the penalty area, or the attacker touches the ball inside the penalty
+area, the ball will be moved to the *furthest* unoccupied neutral spot
+immediately.++}
+
+{--If the attacker and the goalie touch each other and at least one of them has
 physical contact with the ball, the ball will be moved to the nearest
-unoccupied neutral spot immediately.
+unoccupied neutral spot immediately.--}
 
-If a goal is scored as a result of this pushed-situation, it will not be
-granted.
+If a goal is scored as a result of {~~this pushed-situation~>an attacker
+pushing the goalie and/or the ball~~}, it will not be granted.
 
 [[lack-of-progress]]
 === Lack of progress
