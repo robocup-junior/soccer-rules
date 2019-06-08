@@ -19,10 +19,7 @@ COMMIT_EMAIL='travis@travis.ai'
 # fi
 
 if [[ $TRAVIS_PULL_REQUEST == "false" ]]; then
-  if ! [[ $TRAVIS_BRANCH == "master" ]]; then
-     echo "We do not build on pushes for any other branch than 'master'."
-     exit 0;
-  fi
+  echo "Well, we should build just on master, but let's do so on other branches too..."
 else
   if [[ $GITHUB_USERNAME == "" ]]; then
      echo "Seems like this PR came from a fork. For security reasons no code will be executed."
