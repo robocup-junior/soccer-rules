@@ -636,6 +636,22 @@ more details for specifications/regulations.</p>
 <p>The changes determined by the Technical Committee for this year’s rules
 aim to make small improvements while keeping most of the rules intact.</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#deletion-1">[deletion-1]</a></p>
+</li>
+<li>
+<p><a href="#addition-1">[addition-1]</a></p>
+</li>
+<li>
+<p><a href="#substitution-1">[substitution-1]</a></p>
+</li>
+<li>
+<p><a href="#substitution-2">[substitution-2]</a></p>
+</li>
+</ul>
+</div>
 <h3 id="_construction_and_programming_have_to_be_performed_exclusively_by_the_students" class="discrete">Construction and Programming have to be performed exclusively by the students</h3>
 <div class="paragraph">
 <p>Robots must be constructed and programmed exclusively by student members of the
@@ -787,24 +803,29 @@ leaves the penalty area.</p>
 <div class="sect2">
 <h3 id="inside-penalty-area"><a class="anchor" href="#inside-penalty-area"></a><a class="link" href="#inside-penalty-area">1.8. Inside the Penalty Area</a></h3>
 <div class="paragraph">
-<p>Within the penalty area, the goalie has priority. {~~Attacking robots are not
-supposed to push the goalie in any way.~&gt;While inside this area, attacking robots
-are not supposed to touch the goalie nor the ball in any way.~~}</p>
+<p>Within the penalty area, the goalie has priority. [[substitution-1, Changed "Attacking robots are not
+supposed to push the goalie in any way." to "While inside this area, attacking robots
+are not supposed to touch the goalie nor the ball in any way."]] <span class="red"><strong>While inside this area, attacking robots
+are not supposed to touch the goalie nor the ball in any way.</strong></span> <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p>
 </div>
 <div class="paragraph">
-<p>{If the attacker and the goalie touch each other while the ball is also
+<p>[[addition-1, Added "If the attacker and the goalie touch each other while the ball is also
 inside the penalty area, or the attacker touches the ball inside the penalty
-area, the ball will be moved to the *furthest* unoccupied neutral spot
-immediately.}</p>
+area, the ball will be moved to the <strong>furthest</strong> unoccupied neutral spot
+immediately."]] <span class="red"><strong>If the attacker and the goalie touch each other while the ball is also
+inside the penalty area, or the attacker touches the ball inside the penalty
+area, the ball will be moved to the *furthest</strong> unoccupied neutral spot
+immediately.*</span></p>
 </div>
 <div class="paragraph">
-<p>{--If the attacker and the goalie touch each other and at least one of them has
+<p>[[deletion-1, Deleted "If the attacker and the goalie touch each other and at least one of them has
 physical contact with the ball, the ball will be moved to the nearest
-unoccupied neutral spot immediately.--}</p>
+unoccupied neutral spot immediately."]] <sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p>
 </div>
 <div class="paragraph">
-<p>If a goal is scored as a result of {~~this pushed-situation~&gt;an attacker
-pushing the goalie and/or the ball~~}, it will not be granted.</p>
+<p>If a goal is scored as a result of [[substitution-2, Changed "this pushed-situation" to "an attacker
+pushing the goalie and/or the ball"]] <span class="red"><strong>an attacker
+pushing the goalie and/or the ball</strong></span> <sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup>, it will not be granted.</p>
 </div>
 </div>
 <div class="sect2">
@@ -817,7 +838,7 @@ there is no change in ball and robot’s positions, or when the ball is beyond
 detection or reach capability of all robots on the field.</p>
 </div>
 <div class="paragraph">
-<p>After a visible and loud count <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup>, a referee will call "lack of progress" and
+<p>After a visible and loud count <sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup>, a referee will call "lack of progress" and
 will move the ball to the nearest unoccupied neutral spot. If this does not
 solve the lack of progress, the referee can move the ball to a different
 neutral spot.</p>
@@ -857,7 +878,7 @@ when one of the following condition occurs:</p>
 <ol class="arabic">
 <li>
 <p>the ball remains outside the playing field too long, after a visible and
-loud count <sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup>,</p>
+loud count <sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup>,</p>
 </li>
 <li>
 <p>any of the robots are unable to return it into the playing field (without
@@ -945,7 +966,7 @@ offending robot will be moved to an unoccupied neutral spot on the other
 side of the field, orientated towards the nearest wall. If any robot
 needs to be moved to an unoccupied neutral spot more than <strong>three times</strong>
 during its single uninterrupted time chunk on the field, it will be
-deemed damaged <sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup>.</p>
+deemed damaged <sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1075,7 +1096,7 @@ autonomously.</p>
 <div class="paragraph">
 <p>Robots are not allowed to use any kind of communication during game play
 unless the communication between two robots is via Bluetooth class 2 or
-class 3 <sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup> or via any other device
+class 3 <sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup> or via any other device
 that communicates using the 802.15.4 protocol (e.g., ZigBee and XBee).</p>
 </div>
 <div class="paragraph">
@@ -1455,7 +1476,7 @@ its own additional regulations. They become a part of the rules.</p>
 </div>
 <div class="paragraph">
 <p>For RoboCupJunior 2020, there are two sub-leagues as follows
-<sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup>:</p>
+<sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup>:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2282,24 +2303,33 @@ will differ from printer to printer, printing these pages using the sRGB
 <div id="footnotes">
 <hr>
 <div class="footnote" id="_footnotedef_1">
-<a href="#_footnoteref_1">1</a>. usually a count of three, the length of the count could be decided by the OC before a competition as long as it’s the same length within a sub-league
+<a href="#_footnoteref_1">1</a>. In previous version this said "Attacking robots are not supposed to push the goalie in any way."
 </div>
 <div class="footnote" id="_footnotedef_2">
-<a href="#_footnoteref_2">2</a>. usually a count of three, the length of the count could be decided by the OC before a competition as long as it’s the same length within a sub-league
+<a href="#_footnoteref_2">2</a>. In previous version this said "If the attacker and the goalie touch each other and at least one of them has physical contact with the ball, the ball will be moved to the nearest unoccupied neutral spot immediately."
 </div>
 <div class="footnote" id="_footnotedef_3">
-<a href="#_footnoteref_3">3</a>. For the purpose of this rule a time chunk is defined as time between two events when the robot is taken off the field for some reason (e.g. at the end of the first half of the game, when it is deemed damaged or out of bounds).
+<a href="#_footnoteref_3">3</a>. In previous version this said "this pushed-situation"
 </div>
 <div class="footnote" id="_footnotedef_4">
-<a href="#_footnoteref_4">4</a>. range shorter than 20 meters
+<a href="#_footnoteref_4">4</a>. usually a count of three, the length of the count could be decided by the OC before a competition as long as it’s the same length within a sub-league
 </div>
 <div class="footnote" id="_footnotedef_5">
-<a href="#_footnoteref_5">5</a>. biggest differences are described in 8.2.1 Dimensions
+<a href="#_footnoteref_5">5</a>. usually a count of three, the length of the count could be decided by the OC before a competition as long as it’s the same length within a sub-league
+</div>
+<div class="footnote" id="_footnotedef_6">
+<a href="#_footnoteref_6">6</a>. For the purpose of this rule a time chunk is defined as time between two events when the robot is taken off the field for some reason (e.g. at the end of the first half of the game, when it is deemed damaged or out of bounds).
+</div>
+<div class="footnote" id="_footnotedef_7">
+<a href="#_footnoteref_7">7</a>. range shorter than 20 meters
+</div>
+<div class="footnote" id="_footnotedef_8">
+<a href="#_footnoteref_8">8</a>. biggest differences are described in 8.2.1 Dimensions
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-06-08 20:38:18 UTC
+Last updated 2019-06-08 20:54:10 UTC
 </div>
 </div>
 </body>
