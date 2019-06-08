@@ -1,9 +1,9 @@
 import re
 import sys
 
-DELETION_REGEXP = re.compile(r'\{--(.*?)--\}')
-ADDITION_REGEXP = re.compile(r'\{\+\+(.*?)\+\+\}')
-SUBSTITUTION_REGEXP = re.compile(r'\{~~(.*?)~>(.*?)~~\}')
+DELETION_REGEXP = re.compile(r'\{--(.*?)--\}', re.DOTALL)
+ADDITION_REGEXP = re.compile(r'\{\+\+(.*?)\+\+\}', re.DOTALL)
+SUBSTITUTION_REGEXP = re.compile(r'\{~~(.*?)~>(.*?)~~\}', re.DOTALL)
 
 
 class Deletor:
