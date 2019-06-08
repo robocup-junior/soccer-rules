@@ -788,9 +788,9 @@ A robot’s dimensions must not exceed the following limits:
 
 |===
 |sub-league | *Soccer* *Open* | *Soccer Lightweight*
-|size / diameter | Ø 22.0 cm | Ø 22.0 cm +
-|height | 22.0 cm ^[1]^ | 22.0 cm ^[1]^ +
-|weight | 2400 g ^[2]^ | 1100 g ^[2]^ +
+|size / diameter | {~~Ø 22.0 cm~>Ø 20.0 cm~~} ^[4]^| Ø 22.0 cm +
+|height | {~~22.0 cm~>20.0 cm~~} ^[1]^ ^[4]^ | 22.0 cm ^[1]^ +
+|weight | {~~2400 g~>2300 g~~} ^[2]^ ^[4]^ | 1100 g ^[2]^ +
 |ball-capturing zone | 2.5 cm | 3.0 cm +
 |voltage | 15.0 V ^[3]^ | 12.0 V ^[3]^ +
 |===
@@ -804,6 +804,12 @@ batteries
 
 NOTE: [3] Voltage limits relate to the *nominal values*, deviations at the
 power pack due to the fact that charged will be tolerated.
+
+NOTE: [4] {++The Technical Committee intends for the diameter/height of robots
+in the Open sub-league to be 20 cm for 2020 and 2021 seasons, with further
+decrease to 18cm from the 2022 season onwards. Similarly, the weight of 2300 g
+is intended to be used in 2020 and 2021 seasons, with further decrease to 2200g
+in 2022.++}
 
 
 Ball-capturing zone is defined as any internal space created when a
