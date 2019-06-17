@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.9">
-<meta name="author" content="2019-06-08">
+<meta name="generator" content="Asciidoctor 2.0.10">
+<meta name="author" content="2019-06-17">
 <title>RoboCupJunior Soccer Rules 2020</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -241,7 +241,7 @@ table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;pad
 pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
 pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
-.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
 .quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
 .quoteblock blockquote{margin:0;padding:0;border:0}
 .quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
@@ -258,7 +258,8 @@ pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
 .quoteblock.abstract{margin:0 1em 1.25em;display:block}
 .quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
-.quoteblock.excerpt,.quoteblock .quoteblock{margin:0 0 1.25em;padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
 .quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
 .quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
 table.tableblock{max-width:100%;border-collapse:separate}
@@ -440,7 +441,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>RoboCupJunior Soccer Rules 2020</h1>
 <div class="details">
-<span id="author" class="author">2019-06-08</span><br>
+<span id="author" class="author">2019-06-17</span><br>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -645,6 +646,9 @@ introducing new challenges and standard situations.</p>
 </li>
 <li>
 <p><a href="#deletion-2">Deleted "If multiple defense happens repeatedly in a short amount of time, the offending robot will be moved to an unoccupied neutral spot on the other side of the field, orientated towards the nearest wall. If any robot needs to be moved to an unoccupied neutral spot more than <strong>three times</strong> during its single uninterrupted time chunk on the field, it will be deemed damaged."</a></p>
+</li>
+<li>
+<p><a href="#deletion-3">Deleted "A robot is considered inside the Penalty Area when it is completely inside."</a></p>
 </li>
 <li>
 <p><a href="#addition-1">Added "If the attacker and the goalie touch each other while the ball is also inside the penalty area, or the attacker touches the ball inside the penalty area, the ball will be moved to the <em>furthest</em> unoccupied neutral spot immediately."</a></p>
@@ -1356,9 +1360,8 @@ during kick-off.</p>
 <p>The penalty areas are marked by a black line of 20 mm width. The line is
 part of the area.</p>
 </div>
-<div class="paragraph">
-<p>A robot is considered inside the Penalty Area when it is completely
-inside.</p>
+<div id="deletion-3" class="paragraph">
+<p><sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnotedef_11" title="View footnote.">11</a>]</sup></p>
 </div>
 </div>
 <div class="sect2">
@@ -1556,7 +1559,7 @@ its own additional regulations. They become a part of the rules.</p>
 </div>
 <div class="paragraph">
 <p>For RoboCupJunior 2020, there are two sub-leagues as follows
-<sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnotedef_11" title="View footnote.">11</a>]</sup>:</p>
+<sup class="footnote">[<a id="_footnoteref_12" class="footnote" href="#_footnotedef_12" title="View footnote.">12</a>]</sup>:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1604,21 +1607,21 @@ A robot’s dimensions must not exceed the following limits:</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">size / diameter</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a id="substitution-6"></a>
 <span class="red"><strong>Ø 20.0 cm</strong></span>
-<sup class="footnote">[<a id="_footnoteref_12" class="footnote" href="#_footnotedef_12" title="View footnote.">12</a>]</sup> <sup>[4]</sup></p></td>
+<sup class="footnote">[<a id="_footnoteref_13" class="footnote" href="#_footnotedef_13" title="View footnote.">13</a>]</sup> <sup>[4]</sup></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ø 22.0 cm<br></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">height</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a id="substitution-7"></a>
 <span class="red"><strong>20.0 cm</strong></span>
-<sup class="footnote">[<a id="_footnoteref_13" class="footnote" href="#_footnotedef_13" title="View footnote.">13</a>]</sup> <sup>[1]</sup> <sup>[4]</sup></p></td>
+<sup class="footnote">[<a id="_footnoteref_14" class="footnote" href="#_footnotedef_14" title="View footnote.">14</a>]</sup> <sup>[1]</sup> <sup>[4]</sup></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">22.0 cm <sup>[1]</sup><br></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">weight</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a id="substitution-8"></a>
 <span class="red"><strong>2300 g</strong></span>
-<sup class="footnote">[<a id="_footnoteref_14" class="footnote" href="#_footnotedef_14" title="View footnote.">14</a>]</sup> <sup>[2]</sup> <sup>[4]</sup></p></td>
+<sup class="footnote">[<a id="_footnoteref_15" class="footnote" href="#_footnotedef_15" title="View footnote.">15</a>]</sup> <sup>[2]</sup> <sup>[4]</sup></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1100 g <sup>[2]</sup><br></p></td>
 </tr>
 <tr>
@@ -2432,21 +2435,24 @@ will differ from printer to printer, printing these pages using the sRGB
 <a href="#_footnoteref_10">10</a>. In previous version this said "90 cm"
 </div>
 <div class="footnote" id="_footnotedef_11">
-<a href="#_footnoteref_11">11</a>. biggest differences are described in 8.2.1 Dimensions
+<a href="#_footnoteref_11">11</a>. In previous version this said "A robot is considered inside the Penalty Area when it is completely inside."
 </div>
 <div class="footnote" id="_footnotedef_12">
-<a href="#_footnoteref_12">12</a>. In previous version this said "Ø 22.0 cm"
+<a href="#_footnoteref_12">12</a>. biggest differences are described in 8.2.1 Dimensions
 </div>
 <div class="footnote" id="_footnotedef_13">
-<a href="#_footnoteref_13">13</a>. In previous version this said "22.0 cm"
+<a href="#_footnoteref_13">13</a>. In previous version this said "Ø 22.0 cm"
 </div>
 <div class="footnote" id="_footnotedef_14">
-<a href="#_footnoteref_14">14</a>. In previous version this said "2400 g"
+<a href="#_footnoteref_14">14</a>. In previous version this said "22.0 cm"
+</div>
+<div class="footnote" id="_footnotedef_15">
+<a href="#_footnoteref_15">15</a>. In previous version this said "2400 g"
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-06-08 22:24:00 UTC
+Last updated 2019-06-17 09:13:20 UTC
 </div>
 </div>
 </body>
