@@ -626,8 +626,8 @@ In front of each goal there is a 30 cm wide and {~~90 cm~>70 cm~~} long penalty 
 The penalty areas are marked by a black line of 20 mm width. The line is
 part of the area.
 
-A robot is considered inside the Penalty Area when it is completely
-inside.
+{--A robot is considered inside the Penalty Area when it is completely
+inside.--}
 
 [[lighting-and-magnetic-conditions]]
 === Lighting and Magnetic Conditions
