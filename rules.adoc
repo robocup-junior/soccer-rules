@@ -623,8 +623,7 @@ during kick-off.
 
 In front of each goal there is a 30 cm wide and {~~90 cm~>70 cm~~} long penalty area.
 
-The penalty areas are marked by a black line of 20 mm width. The line is
-part of the area.
+The penalty areas are marked by a black line of 20 mm width. The line is {++not++} part of the area.
 
 {--A robot is considered inside the Penalty Area when it is completely
 inside.--}
