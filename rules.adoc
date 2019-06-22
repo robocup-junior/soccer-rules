@@ -59,7 +59,7 @@ Please see <<ball>> for balls specifications and <<league-regulations>> for
 more details for specifications/regulations.
 
 .Two teams of two robots with an orange ball on a RoboCupJunior Soccer field.
-image::media/image1_new.jpeg[]
+image::media/field_with_two_teams.jpg[]
 
 
 === Changes from 2019 RoboCupJunior Soccer Rules
@@ -641,11 +641,11 @@ robots based on the lighting and magnetic conditions at the venue.
 [[field-diagrams]]
 == FIELD DIAGRAMS
 
-image:media/image5_new.jpeg[image,scaledwidth=90.0%]
+image:media/field_without_robots.jpg[image,scaledwidth=90.0%]
 
-image:media/image6_new.jpeg[image,scaledwidth=90.0%]
+image:media/field_measurements.jpg[image,scaledwidth=90.0%]
 
-image:media/image7_new.jpeg[image,scaledwidth=80.0%]
+image:media/field_goal_measurements.jpg[image,scaledwidth=80.0%]
 
 
 [[ball]]
