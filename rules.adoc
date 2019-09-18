@@ -26,6 +26,7 @@ https://junior.forum.robocup.org/ for OC (Organizational Committee) procedures
 and requirements for the international competition. Each team is responsible
 for verifying the latest version of the rules prior to competition.
 
+[discrete]
 == Preface
 
 In the RoboCupJunior soccer challenge, teams of young engineers design, build,
@@ -72,7 +73,7 @@ Robots must be constructed and programmed exclusively by student members of the
 team. Mentors, teachers, parents or companies should not be involved in the
 design, construction, assembly, programming or debugging of robots. To avoid
 embarrassment and possible disqualification, it is extremely important that
-teams abide by <<league-regulations, League regulations>>, 
+teams abide by <<league-regulations, League regulations>>,
 especially <<regulations-construction, Construction>>
 and <<regulations-programming, Programming>>, and all other competitor’s rules.
 
@@ -531,7 +532,9 @@ The goal "posts" are positioned over the white line marking the limits of the
 field. The cross-bar is exactly over the white line. The interior walls and the
 cross-bar of each goal are painted, one goal yellow, the other goal blue. The
 exterior (including the goal post and frame) are painted black (see
-<<field-diagrams>>). {++It is recommended that the blue be of a brighter shade
+<<field-diagrams, Field diagrams>>).
+
+{++It is recommended that the blue be of a brighter shade
 so that it is different enough from the black exterior.++}
 
 [[floor]]
@@ -1059,15 +1062,15 @@ but the TC would like to suggest they contain the following:++}
   team play agains two robots from the other, and a 1v1 one where both teams
   play with just one robot.++}
 
-- {++The Intro League should ignore the Out of Bounds (<<out-of-bounds>>) rule.
+- {++The Intro League should ignore the Out of Bounds rule.
   When robots go out of bounds, the referee should put them back in.++}
 
 - {++The robots should be created from official Lego or Fishertechnik kits,
   except for sensors necessary for robots to be able to find the ball (i.e.
-  ball detector)and the orientation of the field (i.e. compass).++}
+  ball detector) and the orientation of the field (i.e. compass).++}
 
 - {++The robots should be limited in size to 22,4cm by 22,4cm by 22,4cm (all
-  measurements +/- 1cm ). There shall be no weight limit. ++}
+  measurements +/- 1cm ). There shall be no weight limit.++}
 
 Sample Intro League rules already in use can be found on the links below:
 
