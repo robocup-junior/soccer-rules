@@ -26,7 +26,6 @@ https://junior.forum.robocup.org/ for OC (Organizational Committee) procedures
 and requirements for the international competition. Each team is responsible
 for verifying the latest version of the rules prior to competition.
 
-[preface]
 == Preface
 
 In the RoboCupJunior soccer challenge, teams of young engineers design, build,
@@ -55,9 +54,8 @@ ball. Robots may weigh up to 2.4 kg, may have a ball-capturing zone of up to
 Please see <<ball>> for balls specifications and <<league-regulations>> for
 more details for specifications/regulations.
 
-.Two teams of two robots with an orange ball on a RoboCupJunior Soccer field.
+[title="Two teams of two robots with an orange ball on a RoboCupJunior Soccer field."]
 image::media/field_with_two_teams.jpg[]
-
 
 === Changes from 2019 RoboCupJunior Soccer Rules
 
@@ -74,8 +72,9 @@ Robots must be constructed and programmed exclusively by student members of the
 team. Mentors, teachers, parents or companies should not be involved in the
 design, construction, assembly, programming or debugging of robots. To avoid
 embarrassment and possible disqualification, it is extremely important that
-teams abide by <<league-regulations>>, especially <<regulations-construction>>
-and <<regulations-programming>>, and all other competitor’s rules.
+teams abide by <<league-regulations, League regulations>>, 
+especially <<regulations-construction, Construction>>
+and <<regulations-programming, Programming>>, and all other competitor’s rules.
 
 If in doubt, please consult with your Regional Representative before
 registering your team.
@@ -989,25 +988,6 @@ The result of this challenge is the number of scored goals.
 .An example state of the goal after two rounds
 image::media/goal_parts_filled.png[align="center"]
 
-
-[[innovative-usage-of-landmarks]]
-==== Innovative usage of landmarks
-
-The six landmarks on the field were introduced in the previous version of the
-rules in an attempt to provide more opportunities for experimentation with
-localization on the field. However, the change has shown to be quite disruptive
-(in many cases it caused more harm than good) and so a new version of landmarks
-has been designed for this year in order to fix this.
-
-Since these landmarks have been in the rules for quite some time now and some
-teams may have invested into using them, this challenge has been designed to
-give them an opportunity to present their work and receive some bonus points
-for it as well.
-
-The result of this challenge is a binary decision: a set of bonus points
-awarded to a team which manages to persuade the OC that they use the landmarks
-in an innovative way.
-
 [[penalty-kick]]
 === Penalty Kick
 
@@ -1057,6 +1037,44 @@ design, team spirit and individual games.
 Note that as stated in <<spirit>>, *_it is not whether you win or lose, but how
 much you learn that counts!_*
 
+[[intro-league]]
+=== Intro League
+
+{++In order to help newcomers experience the RoboCupJunior Soccer competition,
+the TC would like to encourage local regional competitions to include a so
+called "Intro League". Although such a league will not be part of the
+international competition, the TC still believes that it is worthwile to make
+it part of regional and super-regional competitions. Each regional and
+super-regional competition will likely have its specific rules for the rules
+but the TC would like to suggest they contain the following:++}
+
+- {++The Intro League should be at least to some extend based on the
+  RoboCupJunior Soccer rules++}
+
+- {++Only competitiors that did not previously participate in an international
+  (that is not a regional or super-regional) competition are allowed to take
+  part.++}
+
+- {++It may be worth creating two sub-leagues: a 2v2 one where two robots from one
+  team play agains two robots from the other, and a 1v1 one where both teams
+  play with just one robot.++}
+
+- {++The Intro League should ignore the Out of Bounds (<<out-of-bounds>>) rule.
+  When robots go out of bounds, the referee should put them back in.++}
+
+- {++The robots should be created from official Lego or Fishertechnik kits,
+  except for sensors necessary for robots to be able to find the ball (i.e.
+  ball detector)and the orientation of the field (i.e. compass).++}
+
+- {++The robots should be limited in size to 22,4cm by 22,4cm by 22,4cm (all
+  measurements +/- 1cm ). There shall be no weight limit. ++}
+
+Sample Intro League rules already in use can be found on the links below:
+
+- https://robocupjunior.org.au/sites/default/files/Official%20RCJA%20Standard%20Soccer%20Rules%202019%20%28SLTC%29%20.pdf
+
+- https://rcj2019.eu/sites/default/files/Soccer%201-1%20Standard%20Kit%20Rules%202019%20Final.pdf
+
 [appendix]
 [[technical-specification-for-pulsed-soccer-ball]]
 == Technical Specification for pulsed Soccer Ball
@@ -1074,7 +1092,7 @@ can exhibit the RCJ-compliant label and their balls used in RCJ tournaments.
 
 Balls with these specifications can be detected using specific sensors from
 HiTechnic (IRSeeker - information on distance and angle) but also common IR
-remote control receivers (TSOP1140, TSOP31140, GP1UX511QS, ...
+remote control receivers (TSOP1140, TSOP31140, GP1UX511QS, etc.
 - on-off detection with a possible gross indication of distance).
 
 [[pulsed-specifications]]
@@ -1270,30 +1288,3 @@ c.  Measure the distance that the ball traveled on the device. The distance
 == Inspections sheet example
 
 image:media/image10.png[image,scaledwidth=100.0%]
-
-[appendix]
-[[landmarks-template-2018-version]]
-== Landmarks Template (2018 version)
-
-There are colored landmarks positioned on each wall. They consist of two
-magenta circles printed on letter paper (A4, 210mm x 297mm). They measure 70mm
-in diameter and their centers are 150mm apart from each other. Their position
-within the landmark as well as the position of the respective landmarks on the
-field can be seen in Figure [fig:landmarks_blueprint]. Note that these
-landmarks are always positioned in the middle of the wall.
-
-.Position of magenta circles on each of the two landmarks, as well as the position of each of the two landmarks on the field. Note that in this case ”blue goal to the left/right” here to the situation when one is looking directly at the blue goal from the center of the field. For more information on the position of landmarks please consult the Field diagrams section.
-image::media/landmarks_blueprint.png[scaledwidth=70.0%]
-
-The color used for these landmarks (magenta) is defined (for the purpose of
-this section) to be one of the following:
-
-* `RGB (217, 1, 2)`
-* `CMYK (0, 255, 0, 0)`
-* PANTONE Process Magenta C (https://www.pantone.com/color-finder/Process-Magenta-C)
-
-The following two pages contain a template for the landmarks that are to be put
-on the walls of the field. When printed on ordinary A4 paper, they should have
-the measures described by these rules. While the color on the printed papers
-will differ from printer to printer, printing these pages using the sRGB
-"printer profile" (color scheme) produces the best results.
