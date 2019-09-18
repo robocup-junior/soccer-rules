@@ -431,6 +431,10 @@ team robot must be able to seek and approach the ball anywhere on the field,
 unless the team has only one robot on the field at that time. Goalie has to
 approach the ball in the whole penalty area.
 
+{++If a robot does not touch the ball that is placed no further than 20 cm from
+it within 10 seconds, it is deemed to be damaged (see <<damaged-robots, Damaged
+Robots>>)++}
+
 Robots must be constructed in a way that they do not enter the goal.  Robots
 are allowed to use the cross-bar in order to avoid entering the goal. This rule
 applies to all robots on the field. Any robot that moves into the goal 3 times
