@@ -58,6 +58,7 @@ more details for specifications/regulations.
 [title="Two teams of two robots with an orange ball on a RoboCupJunior Soccer field."]
 image::media/field_with_two_teams.jpg[]
 
+[discrete]
 === Changes from 2019 RoboCupJunior Soccer Rules
 
 The changes determined by the Technical Committee for this year’s rules aim to
@@ -73,9 +74,8 @@ Robots must be constructed and programmed exclusively by student members of the
 team. Mentors, teachers, parents or companies should not be involved in the
 design, construction, assembly, programming or debugging of robots. To avoid
 embarrassment and possible disqualification, it is extremely important that
-teams abide by <<league-regulations, League regulations>>,
-especially <<regulations-construction, Construction>>
-and <<regulations-programming, Programming>>, and all other competitor’s rules.
+teams abide by <<league-regulations>>, especially <<regulations-construction>>
+and <<regulations-programming>>, and all other competitor’s rules.
 
 If in doubt, please consult with your Regional Representative before
 registering your team.
@@ -148,7 +148,7 @@ Before a kick-off, all damaged or out-of-bounds robots are allowed to return to
 the playing field immediately if they are ready and fully functional.
 
 If no robots are present at a kick-off (because they have moved out-of-bounds
-<<out-of-bounds>> or are either damaged <<damaged-robots>>), the penalties are
+<<out-of-bounds>> or are damaged <<damaged-robots>>), the penalties are
 discarded and the match resumes with a <<neutral-kickoff>>.
 
 [[neutral-kickoff]]
@@ -764,7 +764,7 @@ robot’s dimensions must not exceed the following limits:
 
 |===
 |sub-league | *Soccer* *Open* | *Soccer Lightweight*
-|size / diameter | Ø 22.0 cm ^[4]^| Ø 22.0 cm +
+|size / diameter | 22.0 cm ^[4]^| 22.0 cm +
 |height | 22.0 cm ^[1]^ ^[4]^ | 22.0 cm ^[1]^ +
 |weight | 2400 g ^[2]^ ^[4]^ | 1100 g ^[2]^ +
 |ball-capturing zone | 2.5 cm | 3.0 cm +
