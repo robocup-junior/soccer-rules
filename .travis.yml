@@ -10,7 +10,7 @@ services:
 before_install:
   - docker pull asciidoctor/docker-asciidoctor
   - docker pull dxjoke/tectonic-docker
-  - sudo apt-get install dblatex xzdec
+  - sudo apt-get install dblatex xzdec texlive-generic-recommended
 
 cache:
   directories:
