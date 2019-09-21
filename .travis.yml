@@ -18,7 +18,7 @@ script:
   - dblatex -T db2latex rules.xml -t tex --texstyle=./manual.sty -p custom.xsl
   - cat rules.tex | awk 'f;/\\mainmatter/{f=1}'  > rules_without_preamble.tex
   - cat preamble.tex rules_without_preamble.tex > rules.tex
-  - docker run --mount src=$TRAVIS_BUILD_DIR/src,target=/usr/src/tex,type=bind dxjoke/tectonic-docker /bin/sh -c "tectonic rules.tex"
+  - docker run --mount src=$TRAVIS_BUILD_DIR,target=/usr/src/tex,type=bind dxjoke/tectonic-docker /bin/sh -c "tectonic rules.tex"
 
 after_error:
   - docker logs asciidoc-to-html
