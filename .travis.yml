@@ -8,7 +8,7 @@ services:
 before_install:
   - docker pull asciidoctor/docker-asciidoctor
   - docker pull dxjoke/tectonic-docker
-  - sudo apt-get install dblatex
+  - sudo apt-get install dblatex xzdec
 
 install:
   - source .ci/texlive_install.sh
