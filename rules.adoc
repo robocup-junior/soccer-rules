@@ -147,8 +147,8 @@ On the referee’s command (usually by whistle), all robots will be started
 immediately by each captain. Any robots that are started early will be removed
 by the referee from the field and deemed damaged.
 
-Before a kick-off, all damaged or out-of-bounds robots are allowed to return to
-the playing field immediately if they are ready and fully functional.
+Before a kick-off, *all damaged or out-of-bounds robots* are allowed to return to
+the playing field immediately if they are _ready and fully functional_.
 
 If no robots are present at a kick-off (because they have moved out-of-bounds
 <<out-of-bounds>> or are damaged <<damaged-robots>>), the penalties are
@@ -214,11 +214,11 @@ one of these robots will be moved to the _furthest unoccupied neutral spot_
 immediately. If this happens repeatedly, a robot may be deemed damaged
 (<<damaged-robots>>) at referee's discretion.++}
 
+If a goal is scored as a result of this pushed-situation it will not be granted.
+
 {--If the attacker and the goalie touch each other and at least one of them has
 physical contact with the ball, the ball will be moved to the nearest
 unoccupied neutral spot immediately.--}
-
-If a goal is scored as a result of this pushed-situation it will not be granted.
 
 [[lack-of-progress]]
 === Lack of progress
@@ -278,8 +278,6 @@ field.
 If a robot is damaged, it has to be taken off the field and must be fixed
 before it can play again. Even if repaired, the robot must remain off the field
 for at least one minute or until the next kick-off is due.
-{--If all robots have moved out of bounds, the penalties are discarded and the
-match resumes with a neutral kickoff.--}
 
 Some examples of a damaged robot include:
 

@@ -10,6 +10,23 @@
     </xsl:text>
   </xsl:template>
 
+  <xsl:template match="section/simpara">
+      <xsl:text>
+\p </xsl:text>
+    <xsl:apply-templates/>
+    <xsl:text>
+
+</xsl:text>
+  </xsl:template>
+
+  <xsl:template match="part|chapter|appendix|
+                       sect1|sect2|sect3|sect4|sect5|section" mode="label.markup">
+    <xsl:text>\ref{</xsl:text>
+    <xsl:value-of select="(@id|@xml:id)[1]"/>
+    <xsl:text>}</xsl:text>
+  </xsl:template>
+
+
   <xsl:param name="xref.with.number.and.title" select="1"></xsl:param>
 
   <xsl:param name="local.l10n.xml" select="document('')"/>
