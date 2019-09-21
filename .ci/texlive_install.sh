@@ -15,7 +15,7 @@ if ! command -v texlua > /dev/null; then
   cd install-tl-20*
 
   # Install a minimal system
-  ./install-tl --profile=../texlive/texlive.profile
+  ./install-tl --profile=../.ci/texlive.profile
 
   cd ..
 fi
@@ -24,7 +24,7 @@ fi
 tlmgr install luatex
 
 # We specify the directory in which it is located texlive_packages
-tlmgr install $(sed 's/\s*#.*//;/^\s*$/d' texlive/texlive_packages)
+tlmgr install $(sed 's/\s*#.*//;/^\s*$/d' .ci/texlive_packages)
 
 # Keep no backups (not required, simply makes cache bigger)
 tlmgr option -- autobackup 0
