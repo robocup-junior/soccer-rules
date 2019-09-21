@@ -20,8 +20,11 @@ if ! command -v texlua > /dev/null; then
   cd ..
 fi
 
+
 # Init in user space
 tlmgr init-usertree
+
+tlmgr option repository ftp://tug.org/historic/systems/texlive/2015/tlnet-final
 
 # Just including texlua so the cache check above works
 tlmgr install luatex

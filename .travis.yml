@@ -1,5 +1,7 @@
 language: python
 
+dist: bionic
+
 sudo: required
 
 services:
@@ -9,9 +11,6 @@ before_install:
   - docker pull asciidoctor/docker-asciidoctor
   - docker pull dxjoke/tectonic-docker
   - sudo apt-get install dblatex xzdec
-
-install:
-  - source .ci/texlive_install.sh
 
 cache:
   directories:
@@ -26,6 +25,7 @@ script:
   - dblatex -T db2latex rules.xml -t tex --texstyle=./manual.sty -p custom.xsl
   - cat rules.tex | awk 'f;/\\mainmatter/{f=1}'  > rules_without_preamble.tex
   - cat preamble.tex rules_without_preamble.tex > rules.tex
+  - texliveonfly rules.tex
   - pdflatex rules.tex
   - pdflatex rules.tex
 
