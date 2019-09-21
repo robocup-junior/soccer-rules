@@ -26,6 +26,9 @@ https://junior.forum.robocup.org/ for OC (Organizational Committee) procedures
 and requirements for the international competition. Each team is responsible
 for verifying the latest version of the rules prior to competition.
 
+NOTE: These are the Draft rules. Although they are still subject to change, the
+TC expects the changes to be minimal and at mostly cosmetic.
+
 [discrete]
 == Preface
 
@@ -204,10 +207,10 @@ as well.++}
 {++If an attacking and a defending robot touch each other while at least one of
 them is at least partially inside the penalty area, and at least one of them
 has physical contact with the ball, this is called "pushing" and the ball will
-be moved to the *furthest* unoccupied neutral spot immediately.++}
+be moved to the _furthest unoccupied neutral spot_ immediately.++}
 
 {++If two robots from the same team are at least partially in the penalty area,
-one of these robots will be moved to the *furthest* unoccupied neutral spot
+one of these robots will be moved to the _furthest unoccupied neutral spot_
 immediately. If this happens repeatedly, a robot may be deemed damaged
 (<<damaged-robots>>) at referee's discretion.++}
 
@@ -739,7 +742,7 @@ According to rule 3.8 of the RoboCupJunior Soccer Rules, each league has its
 own additional regulations. They become a part of the rules.
 
 For RoboCupJunior 2020, there are two sub-leagues as follows
-footnote:[biggest differences are described in 8.2.1 Dimensions]:
+footnote:[biggest differences are described in <<dimensions>>]:
 
 * Soccer Lightweight
 * Soccer Open

@@ -1,0 +1,73 @@
+%%
+%% This style is derivated from the db2latex one
+%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{manual}
+
+
+% The defined options
+\DeclareOption{hyperlink}{ \def\DBKhyperlink{yes} }
+\DeclareOption{nohyperlink}{ \def\DBKhyperlink{no} }
+
+% Default values
+\ExecuteOptions{hyperlink}
+
+% If defined, process the options
+\ProcessOptions\relax
+
+%% Just use the original package and pass the options
+\RequirePackageWithOptions{db2latex}
+
+\renewcommand{\maketitle}{
+
+    \begin{center}
+    {\LARGE \@title \par}
+	\vskip 8em
+    \end{center}
+
+%  \pagestyle{empty}
+
+%  \noindent
+%  \textbf{\DBKtitle \\}
+%  \ifx\DBKauthor\empty\else{by \DBKauthor \\}\fi
+%  \hspace{0pt}\\
+%  \ifthenelse{\equal{\DBKedition}{}}{}{Edition \DBKedition \\}
+%  \ifthenelse{\equal{\DBKpubdate}{}}{}{Published \DBKpubdate \\}
+%  \ifthenelse{\equal{\DBKcopyright}{}}{}{\DBKcopyright \\}
+%  \hspace{0pt}\\
+  % Now the legalnotice block
+%  \DBKlegalblock
+%  Ahoj
+%  \newpage
+}
+
+\renewenvironment{DBKadmonition}[2] {
+  % this code corresponds to the \begin{admonition} command
+  \hspace{0mm}\newline\hspace*\fill\newline
+  \noindent
+  \setlength{\fboxsep}{5pt}
+  \setlength{\admlength}{\linewidth}
+  \addtolength{\admlength}{-2\fboxsep}
+  \addtolength{\admlength}{-10\fboxrule}
+  \admminipage{\admlength}
+  ~\\[1mm]
+  \ifthenelse{\equal{#1}{}}{
+    \def\admgraph{false}
+  }{
+    \def\admgraph{true}
+    \includegraphics[width=1cm]{icons/#1}
+    \addtolength{\admlength}{-1cm}
+    \addtolength{\admlength}{-20pt}
+    \begin{minipage}[lt]{\admlength}
+  }
+  \parskip=0.5\baselineskip \advance\parskip by 0pt plus 2pt
+} %done
+{ % this code corresponds to the \end{admonition} command
+  \vspace{5mm} 
+  \ifthenelse{\equal{\admgraph}{false}}{}{
+    \end{minipage}
+  }
+  \endadmminipage
+  \vspace{.5em}
+  \par
+}

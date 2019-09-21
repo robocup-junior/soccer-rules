@@ -1,0 +1,127 @@
+%% Preamble %%
+%% A minimal LaTeX preamble
+%% Some packates are needed to implement
+%% Asciidoc features
+
+\documentclass{article}
+
+
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsxtra}
+\usepackage{amsfonts}
+\usepackage{wasysym}
+\usepackage{isomath}
+\usepackage{mathtools}
+\usepackage{txfonts}
+\usepackage{upgreek}
+\usepackage{enumerate}
+\usepackage{tensor}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{changes}
+\usepackage{etoolbox}
+\usepackage{titlesec}
+\let\openbox\relax
+
+
+\usepackage[letterpaper, margin=1in, headheight=47pt]{geometry}
+\usepackage[hyperlink]{manual}
+
+% No paragraph indent
+\setlength{\parindent}{0cm}
+% Bigger paragraph skips
+\setlength{\parskip}{0.25cm}
+
+% TEX Gyre Adventor font (looks pretty nice)
+\renewcommand*\rmdefault{qag}
+
+% Set paragraph numbers correctly (skip susubsection)
+\setcounter{secnumdepth}{4}
+\renewcommand\thesubsection{\arabic{section}.\arabic{subsection}}
+\renewcommand\thesubsubsection{
+\ifnum \value{subsubsection}=0
+    \thesubsection
+\else
+    \thesubsection.\Alph{subsubsection}\relax
+\fi}
+
+\newcommand*{\p}{\paragraph{}}
+
+\newlength\titleindent
+\setlength\titleindent{1.2cm}
+
+\definecolor{mygray}{gray}{0.55}
+\titleformat{\paragraph}[runin]
+{\normalfont\footnotesize}{\llap{\parbox{\titleindent}{\textcolor{mygray}{\theparagraph}\hfill}}}{0em}{}
+
+\titlespacing{\paragraph}{0pt}{0em}{0em}
+
+% End of paragraph numbers setting
+
+\pagestyle{fancy}
+
+\lhead{}
+\chead{}
+\rhead{\includegraphics[width=8cm]{media/image15.png}}
+\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\topmargin}{-20pt}
+
+\rfoot{Page \textbf{\thepage} of \textbf{\pageref{LastPage}}}
+\lfoot{\textit{Draft Rules as of \today}}
+\cfoot{}
+
+% First page
+\fancypagestyle{firststyle}{%
+  \fancyhf{}
+  \fancyfoot[L]{\textit{Draft Rules as of \today}}
+  \fancyfoot[R]{Page \textbf{\thepage} of \textbf{\pageref{LastPage}}}
+}
+
+\title{\vspace{-5ex}RoboCupJunior Soccer Rules 2020\vspace{-5ex}}
+\date{\vspace{-2ex}}
+
+\definecolor{color-1}{rgb}{1,1,1}
+\definecolor{color-2}{rgb}{0,0,0.5}
+\definecolor{color-3}{rgb}{0.07,0.33,0.8}
+\definecolor{color-4}{rgb}{0.13,0.13,0.13}
+\definecolor{red}{rgb}{1,0,0}
+\definecolor{color-6}{rgb}{0,0,1}
+
+
+
+\begin{document}
+\maketitle
+\thispagestyle{firststyle}
+
+\begin{tabular}{rl}
+\resizebox{0.50\textwidth}{!}{
+\begin{tabular}{lr}
+    \multicolumn{2}{l}{\textbf{Soccer Technical Committee 2019:}}\\
+    Tairo Nomura              & Japan\\
+    James Riley               & Australia\\
+    Mikail S. Arani           & Canada\\
+    Javier E. Delgado Moreno  & Mexico \\
+    Felipe Nascimento Martins & Netherlands\\
+    Marek \v{S}uppa           & Slovakia (CHAIR)\\
+\end{tabular}}
+&
+
+\resizebox{0.50\textwidth}{!}{
+\begin{tabular}{lr}
+    \multicolumn{2}{l}{\textbf{Soccer Technical Committee 2018:}}\\
+    Sarit Salzman             & Israel\\
+    James Riley               & Australia\\
+    Michael Sloan Warren      & USA\\
+    Javier E. Delgado Moreno  & Mexico \\
+    Felipe Nascimento Martins & Netherlands\\
+    Marek \v{S}uppa           & Slovakia (CHAIR)\\
+\end{tabular}}
+
+\end{tabular}
+
+\vspace{20pt}

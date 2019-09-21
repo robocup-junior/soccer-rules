@@ -7,20 +7,24 @@ services:
 
 before_install:
   - docker pull asciidoctor/docker-asciidoctor
+  - docker pull dxjoke/tectonic-docker
+  - pip install dblatex
 
 script:
   - cp rules.adoc _rules.adoc
   - python .ci/criticmarkup_to_adoc.py _rules.adoc > rules.adoc
   - docker run -v $TRAVIS_BUILD_DIR:/documents/ asciidoctor/docker-asciidoctor asciidoctor rules.adoc
-  - docker run -v $TRAVIS_BUILD_DIR:/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf rules.adoc
+  - docker run -v $TRAVIS_BUILD_DIR:/documents/ asciidoctor/docker-asciidoctor asciidoctor -b docbook rules.adoc
+  - dblatex -T db2latex rules.xml -t tex --texstyle=./manual.sty -p custom.xsl
+  - cat rules.tex | awk 'f;/\\mainmatter/{f=1}'  > rules_without_preamble.tex
+  - cat preamble.tex rules_without_preamble.tex > rules.tex
+  - docker run --mount src=$TRAVIS_BUILD_DIR/src,target=/usr/src/tex,type=bind dxjoke/tectonic-docker /bin/sh -c "tectonic rules.tex"
 
 after_error:
   - docker logs asciidoc-to-html
-  - docker logs asciidoc-to-pdf
 
 after_failure:
   - docker logs asciidoc-to-html
-  - docker logs asciidoc-to-pdf
 
 after_script:
   - ./.ci/after_script.sh
