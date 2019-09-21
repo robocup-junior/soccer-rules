@@ -10,6 +10,39 @@ before_install:
   - docker pull dxjoke/tectonic-docker
   - sudo apt-get install dblatex
 
+install:
+  # Silent install from conda docs
+  # https://conda.io/docs/user-guide/install/macos.html#install-macos-silent
+  # adapted using
+  # https://conda.io/docs/user-guide/tasks/use-conda-with-travis-ci.html
+
+  # Needed to check if conda already installed
+  - export PATH="$HOME/miniconda/bin:$PATH"
+
+  # If not yet installed, obtain Miniconda
+  # and tectonic
+  # From tectonic docs
+  # https://tectonic-typesetting.github.io/en-US/install.html#the-anaconda-method
+  - if ! command -v conda > /dev/null; then
+      wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
+      bash miniconda.sh -b -p $HOME/miniconda -u;
+      conda config --add channels conda-forge;
+      conda config --set always_yes yes;
+      conda install tectonic==0.1.10;
+    fi
+  # Install biber if required for compiling the references.
+  # Biber 2.5 is required for tectonic 0.1.8
+  - conda install -c malramsay biber==2.5 --yes
+  - conda info -a
+  # Workaround until tectonic 0.1.11 is available
+  - sudo mkdir -p ~/.config/Tectonic/
+  - echo "[[default_bundles]]" | sudo tee --append ~/.config/Tectonic/config.toml
+  - sudo echo "url = \"https://tectonic.newton.cx/bundles/tlextras-2018.1r0/bundle.tar\"" | sudo tee --append ~/.config/Tectonic/config.toml
+cache:
+  directories:
+    - $HOME/miniconda
+    - $HOME/.cache/Tectonic
+
 script:
   - cp rules.adoc _rules.adoc
   - python .ci/criticmarkup_to_adoc.py _rules.adoc > rules.adoc
@@ -18,7 +51,7 @@ script:
   - dblatex -T db2latex rules.xml -t tex --texstyle=./manual.sty -p custom.xsl
   - cat rules.tex | awk 'f;/\\mainmatter/{f=1}'  > rules_without_preamble.tex
   - cat preamble.tex rules_without_preamble.tex > rules.tex
-  - docker run --mount src=$TRAVIS_BUILD_DIR,target=/usr/src/tex,type=bind dxjoke/tectonic-docker /bin/sh -c "tectonic rules.tex"
+  - tectonic --keep-intermediates --reruns 0 ./rules.tex
 
 after_error:
   - docker logs asciidoc-to-html
