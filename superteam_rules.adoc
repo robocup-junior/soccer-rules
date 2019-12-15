@@ -74,8 +74,7 @@ of two halves. The duration of each half is 10-minutes. There will be a
 
 The game clock will run for the duration of the halves without stopping (except
 if or when a referee wants to consult another official). The game clock will be
-run by a referee or a referee assistant (see <<referee-and-referee-assistant>>
-for more infromation on their roles).
+run by a referee or a referee assistant.
 
 SuperTeams are expected to be on the field 5 minutes before their game starts. Being
 at the inspection table does not count in favor of this time limit. Teams that
@@ -155,7 +154,7 @@ enough for them to be able to move freely again.
 [[ball-movement]]
 === Ball movement
 
-RoboCupJunior Soccer Rules rule <<ball-movement>> applies.
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<ball-movement>> applies.
 
 [[scoring]]
 === Scoring
@@ -173,12 +172,12 @@ capture them and get ready for kick-off.
 [[inside-penalty-area]]
 === Inside the Penalty Area
 
-RoboCupJunior Soccer Rules rule <<inside-penalty-area>> applies.
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<inside-penalty-area>> applies.
 
 [[lack-of-progress]]
 === Lack of progress
 
-RoboCupJunior Soccer Rules rule <<lack-of-progress>> applies.
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<lack-of-progress>> applies.
 
 [[out-of-bounds]]
 === Out of bounds
@@ -260,7 +259,7 @@ Whenever a robot is removed from play, its motors must be turned off.
 [[interruption-of-game-ref-interruption]]
 === Interruption of Game
 
-RoboCupJunior Soccer Rules rule <<interruption-of-game-ref-interruption>> applies.
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<interruption-of-game-ref-interruption>> applies.
 
 [[team]]
 == SUPERTEAM
@@ -284,7 +283,7 @@ Soccer Rules rule <<team-regulations>>).
 [[team-violations]]
 === Violations
 
-RoboCupJunior Soccer Rules rule <<team-violations>> applies.
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<team-violations>> applies.
 
 [[robots]]
 == ROBOTS
@@ -307,7 +306,7 @@ identifying the robot as being a member of a team.
 
 Example: Robot A-2: the referee would identify robot with sticker A-2 as robot
 number 2 belonging to team A. These IDs will be written on the Top Markers of
-robots (see RoboCupJunior Soccer Rules rule <<top-markers>>).
+robots (see link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<top-markers>>).
 
 Each individual team is required to have at least one of its robots as an
 active player, with the exception of a sixth team in which case SuperTeam is
@@ -321,12 +320,12 @@ Substitutions are allowed only at every kick-off (see rule <<kick-off>>).
 [[robots-interference]]
 === Interference
 
-RoboCupJunior Soccer Rules rule <<robots-interference>> applies.
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<robots-interference>> applies.
 
 [[robots-control]]
 === Control
 
-RoboCupJunior Soccer Rules rule <<robots-control>> applies.
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<robots-control>> applies.
 
 [[communication]]
 === Communication
@@ -342,22 +341,22 @@ cannot be guaranteed.
 [[agility]]
 === Agility
 
-RoboCupJunior Soccer Rules rule <<agility>> applies.
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<agility>> applies.
 
 [[handle]]
 === Handle
 
-RoboCupJunior Soccer Rules rule <<handle>> applies.
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<handle>> applies.
 
 [[top-markers]]
 === Top Markers
 
-RoboCupJunior Soccer Rules rule <<top-markers>> applies.
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<top-markers>> applies.
 
 [[additional-regulations-of-the-sub-leagues]]
 === Additional regulations of the sub-leagues
 
-RoboCupJunior Soccer Rules rule <<additional-regulations-of-the-sub-leagues>> applies.
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<additional-regulations-of-the-sub-leagues>> applies.
 
 [[violations]]
 === Violations
@@ -382,9 +381,9 @@ There is only one kind of field for all sub-leagues.
 [[dimensions-of-the-field]]
 === Dimensions of the field
 
-The big field is 540 cm by 340 cm. The big field is marked by a white line that
+The Big field is 540 cm by 340 cm. The Big field is marked by a white line that
 is part of the playing field. Around the playing field, beyond the white line,
-is an outer area of 30 cm width. Total dimensions of the big field, including
+is an outer area of 30 cm width. Total dimensions of the Big field, including
 the outer area, are 600 cm by 400 cm. The playing area is divided in sides for
 each SuperTeam by a black line.
 
@@ -403,7 +402,7 @@ out-area. The height of the walls is 22 cm. The walls are painted matte black.
 [[goals]]
 === Goals
 
-The big field has two goals, centered on each of the shorter sides of the
+The Big field has two goals, centered on each of the shorter sides of the
 playing field. The goal inner space is 60 cm width, 10 cm high and 74 mm deep,
 box shaped.
 
@@ -411,7 +410,7 @@ box shaped.
 allow checking if the ball scored).--}
 
 The goal "posts" are positioned over the white line marking the limits of the
-big field. {--The cross-bar is exactly over the white line. The height of the
+Big field. {--The cross-bar is exactly over the white line. The height of the
 cross-bar is 2 cm.--} The interior walls {--and the cross-bar--} of each goal
 are painted, one goal yellow, the other goal blue. The exterior (including the
 goal post and frame) are painted black.
@@ -437,7 +436,7 @@ The neutral spots ought to be of circular shape measuring 1 cm in diameter.
 [[center-circle]]
 === Center circle
 
-A center circle will be drawn on the big field. It is 80 cm in diameter. It is
+A center circle will be drawn on the Big field. It is 80 cm in diameter. It is
 a thin black marker line. It is there for Referees and SuperTeam members as
 guidance during kick-off.
 
@@ -460,20 +459,20 @@ RoboCupJunior Soccer Rules rule <<lighting-and-magnetic-conditions>> applies.
 [[ball]]
 == BALL
 
-RoboCupJunior Soccer Rules rule <<ball>> and its subsections apply.
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<ball>> and its subsections apply.
 
 [[code-of-conduct]]
 == CODE OF CONDUCT
 
-RoboCupJunior Soccer Rules rule <<code-of-conduct>> and its subsections apply.
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<code-of-conduct>> and its subsections apply.
 
 [[conflict-resolution]]
 == CONFLICT RESOLUTION
 
-RoboCupJunior Soccer Rules rule <<conflict-resolution>> and its subsections apply.
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<conflict-resolution>> and its subsections apply.
 
 [discrete]
 [[big-field-diagram]]
 == BIG FIELD DIAGRAM
 
-image:media/bigfield.png[image,scaledwidth=90.0%]
+image:media/bigfield.png[image,scaledwidth=85.0%]
