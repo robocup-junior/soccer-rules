@@ -36,7 +36,7 @@ TC expects the changes to be minimal and at mostly cosmetic.
 [discrete]
 == Preface
 
-In the RoboCupJunior soccer challenge, teams of young engineers design, build,
+In the RoboCupJunior Soccer challenge, teams of young engineers design, build,
 and program two fully autonomous mobile robots to compete against another team
 in matches. The robots must detect a ball and score into a color-coded goal on
 a special field that resembles a human soccer field.
@@ -134,9 +134,7 @@ Each half of the game begins with a kick-off. All robots must be located on
 their own side of the field. All robots must be halted. The ball is positioned
 by a referee in the center of the field.
 
-The team kicking off places their robots on the field first. Robots cannot be
-placed nor remain behind the goal line or in the outer area. Robots cannot be
-repositioned once they have been placed.
+The team kicking off places their robots on the field first. 
 
 The team not kicking off will now place their robots on the defensive end of
 the field. All robots on the team not kicking off must be at least 30 cm away
