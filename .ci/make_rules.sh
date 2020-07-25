@@ -30,3 +30,4 @@ pdflatex $OUTPUT_PREFIX.tex
 pdflatex $OUTPUT_PREFIX.tex
 
 cp $OUTPUT_PREFIX.pdf $OUTPUT_FILE.pdf
+cp $OUTPUT_PREFIX.html $OUTPUT_FILE.html
