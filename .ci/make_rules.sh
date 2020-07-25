@@ -26,5 +26,7 @@ cat $OUTPUT_PREFIX.tex | awk 'f;/\\mainmatter/{f=1}'  > $OUTPUT_PREFIX"_without_
 # Concat the standardized preamble with the "without_preamble" version of the file
 cat preamble.tex $OUTPUT_PREFIX"_without_preamble.tex" > $OUTPUT_PREFIX.tex
 texliveonfly $OUTPUT_PREFIX.tex
-pdflatex $OUTPUT_PREFIX.tex -jobname=$OUTPUT_FILE
-pdflatex $OUTPUT_PREFIX.tex -jobname=$OUTPUT_FILE
+pdflatex $OUTPUT_PREFIX.tex
+pdflatex $OUTPUT_PREFIX.tex
+
+cp $OUTPUT_PREFIX.pdf $OUTPUT_FILE.pdf

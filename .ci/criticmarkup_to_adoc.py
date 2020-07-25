@@ -1,5 +1,6 @@
 import re
 import sys
+import textwrap
 
 DELETION_REGEXP = re.compile(r'\{--(.*?)--\}', re.DOTALL)
 ADDITION_REGEXP = re.compile(r'\{\+\+(.*?)\+\+\}', re.DOTALL)
@@ -52,11 +53,20 @@ class Additor:
 
 class Substituter:
 
-    def __init__(self, changes, note_fmt, replacement_fmt):
+    def __init__(self, changes, note_fmt, replacement_fmt,
+                 wrap_long_strings_at=None):
         self.n_substitutions = 0
         self.changes = changes
         self.note_fmt = note_fmt
         self.replacement_fmt = replacement_fmt
+        self.wrap_long_strings_at = wrap_long_strings_at
+
+    def shorten(self, string):
+        if self.wrap_long_strings_at is not None:
+            return textwrap.shorten(string,
+                                    self.wrap_long_strings_at,
+                                    placeholder='...')
+        return string
 
     def __call__(self, match):
         self.n_substitutions += 1
@@ -64,10 +74,14 @@ class Substituter:
         def callback(n_substitutions, match):
             previous = match.group(1).replace('\n', ' ')
             current = match.group(2).replace('\n', ' ')
+
+            short_previous = self.shorten(previous)
+            short_current = self.shorten(current)
+
             txt = self.replacement_fmt.replace('{CURRENT}', current) \
                                       .replace('{PREVIOUS}', previous)
-            note = self.note_fmt.replace('{CURRENT}', current) \
-                                .replace('{PREVIOUS}', previous)
+            note = self.note_fmt.replace('{CURRENT}', short_current) \
+                                .replace('{PREVIOUS}', short_previous)
 
             change_id = f'substitution-{n_substitutions}'
             self.changes.append(change_id)
