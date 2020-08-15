@@ -1035,10 +1035,11 @@ up new options for gameplay. Given the smaller size and weight of golf balls,
 it should be possible to kick them not just horizontally (as if in "2D") but
 also vertically (that is, to get the ball into the air).++}
 
-{++The task in this technical challenge is to score a goal into an open goal
-from one half of the field. In order for the goal to count, the ball can only
-touch the other part of the field inside the penalty area and the goal itself.
-Note that a golf ball (not necessarily orange) needs to be used.++}
+{++The task in this technical challenge is to score into the open yellow goal
+from the other (blue) half of the field. In order to pass the challenge, the
+ball can only touch the other (yellow) half of the field inside the penalty
+area and the goal itself. Note that a golf ball (not necessarily orange) needs
+to be used.++}
 
 
 [[further-information-on-international-competition]]
