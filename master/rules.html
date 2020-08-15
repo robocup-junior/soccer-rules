@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.10">
-<meta name="author" content="2020-07-25">
+<meta name="author" content="2020-08-15">
 <title>RoboCupJunior Soccer Rules 2021</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -441,7 +441,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>RoboCupJunior Soccer Rules 2021</h1>
 <div class="details">
-<span id="author" class="author">2020-07-25</span><br>
+<span id="author" class="author">2020-08-15</span><br>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -529,9 +529,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#international-competition-team">9.1. Team</a></li>
 <li><a href="#interviews">9.2. Interviews</a></li>
 <li><a href="#technical-challenges">9.3. Technical Challenges</a></li>
-<li><a href="#penalty-kick">9.4. Penalty Kick</a></li>
-<li><a href="#further-information-on-international-competition">9.5. Further information on International Competition</a></li>
-<li><a href="#intro-league">9.6. Intro League</a></li>
+<li><a href="#further-information-on-international-competition">9.4. Further information on International Competition</a></li>
+<li><a href="#intro-league">9.5. Intro League</a></li>
 </ul>
 </li>
 <li><a href="#technical-specification-for-pulsed-soccer-ball">Appendix A: Technical Specification for pulsed Soccer Ball</a>
@@ -620,12 +619,12 @@ differences between the two leagues.</p>
 <li>
 <p><strong>Soccer Lightweight</strong> is played using a special ball that emits an IR
 signal ball. Robots may weigh up to 1.1 kg, may have a ball-capturing zone of
-up to 3.0 cm, and may use batteries up to 12.0 nominal voltage.</p>
+up to 3.0 cm, and may use batteries up to 12.0 V nominal voltage.</p>
 </li>
 <li>
 <p><strong>Soccer Open</strong> is played using a passive, brightly colored orange
 ball. Robots may weigh up to 2.4 kg, may have a ball-capturing zone of up to
-2.5 cm, and may use batteries up to 15.0 nominal voltage.</p>
+2.5 cm, and may use batteries up to 15.0 V nominal voltage.</p>
 </li>
 </ul>
 </div>
@@ -635,13 +634,18 @@ more details for specifications/regulations.</p>
 </div>
 <div class="paragraph">
 <p><em>If you would like to start with RoboCupJunior Soccer, please contact the
-organizer of your regional RoboCupJunior competition and ask them about</em> <a href="#intro-league">Rule 9.6, &#8220;Intro League&#8221;</a>.</p>
+organizer of your regional RoboCupJunior competition and ask them about</em> <a href="#intro-league">Rule 9.5, &#8220;Intro League&#8221;</a>.</p>
 </div>
 <h3 id="_changes_from_2019_and_2020_robocupjunior_soccer_rules" class="discrete">Changes from 2019 (and 2020) RoboCupJunior Soccer Rules</h3>
 <div class="paragraph">
 <p>The changes determined by the Technical Committee for this year’s rules aim to
 reduce the amount of "sumo-like" gameplay while making it more interesting by
 introducing new challenges and standard situations.</p>
+</div>
+<div class="paragraph">
+<p>Most of the changes listed below were already present in the rules of 2020.
+Since the physical competition didn&#8217;t take place, we decided to keep those in
+the list for convenience.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -676,46 +680,55 @@ introducing new challenges and standard situations.</p>
 <p><a href="#addition-4">Added "If a goal is scored as a result of this "pushing" situation, it will not be granted."</a></p>
 </li>
 <li>
-<p><a href="#addition-5">Added "A robot must touch touch the ball that is placed no further than 20 cm from any point on its convex hull within 10 seconds. If a robot does not do so within the time limit, it is deemed to be damaged."</a></p>
+<p><a href="#addition-5">Added "For specific Lightweight regulations see &lt;&lt;regulations-inference-in-lightweight&gt;&gt;"</a></p>
 </li>
 <li>
-<p><a href="#addition-6">Added "It is recommended that the blue be of a brighter shade so that it is different enough from the black exterior."</a></p>
+<p><a href="#addition-6">Added "A robot must touch touch the ball that is placed no further than 20 cm from any point on its convex hull within 10 seconds. If a robot does not do so within the time limit, it is deemed to be damaged."</a></p>
 </li>
 <li>
-<p><a href="#addition-7">Added "The Technical Committee plans to decrease the diameter/height of robots in the Open sub-league to 18 cm and the weight limit to 2200g for the 2022 season. It further plans to replace the current orange ball with a standard orange golf ball."</a></p>
+<p><a href="#addition-7">Added "It is recommended that the blue be of a brighter shade so that it is different enough from the black exterior."</a></p>
 </li>
 <li>
-<p><a href="#addition-8">Added "In Lightweight, the robot must not emit infrared light."</a></p>
+<p><a href="#addition-8">Added "The Technical Committee plans to decrease the diameter/height of robots in the Open sub-league to 18 cm and the weight limit to 2200g for the 2022 season. It further plans to replace the current orange ball with a standard orange golf ball."</a></p>
 </li>
 <li>
-<p><a href="#addition-9">Added "In Lightweight, infrared light reflecting materials must not be used on the outside. If robots are painted, they must be painted matte. Minor parts that reflect infrared light could be used as long as other robots are not affected."</a></p>
+<p><a href="#addition-9">Added "In Lightweight, the robot must not emit infrared light."</a></p>
 </li>
 <li>
-<p><a href="#addition-10">Added "In Soccer, a penalty kick takes place after a grave offense happens. The aim of this technical challenge is to see whether something similar can be done within the limits of RoboCupJunior Soccer."</a></p>
+<p><a href="#addition-10">Added "In Lightweight, infrared light reflecting materials must not be used on the outside. If robots are painted, they must be painted matte. Minor parts that reflect infrared light could be used as long as other robots are not affected."</a></p>
 </li>
 <li>
-<p><a href="#addition-11">Added "There will also be a SuperTeam competition, in which various people from around the world share their robots in one "SuperTeam" and play against other SuperTeams on a so called "Big Field". The full rules of this challenge can be found at"</a></p>
+<p><a href="#addition-11">Added "In Soccer, a penalty kick takes place after a grave offense happens. The aim of this technical challenge is to see whether something similar can be done within the limits of RoboCupJunior Soccer."</a></p>
 </li>
 <li>
-<p><a href="#addition-12">Added "In order to help newcomers experience the RoboCupJunior Soccer competition, the TC would like to encourage local regional competitions to include a so called "Intro League". Although such a league will not be part of the international competition, the TC still believes that it is worthwile to make it part of regional and super-regional competitions. Each regional and super-regional competition will likely have its specific rules for the rules but the TC would like to suggest they contain the following:"</a></p>
+<p><a href="#addition-12">Added "Since the TC plans to move to an orange golf ball in Open, this should open up new options for gameplay. Given the smaller size and weight of golf balls, it should be possible to kick them not just horizontally (as if in "2D") but also vertically (that is, to get the ball into the air)."</a></p>
 </li>
 <li>
-<p><a href="#addition-13">Added "The Intro League should be at least to some extend based on the   RoboCupJunior Soccer rules"</a></p>
+<p><a href="#addition-13">Added "The task in this technical challenge is to score a goal into an open goal from one half of the field. In order for the goal to count, the ball can only touch the other part of the field inside the penalty area and the goal itself. Note that a golf ball (not necessarily orange) needs to be used."</a></p>
 </li>
 <li>
-<p><a href="#addition-14">Added "Only competitiors that did not previously participate in an international   (that is not a regional or super-regional) competition are allowed to take   part."</a></p>
+<p><a href="#addition-14">Added "There will also be a SuperTeam competition, in which various people from around the world share their robots in one "SuperTeam" and play against other SuperTeams on a so called "Big Field". The full rules of this challenge can be found at"</a></p>
 </li>
 <li>
-<p><a href="#addition-15">Added "It may be worth creating two sub-leagues: a 2v2 one where two robots from one   team play agains two robots from the other, and a 1v1 one where both teams   play with just one robot."</a></p>
+<p><a href="#addition-15">Added "In order to help newcomers experience the RoboCupJunior Soccer competition, the TC would like to encourage local regional competitions to include a so called "Intro League". Although such a league will not be part of the international competition, the TC still believes that it is worthwile to make it part of regional and super-regional competitions. Each regional and super-regional competition will likely have its specific rules for the rules but the TC would like to suggest they contain the following:"</a></p>
 </li>
 <li>
-<p><a href="#addition-16">Added "The Intro League should ignore the Out of Bounds rule.   When robots go out of bounds, the referee should put them back in."</a></p>
+<p><a href="#addition-16">Added "The Intro League should be at least to some extend based on the   RoboCupJunior Soccer rules"</a></p>
 </li>
 <li>
-<p><a href="#addition-17">Added "The robots should be created from official Lego or Fishertechnik kits,   except for sensors necessary for robots to be able to find the ball (i.e.   ball detector) and the orientation of the field (i.e. compass)."</a></p>
+<p><a href="#addition-17">Added "Only competitiors that did not previously participate in an international   (that is not a regional or super-regional) competition are allowed to take   part."</a></p>
 </li>
 <li>
-<p><a href="#addition-18">Added "The robots should be limited in size to 22,4cm by 22,4cm by 22,4cm (all   measurements +/- 1cm). There shall be no weight limit."</a></p>
+<p><a href="#addition-18">Added "It may be worth creating two sub-leagues: a 2v2 one where two robots from one   team play agains two robots from the other, and a 1v1 one where both teams   play with just one robot."</a></p>
+</li>
+<li>
+<p><a href="#addition-19">Added "The Intro League should ignore the Out of Bounds rule.   When robots go out of bounds, the referee should put them back in."</a></p>
+</li>
+<li>
+<p><a href="#addition-20">Added "The robots should be created from official Lego or Fishertechnik kits,   except for sensors necessary for robots to be able to find the ball (i.e.   ball detector) and the orientation of the field (i.e. compass)."</a></p>
+</li>
+<li>
+<p><a href="#addition-21">Added "The robots should be limited in size to 22,4cm by 22,4cm by 22,4cm (all   measurements +/- 1cm). There shall be no weight limit."</a></p>
 </li>
 <li>
 <p><a href="#substitution-1">Changed "When the goal difference reaches 10 the game finishes regardless of the state of the game clock." to "The final game score will be trimmed so that there is at most 10 goal difference between the losing and the winning team."</a></p>
@@ -727,19 +740,22 @@ introducing new challenges and standard situations.</p>
 <p><a href="#substitution-3">Changed "22 +/- 2 cm of height" to "at least 5 cm above the highest structure of the robot"</a></p>
 </li>
 <li>
-<p><a href="#substitution-4">Changed "30 cm" to "25 cm"</a></p>
+<p><a href="#substitution-4">Changed "122 cm by 183 cm" to "132 cm by 193 cm"</a></p>
 </li>
 <li>
 <p><a href="#substitution-5">Changed "30 cm" to "25 cm"</a></p>
 </li>
 <li>
-<p><a href="#substitution-6">Changed "90 cm" to "70 cm"</a></p>
+<p><a href="#substitution-6">Changed "30 cm" to "25 cm"</a></p>
 </li>
 <li>
-<p><a href="#substitution-7">Changed "black" to "white"</a></p>
+<p><a href="#substitution-7">Changed "90 cm" to "70 cm"</a></p>
 </li>
 <li>
-<p><a href="#substitution-8">Changed "The fields should be placed in a way that the influence by external infrared light is as low as possible and that the magnetic field of the earth is disturbed as little as possible. Perfect conditions cannot be guaranteed, however. Teams must come to tournaments being prepared to calibrate their robots based on the lighting and magnetic conditions at the venue." to "The organizers will do their best to limit the amount of external lightning and magnetic interference. However, the robots need to be constructed in a way which allows them to work in conditions that are not perfect (i.e. by not relying on compass sensors or specific lightning conditions)."</a></p>
+<p><a href="#substitution-8">Changed "black" to "white"</a></p>
+</li>
+<li>
+<p><a href="#substitution-9">Changed "The fields should be placed in a way that the influence by external infrared light is as low as possible and that the magnetic field of the earth is disturbed as little as possible. Perfect conditions cannot be guaranteed, however. Teams must come to tournaments being prepared to calibrate their robots based on the lighting and magnetic conditions at the venue." to "The organizers will do their best to limit the amount of external lightning and magnetic interference. However, the robots need to be constructed in a way which allows them to work in conditions that are not perfect (i.e. by not relying on compass sensors or specific lightning conditions)."</a></p>
 </li>
 </ul>
 </div>
@@ -819,7 +835,7 @@ the field. All robots on the team not kicking off must be at least 30 cm away
 from the ball (outside of the center circle).</p>
 </div>
 <div class="paragraph">
-<p>Robots cannot be placed behind the goal line or out of bounds. Robots cannot be
+<p>Robots cannot be placed {-behind the goal line or-} out of bounds. Robots cannot be
 repositioned once they have been placed, except if the referee requests to
 adjust their placement to make sure that the robots are placed properly within
 the field positions.</p>
@@ -841,7 +857,7 @@ discarded and the match resumes with a <a href="#neutral-kickoff">Rule 1.3.1, &#
 <div class="sect3">
 <h4 id="neutral-kickoff"><a class="anchor" href="#neutral-kickoff"></a><a class="link" href="#neutral-kickoff">1.3.1. Neutral kick-off</a></h4>
 <div class="paragraph">
-<p>A netural kick-off is the same as the one described in <a href="#kick-off">Rule 1.3, &#8220;Kick-off&#8221;</a> with a
+<p>A neutral kick-off is the same as the one described in <a href="#kick-off">Rule 1.3, &#8220;Kick-off&#8221;</a> with a
 small change: all robots need must be at least 30 cm away from the ball
 (outside of the center circle).</p>
 </div>
@@ -1121,6 +1137,9 @@ robots or be taped/painted with a neutral color.</p>
 playing when placed on a flat surface. Any part of a robot that produces light
 that may interfere with the opposing robot’s vision system must be covered.</p>
 </div>
+<div id="addition-5" class="paragraph">
+<p><span class="red"><strong>For specific Lightweight regulations see <a href="#regulations-inference-in-lightweight">Rule 8.2.2, &#8220;Infrared interference in Lightweight&#8221;</a></strong></span></p>
+</div>
 <div class="paragraph">
 <p>A team claiming that their robot is affected by the other team’s robot in any
 way must show the proof/evidence of the interference. Any interference needs to
@@ -1151,18 +1170,19 @@ cannot be guaranteed.</p>
 <h3 id="agility"><a class="anchor" href="#agility"></a><a class="link" href="#agility">3.5. Agility</a></h3>
 <div class="paragraph">
 <p>Robots must be constructed and programmed in a way that their movement is not
-limited to only one dimension (defined as a single axis, such as). They must
-move in all directions, for example by turning.</p>
+limited to only one dimension (defined as a single axis, such as only moving in
+a straight line). They must move in all directions, for example by turning.</p>
 </div>
 <div class="paragraph">
-<p>Robots must respond to the ball in a direct forward movement. For example, it
-is not enough to basically just move left and right in front of their own goal,
-it must also move directly towards the ball in a forward movement. At least one
-team robot must be able to seek and approach the ball anywhere on the field,
-unless the team has only one robot on the field at that time. <a id="deletion-1"></a>
+<p>Robots must respond to the ball in a direct forward movement towards it. For
+example, it is not enough to basically just move left and right in front of
+their own goal, it must also move directly towards the ball in a forward
+movement. At least one team robot must be able to seek and approach the ball
+anywhere on the field, unless the team has only one robot on the field at that
+time. <a id="deletion-1"></a>
 <sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup></p>
 </div>
-<div id="addition-5" class="paragraph">
+<div id="addition-6" class="paragraph">
 <p><span class="red"><strong>A robot must touch touch the ball that is placed no further than 20 cm from any point on its convex hull within 10 seconds. If a robot does not do so within the time limit, it is deemed to be damaged.</strong></span> (See <a href="#damaged-robots">Damaged Robots</a>.)</p>
 </div>
 <div id="deletion-2" class="paragraph">
@@ -1243,11 +1263,14 @@ tournament.</p>
 <div class="sect2">
 <h3 id="dimensions-of-the-field"><a class="anchor" href="#dimensions-of-the-field"></a><a class="link" href="#dimensions-of-the-field">4.2. Dimensions of the field</a></h3>
 <div class="paragraph">
-<p>The playing-field is 122 cm by 183 cm. The field is marked by a white line
-which is part of the playing-field. Around the playing-field, beyond the white
-line, is an outer area of <a id="substitution-4"></a>
+<p>The playing-field is <a id="substitution-4"></a>
+<span class="red"><strong>132 cm by 193 cm</strong></span>
+<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup>. The field is
+marked by a white line which is part of the playing-field. Around the
+playing-field, beyond the white line, is an outer area of <a id="substitution-5"></a>
 <span class="red"><strong>25 cm</strong></span>
-<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup> width.</p>
+<sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnotedef_11" title="View footnote.">11</a>]</sup>
+width.</p>
 </div>
 <div class="paragraph">
 <p>The floor near the exterior wall includes a wedge, which is an incline with a
@@ -1258,7 +1281,7 @@ when it leaves the playing field.</p>
 <p>Total dimensions of the field, including the outer area, are 182 cm by 243 cm.</p>
 </div>
 <div id="deletion-3" class="paragraph">
-<p><sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnotedef_11" title="View footnote.">11</a>]</sup></p>
+<p><sup class="footnote">[<a id="_footnoteref_12" class="footnote" href="#_footnotedef_12" title="View footnote.">12</a>]</sup></p>
 </div>
 </div>
 <div class="sect2">
@@ -1274,17 +1297,17 @@ out-area. The height of the walls is 22 cm. The walls are painted matte black.</
 <p>The field has two goals, centered on each of the shorter sides of the playing
 field. The goal inner space is 60 cm wide, 10 cm high and 74 mm deep, box
 shaped. <a id="deletion-4"></a>
-<sup class="footnote">[<a id="_footnoteref_12" class="footnote" href="#_footnotedef_12" title="View footnote.">12</a>]</sup></p>
+<sup class="footnote">[<a id="_footnoteref_13" class="footnote" href="#_footnotedef_13" title="View footnote.">13</a>]</sup></p>
 </div>
 <div class="paragraph">
 <p>The goal "posts" are positioned over the white line marking the limits of the
 field. <a id="deletion-5"></a>
-<sup class="footnote">[<a id="_footnoteref_13" class="footnote" href="#_footnotedef_13" title="View footnote.">13</a>]</sup> The interior walls
+<sup class="footnote">[<a id="_footnoteref_14" class="footnote" href="#_footnotedef_14" title="View footnote.">14</a>]</sup> The interior walls
 are painted, one goal yellow, the other goal blue. The exterior (including the
 goal post and frame) are painted black (see <a href="#field-diagrams">Field
 diagrams</a>).</p>
 </div>
-<div id="addition-6" class="paragraph">
+<div id="addition-7" class="paragraph">
 <p><span class="red"><strong>It is recommended that the blue be of a brighter shade so that it is different enough from the black exterior.</strong></span></p>
 </div>
 </div>
@@ -1316,28 +1339,28 @@ during kick-off.</p>
 <div class="sect2">
 <h3 id="penalty-areas"><a class="anchor" href="#penalty-areas"></a><a class="link" href="#penalty-areas">4.8. Penalty areas</a></h3>
 <div class="paragraph">
-<p>In front of each goal there is a <a id="substitution-5"></a>
+<p>In front of each goal there is a <a id="substitution-6"></a>
 <span class="red"><strong>25 cm</strong></span>
-<sup class="footnote">[<a id="_footnoteref_14" class="footnote" href="#_footnotedef_14" title="View footnote.">14</a>]</sup> wide and <a id="substitution-6"></a>
+<sup class="footnote">[<a id="_footnoteref_15" class="footnote" href="#_footnotedef_15" title="View footnote.">15</a>]</sup> wide and <a id="substitution-7"></a>
 <span class="red"><strong>70 cm</strong></span>
-<sup class="footnote">[<a id="_footnoteref_15" class="footnote" href="#_footnotedef_15" title="View footnote.">15</a>]</sup> long penalty
+<sup class="footnote">[<a id="_footnoteref_16" class="footnote" href="#_footnotedef_16" title="View footnote.">16</a>]</sup> long penalty
 area.</p>
 </div>
 <div class="paragraph">
-<p>The penalty areas are marked by a <a id="substitution-7"></a>
+<p>The penalty areas are marked by a <a id="substitution-8"></a>
 <span class="red"><strong>white</strong></span>
-<sup class="footnote">[<a id="_footnoteref_16" class="footnote" href="#_footnotedef_16" title="View footnote.">16</a>]</sup> line of 20 mm width. The
+<sup class="footnote">[<a id="_footnoteref_17" class="footnote" href="#_footnotedef_17" title="View footnote.">17</a>]</sup> line of 20 mm width. The
 line is part of the area.</p>
 </div>
 <div id="deletion-6" class="paragraph">
-<p><sup class="footnote">[<a id="_footnoteref_17" class="footnote" href="#_footnotedef_17" title="View footnote.">17</a>]</sup></p>
+<p><sup class="footnote">[<a id="_footnoteref_18" class="footnote" href="#_footnotedef_18" title="View footnote.">18</a>]</sup></p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="lighting-and-magnetic-conditions"><a class="anchor" href="#lighting-and-magnetic-conditions"></a><a class="link" href="#lighting-and-magnetic-conditions">4.9. Lighting and Magnetic Conditions</a></h3>
-<div id="substitution-8" class="paragraph">
+<div id="substitution-9" class="paragraph">
 <p><span class="red"><strong>The organizers will do their best to limit the amount of external lightning and magnetic interference. However, the robots need to be constructed in a way which allows them to work in conditions that are not perfect (i.e. by not relying on compass sensors or specific lightning conditions).</strong></span>
-<sup class="footnote">[<a id="_footnoteref_18" class="footnote" href="#_footnotedef_18" title="View footnote.">18</a>]</sup></p>
+<sup class="footnote">[<a id="_footnoteref_19" class="footnote" href="#_footnotedef_19" title="View footnote.">19</a>]</sup></p>
 </div>
 <h2 id="field-diagrams" class="discrete">FIELD DIAGRAMS</h2>
 <div class="paragraph">
@@ -1525,7 +1548,7 @@ own additional regulations. They become a part of the rules.</p>
 </div>
 <div class="paragraph">
 <p>For RoboCupJunior 2021, there are two sub-leagues as follows
-<sup class="footnote">[<a id="_footnoteref_19" class="footnote" href="#_footnotedef_19" title="View footnote.">19</a>]</sup>:</p>
+<sup class="footnote">[<a id="_footnoteref_20" class="footnote" href="#_footnotedef_20" title="View footnote.">20</a>]</sup>:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1653,7 +1676,7 @@ power pack due to the fact that charged will be tolerated.
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-[4] <a id="addition-7"></a>
+[4] <a id="addition-8"></a>
 <span class="red"><strong>The Technical Committee plans to decrease the diameter/height of robots in the Open sub-league to 18 cm and the weight limit to 2200g for the 2022 season. It further plans to replace the current orange ball with a standard orange golf ball.</strong></span>
 </td>
 </tr>
@@ -1669,10 +1692,10 @@ ball.</p>
 </div>
 <div class="sect3">
 <h4 id="regulations-inference-in-lightweight"><a class="anchor" href="#regulations-inference-in-lightweight"></a><a class="link" href="#regulations-inference-in-lightweight">8.2.2. Infrared interference in Lightweight</a></h4>
-<div id="addition-8" class="paragraph">
+<div id="addition-9" class="paragraph">
 <p><span class="red"><strong>In Lightweight, the robot must not emit infrared light.</strong></span></p>
 </div>
-<div id="addition-9" class="paragraph">
+<div id="addition-10" class="paragraph">
 <p><span class="red"><strong>In Lightweight, infrared light reflecting materials must not be used on the outside. If robots are painted, they must be painted matte. Minor parts that reflect infrared light could be used as long as other robots are not affected.</strong></span></p>
 </div>
 </div>
@@ -1972,10 +1995,9 @@ follow.</p>
 <div class="title">Figure 5. An example state of the goal after two rounds</div>
 </div>
 </div>
-</div>
-<div class="sect2">
-<h3 id="penalty-kick"><a class="anchor" href="#penalty-kick"></a><a class="link" href="#penalty-kick">9.4. Penalty Kick</a></h3>
-<div id="addition-10" class="paragraph">
+<div class="sect3">
+<h4 id="penalty-kick"><a class="anchor" href="#penalty-kick"></a><a class="link" href="#penalty-kick">9.3.2. Penalty Kick</a></h4>
+<div id="addition-11" class="paragraph">
 <p><span class="red"><strong>In Soccer, a penalty kick takes place after a grave offense happens. The aim of this technical challenge is to see whether something similar can be done within the limits of RoboCupJunior Soccer.</strong></span></p>
 </div>
 <div class="paragraph">
@@ -2011,8 +2033,18 @@ automatically no goal. Once the penalty kick finishes, the game continues with
 a <a href="#kick-off">Rule 1.3, &#8220;Kick-off&#8221;</a>, with the defending team kicking-off.</p>
 </div>
 </div>
+<div class="sect3">
+<h4 id="vertical-kick"><a class="anchor" href="#vertical-kick"></a><a class="link" href="#vertical-kick">9.3.3. Vertical kick</a></h4>
+<div id="addition-12" class="paragraph">
+<p><span class="red"><strong>Since the TC plans to move to an orange golf ball in Open, this should open up new options for gameplay. Given the smaller size and weight of golf balls, it should be possible to kick them not just horizontally (as if in "2D") but also vertically (that is, to get the ball into the air).</strong></span></p>
+</div>
+<div id="addition-13" class="paragraph">
+<p><span class="red"><strong>The task in this technical challenge is to score a goal into an open goal from one half of the field. In order for the goal to count, the ball can only touch the other part of the field inside the penalty area and the goal itself. Note that a golf ball (not necessarily orange) needs to be used.</strong></span></p>
+</div>
+</div>
+</div>
 <div class="sect2">
-<h3 id="further-information-on-international-competition"><a class="anchor" href="#further-information-on-international-competition"></a><a class="link" href="#further-information-on-international-competition">9.5. Further information on International Competition</a></h3>
+<h3 id="further-information-on-international-competition"><a class="anchor" href="#further-information-on-international-competition"></a><a class="link" href="#further-information-on-international-competition">9.4. Further information on International Competition</a></h3>
 <div class="paragraph">
 <p>All teams qualified to the international competition <strong>must</strong> share their
 designs, both hardware and software, with all present and future participants.
@@ -2026,7 +2058,7 @@ the event) the team members are responsible for checking all relevant
 information published by the Soccer Organizational Committee, General Chairs,
 or any other RoboCup official.</p>
 </div>
-<div id="addition-11" class="paragraph">
+<div id="addition-14" class="paragraph">
 <p><span class="red"><strong>There will also be a SuperTeam competition, in which various people from around the world share their robots in one "SuperTeam" and play against other SuperTeams on a so called "Big Field". The full rules of this challenge can be found at</strong></span>
 <a href="https://robocupjuniortc.github.io/soccer-rules/master/superteam_rules.html" class="bare">https://robocupjuniortc.github.io/soccer-rules/master/superteam_rules.html</a></p>
 </div>
@@ -2043,34 +2075,34 @@ much you learn that counts!</em></strong></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="intro-league"><a class="anchor" href="#intro-league"></a><a class="link" href="#intro-league">9.6. Intro League</a></h3>
-<div id="addition-12" class="paragraph">
+<h3 id="intro-league"><a class="anchor" href="#intro-league"></a><a class="link" href="#intro-league">9.5. Intro League</a></h3>
+<div id="addition-15" class="paragraph">
 <p><span class="red"><strong>In order to help newcomers experience the RoboCupJunior Soccer competition, the TC would like to encourage local regional competitions to include a so called "Intro League". Although such a league will not be part of the international competition, the TC still believes that it is worthwile to make it part of regional and super-regional competitions. Each regional and super-regional competition will likely have its specific rules for the rules but the TC would like to suggest they contain the following:</strong></span></p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a id="addition-13"></a>
+<p><a id="addition-16"></a>
 <span class="red"><strong>The Intro League should be at least to some extend based on the   RoboCupJunior Soccer rules</strong></span></p>
 </li>
 <li>
-<p><a id="addition-14"></a>
+<p><a id="addition-17"></a>
 <span class="red"><strong>Only competitiors that did not previously participate in an international   (that is not a regional or super-regional) competition are allowed to take   part.</strong></span></p>
 </li>
 <li>
-<p><a id="addition-15"></a>
+<p><a id="addition-18"></a>
 <span class="red"><strong>It may be worth creating two sub-leagues: a 2v2 one where two robots from one   team play agains two robots from the other, and a 1v1 one where both teams   play with just one robot.</strong></span></p>
 </li>
 <li>
-<p><a id="addition-16"></a>
+<p><a id="addition-19"></a>
 <span class="red"><strong>The Intro League should ignore the Out of Bounds rule.   When robots go out of bounds, the referee should put them back in.</strong></span></p>
 </li>
 <li>
-<p><a id="addition-17"></a>
+<p><a id="addition-20"></a>
 <span class="red"><strong>The robots should be created from official Lego or Fishertechnik kits,   except for sensors necessary for robots to be able to find the ball (i.e.   ball detector) and the orientation of the field (i.e. compass).</strong></span></p>
 </li>
 <li>
-<p><a id="addition-18"></a>
+<p><a id="addition-21"></a>
 <span class="red"><strong>The robots should be limited in size to 22,4cm by 22,4cm by 22,4cm (all   measurements +/- 1cm). There shall be no weight limit.</strong></span></p>
 </li>
 </ul>
@@ -2081,7 +2113,7 @@ much you learn that counts!</em></strong></p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://robocupjunior.org.au/sites/default/files/Official%20RCJA%20Standard%20Soccer%20Rules%202019%20%28SLTC%29%20.pdf" class="bare">https://robocupjunior.org.au/sites/default/files/Official%20RCJA%20Standard%20Soccer%20Rules%202019%20%28SLTC%29%20.pdf</a></p>
+<p><a href="https://robocupjunior.org.au/sites/default/files/Official%202020%20RCJA%20Soccer%20Rules%20%28SSTC%29.pdf" class="bare">https://robocupjunior.org.au/sites/default/files/Official%202020%20RCJA%20Soccer%20Rules%20%28SSTC%29.pdf</a></p>
 </li>
 <li>
 <p><a href="https://rcj2019.eu/sites/default/files/Soccer%201-1%20Standard%20Kit%20Rules%202019%20Final.pdf" class="bare">https://rcj2019.eu/sites/default/files/Soccer%201-1%20Standard%20Kit%20Rules%202019%20Final.pdf</a></p>
@@ -2420,39 +2452,42 @@ should not exceed 22 cm.</p>
 <a href="#_footnoteref_9">9</a>. In previous version this said "22 +/- 2 cm of height"
 </div>
 <div class="footnote" id="_footnotedef_10">
-<a href="#_footnoteref_10">10</a>. In previous version this said "30 cm"
+<a href="#_footnoteref_10">10</a>. In previous version this said "122 cm by 183 cm"
 </div>
 <div class="footnote" id="_footnotedef_11">
-<a href="#_footnoteref_11">11</a>. In previous version this said "It is recommended that the field be positioned 70 to 90 cm off the ground."
+<a href="#_footnoteref_11">11</a>. In previous version this said "30 cm"
 </div>
 <div class="footnote" id="_footnotedef_12">
-<a href="#_footnoteref_12">12</a>. In previous version this said "It has a cross-bar on top (to prevent robots from entering the goal and to allow checking if the ball scored). The height of the cross-bar is 2 +/- 1 cm."
+<a href="#_footnoteref_12">12</a>. In previous version this said "It is recommended that the field be positioned 70 to 90 cm off the ground."
 </div>
 <div class="footnote" id="_footnotedef_13">
-<a href="#_footnoteref_13">13</a>. In previous version this said "The cross-bar is exactly over the white line."
+<a href="#_footnoteref_13">13</a>. In previous version this said "It has a cross-bar on top (to prevent robots from entering the goal and to allow checking if the ball scored). The height of the cross-bar is 2 +/- 1 cm."
 </div>
 <div class="footnote" id="_footnotedef_14">
-<a href="#_footnoteref_14">14</a>. In previous version this said "30 cm"
+<a href="#_footnoteref_14">14</a>. In previous version this said "The cross-bar is exactly over the white line."
 </div>
 <div class="footnote" id="_footnotedef_15">
-<a href="#_footnoteref_15">15</a>. In previous version this said "90 cm"
+<a href="#_footnoteref_15">15</a>. In previous version this said "30 cm"
 </div>
 <div class="footnote" id="_footnotedef_16">
-<a href="#_footnoteref_16">16</a>. In previous version this said "black"
+<a href="#_footnoteref_16">16</a>. In previous version this said "90 cm"
 </div>
 <div class="footnote" id="_footnotedef_17">
-<a href="#_footnoteref_17">17</a>. In previous version this said "A robot is considered inside the Penalty Area when it is completely inside."
+<a href="#_footnoteref_17">17</a>. In previous version this said "black"
 </div>
 <div class="footnote" id="_footnotedef_18">
-<a href="#_footnoteref_18">18</a>. In previous version this said "The fields should be placed in a way that the influence by external infrared light is as low as possible and that the magnetic field of the earth is disturbed as little as possible. Perfect conditions cannot be guaranteed, however. Teams must come to tournaments being prepared to calibrate their robots based on the lighting and magnetic conditions at the venue."
+<a href="#_footnoteref_18">18</a>. In previous version this said "A robot is considered inside the Penalty Area when it is completely inside."
 </div>
 <div class="footnote" id="_footnotedef_19">
-<a href="#_footnoteref_19">19</a>. biggest differences are described in <a href="#dimensions">Rule 8.2.1, &#8220;Dimensions&#8221;</a>
+<a href="#_footnoteref_19">19</a>. In previous version this said "The fields should be placed in a way that the influence by external infrared light is as low as possible and that the magnetic field of the earth is disturbed as little as possible. Perfect conditions cannot be guaranteed, however. Teams must come to tournaments being prepared to calibrate their robots based on the lighting and magnetic conditions at the venue."
+</div>
+<div class="footnote" id="_footnotedef_20">
+<a href="#_footnoteref_20">20</a>. biggest differences are described in <a href="#dimensions">Rule 8.2.1, &#8220;Dimensions&#8221;</a>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-07-25 19:42:24 UTC
+Last updated 2020-08-15 22:18:58 UTC
 </div>
 </div>
 </body>
