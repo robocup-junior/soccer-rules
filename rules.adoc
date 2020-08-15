@@ -56,11 +56,11 @@ differences between the two leagues.
 
 * *Soccer Lightweight* is played using a special ball that emits an IR
 signal ball. Robots may weigh up to 1.1 kg, may have a ball-capturing zone of
-up to 3.0 cm, and may use batteries up to 12.0 nominal voltage.
+up to 3.0 cm, and may use batteries up to 12.0 V nominal voltage.
 
 * *Soccer Open* is played using a passive, brightly colored orange
 ball. Robots may weigh up to 2.4 kg, may have a ball-capturing zone of up to
-2.5 cm, and may use batteries up to 15.0 nominal voltage.
+2.5 cm, and may use batteries up to 15.0 V nominal voltage.
 
 Please see <<ball>> for balls specifications and <<league-regulations>> for
 more details for specifications/regulations.
@@ -74,6 +74,10 @@ organizer of your regional RoboCupJunior competition and ask them about_ <<intro
 The changes determined by the Technical Committee for this year’s rules aim to
 reduce the amount of "sumo-like" gameplay while making it more interesting by
 introducing new challenges and standard situations.
+
+Most of the changes listed below were already present in the rules of 2020.
+Since the physical competition didn't take place, we decided to keep those in
+the list for convenience.
 
 {+-~TOC-CHANGES~-+}
 
@@ -143,7 +147,7 @@ The team not kicking off will now place their robots on the defensive end of
 the field. All robots on the team not kicking off must be at least 30 cm away
 from the ball (outside of the center circle).
 
-Robots cannot be placed behind the goal line or out of bounds. Robots cannot be
+Robots cannot be placed {-behind the goal line or-} out of bounds. Robots cannot be
 repositioned once they have been placed, except if the referee requests to
 adjust their placement to make sure that the robots are placed properly within
 the field positions.
@@ -162,7 +166,7 @@ discarded and the match resumes with a <<neutral-kickoff>>.
 [[neutral-kickoff]]
 ==== Neutral kick-off
 
-A netural kick-off is the same as the one described in <<kick-off>> with a
+A neutral kick-off is the same as the one described in <<kick-off>> with a
 small change: all robots need must be at least 30 cm away from the ball
 (outside of the center circle).
 
@@ -391,6 +395,7 @@ Robots must not produce magnetic interference in other robots on the field.
 Robots must not produce visible light that may prevent the opposing team from
 playing when placed on a flat surface. Any part of a robot that produces light
 that may interfere with the opposing robot’s vision system must be covered.
+{++For specific Lightweight regulations see <<regulations-inference-in-lightweight>>++}
 
 A team claiming that their robot is affected by the other team’s robot in any
 way must show the proof/evidence of the interference. Any interference needs to
@@ -417,15 +422,15 @@ cannot be guaranteed.
 === Agility
 
 Robots must be constructed and programmed in a way that their movement is not
-limited to only one dimension (defined as a single axis, such as). They must
-move in all directions, for example by turning.
+limited to only one dimension (defined as a single axis, such as only moving in
+a straight line). They must move in all directions, for example by turning.
 
-Robots must respond to the ball in a direct forward movement. For example, it
-is not enough to basically just move left and right in front of their own goal,
-it must also move directly towards the ball in a forward movement. At least one
-team robot must be able to seek and approach the ball anywhere on the field,
-unless the team has only one robot on the field at that time. {--Goalie has to
-approach the ball in the whole penalty area.--}
+Robots must respond to the ball in a direct forward movement towards it. For
+example, it is not enough to basically just move left and right in front of
+their own goal, it must also move directly towards the ball in a forward
+movement. At least one team robot must be able to seek and approach the ball
+anywhere on the field, unless the team has only one robot on the field at that
+time. {--Goalie has to approach the ball in the whole penalty area.--}
 
 {++A robot must touch touch the ball that is placed no further than 20 cm from any
 point on its convex hull within 10 seconds. If a robot does not do so within
@@ -495,9 +500,10 @@ There is only one kind of field for all sub-leagues.
 [[dimensions-of-the-field]]
 === Dimensions of the field
 
-The playing-field is 122 cm by 183 cm. The field is marked by a white line
-which is part of the playing-field. Around the playing-field, beyond the white
-line, is an outer area of {~~30 cm~>25 cm~~} width.
+The playing-field is {~~122 cm by 183 cm~>132 cm by 193 cm~~}. The field is
+marked by a white line which is part of the playing-field. Around the
+playing-field, beyond the white line, is an outer area of {~~30 cm~>25 cm~~}
+width.
 
 The floor near the exterior wall includes a wedge, which is an incline with a
 10 cm base and 2 +/- 1 cm rise for allowing the ball to roll back into play
@@ -994,7 +1000,7 @@ The result of this challenge is the number of scored goals.
 image::media/goal_parts_filled.png[align="center"]
 
 [[penalty-kick]]
-=== Penalty Kick
+==== Penalty Kick
 
 {++In Soccer, a penalty kick takes place after a grave offense happens. The aim
 of this technical challenge is to see whether something similar can be done
@@ -1020,6 +1026,20 @@ The kicking procedure consists of the following steps:
 If the offending team's robot moves before the 5 seconds pass, the result is
 automatically no goal. Once the penalty kick finishes, the game continues with
 a <<kick-off>>, with the defending team kicking-off.
+
+[[vertical-kick]]
+==== Vertical kick
+
+{++Since the TC plans to move to an orange golf ball in Open, this should open
+up new options for gameplay. Given the smaller size and weight of golf balls,
+it should be possible to kick them not just horizontally (as if in "2D") but
+also vertically (that is, to get the ball into the air).++}
+
+{++The task in this technical challenge is to score into an open goal from the
+other half of the field. In order to pass the challenge, the ball can only
+touch the other half of the field inside the penalty area and the goal itself.
+Note that a golf ball (not necessarily orange) needs to be used.++}
+
 
 [[further-information-on-international-competition]]
 === Further information on International Competition
@@ -1083,7 +1103,7 @@ but the TC would like to suggest they contain the following:++}
 
 Sample Intro League rules already in use can be found on the links below:
 
-- https://robocupjunior.org.au/sites/default/files/Official%20RCJA%20Standard%20Soccer%20Rules%202019%20%28SLTC%29%20.pdf
+- https://robocupjunior.org.au/sites/default/files/Official%202020%20RCJA%20Soccer%20Rules%20%28SSTC%29.pdf
 
 - https://rcj2019.eu/sites/default/files/Soccer%201-1%20Standard%20Kit%20Rules%202019%20Final.pdf
 
