@@ -33,9 +33,6 @@ form.]
 [title="Two teams of two robots with an orange ball on a RoboCupJunior Soccer field."]
 image::media/field_with_two_teams.jpg[]
 
-NOTE: These are the Draft rules. Although they are still subject to change, the
-TC expects the changes to be minimal and at mostly cosmetic.
-
 [discrete]
 == Preface
 
