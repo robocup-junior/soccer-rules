@@ -1,25 +1,11 @@
 # RoboCupJunior Soccer rules
 
 Welcome to the [RoboCupJunior Soccer](https://junior.robocup.org/) rules
-repository for the 2020 season.
+repository for the 2021 season.
 
-For this season the RoboCupJunior Soccer Technical Committee (TC) would like to
-invite the RoboCupJunior Soccer community to suggest any changes that would be
-worth making to the rules. Note that the Technical Committee will in the end
-approve or disapprove any suggested changes for the 2020 rules, but every
-suggested change (that is found to be reasonable by the TC) will be looked at,
-examined and considered.
-
-## What changes are you looking for?
-
-Contrary to previous years, this year we are looking for a significant change
-which will help ensure the Soccer challenge stays challenging while not making
-it difficult for newcomers to try it out.
-
-Changes that would improve formatting of the rules or their clarity are most
-definitely welcome.
-
-We accept proposals until the **1st of June, 2019**.
+Although the rules have already been made made final and released, we are
+always on the lookout for changes that may either improve the competition or
+simplify the rules (or in the best case, both).
 
 ## How do I suggest a change?
 
@@ -57,3 +43,39 @@ that your submission contains answers to the following sections:
 
 We can discuss your suggestion there, and if it makes sense someone will
 certainly put it into the actual `rules.adoc` document.
+
+## Building the PDF rules on your own
+
+The rules are written in a format called `asciidoc`. It is very similar to
+Markdown but unlike Markdown, it is very extensible and has a nice ecosystems
+of tools around it. To get a feel for what it looks like, please take a look at
+the [AsciiDoc Writer's Guide](https://asciidoctor.org/docs/asciidoc-writers-guide/).
+
+Despite how great it is, the rules cannot be built with AsciiDoc alone. They
+need to be exported into PDF, in a specific format, and we'd also like them to
+highlight the changes in a nice way and automatically generate IDs for each
+paragraph. To do all this, the input AsciiDoc file goes thorugh the following
+steps:
+
+1. AsciiDoc -> CriticMarked AsciiDoc (_to visualize rule changes in red_)
+2. CriticMarked AsciiDoc -> **HTML**
+3. CriticMarked AsciiDoc -> LaTeX (for formatting purposes)
+4. LaTeX -> LaTeX + RCJ Soccer formatting (to ensure uniformity of the output)
+5. LaTeX + RCJ Soccer formatting -> **PDF**
+
+At the end of this process we end up with a **HTML** and a **PDF** version of
+the AsciiDoc file we started with.
+
+This repository is connected to so called [Travis CI](http://travis-ci.org/)
+which allows us to automatically build the rules whenever any change/update
+takes place.
+
+If you'd like to try it on your own, it should not be such a big problem,
+provided you have [Docker](https://docker.com) installed. You can then go
+thorugh the build process in two easy steps:
+
+       podman run -v .:/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh rules
+       podman run -v .:/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh rules
+
+Which will make the `rules.adoc` file go through the build steps above and
+generate files `rules.html` and `rules.pdf` as a result.

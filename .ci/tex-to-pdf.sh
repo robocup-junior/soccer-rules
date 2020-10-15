@@ -1,23 +1,10 @@
 #!/bin/bash
 set -euo pipefail
 
-DOCKER_COMMAND=docker
-VOLUME_SUFFIX=
-PODMAN_BUILD=${PODMAN_BUILD:-no}
-
-if [[ $PODMAN_BUILD == "yes" ]]; then
-        DOCKER_COMMAND="podman"
-        VOLUME_SUFFIX=":Z"
-fi
-
 OUTPUT_FILE=$1
-cp $1.adoc tmp_$1.adoc
 OUTPUT_PREFIX=tmp_$1
 
-cp $OUTPUT_PREFIX.adoc _$OUTPUT_PREFIX.adoc
-python .ci/criticmarkup_to_adoc.py _$OUTPUT_PREFIX.adoc > $OUTPUT_PREFIX.adoc
-$DOCKER_COMMAND run -v $TRAVIS_BUILD_DIR:/documents/$VOLUME_SUFFIX asciidoctor/docker-asciidoctor asciidoctor $OUTPUT_PREFIX.adoc
-$DOCKER_COMMAND run -v $TRAVIS_BUILD_DIR:/documents/$VOLUME_SUFFIX asciidoctor/docker-asciidoctor asciidoctor -b docbook $OUTPUT_PREFIX.adoc
+# Apply custom styling to DocBook
 dblatex -T db2latex $OUTPUT_PREFIX.xml -t tex --texstyle=./manual.sty -p custom.xsl
 
 # Go through the generated .tex output, find the place where the preamble ends
