@@ -74,8 +74,9 @@ If you'd like to try it on your own, it should not be such a big problem,
 provided you have [Docker](https://docker.com) installed. You can then go
 thorugh the build process in two easy steps:
 
-       podman run -v .:/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh rules
-       podman run -v .:/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh rules
+       docker run -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh rules
+       docker run -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh rules
 
-Which will make the `rules.adoc` file go through the build steps above and
-generate files `rules.html` and `rules.pdf` as a result.
+Which will make the `rules.adoc` file (in the current working directory --
+that's the `$(pwd)` part) go through the build steps above and generate files
+`rules.html` and `rules.pdf` as a result.

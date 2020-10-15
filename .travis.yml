@@ -17,12 +17,12 @@ cache:
     - $HOME/.texlive
 
 script:
-  - docker run -v .:/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh rules
-  - docker run -v .:/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh rules
+  - docker run -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh rules
+  - docker run -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh rules
 
   # Same thing for superteam rules
-  - docker run -v .:/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh superteam_rules
-  - docker run -v .:/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh superteam_rules
+  - docker run -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh superteam_rules
+  - docker run -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh superteam_rules
 
 after_error:
   - docker logs asciidoc-to-html
