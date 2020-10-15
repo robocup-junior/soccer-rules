@@ -9,8 +9,7 @@ services:
 
 before_install:
   - docker pull asciidoctor/docker-asciidoctor
-  - docker pull dxjoke/tectonic-docker
-  - sudo apt-get install dblatex xzdec texlive-generic-recommended texlive-fonts-extra
+  - docker pull mrshu/texlive-dblatex
 
 cache:
   directories:
@@ -18,8 +17,12 @@ cache:
     - $HOME/.texlive
 
 script:
-  - ./.ci/make_rules.sh rules
-  - ./.ci/make_rules.sh superteam_rules
+  - docker run -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh rules
+  - docker run -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh rules
+
+  # Same thing for superteam rules
+  - docker run -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh superteam_rules
+  - docker run -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh superteam_rules
 
 after_error:
   - docker logs asciidoc-to-html
