@@ -10,9 +10,9 @@ jobs:
         run: |
           docker run -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh rules
           docker run -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh rules
-          mkdir -p dist/
+          mkdir -p dist/master/
           rm tmp_*
-          cp -R ./media *.html *.pdf dist/
+          cp -R ./media *.html *.pdf dist/master/
 
       - name: publish the rules
         uses: peaceiris/actions-gh-pages@v3
