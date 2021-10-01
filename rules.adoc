@@ -291,9 +291,9 @@ Computers and repair equipment are not permitted in the playing area during
 gameplay. Usually, a team member will need to take the damaged robot to an
 "approved repair table" near the playing area. A referee may permit robot
 sensor calibration, computers and other tools in the playing area, only for the
-5 minutes before the start of each half.  Reprogramming of robots during the
+5 minutes before the start of each half.  {--Reprogramming of robots during the
 gameplay can only happen when they are out of game (i.e., damaged or out of
-bounds), or when explicitly allowed by the referee.
+bounds), or when explicitly allowed by the referee.--}
 
 After a robot has been fixed, it will be placed on the unoccupied neutral spot
 furthest from the ball, facing its own goal. A robot can only be returned to
@@ -438,9 +438,9 @@ All robots must have a stable and easily noticeable handle to hold and to lift
 them. The handle must be easily accessible and allow the robot to be picked up
 from at least 5 cm above the highest structure of the robot.
 
-The dimensions of the handle may exceed the 22 cm height limitation, but the
-part of the handle that exceeds this 22 cm limit cannot be used to mount
-components of the robot.
+The dimensions of the handle may exceed the 22 cm {++(or 18 cm)++} height
+limitation, but the part of the handle that exceeds this 22 cm {++(or 18 cm)++}
+limit cannot be used to mount components of the robot.
 
 [[top-markers]]
 === Top Markers
@@ -1208,8 +1208,7 @@ ball should be hollow.
 [[passive-weight]]
 ==== Weight
 
-The ball should be
-{~~no heavier than 80 grams and no lighter than 60 grams~>46 grams (+- 1 gram) in weight~~}.
+{~~The ball should be no heavier than 80 grams and no lighter than 60 grams~>The weight of the ball should be 46 grams (+- 1 gram)~~}.
 
 [appendix]
 [[kicker-power-measuring-device]]
