@@ -105,14 +105,14 @@ in between the halves.
 The game clock will run for the duration of the halves without stopping (except
 if or when a referee wants to consult another official). The game clock will be
 run by a referee or a referee assistant (see <<referee-and-referee-assistant>>
-for more infromation on their roles).
+for more information on their roles).
 
 Teams are expected to be on the field 5 minutes before their game starts. Being
-at the inspection table does not count in favor of this time limit. Teams that
+at the inspection table does not count in favour of this time limit. Teams that
 are late for the start of the game can be penalized one goal *per 30 seconds*
 at the referee’s discretion.
 
-The final game score will be trimmed so that there is at most 10 goal
+The final game score will be trimmed so that there is at most 10-goal
 difference between the losing and the winning team.
 
 [[pre-match-meeting]]
@@ -260,7 +260,7 @@ push the robot back onto the field.
 
 The ball can leave and bounce back into the playing field. The referee calls
 `*out of reach*`, and will move the ball to the nearest unoccupied neutral spot
-when one of the following condition occurs:
+when one of the following conditions occurs:
 
 1.  the ball remains outside the playing field too long, after a visible and
 loud count footnote:[usually a count of three, the length of
@@ -299,7 +299,7 @@ After a robot has been fixed, it will be placed on the unoccupied neutral spot
 furthest from the ball, facing its own goal. A robot can only be returned to
 the field if the damage has been repaired. If the referee notices that the
 robot was returned to the field with the same original problem, s/he may ask
-the robot to be removed, and proceed with the game as if the robot had not been
+the robot to be removed and proceed with the game as if the robot had not been
 returned.
 
 *Only the referee decides whether a robot is damaged.* A robot can only be
@@ -371,7 +371,7 @@ image::media/image2.png[scaledwidth=40.0%]
 == ROBOTS
 
 [[number-of-robots-substitution]]
-=== Number of robots / substitution
+=== Number of robots / substitutions
 
 Each team is allowed to have at most two robots for the full tournament.
 The substitution of robots during the competition within the team or
@@ -427,9 +427,9 @@ movement. At least one team robot must be able to seek and approach the ball
 anywhere on the field, unless the team has only one robot on the field at that
 time.
 
-A robot must touch touch the ball that is placed no further than 20 cm from any
-point on its convex hull within 10 seconds. If a robot does not do so within
-the time limit, it is deemed to be damaged. (See <<damaged-robots, Damaged Robots>>.)
+A robot must touch the ball that is placed no further than 20 cm from any point
+on its convex hull within 10 seconds. If a robot does not do so within the time
+limit, it is deemed to be damaged. (See <<damaged-robots, Damaged Robots>>.)
 
 [[handle]]
 === Handle
@@ -860,7 +860,7 @@ inspections include:
 * Kicker strength limits, if the robot has a kicker (see <<kicker-power-measuring-device>>).
 
 Proof must be provided by each team that its robots comply with these
-regulations, for example, by a detailed documentation or log book. Teams may be
+regulations, for example, by a detailed documentation or logbook. Teams may be
 interviewed about their robots and the development process at any time during a
 tournament.
 
@@ -875,7 +875,7 @@ aspects which are checked will stay the same.
 [[international-competition-team]]
 === Team
 
-Maximum team size is 4 members for RoboCupJunior .
+Maximum team size is 4 members for RoboCupJunior Soccer.
 
 Starting in 2017, Soccer Lightweight team members can participate in the World
 Championship only twice. After their second participation, they need to move to
@@ -988,7 +988,7 @@ The kicking procedure consists of the following steps:
     inside its own penalty area.
 
 5. In order to score a goal, the offending team's robot needs to move the ball
-    inside the opponents goal. It needs to do so in at most 15 seconds and while
+    inside the opponent's goal. It needs to do so in at most 15 seconds and while
     staying within the center circle once it touches the ball.
 
 If the offending team's robot moves before the 5 seconds pass, the result is
@@ -1041,23 +1041,23 @@ much you learn that counts!_*
 [[intro-league]]
 === Intro League
 
-In order to help newcomers experience the RoboCupJunior Soccer competition,
-the TC would like to encourage local regional competitions to include a so
-called "Intro League". Although such a league will not be part of the
-international competition, the TC still believes that it is worthwile to make
-it part of regional and super-regional competitions. Each regional and
-super-regional competition will likely have its specific rules for the rules
-but the TC would like to suggest they contain the following:
+In order to help newcomers experience the RoboCupJunior Soccer competition, the
+TC would like to encourage local regional competitions to include a so called
+"Intro League". Although such a league will not be part of the international
+competition, the TC still believes that it is worthwhile to make it part of
+regional and super-regional competitions. Each regional and super-regional
+competition will likely have its specific rules but the TC would like to
+suggest they contain the following:
 
 - The Intro League should be at least to some extend based on the
   RoboCupJunior Soccer rules
 
-- Only competitiors that did not previously participate in an international
+- Only competitors that did not previously participate in an international
   (that is not a regional or super-regional) competition are allowed to take
   part.
 
 - It may be worth creating two sub-leagues: a 2v2 one where two robots from one
-  team play agains two robots from the other, and a 1v1 one where both teams
+  team play against two robots from the other, and a 1v1 one where both teams
   play with just one robot.
 
 - The Intro League should ignore the Out of Bounds rule.  When robots go out of
@@ -1104,7 +1104,7 @@ remote control receivers (TSOP1140, TSOP31140, GP1UX511QS, etc.
 
 The ball emits infra-red (IR) light of wavelengths in the range 920nm - 960nm,
 pulsed at a square-wave carrier frequency of 40 KHz. The ball should have
-enough ultra-bright, wide angle LEDs to minimize unevenness of the IR output.
+enough ultra-bright, wide-angle LEDs to minimize unevenness of the IR output.
 
 [[pulsed-diameter]]
 ==== Diameter
@@ -1208,7 +1208,8 @@ ball should be hollow.
 [[passive-weight]]
 ==== Weight
 
-The ball should be {~~no heavier than 80 grams and no lighter than 60 grams~>46 grams (+- 1 gram) in weight~~}.
+The ball should be
+{~~no heavier than 80 grams and no lighter than 60 grams~>46 grams (+- 1 gram) in weight~~}.
 
 [appendix]
 [[kicker-power-measuring-device]]
@@ -1255,7 +1256,7 @@ the attached device schematic is simple enough for quick construction.
 a.  Print out the device schematics.
 b.  Paste the paper on a plastic board. The incline line (red lines)
     should be straight.
-c.  Cut out along the lines, and drill the holes.
+c.  Cut out along the lines and drill the holes.
 d.  The two boards should be connected using the 40mm spacers.
 
 [[inspection]]
