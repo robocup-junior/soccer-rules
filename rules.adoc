@@ -193,6 +193,11 @@ imparts dynamic back spin on the ball to keep the ball on its surface.
 
 Other players must be able to access the ball.
 
+{++The ball needs to stay within the bounds of the playing field, as delimited
+by the walls. If a robot moves the ball outside of the playing field (that,
+beyond the walls or above their height), it is deemed damaged.
+(<<damaged-robots>>)++}
+
 [[scoring]]
 === Scoring
 
@@ -205,8 +210,8 @@ game will be restarted with a kick-off from the team who was scored against.
 === Inside the Penalty Area
 
 No robots are supposed to be fully inside the penalty area. As the penalty
-areas are marked with a white line, the Out of Bounds rule applies to this line
-as well. (<<out-of-bounds>>)
+areas are marked with a white line, they are deemed to be out of the reach of
+any of the robots and the Out of Bounds rule applies as well. (<<out-of-bounds>>)
 
 If an attacking and a defending robot touch each other while at least one of
 them is at least partially inside the penalty area, and at least one of them
@@ -523,6 +528,14 @@ enough from the black exterior.
 
 The floor consists of dark green carpet on top of a hard level surface.  All
 straight lines on the field should be painted and have a width of 20 mm.
+
+{++It is impractical to set international constraints on carpet other than it
+being dark green. In the spirit of the competition, teams should design robots
+to be tolerant or adaptable to different fibers, textures, construction,
+density, and designs of carpet especially when competing amongst different
+regions. Teams are encouraged to visit regional resources or reach out to Local
+Organization Committee for suggestions if desiring to build their own practice
+field(s).++}
 
 [[neutral-spots]]
 === Neutral spots
