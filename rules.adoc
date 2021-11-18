@@ -56,8 +56,8 @@ signal ball. Robots may weigh up to 1.1 kg, may have a ball-capturing zone of
 up to 3.0 cm, and may use batteries up to 12.0 V nominal voltage.
 
 * *Soccer Open* is played using a passive, brightly colored orange
-ball. Robots may weigh up to 2.4 kg, may have a ball-capturing zone of up to
-2.5 cm, and may use batteries up to 15.0 V nominal voltage.
+ball. Robots may weigh up to 2.2 kg, may have a ball-capturing zone of up to
+1.5 cm, and may use batteries up to 15.0 V nominal voltage.
 
 Please see <<ball>> for balls specifications and <<league-regulations>> for
 more details for specifications/regulations.
@@ -1214,9 +1214,8 @@ There should be no distractive markings on the ball.
 [[passive-surface]]
 ==== Surface
 
-The surface of the ball shall be smooth and matte. Engravings on the ball’s
-surface are tolerated. The ball should not reflect light. The inside of the
-ball should be hollow.
+Engravings on the ball’s surface are tolerated. The inside of the ball should
+be hollow.
 
 [[passive-weight]]
 ==== Weight
