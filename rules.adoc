@@ -1,4 +1,4 @@
-= RoboCupJunior Soccer Rules 2022 (Draft)
+= RoboCupJunior Soccer Rules 2022
 {docdate}
 :toc: left
 :sectanchors:
@@ -1209,7 +1209,7 @@ meters onto a hardwood table or floor.
 The ball shall be of orange color. Since the definition of the orange color in
 general is not easy, any color that a human would deem to be orange and is
 substantially different from the other colors used on the field is acceptable.
-There should be no distractive markings on the ball.
+{--There should be no distractive markings on the ball.--}
 
 [[passive-surface]]
 ==== Surface
@@ -1244,9 +1244,13 @@ image:media/image8.png[image,scaledwidth=100.0%]
 
 |===
 |Plastic Board            | A4 paper size
-|M3 Spacers (40mm length) | 5
+|M3 Spacers               | 5
 |M3 Screw                 | 10
 |===
+
+NOTE: {++The M3 spacers are diffierent for each league, due to the different ball
+sizes. For the Lightweight league, please use **40mm** spacer and for the open
+league please use **25mm** spacer.++}
 
 [[device-schematics]]
 === Device schematics
@@ -1268,7 +1272,9 @@ a.  Print out the device schematics.
 b.  Paste the paper on a plastic board. The incline line (red lines)
     should be straight.
 c.  Cut out along the lines and drill the holes.
-d.  The two boards should be connected using the 40mm spacers.
+d.  The two boards should be connected using the {++40mm (Lightweight) or 25mm (Open)++} spacers.
+
+NOTE: You can find the image of the schematic at https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.png
 
 [[inspection]]
 === Inspection
@@ -1278,6 +1284,8 @@ a.  Place a ball at the bottom of the ramp run of the device, and put the robot
 b.  Activate the robot’s kicker for a single shot.
 c.  Measure the distance that the ball traveled on the device. The distance
     should not exceed 22 cm.
+
+image:media/image9.png[image,scaledwidth=100.0%]
 
 [appendix]
 [[inspections-sheet-example]]
