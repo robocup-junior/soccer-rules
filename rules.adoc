@@ -1248,9 +1248,9 @@ image:media/image8.png[image,scaledwidth=100.0%]
 |M3 Screw                 | 10
 |===
 
-NOTE: {++The M3 spacers are diffierent for each league, due to the different ball
-sizes. For the Lightweight league, please use **40mm** spacer and for the open
-league please use **25mm** spacer.++}
+NOTE: {++The M3 spacers are different for each league, due to the different
+size of the ball. For the Lightweight league, please use **40mm** spacer and
+for the open league please use **25mm** spacer.++}
 
 [[device-schematics]]
 === Device schematics
