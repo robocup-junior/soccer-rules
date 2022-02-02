@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.16">
-<meta name="author" content="2021-12-09">
-<title>RoboCupJunior Soccer Rules 2022 (Draft)</title>
+<meta name="generator" content="Asciidoctor 2.0.17">
+<meta name="author" content="2022-02-02">
+<title>RoboCupJunior Soccer Rules 2022</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -194,7 +194,8 @@ body.toc2.toc-right{padding-left:0;padding-right:20em}}
 #content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
 details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
 details{margin-left:1.25rem}
-details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;-webkit-tap-highlight-color:transparent}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
 details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
 details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
 details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
@@ -236,9 +237,8 @@ pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
 table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
 table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
 table.linenotable td.code{padding-left:.75em}
-table.linenotable td.linenos{border-right:1px solid;opacity:.35;padding-right:.5em}
-pre.pygments .lineno{border-right:1px solid;opacity:.35;display:inline-block;margin-right:.75em}
-pre.pygments .lineno::before{content:"";margin-right:-.125em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
 .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
 .quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
 .quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
@@ -275,7 +275,7 @@ table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-c
 table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
 table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
 table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
-table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
 th.halign-left,td.halign-left{text-align:left}
 th.halign-right,td.halign-right{text-align:right}
 th.halign-center,td.halign-center{text-align:center}
@@ -291,10 +291,11 @@ ol{margin-left:1.75em}
 ul li ol{margin-left:1.5em}
 dl dd{margin-left:1.125em}
 dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
-ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
 ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
 ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
 ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
 ul.checklist>li>p:first-child{margin-left:-1em}
 ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
 ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
@@ -337,8 +338,6 @@ sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
 #footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
 #footnotes .footnote:last-of-type{margin-bottom:0}
 #content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
-.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
-.gist .file-data>table td.line-data{width:99%}
 div.unbreakable{page-break-inside:avoid}
 .big{font-size:larger}
 .small{font-size:smaller}
@@ -440,9 +439,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>RoboCupJunior Soccer Rules 2022 (Draft)</h1>
+<h1>RoboCupJunior Soccer Rules 2022</h1>
 <div class="details">
-<span id="author" class="author">2021-12-09</span><br>
+<span id="author" class="author">2022-02-02</span><br>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -645,6 +644,9 @@ the list for convenience.</p>
 <p><a href="#deletion-1">Deleted "Reprogramming of robots during the gameplay can only happen when they are out of game (i.e., damaged or out of bounds), or when explicitly allowed by the referee."</a></p>
 </li>
 <li>
+<p><a href="#deletion-2">Deleted "There should be no distractive markings on the ball."</a></p>
+</li>
+<li>
 <p><a href="#addition-1">Added "The ball needs to stay within the bounds of the field, as delimited by the walls. If a robot moves the ball outside of the field (that is, beyond the walls or above their height), it is deemed damaged. (&lt;&lt;damaged-robots&gt;&gt;)"</a></p>
 </li>
 <li>
@@ -664,6 +666,12 @@ the list for convenience.</p>
 </li>
 <li>
 <p><a href="#addition-7">Added "In order to push the state of the art in the Soccer competition forward, while also trying to bridge the gap between the Junior and Major leagues, the RCJ Soccer Committee chose a standard orange golf ball as the "passive" ball. This is the same choice as the Small Size League makes footnote:[See the SSL rules at https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball] and since these balls are standardized, they should be cheap and easy to get anywhere around the globe."</a></p>
+</li>
+<li>
+<p><a href="#addition-8">Added "The M3 spacers are diffierent for each league, due to the different ball sizes. For the Lightweight league, please use <strong>25mm</strong> spacer and for the open league please use <strong>40mm</strong> spacer."</a></p>
+</li>
+<li>
+<p><a href="#addition-9">[addition-9]</a></p>
 </li>
 <li>
 <p><a href="#substitution-1">Changed "one of these robots" to "the robot further from the ball"</a></p>
@@ -2203,8 +2211,10 @@ meters onto a hardwood table or floor.</p>
 <div class="paragraph">
 <p>The ball shall be of orange color. Since the definition of the orange color in
 general is not easy, any color that a human would deem to be orange and is
-substantially different from the other colors used on the field is acceptable.
-There should be no distractive markings on the ball.</p>
+substantially different from the other colors used on the field is acceptable.</p>
+</div>
+<div id="deletion-2" class="paragraph">
+<p><sup class="footnote">[<a id="_footnoteref_15" class="footnote" href="#_footnotedef_15" title="View footnote.">15</a>]</sup></p>
 </div>
 </div>
 <div class="sect3">
@@ -2218,7 +2228,7 @@ be hollow.</p>
 <h4 id="passive-weight"><a class="anchor" href="#passive-weight"></a><a class="link" href="#passive-weight">B.2.5. Weight</a></h4>
 <div id="substitution-8" class="paragraph">
 <p><span class="red"><strong>The weight of the ball should be 46 grams (+- 1 gram)</strong></span>
-<sup class="footnote">[<a id="_footnoteref_15" class="footnote" href="#_footnotedef_15" title="View footnote.">15</a>]</sup>.</p>
+<sup class="footnote">[<a id="_footnoteref_16" class="footnote" href="#_footnotedef_16" title="View footnote.">16</a>]</sup>.</p>
 </div>
 </div>
 </div>
@@ -2257,7 +2267,7 @@ It is easy to build with commonly accessible materials.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">A4 paper size</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">M3 Spacers (40mm length)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M3 Spacers</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
 </tr>
 <tr>
@@ -2266,6 +2276,19 @@ It is easy to build with commonly accessible materials.</p>
 </tr>
 </tbody>
 </table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<a id="addition-8"></a>
+<span class="red"><strong>The M3 spacers are diffierent for each league, due to the different ball sizes. For the Lightweight league, please use <strong>25mm</strong> spacer and for the open league please use <strong>40mm</strong> spacer.</strong></span>
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect2">
 <h3 id="device-schematics"><a class="anchor" href="#device-schematics"></a><a class="link" href="#device-schematics">C.3. Device schematics</a></h3>
@@ -2306,9 +2329,22 @@ should be straight.</p>
 <p>Cut out along the lines and drill the holes.</p>
 </li>
 <li>
-<p>The two boards should be connected using the 40mm spacers.</p>
+<p>The two boards should be connected using the <a id="addition-9"></a>
+<span class="red"><strong>25mm (Lightweight) or 40mm (Open)</strong></span> spacers.</p>
 </li>
 </ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+You can find the image of the schematic at <a href="https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.png" class="bare">https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.png</a>
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect2">
@@ -2327,6 +2363,9 @@ in front of the ball, aiming the kicker towards the top of the ramp.</p>
 should not exceed 22 cm.</p>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="media/image9.png" alt="image"></span></p>
 </div>
 </div>
 </div>
@@ -2385,12 +2424,15 @@ should not exceed 22 cm.</p>
 <a href="#_footnoteref_14">14</a>. In previous version this said "65mm +- 5mm"
 </div>
 <div class="footnote" id="_footnotedef_15">
-<a href="#_footnoteref_15">15</a>. In previous version this said "The ball should be no heavier than 80 grams and no lighter than 60 grams"
+<a href="#_footnoteref_15">15</a>. In previous version this said "There should be no distractive markings on the ball."
+</div>
+<div class="footnote" id="_footnotedef_16">
+<a href="#_footnoteref_16">16</a>. In previous version this said "The ball should be no heavier than 80 grams and no lighter than 60 grams"
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-12-09 00:38:09 UTC
+Last updated 2022-02-02 02:28:06 UTC
 </div>
 </div>
 </body>
