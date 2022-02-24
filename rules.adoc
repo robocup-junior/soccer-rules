@@ -285,7 +285,7 @@ Some examples of a damaged robot include:
 
 * it does not respond to the ball, or is unable to move (it lost pieces,
 power, etc.).
-* it continually moves into the goal or out of the playing field.
+* it continually moves into the {~~goal~>penalty area~} or out of the playing field.
 * it turns over on its own accord.
 
 Computers and repair equipment are not permitted in the playing area during
