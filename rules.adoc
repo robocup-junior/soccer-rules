@@ -784,14 +784,17 @@ reflect infrared light could be used as long as other robots are not affected.
 [[regulations-limitations]]
 ==== Limitations
 
-A single robot can only use one camera. All commercial omnidirectional
+{~~A single robot can only use one camera. All commercial omnidirectional
 lenses/cameras are not permitted. Only omnidirectional lenses/cameras made by
 students are permitted, meaning that their construction needs to be primarily
 and substantially the original work of a team. Teams using them on their robots
 must prove how they made them on their presentation poster and at an interview.
 For the purpose of these rules omnidirectional is defined as having a
 field-of-view of more than 140 degrees horizontally and more than 80 degrees
-vertically (these values reflect the optical system of the human eye).
+vertically (these values reflect the optical system of the human eye).~>A
+robot may use any number of cameras without any restrictions on lenses,
+optical parts, optical systems, and total field of view. Components may be
+sourced in any way the team sees fit.~~}
 
 Voltage pump circuits are permitted only for a kicker drive. All other
 electrical circuits inside the robot cannot exceed 15.0 V for Soccer Open and
