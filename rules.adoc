@@ -746,7 +746,7 @@ robot’s dimensions must not exceed the following limits:
 
 |===
 |sub-league | *Soccer* *Open* | *Soccer Lightweight*
-|size / diameter | {~~22.0~>18.0~~} cm | 22.0 cm +
+|size {~~/ diameter~>(robot must fit cylinder of this diameter)~~} | {~~22.0~>18.0~~} cm | 22.0 cm +
 |height | {~~22.0~>18.0~~} cm ^[1]^ | 22.0 cm ^[1]^ +
 |weight | {~~2400~>2200~~} g ^[2]^ | 1100 g ^[2]^ +
 |ball-capturing zone | {~~2.5~>1.5~~} cm | 3.0 cm +
