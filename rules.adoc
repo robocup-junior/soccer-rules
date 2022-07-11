@@ -215,9 +215,9 @@ No robots are supposed to be fully inside the penalty area. As the penalty
 areas are marked with a white line, the Out of Bounds and Out of Reach rules
 apply as well. (<<out-of-bounds>>)
 
-If two robots from the same team are at least partially in a penalty area, {~~one of these robots~>the robot further from the ball~~} will be moved to the _furthest unoccupied neutral spot_ immediately. If this happens repeatedly, a robot may be deemed damaged at referee's discretion. (<<damaged-robots>>)
+If two robots from the same team are at least partially in a penalty area, the robot further from the ball will be moved to the _furthest unoccupied neutral spot_ immediately. If this happens repeatedly, a robot may be deemed damaged at referee's discretion. (<<damaged-robots>>)
 
-If an attacking and a defending robot touch each other while at least one of them is at least partially inside the penalty area, and at least one of them has physical contact with the ball, this {~~is~>may be~~} called "pushing" {++at the referee's discretion++}. In this case, the ball will be moved to the _furthest unoccupied neutral spot_ immediately.
+If an attacking and a defending robot touch each other while at least one of them is at least partially inside the penalty area, and at least one of them has physical contact with the ball, this may be called "pushing" at the referee's discretion. In this case, the ball will be moved to the _furthest unoccupied neutral spot_ immediately.
 
 If a goal is scored as a result of a "pushing" situation, it will not be
 granted.
@@ -285,16 +285,14 @@ Some examples of a damaged robot include:
 
 * it does not respond to the ball, or is unable to move (it lost pieces,
 power, etc.).
-* it continually moves into the {~~goal~>penalty area~~} or out of the playing field.
+* it continually moves into the penalty area or out of the playing field.
 * it turns over on its own accord.
 
 Computers and repair equipment are not permitted in the playing area during
 gameplay. Usually, a team member will need to take the damaged robot to an
 "approved repair table" near the playing area. A referee may permit robot
 sensor calibration, computers and other tools in the playing area, only for the
-5 minutes before the start of each half.  {--Reprogramming of robots during the
-gameplay can only happen when they are out of game (i.e., damaged or out of
-bounds), or when explicitly allowed by the referee.--}
+5 minutes before the start of each half.
 
 After a robot has been fixed, it will be placed on the unoccupied neutral spot
 furthest from the ball, facing its own goal. A robot can only be returned to
@@ -439,8 +437,8 @@ All robots must have a stable and easily noticeable handle to hold and to lift
 them. The handle must be easily accessible and allow the robot to be picked up
 from at least 5 cm above the highest structure of the robot.
 
-The dimensions of the handle may exceed the 22 cm {++(or 18 cm)++} height
-limitation, but the part of the handle that exceeds this 22 cm {++(or 18 cm)++}
+The dimensions of the handle may exceed the 22 cm (or 18 cm) height
+limitation, but the part of the handle that exceeds this 22 cm (or 18 cm)
 limit cannot be used to mount components of the robot.
 
 [[top-markers]]
@@ -525,13 +523,13 @@ enough from the black exterior.
 The floor consists of dark green carpet on top of a hard level surface.  All
 straight lines on the field should be painted and have a width of 20 mm.
 
-{++It is impractical to set international constraints on carpet other than it
+It is impractical to set international constraints on carpet other than it
 being dark green. In the spirit of the competition, teams should design robots
 to be tolerant or adaptable to different fibers, textures, construction,
 density, and designs of carpet especially when competing amongst different
 regions. Teams are encouraged to visit regional resources or reach out to Local
 Organization Committee for suggestions if desiring to build their own practice
-field(s).++}
+field(s).
 
 [[neutral-spots]]
 === Neutral spots
@@ -744,12 +742,10 @@ Soccer Lightweight sub-league are played using the IR ball.
 Robots will be measured in an upright position with all parts extended. A
 robot’s dimensions must not exceed the following limits:
 
-|===
-|sub-league | *Soccer* *Open* | *Soccer Lightweight*
-|size {~~/ diameter~>(robot must fit cylinder of this diameter)~~} | {~~22.0~>18.0~~} cm | 22.0 cm +
-|height | {~~22.0~>18.0~~} cm ^[1]^ | 22.0 cm ^[1]^ +
-|weight | {~~2400~>2200~~} g ^[2]^ | 1100 g ^[2]^ +
-|ball-capturing zone | {~~2.5~>1.5~~} cm | 3.0 cm +
+|size / (robot must fit cylinder of this diameter) | 18.0 cm | 22.0 cm +
+|height | 18.0 cm ^[1]^ | 22.0 cm ^[1]^ +
+|weight | 2200 g ^[2]^ | 1100 g ^[2]^ +
+|ball-capturing zone | 1.5 cm | 3.0 cm +
 |voltage | 15.0 V ^[3]^ ^[4]^ | 12.0 V ^[3]^ ^[4]^ +
 |===
 
@@ -762,9 +758,6 @@ batteries
 
 NOTE: [3] Voltage limits relate to the *nominal values*, deviations at the
 power pack due to the fact that charged will be tolerated.
-
-NOTE: [4] {++For the 2023 rules, the Soccer Committee intends to limit the
-voltage to 9.0 V nominal for both leagues.++}
 
 Ball-capturing zone is defined as any internal space created when a straight
 edge is placed on the protruding points of a robot. This means the ball must
@@ -784,14 +777,17 @@ reflect infrared light could be used as long as other robots are not affected.
 [[regulations-limitations]]
 ==== Limitations
 
-A single robot can only use one camera. All commercial omnidirectional
+{~~A single robot can only use one camera. All commercial omnidirectional
 lenses/cameras are not permitted. Only omnidirectional lenses/cameras made by
 students are permitted, meaning that their construction needs to be primarily
 and substantially the original work of a team. Teams using them on their robots
 must prove how they made them on their presentation poster and at an interview.
 For the purpose of these rules omnidirectional is defined as having a
 field-of-view of more than 140 degrees horizontally and more than 80 degrees
-vertically (these values reflect the optical system of the human eye).
+vertically (these values reflect the optical system of the human eye).~>A
+robot may use any number of cameras without any restrictions on lenses,
+optical parts, optical systems, and total field of view. Components may be
+sourced in any way the team sees fit.~~}
 
 Voltage pump circuits are permitted only for a kicker drive. All other
 electrical circuits inside the robot cannot exceed 15.0 V for Soccer Open and
@@ -1179,14 +1175,13 @@ considered to be approved by the Soccer Committee.
 [[passive-ball-spec-preamble]]
 === Preamble
 
-{++In order to push the state of the art in the Soccer competition forward,
+In order to push the state of the art in the Soccer competition forward,
 while also trying to bridge the gap between the Junior and Major leagues, the
 RCJ Soccer Committee chose a standard orange golf ball as the "passive" ball.
 This is the same choice as the Small Size League makes footnote:[See the SSL
 rules at https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball] and since
 these balls are standardized, they should be cheap and easy to get anywhere
-around the globe.++}
-
+around the globe.
 
 [[specifications]]
 === Specifications
@@ -1194,7 +1189,7 @@ around the globe.++}
 [[passive-diameter]]
 ==== Diameter
 
-The diameter of the ball is required to be {~~65mm +- 5mm~>42mm +- 1mm~~}.
+The diameter of the ball is required to be 42mm +- 1mm.
 
 [[passive-drop-test]]
 ==== Drop Test
@@ -1209,7 +1204,6 @@ meters onto a hardwood table or floor.
 The ball shall be of orange color. Since the definition of the orange color in
 general is not easy, any color that a human would deem to be orange and is
 substantially different from the other colors used on the field is acceptable.
-{--There should be no distractive markings on the ball.--}
 
 [[passive-surface]]
 ==== Surface
@@ -1220,7 +1214,7 @@ be hollow.
 [[passive-weight]]
 ==== Weight
 
-{~~The ball should be no heavier than 80 grams and no lighter than 60 grams~>The weight of the ball should be 46 grams (+- 1 gram)~~}.
+The weight of the ball should be 46 grams (+- 1 gram).
 
 [appendix]
 [[kicker-power-measuring-device]]
@@ -1248,9 +1242,9 @@ image:media/image8.png[image,scaledwidth=100.0%]
 |M3 Screw                 | 10
 |===
 
-NOTE: {++The M3 spacers are different for each league, due to the different
+NOTE: The M3 spacers are different for each league, due to the different
 size of the ball. For the Lightweight league, please use **40mm** spacer and
-for the open league please use **25mm** spacer.++}
+for the open league please use **25mm** spacer.
 
 [[device-schematics]]
 === Device schematics
@@ -1272,7 +1266,7 @@ a.  Print out the device schematics.
 b.  Paste the paper on a plastic board. The incline line (red lines)
     should be straight.
 c.  Cut out along the lines and drill the holes.
-d.  The two boards should be connected using the {++40mm (Lightweight) or 25mm (Open)++} spacers.
+d.  The two boards should be connected using the 40mm (Lightweight) or 25mm (Open) spacers.
 
 NOTE: You can find the image of the schematic at https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.png
 
