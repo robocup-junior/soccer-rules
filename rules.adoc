@@ -763,9 +763,6 @@ batteries
 NOTE: [3] Voltage limits relate to the *nominal values*, deviations at the
 power pack due to the fact that charged will be tolerated.
 
-NOTE: [4] {++For the 2023 rules, the Soccer Committee intends to limit the
-voltage to 9.0 V nominal for both leagues.++}
-
 Ball-capturing zone is defined as any internal space created when a straight
 edge is placed on the protruding points of a robot. This means the ball must
 not enter the concave hull of a robot by more than the specified depth.
