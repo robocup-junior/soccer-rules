@@ -1,4 +1,4 @@
-= RoboCupJunior Soccer Rules 2022
+= RoboCupJunior Soccer Rules 2023
 {docdate}
 :toc: left
 :sectanchors:
@@ -17,7 +17,7 @@ endif::basebackend-html[]
 :icons: font
 :numbered:
 
-These are the official Soccer rules for RoboCupJunior 2022. They are released
+These are the official Soccer rules for RoboCupJunior 2023. They are released
 by the RoboCupJunior Soccer Committee. The English version of these
 rules has priority over any translations.
 
@@ -69,15 +69,11 @@ Unless specified otherwise, all parts of these rules are released under the
 terms of the Creative Commons Attribution-ShareAlike License.
 
 [discrete]
-=== Changes from 2019 (and 2020/2021) RoboCupJunior Soccer Rules
+=== Changes from the 2022 RoboCupJunior Soccer Rules
 
 The changes determined by the Soccer Committee for this year’s rules aim to
 reduce the amount of "sumo-like" gameplay while making it more interesting by
 introducing new challenges and standard situations.
-
-Most of the changes listed below were already present in the rules of 2020.
-Since the physical competition didn't take place, we decided to keep those in
-the list for convenience.
 
 {+-~TOC-CHANGES~-+}
 
