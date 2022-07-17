@@ -346,10 +346,13 @@ assistant team member.
 
 Teams that do not abide by the rules are not allowed to participate.
 
-Any person close to the playing field is not allowed to wear any orange, yellow
+{~~ Any person close to the playing field is not allowed to wear any orange, yellow
 or blue clothes that can be seen by the robots (to avoid interference). A
 referee can require a team member to change clothes or to be replaced by
-another team member if interference is suspected.
+another team member if interference is suspected. ~> Robots are expected to be
+capable of dealing with any colors above the walls (e.g. blue, yellow, 
+green or orange shirts) either in hardware (e.g. blocking FoV from looking up) or 
+in software (e.g. masking the input image). ~~}
 
 The referee can interrupt a game in progress if any kind of interference from
 spectators is suspected (color clothing, IR emitters, camera flashes, mobile
