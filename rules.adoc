@@ -783,9 +783,11 @@ must prove how they made them on their presentation poster and at an interview.
 For the purpose of these rules omnidirectional is defined as having a
 field-of-view of more than 140 degrees horizontally and more than 80 degrees
 vertically (these values reflect the optical system of the human eye).~>A
-robot may use any number of cameras without any restrictions on lenses,
+robot may use any number of cameras without any restrictions on lenses excluding omnidirectional lens,
 optical parts, optical systems, and total field of view. Components may be
-sourced in any way the team sees fit.~~}
+sourced in any way the team sees fit. As an exception, All commercial omnidirectional
+lenses are not permitted. Only omnidirectional lenses designed, manufactured and processed including polishing by
+students are permitted.   ~~}
 
 Voltage pump circuits are permitted only for a kicker drive. All other
 electrical circuits inside the robot cannot exceed 15.0 V for Soccer Open and
