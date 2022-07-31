@@ -481,6 +481,12 @@ tournament.
 
 There is only one kind of field for all sub-leagues.
 
+IMPORTANT: *IMPORTANT:* The field changes listed below in red are in a *DRAFT STATUS*.
+Please expect further changes in the field and goal size & positions in the final version.
+
+NOTE: *NOTE*: Please provide feedback regarding the draft changes on the forum:
+https://junior.forum.robocup.org/t/enlarge-size-of-playing-area-soccer-2023-rules/2619/6
+
 [[dimensions-of-the-field]]
 === Dimensions of the field
 
