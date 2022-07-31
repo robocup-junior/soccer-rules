@@ -568,15 +568,15 @@ magnetic interference. However, the robots need to be constructed in a way
 which allows them to work in conditions that are not perfect (i.e. by not
 relying on compass sensors or specific lightning conditions).
 
-[discrete]
-[[field-diagrams]]
-== FIELD DIAGRAMS
+//[discrete]
+//[[field-diagrams]]
+//== FIELD DIAGRAMS
 
-image:media/field_without_robots.jpg[image,scaledwidth=90.0%]
+//image:media/field_without_robots.jpg[image,scaledwidth=90.0%]
 
-image:media/field_measurements.jpg[image,scaledwidth=90.0%]
+//image:media/field_measurements.jpg[image,scaledwidth=90.0%]
 
-image:media/field_goal_measurements.jpg[image,scaledwidth=80.0%]
+//image:media/field_goal_measurements.jpg[image,scaledwidth=80.0%]
 
 
 [[ball]]
