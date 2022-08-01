@@ -526,7 +526,9 @@ enough from the black exterior.
 === Floor
 
 The floor consists of dark green carpet on top of a hard level surface.  All
-straight lines on the field should be painted and have a width of 20 mm.
+straight lines on the field should be {~~painted~>painted, marked with tape
+or installed as white carpet and be somewhat robust to tearing or ripping~~}
+and have a width of 20 mm.
 
 It is impractical to set international constraints on carpet other than it
 being dark green. In the spirit of the competition, teams should design robots
