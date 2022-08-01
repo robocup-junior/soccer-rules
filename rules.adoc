@@ -824,8 +824,8 @@ competition. During gameplay, a referee can ask to see a sample kick on the
 field before each half, when a damaged robot is returned to the field, or when
 the game is about to be restarted after a goal. If the referee strongly
 suspects that a kicker exceeds the power limit, he can require an official
-measurement with the ’Kicker Power Measure Device’. (See
-<<kicker-power-measuring-device>> for more details.)
+measurement with {++(Lightweight) or without (Open)++} the ’Kicker
+Power Measure Device’. (See <<kicker-power-measuring>> for more details.)
 
 [[regulations-construction]]
 ==== Construction
@@ -886,7 +886,7 @@ inspections include:
 * Weight restrictions for the particular sub-league (see <<dimensions>>).
 * Robot dimensions (see <<dimensions>>).
 * Voltage restrictions (see <<dimensions>> and <<regulations-limitations>>).
-* Kicker strength limits, if the robot has a kicker (see <<kicker-power-measuring-device>>).
+* Kicker strength limits, if the robot has a kicker (see <<kicker-power-measuring>>).
 
 Proof must be provided by each team that its robots comply with these
 regulations, for example, by a detailed documentation or logbook. Teams may be
@@ -1251,14 +1251,26 @@ prepared to play with balls as supplied by tournament organizers.++}
 The weight of the ball should be 46 grams (+- 1 gram).
 
 [appendix]
-[[kicker-power-measuring-device]]
-== Kicker Power Measuring Device
+[[kicker-power-measuring]]
+== Kicker Power Measuring Procedures
 
 All robot kickers will be tested with the ball used in the sub-league they
 participate in.
+{++Kicker Power will be measured by means of an on-field test in Soccer Open
+and by means of the Kicker Power Measuring Device in Soccer Lightweight.++}
+
+==== Soccer Open Kicker Power Measurement
+{++Kicker power measurement will be performed on-field in Soccer Open. The test
+is performed as follows:++}
+
+1.  {++Place robot at the back wall on the left side of the a goal.++}
+2.  {++Perform a kick into the opposing goal++}
+3.  {++The kicker power test is passed if after bouncing off of the opposite goal
+the ball does not return further than the front line of to the penalty area
+it was shout out from.++}
 
 [[kicker-power-measure-preamble]]
-=== Preamble
+===== Soccer Lightweight Kicker Power Measurement Device
 
 This Kicker Power Measuring Device can measure the power of a robot’s kicker.
 It is easy to build with commonly accessible materials.
@@ -1268,7 +1280,7 @@ This device can measure the power of a robot’s kicker up to a length of 22cm.
 image:media/image8.png[image,scaledwidth=100.0%]
 
 [[materials]]
-=== Materials
+===== Materials
 
 |===
 |Plastic Board            | A4 paper size
@@ -1281,7 +1293,7 @@ size of the ball. For the Lightweight league, please use **40mm** spacer and
 for the open league please use **25mm** spacer.
 
 [[device-schematics]]
-=== Device schematics
+===== Device schematics
 
 The device schematics can be printed out from the diagram located at the end of
 the document. Please be advised to check that the software you use to print the
@@ -1294,7 +1306,7 @@ lines are acceptable, but a curved line will request more difficult cutting and
 the attached device schematic is simple enough for quick construction.
 
 [[example-of-device-construction]]
-=== Example of device construction
+===== Example of device construction
 
 a.  Print out the device schematics.
 b.  Paste the paper on a plastic board. The incline line (red lines)
@@ -1305,7 +1317,7 @@ d.  The two boards should be connected using the 40mm (Lightweight) or 25mm (Ope
 NOTE: You can find the image of the schematic at https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.png
 
 [[inspection]]
-=== Inspection
+===== Soccer Lightweight Kicker Power Measurement Procedure
 
 a.  Place a ball at the bottom of the ramp run of the device, and put the robot
     in front of the ball, aiming the kicker towards the top of the ramp.
