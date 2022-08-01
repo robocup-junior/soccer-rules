@@ -17,14 +17,22 @@ endif::basebackend-html[]
 :icons: font
 :numbered:
 
-These are the official Soccer rules for RoboCupJunior 2023. They are released
+IMPORTANT: These are DRAFT rules for 2023 and therefore NOT YET the official
+rules. They may be subject to change. Suggest changes and tell us what you
+think of the rules in the public discussion and feedback thread on the RoboCup
+Junior Forum:
+https://junior.forum.robocup.org/t/2023-draft-rules-public-discussion-soccer-rules-2023/2616
+
+//TODO: revert to official Soccer rules for final release
+These are the draft Soccer rules for RoboCupJunior 2023. They are released
 by the RoboCupJunior Soccer Committee. The English version of these
 rules has priority over any translations.
 
 Teams are advised to check the RoboCupJunior Soccer site
 https://junior.forum.robocup.org/ for OC (Organizational Committee) procedures
 and requirements for the international competition. Each team is responsible
-for verifying the latest version of the rules prior to competition.
+for verifying the latest version of the rules prior to competition. {++Teams
+should ask for clarifications on the Forum where necessary.++}
 footnote:[The current version of these rules can be found at
 https://robocupjuniortc.github.io/soccer-rules/master/rules.html in HTML form
 and at https://robocupjuniortc.github.io/soccer-rules/master/rules.pdf in PDF
