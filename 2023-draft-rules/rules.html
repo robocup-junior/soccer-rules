@@ -587,7 +587,7 @@ rules has priority over any translations.</p>
 </div>
 <div class="paragraph">
 <p>Teams are advised to check the RoboCupJunior Soccer site
-<a href="https://junior.forum.robocup.org/" class="bare">https://junior.forum.robocup.org/</a> for OC (Organizational Committee) procedures
+<a href="https://junior.forum.robocup.org/" class="bare">https://junior.forum.robocup.org/</a> for OC (Organization Committee) procedures
 and requirements for the international competition. Each team is responsible
 for verifying the latest version of the rules prior to competition. <a id="addition-1"></a>
 <span class="red"><strong>Teams should ask for clarifications on the Forum where necessary.</strong></span>
@@ -662,10 +662,16 @@ introducing new challenges and standard situations.</p>
 <p><a href="#addition-3">[addition-3]</a></p>
 </li>
 <li>
-<p><a href="#addition-4">Added "While tournament organizers may supply matte balls to improve camera vision, if they do not teams must still be prepared to play with balls as supplied by tournament organizers."</a></p>
+<p><a href="#addition-4">Added "No voltage may exceed 48V at any time and maximum boost voltage must be available for  demonstration and measurement at inspections. When not in use measurement contacts must be protected from accidental touches or short circuits."</a></p>
 </li>
 <li>
-<p><a href="#addition-5">Added "and the ball should not have a soft-touch finish. Teams must be prepared to play with balls as supplied by tournament organizers."</a></p>
+<p><a href="#addition-5">Added "To make SuperTeam games more manageable at present and make communication between multiple robots in a SuperTeam easier in the future, the Organization Committee will provide each team with a communication module. Each team will be expected to interface with this module using a single 2.54mm GPIO pin at present and the Organization Committee plans on extending this to using UART for more complex applications in future years. More details will be provided by the Organization Committee shortly before the competition."</a></p>
+</li>
+<li>
+<p><a href="#addition-6">Added "While tournament organizers may supply matte balls to improve camera vision, if they do not teams must still be prepared to play with balls as supplied by tournament organizers."</a></p>
+</li>
+<li>
+<p><a href="#addition-7">Added "and the ball should not have a soft-touch finish. Teams must be prepared to play with balls as supplied by tournament organizers."</a></p>
 </li>
 <li>
 <p><a href="#substitution-1">Changed "Any person close to the playing field is not allowed to wear any orange, yellow or blue clothes that can be seen by the robots (to avoid interference). A referee can require a team member to change clothes or to be replaced by another team member if interference is suspected." to "Robots are expected to be capable of dealing with any colors above the walls (e.g. blue, yellow, green or orange shirts) either in hardware (e.g. blocking FoV from looking up) or in software (e.g. masking the input image)."</a></p>
@@ -1638,7 +1644,9 @@ reflect infrared light could be used as long as other robots are not affected.</
 <sup class="footnote">[<a id="_footnoteref_13" class="footnote" href="#_footnotedef_13" title="View footnote.">13</a>]</sup></p>
 </div>
 <div class="paragraph">
-<p>Voltage pump circuits are permitted only for a kicker drive. All other
+<p>Voltage pump circuits are permitted only for a kicker drive. <a id="addition-4"></a>
+<span class="red"><strong>No voltage may exceed 48V at any time and maximum boost voltage must be available for  demonstration and measurement at inspections. When not in use measurement contacts must be protected from accidental touches or short circuits.</strong></span> All
+other
 electrical circuits inside the robot cannot exceed 15.0 V for Soccer Open and
 12.0 V for Soccer Lightweight. Each robot must be designed to allow verifying
 the voltage of power packs and its circuits, unless the nominal voltage is
@@ -1984,13 +1992,13 @@ used.</p>
 <p>All teams qualified to the international competition <strong>must</strong> share their
 designs, both hardware and software, with all present and future participants.
 These teams are also required to send a digital portfolio before the
-competition. Further details on how will be provided by the Organizational
+competition. Further details on how will be provided by the Organization
 Committee.</p>
 </div>
 <div class="paragraph">
 <p>During the competition days of the International Competition (as well as before
 the event) the team members are responsible for checking all relevant
-information published by the Soccer Organizational Committee, General Chairs,
+information published by the Soccer Organization Committee, General Chairs,
 or any other RoboCup official.</p>
 </div>
 <div class="paragraph">
@@ -1999,9 +2007,22 @@ the world share their robots in one "SuperTeam" and play against other
 SuperTeams on a so called "Big Field". The full rules of this challenge can be found at
 <a href="https://robocupjuniortc.github.io/soccer-rules/master/superteam_rules.html" class="bare">https://robocupjuniortc.github.io/soccer-rules/master/superteam_rules.html</a></p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<a id="addition-5"></a>
+<span class="red"><strong>To make SuperTeam games more manageable at present and make communication between multiple robots in a SuperTeam easier in the future, the Organization Committee will provide each team with a communication module. Each team will be expected to interface with this module using a single 2.54mm GPIO pin at present and the Organization Committee plans on extending this to using UART for more complex applications in future years. More details will be provided by the Organization Committee shortly before the competition.</strong></span>
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>Teams competing in the International Competition can receive awards for their
-performance. These awards are decided and introduced by the Organizational
+performance. These awards are decided and introduced by the Organization
 Committee, which publishes all necessary details well before the actual event.
 In the past years they were awarded for best poster, presentation, robot
 design, team spirit and individual games.</p>
@@ -2206,7 +2227,7 @@ meters onto a hardwood table or floor.</p>
 general is not easy, any color that a human would deem to be orange and is
 substantially different from the other colors used on the field is acceptable.</p>
 </div>
-<div id="addition-4" class="paragraph">
+<div id="addition-6" class="paragraph">
 <p><span class="red"><strong>While tournament organizers may supply matte balls to improve camera vision, if they do not teams must still be prepared to play with balls as supplied by tournament organizers.</strong></span></p>
 </div>
 </div>
@@ -2214,7 +2235,7 @@ substantially different from the other colors used on the field is acceptable.</
 <h4 id="passive-surface"><a class="anchor" href="#passive-surface"></a><a class="link" href="#passive-surface">B.2.4. Surface</a></h4>
 <div class="paragraph">
 <p>Engravings on the ball’s surface are tolerated. The inside of the ball should
-be hollow <a id="addition-5"></a>
+be hollow <a id="addition-7"></a>
 <span class="red"><strong>and the ball should not have a soft-touch finish. Teams must be prepared to play with balls as supplied by tournament organizers.</strong></span></p>
 </div>
 </div>
@@ -2419,7 +2440,7 @@ should not exceed 22 cm.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-08-01 20:10:21 UTC
+Last updated 2022-08-01 21:22:22 UTC
 </div>
 </div>
 </body>
