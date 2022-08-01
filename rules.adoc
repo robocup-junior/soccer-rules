@@ -32,7 +32,7 @@ Teams are advised to check the RoboCupJunior Soccer site
 https://junior.forum.robocup.org/ for OC (Organizational Committee) procedures
 and requirements for the international competition. Each team is responsible
 for verifying the latest version of the rules prior to competition. {++Teams
-should ask for clarifications on the Forum where necessary ++}
+should ask for clarifications on the Forum where necessary.++}
 footnote:[The current version of these rules can be found at
 https://robocupjuniortc.github.io/soccer-rules/master/rules.html in HTML form
 and at https://robocupjuniortc.github.io/soccer-rules/master/rules.pdf in PDF
