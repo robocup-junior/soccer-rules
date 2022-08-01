@@ -1212,15 +1212,19 @@ meters onto a hardwood table or floor.
 [[passive-coloration]]
 ==== Coloration
 
-The ball shall be of {++matte++} orange color. Since the definition of the orange color in
+The ball shall be of orange color. Since the definition of the orange color in
 general is not easy, any color that a human would deem to be orange and is
 substantially different from the other colors used on the field is acceptable.
+{++While tournament organizers may supply matte balls to improve camera vision,
+if they do not teams must still be prepared to play with balls as supplied by 
+tournament organizers.++}
 
 [[passive-surface]]
 ==== Surface
 
 Engravings on the ball’s surface are tolerated. The inside of the ball should
-be hollow {++and the ball should not have a soft-touch finish.++}
+be hollow {++and the ball should not have a soft-touch finish. Teams must be 
+prepared to play with balls as supplied by tournament organizers.++}
 
 [[passive-weight]]
 ==== Weight
