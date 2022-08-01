@@ -520,7 +520,7 @@ enough from the black exterior.
 === Floor
 
 The floor consists of dark green carpet on top of a hard level surface.  All
-straight lines on the field should be painted{~~ and have a width of 20 mm.~>.
+straight lines on the field should be painted {~~and have a width of 20 mm.~>.
 Lines should have a width of 20mm (±10%).~~}
 
 It is impractical to set international constraints on carpet other than it
