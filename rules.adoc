@@ -790,7 +790,7 @@ robot may use any number of cameras without any restrictions on lenses,
 optical parts, optical systems, and total field of view. Components may be
 sourced in any way the team sees fit.~~}
 
-Voltage pump circuits are permitted only for a kicker drive. {++ No voltage may
+Voltage pump circuits are permitted only for a kicker drive. {++No voltage may
 exceed 48V at any time and maximum boost voltage must be available for 
 demonstration and measurement at inspections. When not in use measurement
 contacts must be protected from accidental touches or short circuits. ++} All 
