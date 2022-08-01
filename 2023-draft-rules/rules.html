@@ -546,13 +546,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#specifications">B.2. Specifications</a></li>
 </ul>
 </li>
-<li><a href="#kicker-power-measuring-device">Appendix C: Kicker Power Measuring Device</a>
-<ul class="sectlevel2">
-<li><a href="#kicker-power-measure-preamble">C.1. Preamble</a></li>
-<li><a href="#materials">C.2. Materials</a></li>
-<li><a href="#device-schematics">C.3. Device schematics</a></li>
-<li><a href="#example-of-device-construction">C.4. Example of device construction</a></li>
-<li><a href="#inspection">C.5. Inspection</a></li>
+<li><a href="#kicker-power-measuring">Appendix C: Kicker Power Measuring Procedures</a>
+<ul class="sectlevel3">
+<li><a href="#_soccer_open_kicker_power_measurement">C.1. Soccer Open Kicker Power Measurement</a></li>
 </ul>
 </li>
 <li><a href="#inspections-sheet-example">Appendix D: Inspections sheet example</a></li>
@@ -665,13 +661,31 @@ introducing new challenges and standard situations.</p>
 <p><a href="#addition-4">Added "No voltage may exceed 48V at any time and maximum boost voltage must be available for  demonstration and measurement at inspections. When not in use measurement contacts must be protected from accidental touches or short circuits."</a></p>
 </li>
 <li>
-<p><a href="#addition-5">Added "To make SuperTeam games more manageable at present and make communication between multiple robots in a SuperTeam easier in the future, the Organization Committee will provide each team with a communication module. Each team will be expected to interface with this module using a single 2.54mm GPIO pin at present and the Organization Committee plans on extending this to using UART for more complex applications in future years. More details will be provided by the Organization Committee shortly before the competition."</a></p>
+<p><a href="#addition-5">Added "(Lightweight) or without (Open)"</a></p>
 </li>
 <li>
-<p><a href="#addition-6">Added "While tournament organizers may supply matte balls to improve camera vision, if they do not teams must still be prepared to play with balls as supplied by tournament organizers."</a></p>
+<p><a href="#addition-6">Added "To make SuperTeam games more manageable at present and make communication between multiple robots in a SuperTeam easier in the future, the Organization Committee will provide each team with a communication module. Each team will be expected to interface with this module using a single 2.54mm GPIO pin at present and the Organization Committee plans on extending this to using UART for more complex applications in future years. More details will be provided by the Organization Committee shortly before the competition."</a></p>
 </li>
 <li>
-<p><a href="#addition-7">Added "and the ball should not have a soft-touch finish. Teams must be prepared to play with balls as supplied by tournament organizers."</a></p>
+<p><a href="#addition-7">Added "While tournament organizers may supply matte balls to improve camera vision, if they do not teams must still be prepared to play with balls as supplied by tournament organizers."</a></p>
+</li>
+<li>
+<p><a href="#addition-8">Added "and the ball should not have a soft-touch finish. Teams must be prepared to play with balls as supplied by tournament organizers."</a></p>
+</li>
+<li>
+<p><a href="#addition-9">Added "Kicker Power will be measured by means of an on-field test in Soccer Open and by means of the Kicker Power Measuring Device in Soccer Lightweight."</a></p>
+</li>
+<li>
+<p><a href="#addition-10">Added "Kicker power measurement will be performed on-field in Soccer Open. The test is performed as follows:"</a></p>
+</li>
+<li>
+<p><a href="#addition-11">Added "Place robot at the back wall on the left side of the a goal."</a></p>
+</li>
+<li>
+<p><a href="#addition-12">Added "Perform a kick into the opposing goal"</a></p>
+</li>
+<li>
+<p><a href="#addition-13">Added "The kicker power test is passed if after bouncing off of the opposite goal the ball does not return further than the front line of to the penalty area it was shout out from."</a></p>
 </li>
 <li>
 <p><a href="#substitution-1">Changed "Any person close to the playing field is not allowed to wear any orange, yellow or blue clothes that can be seen by the robots (to avoid interference). A referee can require a team member to change clothes or to be replaced by another team member if interference is suspected." to "Robots are expected to be capable of dealing with any colors above the walls (e.g. blue, yellow, green or orange shirts) either in hardware (e.g. blocking FoV from looking up) or in software (e.g. masking the input image)."</a></p>
@@ -1661,8 +1675,9 @@ competition. During gameplay, a referee can ask to see a sample kick on the
 field before each half, when a damaged robot is returned to the field, or when
 the game is about to be restarted after a goal. If the referee strongly
 suspects that a kicker exceeds the power limit, he can require an official
-measurement with the ’Kicker Power Measure Device’. (See
-<a href="#kicker-power-measuring-device">Appendix C, <em>Kicker Power Measuring Device</em></a> for more details.)</p>
+measurement with <a id="addition-5"></a>
+<span class="red"><strong>(Lightweight) or without (Open)</strong></span> the ’Kicker
+Power Measure Device’. (See <a href="#kicker-power-measuring">Appendix C, <em>Kicker Power Measuring Procedures</em></a> for more details.)</p>
 </div>
 </div>
 <div class="sect3">
@@ -1770,7 +1785,7 @@ inspections include:</p>
 <p>Voltage restrictions (see <a href="#dimensions">Rule 8.2.1, &#8220;Dimensions&#8221;</a> and <a href="#regulations-limitations">Rule 8.2.3, &#8220;Limitations&#8221;</a>).</p>
 </li>
 <li>
-<p>Kicker strength limits, if the robot has a kicker (see <a href="#kicker-power-measuring-device">Appendix C, <em>Kicker Power Measuring Device</em></a>).</p>
+<p>Kicker strength limits, if the robot has a kicker (see <a href="#kicker-power-measuring">Appendix C, <em>Kicker Power Measuring Procedures</em></a>).</p>
 </li>
 </ul>
 </div>
@@ -2014,7 +2029,7 @@ SuperTeams on a so called "Big Field". The full rules of this challenge can be f
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-<a id="addition-5"></a>
+<a id="addition-6"></a>
 <span class="red"><strong>To make SuperTeam games more manageable at present and make communication between multiple robots in a SuperTeam easier in the future, the Organization Committee will provide each team with a communication module. Each team will be expected to interface with this module using a single 2.54mm GPIO pin at present and the Organization Committee plans on extending this to using UART for more complex applications in future years. More details will be provided by the Organization Committee shortly before the competition.</strong></span>
 </td>
 </tr>
@@ -2227,7 +2242,7 @@ meters onto a hardwood table or floor.</p>
 general is not easy, any color that a human would deem to be orange and is
 substantially different from the other colors used on the field is acceptable.</p>
 </div>
-<div id="addition-6" class="paragraph">
+<div id="addition-7" class="paragraph">
 <p><span class="red"><strong>While tournament organizers may supply matte balls to improve camera vision, if they do not teams must still be prepared to play with balls as supplied by tournament organizers.</strong></span></p>
 </div>
 </div>
@@ -2235,7 +2250,7 @@ substantially different from the other colors used on the field is acceptable.</
 <h4 id="passive-surface"><a class="anchor" href="#passive-surface"></a><a class="link" href="#passive-surface">B.2.4. Surface</a></h4>
 <div class="paragraph">
 <p>Engravings on the ball’s surface are tolerated. The inside of the ball should
-be hollow <a id="addition-7"></a>
+be hollow <a id="addition-8"></a>
 <span class="red"><strong>and the ball should not have a soft-touch finish. Teams must be prepared to play with balls as supplied by tournament organizers.</strong></span></p>
 </div>
 </div>
@@ -2249,14 +2264,38 @@ be hollow <a id="addition-7"></a>
 </div>
 </div>
 <div class="sect1">
-<h2 id="kicker-power-measuring-device"><a class="anchor" href="#kicker-power-measuring-device"></a><a class="link" href="#kicker-power-measuring-device">Appendix C: Kicker Power Measuring Device</a></h2>
+<h2 id="kicker-power-measuring"><a class="anchor" href="#kicker-power-measuring"></a><a class="link" href="#kicker-power-measuring">Appendix C: Kicker Power Measuring Procedures</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>All robot kickers will be tested with the ball used in the sub-league they
 participate in.</p>
 </div>
-<div class="sect2">
-<h3 id="kicker-power-measure-preamble"><a class="anchor" href="#kicker-power-measure-preamble"></a><a class="link" href="#kicker-power-measure-preamble">C.1. Preamble</a></h3>
+<div id="addition-9" class="paragraph">
+<p><span class="red"><strong>Kicker Power will be measured by means of an on-field test in Soccer Open and by means of the Kicker Power Measuring Device in Soccer Lightweight.</strong></span></p>
+</div>
+<div class="sect3">
+<h4 id="_soccer_open_kicker_power_measurement"><a class="anchor" href="#_soccer_open_kicker_power_measurement"></a><a class="link" href="#_soccer_open_kicker_power_measurement">C.1. Soccer Open Kicker Power Measurement</a></h4>
+<div id="addition-10" class="paragraph">
+<p><span class="red"><strong>Kicker power measurement will be performed on-field in Soccer Open. The test is performed as follows:</strong></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a id="addition-11"></a>
+<span class="red"><strong>Place robot at the back wall on the left side of the a goal.</strong></span></p>
+</li>
+<li>
+<p><a id="addition-12"></a>
+<span class="red"><strong>Perform a kick into the opposing goal</strong></span></p>
+</li>
+<li>
+<p><a id="addition-13"></a>
+<span class="red"><strong>The kicker power test is passed if after bouncing off of the opposite goal the ball does not return further than the front line of to the penalty area it was shout out from.</strong></span></p>
+</li>
+</ol>
+</div>
+<div class="sect4">
+<h5 id="kicker-power-measure-preamble"><a class="anchor" href="#kicker-power-measure-preamble"></a><a class="link" href="#kicker-power-measure-preamble">Soccer Lightweight Kicker Power Measurement Device</a></h5>
 <div class="paragraph">
 <p>This Kicker Power Measuring Device can measure the power of a robot’s kicker.
 It is easy to build with commonly accessible materials.</p>
@@ -2268,8 +2307,8 @@ It is easy to build with commonly accessible materials.</p>
 <p><span class="image"><img src="media/image8.png" alt="image"></span></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="materials"><a class="anchor" href="#materials"></a><a class="link" href="#materials">C.2. Materials</a></h3>
+<div class="sect4">
+<h5 id="materials"><a class="anchor" href="#materials"></a><a class="link" href="#materials">Materials</a></h5>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -2305,8 +2344,8 @@ for the open league please use <strong>25mm</strong> spacer.
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="device-schematics"><a class="anchor" href="#device-schematics"></a><a class="link" href="#device-schematics">C.3. Device schematics</a></h3>
+<div class="sect4">
+<h5 id="device-schematics"><a class="anchor" href="#device-schematics"></a><a class="link" href="#device-schematics">Device schematics</a></h5>
 <div class="paragraph">
 <p>The device schematics can be printed out from the diagram located at the end of
 the document. Please be advised to check that the software you use to print the
@@ -2329,8 +2368,8 @@ the attached device schematic is simple enough for quick construction.
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="example-of-device-construction"><a class="anchor" href="#example-of-device-construction"></a><a class="link" href="#example-of-device-construction">C.4. Example of device construction</a></h3>
+<div class="sect4">
+<h5 id="example-of-device-construction"><a class="anchor" href="#example-of-device-construction"></a><a class="link" href="#example-of-device-construction">Example of device construction</a></h5>
 <div class="olist loweralpha">
 <ol class="loweralpha">
 <li>
@@ -2361,8 +2400,8 @@ You can find the image of the schematic at <a href="https://github.com/RoboCupJu
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="inspection"><a class="anchor" href="#inspection"></a><a class="link" href="#inspection">C.5. Inspection</a></h3>
+<div class="sect4">
+<h5 id="inspection"><a class="anchor" href="#inspection"></a><a class="link" href="#inspection">Soccer Lightweight Kicker Power Measurement Procedure</a></h5>
 <div class="olist loweralpha">
 <ol class="loweralpha">
 <li>
@@ -2380,6 +2419,7 @@ should not exceed 22 cm.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="media/image9.png" alt="image"></span></p>
+</div>
 </div>
 </div>
 </div>
@@ -2440,7 +2480,7 @@ should not exceed 22 cm.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-08-01 21:22:22 UTC
+Last updated 2022-08-01 21:33:00 UTC
 </div>
 </div>
 </body>
