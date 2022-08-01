@@ -1205,7 +1205,7 @@ meters onto a hardwood table or floor.
 The ball shall be of orange color. Since the definition of the orange color in
 general is not easy, any color that a human would deem to be orange and is
 substantially different from the other colors used on the field is acceptable.
-{++ While tournament organizers may supply matte balls to improve camera vision,
+{++While tournament organizers may supply matte balls to improve camera vision,
 if they do not teams must still be prepared to play with balls as supplied by 
 tournament organizers.++}
 
