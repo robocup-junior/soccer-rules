@@ -1232,7 +1232,7 @@ is performed as follows:++}
 
 1.  {++Place robot at the back wall on the left side of the a goal.++}
 2.  {++Perform a kick into the opposing goal++}
-3.  {++The kicker power test is passed if after bouncing of the opposite goal
+3.  {++The kicker power test is passed if after bouncing off of the opposite goal
 the ball does not return further than the front line of to the penalty area
 it was shout out from.++}
 
