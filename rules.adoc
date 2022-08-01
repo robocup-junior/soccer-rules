@@ -346,13 +346,13 @@ assistant team member.
 
 Teams that do not abide by the rules are not allowed to participate.
 
-{~~ Any person close to the playing field is not allowed to wear any orange, yellow
+{~~Any person close to the playing field is not allowed to wear any orange, yellow
 or blue clothes that can be seen by the robots (to avoid interference). A
 referee can require a team member to change clothes or to be replaced by
-another team member if interference is suspected. ~> Robots are expected to be
+another team member if interference is suspected.~>Robots are expected to be
 capable of dealing with any colors above the walls (e.g. blue, yellow, 
 green or orange shirts) either in hardware (e.g. blocking FoV from looking up) or 
-in software (e.g. masking the input image). ~~}
+in software (e.g. masking the input image).~~}
 
 The referee can interrupt a game in progress if any kind of interference from
 spectators is suspected (color clothing, IR emitters, camera flashes, mobile
@@ -484,12 +484,18 @@ tournament.
 
 There is only one kind of field for all sub-leagues.
 
+IMPORTANT: *IMPORTANT:* The field changes listed below in red are in a *DRAFT STATUS*.
+Please expect further changes in the field and goal size & positions in the final version.
+
+NOTE: *NOTE*: Please provide feedback regarding the draft changes on the forum:
+https://junior.forum.robocup.org/t/enlarge-size-of-playing-area-soccer-2023-rules/2619/6
+
 [[dimensions-of-the-field]]
 === Dimensions of the field
 
-The playing-field is 132 cm by 193 cm. The field is marked by a white line
-which is part of the playing-field. Around the playing-field, beyond the white
-line, there is an outer area of 25 cm in width.
+The playing-field is {~~132 cm by 193 cm~>162 cm by 223 cm.~~}. The field is
+marked by a white line which is part of the playing-field. Around the
+playing-field, beyond the white line, there is an outer area of {~~25 cm in width~>10 cm in width~~}.
 
 The floor near the exterior wall includes a wedge, which is an incline with a
 10 cm base and 2 +/- 1 cm rise for allowing the ball to roll back into play
@@ -520,8 +526,9 @@ enough from the black exterior.
 === Floor
 
 The floor consists of dark green carpet on top of a hard level surface.  All
-straight lines on the field should be painted {~~and have a width of 20 mm.~>.
-Lines should have a width of 20mm (±10%).~~}
+straight lines on the field should be {~~painted~>painted, marked with tape
+or installed as white carpet and be somewhat robust to tearing or ripping~~}
+{~~and have a width of 20 mm.~>. Lines should have a width of 20mm (±10%).~~}
 
 It is impractical to set international constraints on carpet other than it
 being dark green. In the spirit of the competition, teams should design robots
@@ -535,9 +542,11 @@ field(s).
 === Neutral spots
 
 There are five neutral spots defined in the field. One is in the center of the
-field. The other four are adjacent to each corner, located 45 cm along the long
+field. {~~The other four are adjacent to each corner, located 45 cm along the long
 edge of the field, aligned with each goal post towards the middle of the field
-(from the goal post). The neutral spots can be drawn with a thin black marker.
+(from the goal post)~>The other four are adjacent to each corner, located 45 cm
+along the long edge of the field. They align with the sides of the goalie
+areas.~~}. The neutral spots can be drawn with a thin black marker.
 The neutral spots ought to be of circular shape measuring 1 cm in diameter.
 
 [[center-circle]]
@@ -550,7 +559,7 @@ during kick-off.
 [[penalty-areas]]
 === Penalty areas
 
-In front of each goal there is a 25 cm wide and 70 cm long penalty
+In front of each goal there is a 25 cm wide and {~~70 cm long~>80 cm long~~} penalty
 area.
 
 The penalty areas are marked by a white line of 20 mm width. The line is part
@@ -564,15 +573,15 @@ magnetic interference. However, the robots need to be constructed in a way
 which allows them to work in conditions that are not perfect (i.e. by not
 relying on compass sensors or specific lightning conditions).
 
-[discrete]
-[[field-diagrams]]
-== FIELD DIAGRAMS
+//[discrete]
+//[[field-diagrams]]
+//== FIELD DIAGRAMS
 
-image:media/field_without_robots.jpg[image,scaledwidth=90.0%]
+//image:media/field_without_robots.jpg[image,scaledwidth=90.0%]
 
-image:media/field_measurements.jpg[image,scaledwidth=90.0%]
+//image:media/field_measurements.jpg[image,scaledwidth=90.0%]
 
-image:media/field_goal_measurements.jpg[image,scaledwidth=80.0%]
+//image:media/field_goal_measurements.jpg[image,scaledwidth=80.0%]
 
 
 [[ball]]
