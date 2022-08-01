@@ -29,7 +29,7 @@ by the RoboCupJunior Soccer Committee. The English version of these
 rules has priority over any translations.
 
 Teams are advised to check the RoboCupJunior Soccer site
-https://junior.forum.robocup.org/ for OC (Organizational Committee) procedures
+https://junior.forum.robocup.org/ for OC (Organization Committee) procedures
 and requirements for the international competition. Each team is responsible
 for verifying the latest version of the rules prior to competition. {++Teams
 should ask for clarifications on the Forum where necessary.++}
@@ -1045,12 +1045,12 @@ used.
 All teams qualified to the international competition *must* share their
 designs, both hardware and software, with all present and future participants.
 These teams are also required to send a digital portfolio before the
-competition. Further details on how will be provided by the Organizational
+competition. Further details on how will be provided by the Organization
 Committee.
 
 During the competition days of the International Competition (as well as before
 the event) the team members are responsible for checking all relevant
-information published by the Soccer Organizational Committee, General Chairs,
+information published by the Soccer Organization Committee, General Chairs,
 or any other RoboCup official.
 
 There will also be a SuperTeam competition, in which various people from around
@@ -1058,8 +1058,16 @@ the world share their robots in one "SuperTeam" and play against other
 SuperTeams on a so called "Big Field". The full rules of this challenge can be found at
 https://robocupjuniortc.github.io/soccer-rules/master/superteam_rules.html
 
+NOTE: {++To make SuperTeam games more manageable at present and make
+communication between multiple robots in a SuperTeam easier in the future, the
+Organization Committee will provide each team with a communication module. Each
+team will be expected to interface with this module using a single 2.54mm GPIO
+pin at present and the Organization Committee plans on extending this to using
+UART for more complex applications in future years. More details will be
+provided by the Organization Committee shortly before the competition.++}
+
 Teams competing in the International Competition can receive awards for their
-performance. These awards are decided and introduced by the Organizational
+performance. These awards are decided and introduced by the Organization
 Committee, which publishes all necessary details well before the actual event.
 In the past years they were awarded for best poster, presentation, robot
 design, team spirit and individual games.
