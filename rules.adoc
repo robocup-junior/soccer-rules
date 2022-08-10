@@ -245,7 +245,8 @@ neutral spot.
 [[out-of-bounds]]
 === Out of bounds
 
-If a robot’s entire body moves out beyond the white line of the field, it will
+{~~If a robot’s entire body moves out beyond the white line of the field, it will~>
+If a robot touches a wall or moves completely into the penalty area it will~~}
 be called for being out of bounds. When this situation arises, the robot is
 given a one-minute penalty, and the team is asked to remove the robot from the
 field. There is no time stoppage for the game itself.  The robot is allowed to
