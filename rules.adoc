@@ -775,7 +775,10 @@ ball.
 [[regulations-inference-in-lightweight]]
 ==== Infrared interference in Lightweight
 
+{Old-Text}
 In Lightweight, the robot must not emit infrared light.
+{New-Text}
+Components designed to emit IR (e.g. IR time-of-flight LiDAR sensors) are not allowed and must be covered or removed if present at all. Any device designed to emit light of any wavelength must be mounted so that light is directed perpendicular to the playing field or be covered/removed. Please search the forum and post any questions if any necessary clarifications are not found.
 
 In Lightweight, infrared light reflecting materials must not be used on the
 outside. If robots are painted, they must be painted matte. Minor parts that
