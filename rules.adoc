@@ -25,7 +25,7 @@ https://junior.forum.robocup.org/t/2023-draft-rules-public-discussion-soccer-rul
 
 //TODO: revert to official Soccer rules for final release
 These are the draft Soccer rules for RoboCupJunior 2023. They are released
-by the RoboCupJunior Soccer Committee. The English version of these
+by the RoboCupJunior Soccer League Committee. The English version of these
 rules has priority over any translations.
 
 Teams are advised to check the RoboCupJunior Soccer site
@@ -79,7 +79,7 @@ terms of the Creative Commons Attribution-ShareAlike License.
 [discrete]
 === Changes from the 2022 RoboCupJunior Soccer Rules
 
-The changes determined by the Soccer Committee for this year’s rules aim to
+The changes determined by the Soccer League Committee for this year’s rules aim to
 reduce the amount of "sumo-like" gameplay while making it more interesting by
 introducing new challenges and standard situations.
 
@@ -110,12 +110,12 @@ halves. The duration of each half is 10-minutes. There will be a 5-minute break
 in between the halves.
 
 The game clock will run for the duration of the halves without stopping (except
-if or when a referee wants to consult another official). The game clock will be
+when a referee wants to consult another official). The game clock will be
 run by a referee or a referee assistant (see <<referee-and-referee-assistant>>
 for more information on their roles).
 
-Teams are expected to be on the field 5 minutes before their game starts. Being
-at the inspection table does not count in favour of this time limit. Teams that
+Teams are expected to be at the field 5 minutes before their game starts. Being
+at the inspection table does not count in favor of this time limit. Teams that
 are late for the start of the game can be penalized one goal *per 30 seconds*
 at the referee’s discretion.
 
@@ -169,13 +169,13 @@ discarded and the match resumes with a <<neutral-kickoff>>.
 ==== Neutral kick-off
 
 A neutral kick-off is the same as the one described in <<kick-off>> with a
-small change: all robots need must be at least 30 cm away from the ball
+small change: all robots must be at least 30 cm away from the ball
 (outside of the center circle).
 
 [[human-interference]]
 === Human interference
 
-Except for the kick-off, human interference from the teams (e.g.  touching the
+Except for the kick-off, human interference from the teams (e.g. touching the
 robots) during the game is not allowed unless explicitly permitted by a
 referee. Violating team/team member(s) can be disqualified from the game.
 
@@ -344,7 +344,7 @@ be shared between teams.
 Each team member needs to carry a technical role.
 
 Each team must have a *captain*. The captain is the person responsible
-for communication with referees. The team can replace its captain during
+for communication with referees. The team can replace its captain with another team member during
 the competition. Team is allowed to have at most two members beside the
 field during game play: they will usually be the captain and an
 assistant team member.
@@ -363,15 +363,14 @@ green or orange shirts) either in hardware (e.g. blocking FoV from looking up) o
 in software (e.g. masking the input image).~~}
 
 The referee can interrupt a game in progress if any kind of interference from
-spectators is suspected (color clothing, IR emitters, camera flashes, mobile
+spectators is suspected (IR emitters, camera flashes, mobile
 phones, radios, computers, etc.).
 
 This needs to be confirmed by an OC member if a claim is placed by the other
 team. A team claiming that their robot is affected by colors has to show the
 proof/evidence of the interference.
 
-.Anyone close to the playing field is not allowed to wear orange, yellow or blue clothes
-image::media/image2.png[scaledwidth=40.0%]
+
 
 [[robots]]
 == ROBOTS
@@ -405,7 +404,7 @@ be confirmed by an OC member if a claim is placed by the other team.
 [[robots-control]]
 === Control
 
-The use of remote control of any kind is not allowed during the match.  Robots
+The use of remote control of any kind is not allowed during the match. Robots
 must be started and stopped manually by humans and be controlled autonomously.
 
 [[communication]]
@@ -430,8 +429,10 @@ Robots must respond to the ball in a direct forward movement towards it. For
 example, it is not enough to basically just move left and right in front of
 their own goal, it must also move directly towards the ball in a forward
 movement. At least one team robot must be able to seek and approach the ball
-anywhere on the field, unless the team has only one robot on the field at that
+anywhere on the field, unless the team has only one robot on the field at that 
 time.
+
+// helper for diff- delete any time
 
 A robot must touch the ball that is placed no further than 20 cm from any point
 on its convex hull within 10 seconds. If a robot does not do so within the time
@@ -705,14 +706,14 @@ members.
 [[rule-clarification]]
 === Rule clarification
 
-Rule clarification may be made by members of the RoboCupJunior Soccer
+Rule clarification may be made by members of the RoboCupJunior Soccer League
 Committee and Organizing Committee, if necessary even during a tournament.
 
 [[rule-modification]]
 === Rule modification
 
 If special circumstances, such as unforeseen problems or capabilities of a
-robot occur, rules may be modified by the RoboCupJunior Soccer Committee, if
+robot occur, rules may be modified by the RoboCupJunior Soccer League Committee, if
 necessary even during a tournament.
 
 [[regulatory-statutes]]
@@ -931,19 +932,19 @@ to do so. During the interview, the team will be evaluated using so called
 Rubrics, which are published on the website mentioned in the beginning of these
 rules.
 
-The Technical Committee recommends the implementation of interviews in regional
+The Soccer League Committee recommends the implementation of interviews in regional
 competitions as well, but this is not mandatory.
 
 [[technical-challenges]]
 === Technical Challenges
 
 Inspired by the major leagues and the need for further technological
-advancement of the leagues, the Soccer Committee has decided to introduce so
+advancement of the leagues, the Soccer League Committee has decided to introduce so
 called *Technical Challenges*.
 
 The idea of these challenges is to give the teams an opportunity to show off
 various abilities of their robots which may not get noticed during the regular
-games. Furthermore, the Technical Committee envisions these challenges to be a
+games. Furthermore, the Soccer League Committee envisions these challenges to be a
 place for testing new ideas that may make it to the future rules, or otherwise
 shape the competition.
 
@@ -1079,12 +1080,12 @@ much you learn that counts!_*
 === Intro League
 
 In order to help newcomers experience the RoboCupJunior Soccer competition, the
-Soccer Committee would like to encourage local regional competitions to include
+Soccer League Committee would like to encourage local regional competitions to include
 a so called "Intro League". Although such a league will not be part of the
-international competition, the Soccer Committee still believes that it is
+international competition, the Soccer League Committee still believes that it is
 worthwhile to make it part of regional and super-regional competitions. Each
 regional and super-regional competition will likely have its specific rules but
-the Soccer Committee would like to suggest they contain the following:
+the Soccer League Committee would like to suggest they contain the following:
 
 - The Intro League should be at least to some extend based on the
   RoboCupJunior Soccer rules
@@ -1124,7 +1125,7 @@ Sample Intro League rules already in use can be found on the links below:
 
 Answering to the request for a soccer ball for RCJ tournaments that would be
 more robust to interfering lights, less energy consuming and mechanically more
-resistant, the RCJ Soccer Committee defined the following technical
+resistant, the RCJ Soccer League Committee defined the following technical
 specifications with the special collaboration from EK Japan and HiTechnic.
 
 Producers of these balls must apply for a certification process upon which they
@@ -1190,13 +1191,13 @@ goals, or the field itself.
 === Official suppliers for pulsed balls
 
 Currently, there is one ball that has been approved by the RoboCupJunior
-Soccer Committee:
+Soccer League Committee:
 
 - RoboSoccer ball operating in MODE A (pulsed) made by EK Japan/Elekit (https://elekit.co.jp)
 
 Note that this ball was previously called RCJ-05.  While you may not be able to
 find a ball with this name anymore, any IR ball produced by EK Japan/Elekit is
-considered to be approved by the Soccer Committee.
+considered to be approved by the Soccer League Committee.
 
 [appendix]
 [[passive-ball-spec]]
@@ -1207,7 +1208,7 @@ considered to be approved by the Soccer Committee.
 
 In order to push the state of the art in the Soccer competition forward,
 while also trying to bridge the gap between the Junior and Major leagues, the
-RCJ Soccer Committee chose a standard orange golf ball as the "passive" ball.
+RCJ Soccer League Committee chose a standard orange golf ball as the "passive" ball.
 This is the same choice as the Small Size League makes footnote:[See the SSL
 rules at https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball] and since
 these balls are standardized, they should be cheap and easy to get anywhere
