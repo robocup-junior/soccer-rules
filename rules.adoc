@@ -71,7 +71,7 @@ Please see <<ball>> for balls specifications and <<league-regulations>> for
 more details for specifications/regulations.
 
 _If you would like to start with RoboCupJunior Soccer, please contact the
-organizer of your regional RoboCupJunior competition and ask them about_ <<intro-league>>.
+organizer of your regional RoboCupJunior competition and ask them about_ <<entry-league>>.
 
 Unless specified otherwise, all parts of these rules are released under the
 terms of the Creative Commons Attribution-ShareAlike License.
@@ -1075,37 +1075,34 @@ design, team spirit and individual games.
 Note that as stated in <<spirit>>, *_it is not whether you win or lose, but how
 much you learn that counts!_*
 
-[[intro-league]]
-=== Intro League
+[[entry-league]]
+=== Entry League
 
 In order to help newcomers experience the RoboCupJunior Soccer competition, the
-Soccer Committee would like to encourage local regional competitions to include
-a so called "Intro League". Although such a league will not be part of the
+Soccer Committee would like to encourage regional competitions to include
+a so called "Entry League". Although such a league will not be part of the
 international competition, the Soccer Committee still believes that it is
-worthwhile to make it part of regional and super-regional competitions. Each
+worthwhile to make it part of regional and super-regional competitions because a
+number of regions are already running and report great success with them. Each
 regional and super-regional competition will likely have its specific rules but
-the Soccer Committee would like to suggest they contain the following:
+the Soccer Committee maintains a suggested ruleset to base Entry Leagues around.
 
-- The Intro League should be at least to some extend based on the
-  RoboCupJunior Soccer rules
+- The Entry League should be roughly based on the RoboCupJunior Soccer rules
 
 - Only competitors that did not previously participate in an international
   (that is not a regional or super-regional) competition are allowed to take
   part.
 
-- It may be worth creating two sub-leagues: a 2v2 one where two robots from one
-  team play against two robots from the other, and a 1v1 one where both teams
-  play with just one robot.
+- The Entry League should ignore the Out of Bounds rule either by allowing play
+  all the way to the walls or by placing robots that go out of bounds back in
+  immediately.
 
-- The Intro League should ignore the Out of Bounds rule.  When robots go out of
-  bounds, the referee should put them back in.
-
-- The robots should be created from official Lego or Fishertechnik kits, except
-  for sensors necessary for robots to be able to find the ball (i.e.  ball
-  detector) and the orientation of the field (i.e. compass).
-
-- The robots should be limited in size to 22,4cm by 22,4cm by 22,4cm (all
-  measurements +/- 1cm). There shall be no weight limit.
+- If may be considered to host an additional league for robots created exclusively
+  from a specific set of permissible parts (e.g. only official Lego or Fischertechnik 
+  kits, except for sensors necessary for robots to be able to find the ball (e.g. ball
+  detector) and the orientation of the field (e.g. compass). For these robots a square
+  permissible size of 22,4cm by 22,4cm by 22,4cm (all measurements +/- 1cm) have been
+  used without a weight limit im some regional and super-regional tournaments.
 
 Sample Intro League rules already in use can be found on the links below:
 
