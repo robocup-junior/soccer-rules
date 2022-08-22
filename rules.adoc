@@ -29,7 +29,8 @@ by the RoboCupJunior Soccer League Committee. The English version of these
 rules has priority over any translations.
 
 Teams are advised to check the RoboCupJunior Soccer site
-https://junior.forum.robocup.org/ for OC (Organization Committee) procedures
+https://junior.forum.robocup.org/ for OC (Organization Committee, the Soccer
+League Committee acts as Organization Committee for the international competition) procedures
 and requirements for the international competition. Each team is responsible
 for verifying the latest version of the rules prior to competition. {++Teams
 should ask for clarifications on the Forum where necessary.++}
@@ -901,6 +902,9 @@ aspects which are checked will stay the same.
 
 [[international-competition]]
 == INTERNATIONAL COMPETITION
+
+At the international competition the Soccer League Committee will act as the
+organizing committee of the competition.
 
 [[international-competition-team]]
 === Team
