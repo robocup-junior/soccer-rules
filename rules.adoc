@@ -1262,7 +1262,7 @@ and by means of the Kicker Power Measuring Device in Soccer Lightweight.++}
 
 ==== Soccer Open Kicker Power Measurement
 {++Kicker power measurement will be performed on-field in Soccer Open. The test
-is performed as follows:++}
+will use the tournament ball. It is performed as follows:++}
 
 1.  {++Place robot inside the left corner of a goal.++}
 2.  {++Perform a kick into the opposing goal++}
