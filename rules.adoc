@@ -1264,7 +1264,7 @@ and by means of the Kicker Power Measuring Device in Soccer Lightweight.++}
 {++Kicker power measurement will be performed on-field in Soccer Open. The test
 is performed as follows:++}
 
-1.  {++Place robot at the back wall on the left side of the a goal.++}
+1.  {++Place robot inside the left corner of a goal.++}
 2.  {++Perform a kick into the opposing goal++}
 3.  {++The kicker power test is passed if after bouncing off of the opposite goal
 the ball does not return further than the front line of to the penalty area
