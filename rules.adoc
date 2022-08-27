@@ -1064,7 +1064,7 @@ communication between multiple robots in a SuperTeam easier in the future, the
 Organization Committee will provide each team with a communication module. Each
 team will be expected to interface with this module using a single 2.54mm GPIO
 pin at present and the Organization Committee plans on extending this to using
-UART for more complex applications in future years. More details will be
+UART or I²C for more complex applications in future years. More details will be
 provided by the Organization Committee shortly before the competition.++}
 
 Teams competing in the International Competition can receive awards for their
