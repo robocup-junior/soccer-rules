@@ -1242,9 +1242,10 @@ tournament organizers.++}
 [[passive-surface]]
 ==== Surface
 
-Engravings on the ball’s surface are tolerated. The inside of the ball should
-be hollow {++and the ball should not have a soft-touch finish. Teams must be
-prepared to play with balls as supplied by tournament organizers.++}
+Engravings {++and printed labels++} on the ball’s surface are tolerated. 
+{~~The inside of the ball should be hollow ~>The the ball should not have 
+a soft-touch finish. Teams must be prepared to play with balls as supplied 
+by tournament organizers.~~}
 
 [[passive-weight]]
 ==== Weight
