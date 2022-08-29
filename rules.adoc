@@ -110,12 +110,12 @@ halves. The duration of each half is 10-minutes. There will be a 5-minute break
 in between the halves.
 
 The game clock will run for the duration of the halves without stopping (except
-if or when a referee wants to consult another official). The game clock will be
+when a referee wants to consult another official). The game clock will be
 run by a referee or a referee assistant (see <<referee-and-referee-assistant>>
 for more information on their roles).
 
-Teams are expected to be on the field 5 minutes before their game starts. Being
-at the inspection table does not count in favour of this time limit. Teams that
+Teams are expected to be at the field 5 minutes before their game starts. Being
+at the inspection table does not count in favor of this time limit. Teams that
 are late for the start of the game can be penalized one goal *per 30 seconds*
 at the referee’s discretion.
 
@@ -169,13 +169,13 @@ discarded and the match resumes with a <<neutral-kickoff>>.
 ==== Neutral kick-off
 
 A neutral kick-off is the same as the one described in <<kick-off>> with a
-small change: all robots need must be at least 30 cm away from the ball
+small change: all robots must be at least 30 cm away from the ball
 (outside of the center circle).
 
 [[human-interference]]
 === Human interference
 
-Except for the kick-off, human interference from the teams (e.g.  touching the
+Except for the kick-off, human interference from the teams (e.g. touching the
 robots) during the game is not allowed unless explicitly permitted by a
 referee. Violating team/team member(s) can be disqualified from the game.
 
@@ -208,20 +208,27 @@ or above their height), it is deemed damaged. (<<damaged-robots>>)++}
 === Scoring
 
 A goal is scored when the ball strikes or touches the back wall of the goal.
-Goals scored any robot lead to the same end result: they give one goal to the
+Goals scored by any robot have the same end result: they give one goal to the
 team on the opposite side. After a goal, the game will be restarted with a
 kick-off from the team who was scored against.
 
 [[inside-penalty-area]]
 === Inside the Penalty Area
 
-No robots are supposed to be fully inside the penalty area. As the penalty
+No robots are allowed to be fully inside the penalty area. As the penalty
 areas are marked with a white line, the Out of Bounds and Out of Reach rules
 apply as well. (<<out-of-bounds>>)
 
-If two robots from the same team are at least partially in a penalty area, the robot further from the ball will be moved to the _furthest unoccupied neutral spot_ immediately. If this happens repeatedly, a robot may be deemed damaged at referee's discretion. (<<damaged-robots>>)
+If two robots from the same team are at least partially in a penalty area,
+the robot further from the ball will be moved to the _furthest unoccupied
+neutral spot_ immediately. If this happens repeatedly, a robot may be deemed
+damaged at referee's discretion. (<<damaged-robots>>)
 
-If an attacking and a defending robot touch each other while at least one of them is at least partially inside the penalty area, and at least one of them has physical contact with the ball, this may be called "pushing" at the referee's discretion. In this case, the ball will be moved to the _furthest unoccupied neutral spot_ immediately.
+If an attacking and a defending robot touch each other while at least one of
+them is at least partially inside the penalty area, and at least one of them
+has physical contact with the ball, this may be called "pushing" at the
+referee's discretion. In this case, the ball will be moved to the _furthest
+unoccupied neutral spot_ immediately.
 
 If a goal is scored as a result of a "pushing" situation, it will not be
 granted.
@@ -302,7 +309,7 @@ sensor calibration, computers and other tools in the playing area, only for the
 After a robot has been fixed, it will be placed on the unoccupied neutral spot
 furthest from the ball, facing its own goal. A robot can only be returned to
 the field if the damage has been repaired. If the referee notices that the
-robot was returned to the field with the same original problem, s/he may ask
+robot was returned to the field with the same original problem, they may ask
 the robot to be removed and proceed with the game as if the robot had not been
 returned.
 
@@ -345,7 +352,8 @@ be shared between teams.
 Each team member needs to carry a technical role.
 
 Each team must have a *captain*. The captain is the person responsible
-for communication with referees. The team can replace its captain during
+for communication with referees. The team can replace its captain
+with another team member during
 the competition. Team is allowed to have at most two members beside the
 field during game play: they will usually be the captain and an
 assistant team member.
@@ -364,15 +372,13 @@ green or orange shirts) either in hardware (e.g. blocking FoV from looking up) o
 in software (e.g. masking the input image).~~}
 
 The referee can interrupt a game in progress if any kind of interference from
-spectators is suspected (color clothing, IR emitters, camera flashes, mobile
+spectators is suspected (IR emitters, camera flashes, mobile
 phones, radios, computers, etc.).
 
 This needs to be confirmed by an OC member if a claim is placed by the other
 team. A team claiming that their robot is affected by colors has to show the
 proof/evidence of the interference.
 
-.Anyone close to the playing field is not allowed to wear orange, yellow or blue clothes
-image::media/image2.png[scaledwidth=40.0%]
 
 [[robots]]
 == ROBOTS
@@ -406,7 +412,7 @@ be confirmed by an OC member if a claim is placed by the other team.
 [[robots-control]]
 === Control
 
-The use of remote control of any kind is not allowed during the match.  Robots
+The use of remote control of any kind is not allowed during the match. Robots
 must be started and stopped manually by humans and be controlled autonomously.
 
 [[communication]]
@@ -502,9 +508,9 @@ https://junior.forum.robocup.org/t/enlarge-size-of-playing-area-soccer-2023-rule
 [[dimensions-of-the-field]]
 === Dimensions of the field
 
-The playing-field is {~~132 cm by 193 cm~>162 cm by 223 cm.~~}. The field is
-marked by a white line which is part of the playing-field. Around the
-playing-field, beyond the white line, there is an outer area of {~~25 cm in width~>10 cm in width~~}.
+The playing field is {~~132 cm by 193 cm~>162 cm by 223 cm.~~}. The field is
+marked by a white line which is part of the playing field. Around the
+playing field, beyond the white line, there is an outer area of {~~25 cm in width~>10 cm in width~~}.
 
 The floor near the exterior wall includes a wedge, which is an incline with a
 10 cm base and 2 +/- 1 cm rise for allowing the ball to roll back into play
@@ -536,7 +542,7 @@ enough from the black exterior.
 
 The floor consists of dark green carpet on top of a hard level surface.  All
 straight lines on the field should be {~~painted~>painted, marked with tape
-or installed as white carpet and be somewhat robust to tearing or ripping.~~} {~~and have a width of 20 mm.~>Lines should have a width of 20mm (±10%).~~}
+or installed as white carpet and be somewhat robust to tearing or ripping.~~} {~~and have a width of 20 mm.~>Lines should have a width of 20 mm (±10%).~~}
 
 It is impractical to set international constraints on carpet other than it
 being dark green. In the spirit of the competition, teams should design robots
@@ -570,8 +576,8 @@ during kick-off.
 In front of each goal there is a 25 cm wide and {~~70 cm long~>80 cm long~~} penalty
 area.
 
-The penalty areas are marked by a white line of 20 mm width. The line is part
-of the area.
+The penalty areas are marked by a white line of 20 mm (±10%) width. The
+line is part of the area.
 
 [[lighting-and-magnetic-conditions]]
 === Lighting and Magnetic Conditions
@@ -706,14 +712,14 @@ members.
 [[rule-clarification]]
 === Rule clarification
 
-Rule clarification may be made by members of the RoboCupJunior Soccer
+Rule clarification may be made by members of the tournament organizers
 Committee and Organizing Committee, if necessary even during a tournament.
 
 [[rule-modification]]
 === Rule modification
 
 If special circumstances, such as unforeseen problems or capabilities of a
-robot occur, rules may be modified by the RoboCupJunior Soccer Committee, if
+robot occur, rules may be modified by the tournament organizers, if
 necessary even during a tournament.
 
 [[regulatory-statutes]]
@@ -881,7 +887,7 @@ sample programs, not even if they are modified.
 
 Robots must be inspected and certified every day before the first game is
 played. The Organizing Committee may request other inspections if necessary,
-including random inspections which may happen at any time.  The routine
+including random inspections which may happen at any time. The routine
 inspections include:
 
 * Weight restrictions for the particular sub-league (see <<dimensions>>).
@@ -1125,7 +1131,7 @@ Sample Intro League rules already in use can be found on the links below:
 
 Answering to the request for a soccer ball for RCJ tournaments that would be
 more robust to interfering lights, less energy consuming and mechanically more
-resistant, the RCJ Soccer Committee defined the following technical
+resistant, the RCJ Soccer League Committee defined the following technical
 specifications with the special collaboration from EK Japan and HiTechnic.
 
 Producers of these balls must apply for a certification process upon which they
@@ -1191,13 +1197,13 @@ goals, or the field itself.
 === Official suppliers for pulsed balls
 
 Currently, there is one ball that has been approved by the RoboCupJunior
-Soccer Committee:
+Soccer League Committee:
 
 - RoboSoccer ball operating in MODE A (pulsed) made by EK Japan/Elekit (https://elekit.co.jp)
 
 Note that this ball was previously called RCJ-05.  While you may not be able to
 find a ball with this name anymore, any IR ball produced by EK Japan/Elekit is
-considered to be approved by the Soccer Committee.
+considered to be approved by the Soccer League Committee.
 
 [appendix]
 [[passive-ball-spec]]
