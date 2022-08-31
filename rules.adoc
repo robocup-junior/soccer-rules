@@ -86,7 +86,7 @@ the forum any time) aim to improve general gameplay by reducing lack of progress
 and out of reach situations (increased playing area size) and for Open League easing
 optics requirements and permitting more kicker power.
 
-Detailled changes are listed below and link to the corresponding place in the rule.
+Detailed changes are listed below and link to the corresponding place in the rule.
 
 {+-~TOC-CHANGES~-+}
 
@@ -348,7 +348,7 @@ kick-off.
 === Regulations
 
 A team must have more than one member to form a RoboCupJunior team to
-participate in the international competiton. Team member(s) and/or robot(s) cannot
+participate in the international competition. Team member(s) and/or robot(s) cannot
 be shared between teams.
 
 Each team member needs to carry a technical role.
@@ -1086,7 +1086,7 @@ Soccer League Committee would like to encourage competitions to include
 a so called "Entry League". Although such a league will not be part of the
 international competition, the Soccer League Committee still believes that it is
 worthwhile to make it part of regional and super-regional competitions. To this end
-the Soccer League Committee has prepared a suggested ruleset. footnote:[avaiable
+the Soccer League Committee has prepared a suggested ruleset. footnote:[avaliable
 as HTML and PDF at
 https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.html and
 https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.pdf respectively]
@@ -1128,7 +1128,7 @@ etc. - on-off detection with a possible gross indication of distance).
 ==== IR light
 
 The ball emits infra-red (IR) light of wavelengths in the range 920nm - 960nm,
-pulsed at a square-wave carrier frequency of 40 KHz. The ball should have
+pulsed at a square-wave carrier frequency of 40 kHz. The ball should have
 enough ultra-bright, wide-angle LEDs to minimize unevenness of the IR output.
 
 [[pulsed-diameter]]
@@ -1147,7 +1147,7 @@ meters onto a hardwood table or floor.
 [[pulsed-modulation]]
 ==== Modulation
 
-The 40 KHz carrier output of the ball shall be modulated with a trapezoidal
+The 40 kHz carrier output of the ball shall be modulated with a trapezoidal
 (stepped) waveform of frequency 1.2 kHz. Each 833-microsecond cycle of the
 modulation waveform shall comprise 8 carrier pulses at full intensity, followed
 (in turn) by 4 carrier pulses at 1/4 of full intensity, four pulses at 1/16 of
@@ -1178,7 +1178,7 @@ goals, or the field itself.
 Currently, there is one ball that has been approved by the
 Soccer League Committee:
 
-- RoboSoccer ball operating in MODE A (pulsed) made by EK Japan/Elekit (https://elekit.co.jp/en/product/RCJ-05R)
+- RoboCup Junior Soccer ball operating in MODE A (pulsed) made by EK Japan/Elekit (https://elekit.co.jp/en/product/RCJ-05R)
 
 Note that this ball was previously called RCJ-05. While you may not be able to
 find a ball with this name anymore, any IR ball produced by EK Japan/Elekit is
