@@ -531,22 +531,27 @@ shaped.
 The goal "posts" are positioned over the white line marking the limits of the
 field.
 
-It is recommended that the blue be of a brighter shade so that it is different
-enough from the black exterior.
+The interior walls and of each goal are colored matte, one goal yellow and the
+other goal blue. It is recommended that the blue be of a brighter shade so that
+it is different enough from the black exterior.
 
 [[floor]]
 === Floor
 
-The floor consists of dark green carpet on top of a hard level surface. All
-straight lines on the field should be {~~painted~>painted, marked with tape
+{~~The floor consists of dark green carpet on top of a hard level surface~>The floor
+consists of green carpet ideally of darker shade on top of a hard level surface. Teams
+should be prepared to adjust to different levels of contrast between the green carpet
+and lines as some events may be restricted to using lighter shades of green~~}  All
+{~~straight lines~>lines~~} on the field should be {~~painted~>painted, marked with tape,
 or installed as white carpet and be somewhat resistant to tearing or ripping.~~}
-{~~and have a width of 20 mm.~>Lines should have a width of 20 mm (±10%).~~}
+{~~and have a width of 20 mm.~>Lines should have a width of 20mm (±10%).~~}
 
-Teams should design robots
-to be tolerant or adaptable to different fibers, textures, construction, {++brightness++}
-density, and designs of carpet especially when competing amongst different
-regions. Teams are encouraged to visit regional resources or reach out to local
-tournament organizers for suggestions if desiring to build their own practice
+It is impractical to set international constraints on carpet other than it
+being {~~dark green~>green~~}. In the spirit of the competition, teams should design robots
+to be tolerant or adaptable to different fibers, textures, construction,
+density, {~~and~>shades, and~~} designs of carpet especially when competing amongst different
+regions. Teams are encouraged to visit regional resources or reach out to Local
+Organization Committee for suggestions if desiring to build their own practice
 field(s).
 
 [[neutral-spots]]
@@ -584,15 +589,13 @@ magnetic interference. However, the robots need to be constructed in a way
 which allows them to work in conditions that are not perfect (i.e. by not
 relying on compass sensors or specific lightning conditions).
 
-//[discrete]
-//[[field-diagrams]]
-//== FIELD DIAGRAMS
+[discrete]
+[[field-diagrams]]
+== FIELD DIAGRAMS
 
-//image:media/field_without_robots.jpg[image,scaledwidth=90.0%]
+image:media/SoccerFieldWedgeNoWedge.jpg[image,scaledwidth=90.0%]
 
-//image:media/field_measurements.jpg[image,scaledwidth=90.0%]
-
-//image:media/field_goal_measurements.jpg[image,scaledwidth=80.0%]
+image:media/SoccerFieldDrawing.jpg[image,scaledwidth=90.0%]
 
 
 [[ball]]
@@ -1068,6 +1071,9 @@ team will be expected to interface with this module using a single 2.54mm GPIO
 pin at present and the Soccer League Committee plans on extending this to using
 UART for more complex applications in future years. More details will be
 provided by the Soccer League Committee shortly before the competition.++}
+pin at present and the Soccer League Committee plans on extending this to using
+UART or I²C for more complex applications in future years. More details will be
+provided by the Soccer League Committee before the competition.++}
 
 Teams competing in the international competition can receive awards for their
 performance. These awards are decided and introduced by the Soccer League
@@ -1227,9 +1233,10 @@ tournament organizers.++}
 [[passive-surface]]
 ==== Surface
 
-Engravings on the ball’s surface are tolerated. The inside of the ball should
-be hollow {++and the ball should not have a soft-touch finish. Teams must be
-prepared to play with the balls supplied by tournament organizers.++}
+Engravings {++and printed labels++} on the ball’s surface are tolerated. 
+{~~The inside of the ball should be hollow ~>The the ball should not have 
+a soft-touch finish. Teams must be prepared to play with balls as supplied 
+by tournament organizers.~~}
 
 [[passive-weight]]
 ==== Weight
@@ -1247,12 +1254,13 @@ and by means of the Kicker Power Measuring Device in Soccer Lightweight.++}
 
 ==== Soccer Open Kicker Power Measurement
 {++Kicker power measurement will be performed on-field in Soccer Open. The test
-is performed as follows:++}
+will use the tournament ball. It is performed as follows:++}
 
-1. {++Place robot under test at the back wall on the left side of the a goal.++}
-2. {++Perform a kick into the opposing goal++}
-3. {++The kicker power test is passed if after bouncing off of the opposite goal
-the ball does not return further than the front line of the penalty area
+
+1.  {++Place robot inside the left corner of a goal.++}
+2.  {++Perform a kick into the opposing goal++}
+3.  {++The kicker power test is passed if after bouncing off of the opposite goal
+the ball does not return further than the front line of to the penalty area
 it was shot from.++}
 
 [[kicker-power-measure-preamble]]
