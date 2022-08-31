@@ -479,7 +479,7 @@ in <<league-regulations>>.
 Robots that do not abide by the specifications/regulations (see
 <<regulations>>) are not allowed to play, unless these rules specify otherwise.
 
-If violations are detected during a running game the team is disqualified for
+If violations are detected during a running game the team can be disqualified for
 that game.
 
 If similar violations occur repeatedly, the team can be disqualified from the
@@ -628,7 +628,7 @@ robots during normal game play.
 Robots are not allowed to cause damage to the field or to the ball during
 normal game play.
 
-A robot that causes damage may be disqualified from a specific match at the
+A robot that causes damage can be disqualified from a specific match at the
 referee’s discretion. The OC will also be informed.
 
 Humans are not allowed to cause deliberate interference with robots or damage
