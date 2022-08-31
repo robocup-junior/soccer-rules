@@ -858,7 +858,7 @@ protected from all human contact and direct contact with other robots.
 
 IMPORTANT: All driven dribbler gears must be covered with metal or hard plastic.
 
-When batteries are transported or moved, it is recommended that safety bags be
+When batteries are transported or moved, it is *strongly* recommended that safety bags be
 used. Reasonable efforts should be made to make sure that in all circumstances
 robots avoid short-circuits and chemical or air leaks.
 
@@ -934,7 +934,7 @@ to do so. During the interview, the team will be evaluated using so called
 Rubrics, which are published on the website mentioned in the beginning of these
 rules.
 
-The Soccer League Committee recommends the implementation of interviews in regional
+The Soccer League Committee *strongly* recommends the implementation of interviews in regional
 competitions as well, but this is not mandatory.
 
 [[technical-challenges]]
