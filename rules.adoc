@@ -792,8 +792,8 @@ ball.
 
 In Lightweight, the robot must not emit infrared light.
 
-In Lightweight, infrared light reflecting materials must not be used on the
-outside. If robots are painted, they must be painted matte. Minor parts that
+In Lightweight, infrared light reflecting materials must not be visible.
+If robots are painted, they must be painted matte. Minor parts that
 reflect infrared light could be used as long as other robots are not affected.
 
 [[regulations-limitations]]
