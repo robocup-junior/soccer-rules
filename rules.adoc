@@ -1094,7 +1094,7 @@ In order to help newcomers experience the RoboCupJunior Soccer competition, the
 Soccer League Committee would like to encourage competitions to include
 a so called "Entry League". Although such a league will not be part of the
 international competition, the Soccer League Committee still believes that it is
-worthwhile to make it part of regional and super-regional competitions. To this end
+worthwhile to make it part of regional and super-regional competitions. To this end,
 the Soccer League Committee has prepared a suggested ruleset. footnote:[avaliable
 as HTML and PDF at
 https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.html and
