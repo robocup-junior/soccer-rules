@@ -528,8 +528,9 @@ shaped.
 The goal "posts" are positioned over the white line marking the limits of the
 field.
 
-It is recommended that the blue be of a brighter shade so that it is different
-enough from the black exterior.
+The interior walls and of each goal are colored matte, one goal yellow and the
+other goal blue. It is recommended that the blue be of a brighter shade so that
+it is different enough from the black exterior.
 
 [[floor]]
 === Floor
