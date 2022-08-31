@@ -91,7 +91,7 @@ introducing new challenges and standard situations.
 Robots must be constructed and programmed exclusively by student members of the
 team. Mentors, teachers, parents or companies should not be involved in the
 design, construction, assembly, programming or debugging of robots. To avoid
-embarrassment and possible bcation, it is extremely important that
+embarrassment and possible disqualification, it is extremely important that
 teams abide by <<league-regulations>>, especially <<regulations-construction>>
 and <<regulations-programming>>, and all other competitor’s rules.
 
