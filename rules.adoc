@@ -535,14 +535,14 @@ it is different enough from the black exterior.
 [[floor]]
 === Floor
 
-The floor consists of dark green carpet on top of a hard level surface.  All
-straight lines on the field should be {~~painted~>painted, marked with tape
+{~~The floor consists of dark green carpet on top of a hard level surface~>The floor consists of green carpet ideally of darker shade on top of a hard level surface. Teams should be prepared to adjust to different levels of contrast between the green carpet and lines as some events may be restricted to using lighter shades of green~~}  All
+{~~straight lines~>lines~~} on the field should be {~~painted~>painted, marked with tape,
 or installed as white carpet and be somewhat robust to tearing or ripping.~~} {~~and have a width of 20 mm.~>Lines should have a width of 20mm (±10%).~~}
 
 It is impractical to set international constraints on carpet other than it
-being dark green. In the spirit of the competition, teams should design robots
+being {~~dark green~>green~~}. In the spirit of the competition, teams should design robots
 to be tolerant or adaptable to different fibers, textures, construction,
-density, and designs of carpet especially when competing amongst different
+density, {~~and~>shades, and~~} designs of carpet especially when competing amongst different
 regions. Teams are encouraged to visit regional resources or reach out to Local
 Organization Committee for suggestions if desiring to build their own practice
 field(s).
