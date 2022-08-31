@@ -121,7 +121,7 @@ for more information on their roles).
 
 Teams are expected to be at the field 5 minutes before their game starts. Being
 at the inspection table does not count in favor of this time limit. Teams that
-are late for the start of the game can be penalized one goal *per 30 seconds*
+are late for the start of the game may be penalized one goal *per 30 seconds*
 at the referee’s discretion.
 
 The final game score will be trimmed so that there is at most 10-goal
@@ -182,7 +182,7 @@ small change: all robots must be at least 30 cm away from the ball
 
 Except for the kick-off, human interference from the teams (e.g. touching the
 robots) during the game is not allowed unless explicitly permitted by a
-referee. Violating team(s)/team member(s) can be disqualified from the game.
+referee. Violating team(s)/team member(s) may be disqualified from the game.
 
 The referee or a referee assistant can help robots get unstuck if the ball is
 not being disputed near them and if the situation was created from normal
@@ -357,7 +357,7 @@ Each team must have a *captain*. The captain is the person responsible
 for communication with referees. The team can replace its captain
 with another team member during
 the competition. Each team is allowed to have at most two members beside the
-field during game play: they will usually be the captain and an
+field during gameplay: they will usually be the captain and an
 assistant team member.
 
 [[team-violations]]
@@ -420,7 +420,7 @@ must be started and stopped manually by humans and be controlled autonomously.
 [[communication]]
 === Communication
 
-Robots are not allowed to use any kind of communication during game play unless
+Robots are not allowed to use any kind of communication during gameplay unless
 the communication between robots is via Bluetooth class 2 or class 3
 footnote:[range shorter than 20 meters] or via any other device that
 communicates using the 802.15.4 protocol (e.g., ZigBee and XBee).
@@ -487,10 +487,10 @@ in <<league-regulations>>.
 Robots that do not abide by the specifications/regulations (see
 <<regulations>>) are not allowed to play, unless these rules specify otherwise.
 
-If violations are detected during a running game the team can be disqualified for
+If violations are detected during a running game the team may be disqualified for
 that game.
 
-If similar violations occur repeatedly, the team can be disqualified from the
+If similar violations occur repeatedly, the team may be disqualified from the
 tournament.
 
 [[field]]
@@ -626,10 +626,10 @@ robot soccer. It is expected that all robots will be built with consideration
 to other participants.
 
 Robots are not allowed to cause deliberate interference with or damage to other
-robots during normal game play.
+robots during normal gameplay.
 
 Robots are not allowed to cause damage to the field or to the ball during
-normal game play.
+normal gameplay.
 
 A robot that causes damage may be disqualified from a specific match at the
 tournament organizer's discretion. 
@@ -671,13 +671,13 @@ respect the RoboCupJunior mission.
 [[violations-disqualification]]
 === Violations / Disqualification
 
-Teams that violate the code of conduct can be disqualified from the tournament.
+Teams that violate the code of conduct may be disqualified from the tournament.
 It is also possible to disqualify only single person or single robot from
 further participation in the tournament.
 
 In less severe cases of violations of the code of conduct, a team will be given
 a warning. In severe or repeated cases of
-violations of the code of conduct a team can be disqualified immediately
+violations of the code of conduct a team may be disqualified immediately
 without a warning.
 
 [[conflict-resolution]]
@@ -698,7 +698,7 @@ immediate disqualification from the game.
 
 Only the captain has a mandate to freely speak to the referee and/or their
 assistant. Shouting at a referee and/or their assistant, as well as demanding a
-change in ruling can be directly penalized by a warning at the referee’s
+change in ruling may be penalized by a warning at the referee’s
 discretion.
 
 At the conclusion of the game, the result recorded in the scoresheet is final.
@@ -1140,7 +1140,7 @@ used.
 [[pulsed-drop-test]]
 ==== Drop Test
 
-The ball must be able to resist normal game play. As an indication of its
+The ball must be able to resist normal gameplay. As an indication of its
 durability, it should be able to survive, undamaged, a free-fall from 1.5
 meters onto a hardwood table or floor.
 
@@ -1210,7 +1210,7 @@ The diameter of the ball is required to be 42mm +- 1mm.
 [[passive-drop-test]]
 ==== Drop Test
 
-The ball must be able to resist normal game play. As an indication of its
+The ball must be able to resist normal gameplay. As an indication of its
 durability, it should be able to survive, undamaged, a free-fall from 1.5
 meters onto a hardwood table or floor.
 
