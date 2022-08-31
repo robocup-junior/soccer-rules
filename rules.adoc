@@ -1,4 +1,4 @@
-= RoboCupJunior Soccer Rules 2023 (Draft)
+  = RoboCupJunior Soccer Rules 2023 (Draft)
 {docdate}
 :toc: left
 :sectanchors:
@@ -786,7 +786,10 @@ ball.
 [[regulations-inference-in-lightweight]]
 ==== Infrared interference in Lightweight
 
-In Lightweight, the robot must not emit infrared light.
+{~~In Lightweight, the robot must not emit infrared light.~>
+Components designed to emit IR (e.g. ToF, LiDAR, IR distance sensors,
+IR LEDs/LASERs etc.) are not allowed and tournament organizers will require
+such devices to be removed or covered up.~~}
 
 In Lightweight, infrared light reflecting materials must not be used on the
 outside. If robots are painted, they must be painted matte. Minor parts that
