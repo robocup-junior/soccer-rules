@@ -1312,9 +1312,3 @@ c.  Measure the distance that the ball traveled on the device. The distance
     should not exceed 22 cm.
 
 image:media/image9.png[image,scaledwidth=100.0%]
-
-[appendix]
-[[inspections-sheet-example]]
-== Inspections sheet example
-
-image:media/image10.png[image,scaledwidth=100.0%]
