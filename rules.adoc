@@ -96,7 +96,7 @@ Detailed changes are listed below and link to the corresponding place in the rul
 Robots must be constructed and programmed exclusively by student members of the
 team. Mentors, teachers, parents or companies should not be involved in the
 design, construction, assembly, programming or debugging of robots. To avoid
-embarrassment and possible disqualification, it is extremely important that
+possible disqualification, it is extremely important that
 teams abide by <<league-regulations>>, especially <<regulations-construction>>
 and <<regulations-programming>>, and all other competitor’s rules.
 
@@ -205,7 +205,7 @@ imparts dynamic back spin on the ball to keep the ball on its surface.
 
 Other players must be able to access the ball.
 
-{++The ball needs to stay within the bounds of the field, as delimited by the
+{++The ball needs to stay within the bounds of the field, as defined by the
 walls. If a robot moves the ball outside of the field (that is, beyond the walls
 or above their height), it is deemed damaged. (<<damaged-robots>>)++}
 
