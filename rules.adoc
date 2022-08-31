@@ -1,4 +1,4 @@
-  = RoboCupJunior Soccer Rules 2023 (Draft)
+ = RoboCupJunior Soccer Rules 2023 (Draft)
 {docdate}
 :toc: left
 :sectanchors:
