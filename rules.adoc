@@ -256,12 +256,12 @@ neutral spot.
 [[out-of-bounds]]
 === Out of bounds
 
-{~~If a robot’s entire body moves out beyond the white line of the field, it will~>
-If a robot touches a wall or moves completely into the penalty area it will~~}
-be called for being `*out of bounds*`. When this situation arises, the robot is
-given a one-minute penalty, and the team is asked to remove the robot from the
-field. There is no time stoppage for the game itself. The robot is allowed to
-return if a kick-off occurs before the penalty has elapsed.
+{~~If a robot’s entire body moves out beyond the white line of the field, it
+will~>If a robot touches a wall or moves completely into the penalty area it
+will~~} be called for being `*out of bounds*`. When this situation arises, the
+robot is given a one-minute penalty, and the team is asked to remove the robot
+from the field. There is no time stoppage for the game itself. The robot is
+allowed to return if a kick-off occurs before the penalty has elapsed.
 
 The one-minute penalty starts when the robot is removed from play.
 Furthermore, any goal scored by the penalized team while the penalized robot is
@@ -506,8 +506,8 @@ There is only one kind of field for all sub-leagues.
 
 The playing field is {~~132 cm by 193 cm~>158 cm by 219 cm~~}. The field is
 marked by a white line which is part of the playing field. Around the
-playing field, beyond the white line, there is an outer area of
-{~~25 cm in width~>12 cm in width~~}.
+playing field, beyond the white line, there is an outer area
+of {~~25 cm in width~>12 cm in width~~}.
 
 The floor near the exterior wall includes a wedge, which is an incline with a
 10 cm base and 2 +/- 1 cm rise for allowing the ball to roll back into play
@@ -635,7 +635,7 @@ Robots are not allowed to cause damage to the field or to the ball during
 normal gameplay.
 
 A robot that causes damage may be disqualified from a specific match at the
-tournament organizer's discretion. 
+tournament organizer's discretion.
 
 Humans are not allowed to cause deliberate interference with robots or damage
 to the field or the ball.
@@ -767,21 +767,23 @@ robot’s dimensions must not exceed the following limits:
 
 |===
 |sub-league | *Soccer* *Open* | *Soccer Lightweight*
-|size / (robot must fit {++smoothly++} into a cylinder of this diameter) | 18.0 cm | 22.0 cm +
+|size ^[0]^  | 18.0 cm | 22.0 cm +
 |height | 18.0 cm ^[1]^ | 22.0 cm ^[1]^ +
 |weight | 2200 g ^[2]^ | 1100 g ^[2]^ +
 |ball-capturing zone | 1.5 cm | 3.0 cm +
 |voltage | 15.0 V ^[3]^ ^[4]^ | 12.0 V ^[3]^ ^[4]^ +
 |===
 
+TIP: [0] Robot must fit {++smoothly++} into a cylinder of this diameter
+
 TIP: [1] The handle and the top markers of a robot may exceed the height.
 
 TIP: [2] The weight of the robot includes that of the handle.
 
-IMPORTANT: [3] We encourage teams to include protection circuits for Lithium-based
+IMPORTANT: [3] We *strongly* encourage teams to include protection circuits for Lithium-based
 batteries
 
-NOTE: [3] Voltage limits relate to the *nominal values*, deviations at the
+NOTE: [4] Voltage limits relate to the *nominal values*, deviations at the
 power pack due to the fact that charged will be tolerated.
 
 Ball-capturing zone is defined as any internal space created when a straight
@@ -793,10 +795,10 @@ ball.
 [[regulations-inference-in-lightweight]]
 ==== Infrared interference in Lightweight
 
-{~~In Lightweight, the robot must not emit infrared light.~>
-Components designed to emit IR (e.g. ToF, LiDAR, IR distance sensors,
-IR LEDs/LASERs etc.) are not allowed and tournament organizers will require
-such devices to be removed or covered up.~~}
+{~~In Lightweight, the robot must not emit infrared light.~>Components designed
+to emit IR (e.g. ToF, LiDAR, IR distance sensors, IR LEDs/LASERs etc.) are not
+allowed and tournament organizers will require such devices to be removed or
+covered up.~~}
 
 In Lightweight, infrared light reflecting materials must not be visible.
 If robots are painted, they must be painted matte. Minor parts that
@@ -818,9 +820,9 @@ optical parts, optical systems, and total field of view. Components may be
 sourced in any way the team sees fit.~~}
 
 Voltage pump circuits are permitted only for a kicker drive. {++No voltage may
-exceed 48V at any time and maximum boost voltage must be available for 
+exceed 48V at any time and maximum boost voltage must be available for
 demonstration and measurement at inspections. When not in use measurement
-contacts must be protected from accidental touches or short circuits.++} All 
+contacts must be protected from accidental touches or short circuits.++} All
 other
 electrical circuits inside the robot cannot exceed 15.0 V for Soccer Open and
 12.0 V for Soccer Lightweight. Each robot must be designed to allow verifying
@@ -940,7 +942,7 @@ to do so. During the interview, the team will be evaluated using so called
 Rubrics, which are published on the website mentioned in the beginning of these
 rules.
 
-The Soccer League Committee *strongly* recommends the implementation of interviews in regional
+The Soccer League Committee recommends the implementation of interviews in regional
 competitions as well, but this is not mandatory.
 
 [[technical-challenges]]
@@ -1072,8 +1074,6 @@ communication between multiple robots in a SuperTeam easier in the future, the
 Soccer League Committee will provide each team with a communication module. Each
 team will be expected to interface with this module using a single 2.54mm GPIO
 pin at present and the Soccer League Committee plans on extending this to using
-UART for more complex applications in future years. More details will be
-provided by the Soccer League Committee shortly before the competition.++}
 pin at present and the Soccer League Committee plans on extending this to using
 UART or I²C for more complex applications in future years. More details will be
 provided by the Soccer League Committee before the competition.++}
@@ -1095,13 +1095,13 @@ Soccer League Committee would like to encourage competitions to include
 a so called "Entry League". Although such a league will not be part of the
 international competition, the Soccer League Committee still believes that it is
 worthwhile to make it part of regional and super-regional competitions. To this end,
-the Soccer League Committee has prepared a suggested ruleset. footnote:[avaliable
+the Soccer League Committee has prepared a suggested ruleset. footnote:[Avaliable
 as HTML and PDF at
 https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.html and
 https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.pdf respectively]
 Some regional and super-regional competitions already have rulesets and will likely
 make changes to the suggested rulesets or replace them entirely for their events.
-footnote:[Examples: 
+footnote:[Examples:
 https://www.robocupjunior.org.au/wp-content/uploads/2021/02/RCJASoccer-SimpleSimon2021.pdf,
 https://rcj2019.eu/sites/default/files/Soccer%201-1%20Standard%20Kit%20Rules%202019%20Final.pdf]
 Teams should ask their local/regional/super-regional tournament organizers for
@@ -1236,9 +1236,9 @@ tournament organizers.++}
 [[passive-surface]]
 ==== Surface
 
-Engravings {++and printed labels++} on the ball’s surface are tolerated. 
-{~~The inside of the ball should be hollow ~>The the ball should not have 
-a soft-touch finish. Teams must be prepared to play with balls as supplied 
+Engravings {++and printed labels++} on the ball’s surface are tolerated.
+{~~The inside of the ball should be hollow ~>The the ball should not have
+a soft-touch finish. Teams must be prepared to play with balls as supplied
 by tournament organizers.~~}
 
 [[passive-weight]]
