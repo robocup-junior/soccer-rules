@@ -780,7 +780,7 @@ TIP: [1] The handle and the top markers of a robot may exceed the height.
 
 TIP: [2] The weight of the robot includes that of the handle.
 
-IMPORTANT: [3] We encourage teams to include protection circuits for Lithium-based
+IMPORTANT: [3] We *strongly* encourage teams to include protection circuits for Lithium-based
 batteries
 
 NOTE: [4] Voltage limits relate to the *nominal values*, deviations at the
@@ -942,7 +942,7 @@ to do so. During the interview, the team will be evaluated using so called
 Rubrics, which are published on the website mentioned in the beginning of these
 rules.
 
-The Soccer League Committee *strongly* recommends the implementation of interviews in regional
+The Soccer League Committee recommends the implementation of interviews in regional
 competitions as well, but this is not mandatory.
 
 [[technical-challenges]]
