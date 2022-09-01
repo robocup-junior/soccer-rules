@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<meta name="author" content="2022-08-31">
+<meta name="author" content="2022-09-01">
 <title>RoboCupJunior Soccer Rules 2023 (Draft)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -441,7 +441,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>RoboCupJunior Soccer Rules 2023 (Draft)</h1>
 <div class="details">
-<span id="author" class="author">2022-08-31</span><br>
+<span id="author" class="author">2022-09-01</span><br>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -661,13 +661,13 @@ optics requirements and permitting more kicker power.</p>
 <p><a href="#addition-2">Added "The ball needs to stay within the bounds of the field, as defined by the walls. If a robot moves the ball outside of the field (that is, beyond the walls or above their height), it is deemed damaged. (&lt;&lt;damaged-robots&gt;&gt;)"</a></p>
 </li>
 <li>
-<p><a href="#addition-3">[addition-3]</a></p>
+<p><a href="#addition-3">Added "smoothly"</a></p>
 </li>
 <li>
-<p><a href="#addition-4">Added "No voltage may exceed 48V at any time and maximum boost voltage must be available for  demonstration and measurement at inspections. When not in use measurement contacts must be protected from accidental touches or short circuits."</a></p>
+<p><a href="#addition-4">Added "No voltage may exceed 48V at any time and maximum boost voltage must be available for demonstration and measurement at inspections. When not in use measurement contacts must be protected from accidental touches or short circuits."</a></p>
 </li>
 <li>
-<p><a href="#addition-5">Added "To make SuperTeam games more manageable at present and make communication between multiple robots in a SuperTeam easier in the future, the Soccer League Committee will provide each team with a communication module. Each team will be expected to interface with this module using a single 2.54mm GPIO pin at present and the Soccer League Committee plans on extending this to using UART for more complex applications in future years. More details will be provided by the Soccer League Committee shortly before the competition."</a></p>
+<p><a href="#addition-5">Added "To make SuperTeam games more manageable at present and make communication between multiple robots in a SuperTeam easier in the future, the Soccer League Committee will provide each team with a communication module. Each team will be expected to interface with this module using a single 2.54mm GPIO pin at present and the Soccer League Committee plans on extending this to using pin at present and the Soccer League Committee plans on extending this to using UART or I²C for more complex applications in future years. More details will be provided by the Soccer League Committee before the competition."</a></p>
 </li>
 <li>
 <p><a href="#addition-6">Added "While tournament organizers may supply matte balls to improve camera vision, teams must still be prepared to play with the balls supplied by tournament organizers."</a></p>
@@ -691,7 +691,7 @@ optics requirements and permitting more kicker power.</p>
 <p><a href="#addition-12">Added "The kicker power test is passed if after bouncing off of the opposite goal the ball does not return further than the front line of to the penalty area it was shot from."</a></p>
 </li>
 <li>
-<p><a href="#substitution-1">Changed "If a robot’s entire body moves out beyond the white line of the field, it will" to " If a robot touches a wall or moves completely into the penalty area it will"</a></p>
+<p><a href="#substitution-1">Changed "If a robot’s entire body moves out beyond the white line of the field, it will" to "If a robot touches a wall or moves completely into the penalty area it will"</a></p>
 </li>
 <li>
 <p><a href="#substitution-2">Changed "Any person close to the playing field is not allowed to wear any orange, yellow or blue clothes that can be seen by the robots (to avoid interference). A referee can require a team member to change clothes or to be replaced by another team member if interference is suspected." to "Robots are expected to be capable of dealing with any colors above the walls (e.g. blue, yellow, green or orange shirts) either in hardware (e.g. limiting the field of view from looking up) or in software (e.g. masking the input image)."</a></p>
@@ -727,13 +727,13 @@ optics requirements and permitting more kicker power.</p>
 <p><a href="#substitution-12">Changed "70 cm long" to "80 cm long"</a></p>
 </li>
 <li>
-<p><a href="#substitution-13">Changed "In Lightweight, the robot must not emit infrared light." to " Components designed to emit IR (e.g. ToF, LiDAR, IR distance sensors, IR LEDs/LASERs etc.) are not allowed and tournament organizers will require such devices to be removed or covered up."</a></p>
+<p><a href="#substitution-13">Changed "In Lightweight, the robot must not emit infrared light." to "Components designed to emit IR (e.g. ToF, LiDAR, IR distance sensors, IR LEDs/LASERs etc.) are not allowed and tournament organizers will require such devices to be removed or covered up."</a></p>
 </li>
 <li>
 <p><a href="#substitution-14">Changed "A single robot can only use one camera. All commercial omnidirectional lenses/cameras are not permitted. Only omnidirectional lenses/cameras made by students are permitted, meaning that their construction needs to be primarily and substantially the original work of a team. Teams using them on their robots must prove how they made them on their presentation poster and at an interview. For the purpose of these rules omnidirectional is defined as having a field-of-view of more than 140 degrees horizontally and more than 80 degrees vertically (these values reflect the optical system of the human eye)." to "A robot may use any number of cameras without restrictions on lenses, optical parts, optical systems, and total field of view. Components may be sourced in any way the team sees fit."</a></p>
 </li>
 <li>
-<p><a href="#substitution-15">Changed "The inside of the ball should be hollow " to "The the ball should not have  a soft-touch finish. Teams must be prepared to play with balls as supplied  by tournament organizers."</a></p>
+<p><a href="#substitution-15">Changed "The inside of the ball should be hollow " to "The the ball should not have a soft-touch finish. Teams must be prepared to play with balls as supplied by tournament organizers."</a></p>
 </li>
 </ul>
 </div>
@@ -930,12 +930,11 @@ neutral spot.</p>
 <div class="sect2">
 <h3 id="out-of-bounds"><a class="anchor" href="#out-of-bounds"></a><a class="link" href="#out-of-bounds">1.9. Out of bounds</a></h3>
 <div id="substitution-1" class="paragraph">
-<p><span class="red">* If a robot touches a wall or moves completely into the penalty area it will*</span>
-<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup>
-be called for being <code><strong>out of bounds</strong></code>. When this situation arises, the robot is
-given a one-minute penalty, and the team is asked to remove the robot from the
-field. There is no time stoppage for the game itself. The robot is allowed to
-return if a kick-off occurs before the penalty has elapsed.</p>
+<p><span class="red"><strong>If a robot touches a wall or moves completely into the penalty area it will</strong></span>
+<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup> be called for being <code><strong>out of bounds</strong></code>. When this situation arises, the
+robot is given a one-minute penalty, and the team is asked to remove the robot
+from the field. There is no time stoppage for the game itself. The robot is
+allowed to return if a kick-off occurs before the penalty has elapsed.</p>
 </div>
 <div class="paragraph">
 <p>The one-minute penalty starts when the robot is removed from play.
@@ -1242,10 +1241,9 @@ tournament.</p>
 <span class="red"><strong>158 cm by 219 cm</strong></span>
 <sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup>. The field is
 marked by a white line which is part of the playing field. Around the
-playing field, beyond the white line, there is an outer area of</p>
-</div>
-<div id="substitution-4" class="paragraph">
-<p><span class="red"><strong>12 cm in width</strong></span>
+playing field, beyond the white line, there is an outer area
+of <a id="substitution-4"></a>
+<span class="red"><strong>12 cm in width</strong></span>
 <sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup>.</p>
 </div>
 <div class="paragraph">
@@ -1577,8 +1575,7 @@ robot’s dimensions must not exceed the following limits:</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Soccer Lightweight</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">size / (robot must fit <a id="addition-3"></a>
-<span class="red"><strong>smoothly</strong></span> into a cylinder of this diameter)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">size <sup>[0]</sup></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">18.0 cm</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">22.0 cm<br></p></td>
 </tr>
@@ -1611,6 +1608,19 @@ robot’s dimensions must not exceed the following limits:</p>
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
+[0] Robot must fit <a id="addition-3"></a>
+<span class="red"><strong>smoothly</strong></span> into a cylinder of this diameter
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
 [1] The handle and the top markers of a robot may exceed the height.
 </td>
 </tr>
@@ -1635,7 +1645,7 @@ robot’s dimensions must not exceed the following limits:</p>
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-[3] We encourage teams to include protection circuits for Lithium-based
+[3] We <strong>strongly</strong> encourage teams to include protection circuits for Lithium-based
 batteries
 </td>
 </tr>
@@ -1648,7 +1658,7 @@ batteries
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-[3] Voltage limits relate to the <strong>nominal values</strong>, deviations at the
+[4] Voltage limits relate to the <strong>nominal values</strong>, deviations at the
 power pack due to the fact that charged will be tolerated.
 </td>
 </tr>
@@ -1665,7 +1675,7 @@ ball.</p>
 <div class="sect3">
 <h4 id="regulations-inference-in-lightweight"><a class="anchor" href="#regulations-inference-in-lightweight"></a><a class="link" href="#regulations-inference-in-lightweight">8.2.2. Infrared interference in Lightweight</a></h4>
 <div id="substitution-13" class="paragraph">
-<p><span class="red">* Components designed to emit IR (e.g. ToF, LiDAR, IR distance sensors, IR LEDs/LASERs etc.) are not allowed and tournament organizers will require such devices to be removed or covered up.*</span>
+<p><span class="red"><strong>Components designed to emit IR (e.g. ToF, LiDAR, IR distance sensors, IR LEDs/LASERs etc.) are not allowed and tournament organizers will require such devices to be removed or covered up.</strong></span>
 <sup class="footnote">[<a id="_footnoteref_18" class="footnote" href="#_footnotedef_18" title="View footnote.">18</a>]</sup></p>
 </div>
 <div class="paragraph">
@@ -1682,7 +1692,7 @@ reflect infrared light could be used as long as other robots are not affected.</
 </div>
 <div class="paragraph">
 <p>Voltage pump circuits are permitted only for a kicker drive. <a id="addition-4"></a>
-<span class="red"><strong>No voltage may exceed 48V at any time and maximum boost voltage must be available for  demonstration and measurement at inspections. When not in use measurement contacts must be protected from accidental touches or short circuits.</strong></span> All
+<span class="red"><strong>No voltage may exceed 48V at any time and maximum boost voltage must be available for demonstration and measurement at inspections. When not in use measurement contacts must be protected from accidental touches or short circuits.</strong></span> All
 other
 electrical circuits inside the robot cannot exceed 15.0 V for Soccer Open and
 12.0 V for Soccer Lightweight. Each robot must be designed to allow verifying
@@ -1864,7 +1874,7 @@ Rubrics, which are published on the website mentioned in the beginning of these
 rules.</p>
 </div>
 <div class="paragraph">
-<p>The Soccer League Committee <strong>strongly</strong> recommends the implementation of interviews in regional
+<p>The Soccer League Committee recommends the implementation of interviews in regional
 competitions as well, but this is not mandatory.</p>
 </div>
 </div>
@@ -2051,10 +2061,7 @@ SuperTeams on a so called "Big Field". The full rules of this challenge can be f
 </td>
 <td class="content">
 <a id="addition-5"></a>
-<span class="red"><strong>To make SuperTeam games more manageable at present and make communication between multiple robots in a SuperTeam easier in the future, the Soccer League Committee will provide each team with a communication module. Each team will be expected to interface with this module using a single 2.54mm GPIO pin at present and the Soccer League Committee plans on extending this to using UART for more complex applications in future years. More details will be provided by the Soccer League Committee shortly before the competition.</strong></span>
-pin at present and the Soccer League Committee plans on extending this to using
-UART or I²C for more complex applications in future years. More details will be
-provided by the Soccer League Committee before the competition.++}
+<span class="red"><strong>To make SuperTeam games more manageable at present and make communication between multiple robots in a SuperTeam easier in the future, the Soccer League Committee will provide each team with a communication module. Each team will be expected to interface with this module using a single 2.54mm GPIO pin at present and the Soccer League Committee plans on extending this to using pin at present and the Soccer League Committee plans on extending this to using UART or I²C for more complex applications in future years. More details will be provided by the Soccer League Committee before the competition.</strong></span>
 </td>
 </tr>
 </table>
@@ -2241,7 +2248,7 @@ substantially different from the other colors used on the field is acceptable.</
 <span class="red"><strong>and printed labels</strong></span> on the ball’s surface are tolerated.</p>
 </div>
 <div id="substitution-15" class="paragraph">
-<p><span class="red"><strong>The the ball should not have  a soft-touch finish. Teams must be prepared to play with balls as supplied  by tournament organizers.</strong></span>
+<p><span class="red"><strong>The the ball should not have a soft-touch finish. Teams must be prepared to play with balls as supplied by tournament organizers.</strong></span>
 <sup class="footnote">[<a id="_footnoteref_23" class="footnote" href="#_footnotedef_23" title="View footnote.">23</a>]</sup></p>
 </div>
 </div>
@@ -2476,7 +2483,7 @@ should not exceed 22 cm.</p>
 <a href="#_footnoteref_19">19</a>. In previous version this said "A single robot can only use one camera. All commercial omnidirectional lenses/cameras are not permitted. Only omnidirectional lenses/cameras made by students are permitted, meaning that their construction needs to be primarily and substantially the original work of a team. Teams using them on their robots must prove how they made them on their presentation poster and at an interview. For the purpose of these rules omnidirectional is defined as having a field-of-view of more than 140 degrees horizontally and more than 80 degrees vertically (these values reflect the optical system of the human eye)."
 </div>
 <div class="footnote" id="_footnotedef_20">
-<a href="#_footnoteref_20">20</a>. avaliable as HTML and PDF at <a href="https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.html" class="bare">https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.html</a> and <a href="https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.pdf" class="bare">https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.pdf</a> respectively
+<a href="#_footnoteref_20">20</a>. Avaliable as HTML and PDF at <a href="https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.html" class="bare">https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.html</a> and <a href="https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.pdf" class="bare">https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.pdf</a> respectively
 </div>
 <div class="footnote" id="_footnotedef_21">
 <a href="#_footnoteref_21">21</a>. Examples: <a href="https://www.robocupjunior.org.au/wp-content/uploads/2021/02/RCJASoccer-SimpleSimon2021.pdf" class="bare">https://www.robocupjunior.org.au/wp-content/uploads/2021/02/RCJASoccer-SimpleSimon2021.pdf</a>, <a href="https://rcj2019.eu/sites/default/files/Soccer%201-1%20Standard%20Kit%20Rules%202019%20Final.pdf" class="bare">https://rcj2019.eu/sites/default/files/Soccer%201-1%20Standard%20Kit%20Rules%202019%20Final.pdf</a>
@@ -2490,7 +2497,7 @@ should not exceed 22 cm.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-08-31 22:23:37 UTC
+Last updated 2022-09-01 18:14:22 UTC
 </div>
 </div>
 </body>
