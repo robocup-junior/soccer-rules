@@ -907,9 +907,9 @@ tournament.
 
 Maximum team size is 4 members for RoboCupJunior Soccer.
 
-Starting in 2017, Soccer Lightweight team members can participate in the World
+Soccer Lightweight team members can participate in the World
 Championship only twice. After their second participation, they need to move to
-Soccer Open. Note that counting starts with the 2017 World Championship.
+Soccer Open.
 
 [[interviews]]
 === Interviews
