@@ -1,4 +1,4 @@
-= RoboCupJunior Soccer SuperTeam Rules 2020
+= RoboCupJunior Soccer SuperTeam Rules 2023
 {docdate}
 :toc: left
 :sectanchors:
@@ -17,21 +17,20 @@ endif::basebackend-html[]
 :icons: font
 :numbered:
 
-These are the official SuperTeam Soccer rules for RoboCupJunior 2020. They are
-released by the RoboCupJunior Soccer Technical Committee. The English version
+These are the official SuperTeam Soccer rules for RoboCupJunior 2023. They are
+released by the RoboCupJunior Soccer League Committee. The English version
 of these rules has priority over any translations.
 
 Teams are advised to check the RoboCupJunior Soccer site
-https://junior.forum.robocup.org/ for OC (Organizational Committee) procedures
-and requirements for the international competition. Each team is responsible
-for verifying the latest version of the rules prior to competition.
+https://junior.forum.robocup.org/ for procedures and requirements for the
+international competition and with local tournament organizers for local,
+regional and super-regional competitions. Each team is responsible
+for verifying the latest version of the rules prior to competition. {++Teams
+should ask for clarifications on the Forum where necessary.++}
 footnote:[The current version of these rules can be found at
 https://robocupjuniortc.github.io/soccer-rules/master/rules.html in HTML form
 and at https://robocupjuniortc.github.io/soccer-rules/master/rules.pdf in PDF
 form.]
-
-NOTE: These are the Draft rules. Although they are still subject to change, the
-TC expects the changes to be minimal and at mostly cosmetic.
 
 [discrete]
 == Preface
@@ -46,10 +45,6 @@ electronics and mechatronics. Teams are also expected to contribute to the
 advancement of the community as a whole by sharing their discoveries with other
 participants and by engaging in good sportsmanship, regardless of culture, age
 or result in the competition. *All are expected to compete, learn, have fun, and grow.*
-
-RoboCupJunior Soccer consist of two sub-leagues: *Soccer Open* and *Soccer
-Lightweight*. These rules apply for both sub-leagues. There are two main
-differences between the two leagues.
 
 **These rules are released together with the current regular game rules. Wherever
 a change is needed because of the difference with regular games, situation have
@@ -73,22 +68,21 @@ of two halves. The duration of each half is 10-minutes. There will be a
 5-minute break in between the halves.
 
 The game clock will run for the duration of the halves without stopping (except
-if or when a referee wants to consult another official). The game clock will be
+when a referee wants to consult another official). The game clock will be
 run by a referee or a referee assistant.
 
-SuperTeams are expected to be on the field 5 minutes before their game starts. Being
+SuperTeams are expected to be at the field 5 minutes before their game starts. Being
 at the inspection table does not count in favor of this time limit. Teams that
-are late for the start of the game can be penalized one goal *per 30 seconds*
+are late for the start of the game may be penalized one goal *per 30 seconds*
 at the referee’s discretion.
 
-{~~When the goal difference reaches 10 the game finishes regardless of the
-state of the game clock.~>The final game score will be trimmed so that there is
-at most 10 goal difference between the losing and the winning team.~~}
+The final game score will be trimmed so that there is at most 10-goal
+difference between the losing and the winning team.
 
 [[pre-match-meeting]]
 === Pre-match meeting
 
-At the start of the first half of the game, a referee will toss a coin.  The
+At the start of the first half of the game, a referee will toss a coin. The
 team mentioned first in the draw shall call the coin. The winner of the toss
 can choose either which end to kick towards, or to kick off first. The loser of
 the toss chooses the other option. After the first half, teams switch sides.
@@ -133,8 +127,8 @@ discarded and the match resumes with a <<neutral-kickoff>>.
 [[neutral-kickoff]]
 ==== Neutral kick-off
 
-A netural kick-off is the same as the one described in <<kick-off>> with a
-small change: all robots need must be at least 30 cm away from the ball
+A neutral kick-off is the same as the one described in <<kick-off>> with a
+small change: all robots must be at least 30 cm away from the ball
 (outside of the center circle).
 
 [[human-interference]]
@@ -142,7 +136,7 @@ small change: all robots need must be at least 30 cm away from the ball
 
 Except for the kick-off, human interference from SuperTeam members (e.g.
 touching the robots) during the game is not allowed unless explicitly permitted
-by a referee. Violating SuperTeam / SuperTeam member(s) can be disqualified from
+by a referee. Violating SuperTeam(s) / SuperTeam member(s) may be disqualified from
 the game.
 
 The referee or a referee assistant can help robots get unstuck if the ball is
@@ -160,8 +154,8 @@ link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJun
 === Scoring
 
 A goal is scored when the ball strikes or touches the back wall of the goal.
-Goals scored either by an attacking or defending robot have the same end
-result: they give one goal to the SuperTeam on the opposite side.  After a
+Goals scored any robot have the same end
+result: they give one goal to the SuperTeam on the opposite side. After a
 goal, the game will be restarted with a kick-off from the SuperTeam who was
 scored against.
 
@@ -185,7 +179,7 @@ link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJun
 If a robot’s entire body moves out beyond the white line of the Big field, it
 will be called for being out of bounds. When this situation arises, the robot
 is given a one-minute penalty, and the SuperTeam is asked to remove the robot
-from the Big field. There is no time stoppage for the game itself.  The robot
+from the Big field. There is no time stoppage for the game itself. The robot
 is allowed to return if a kick-off occurs before the penalty has elapsed.
 
 The one-minute penalty starts when the robot is removed from play.
@@ -197,64 +191,26 @@ After the penalty time has passed, robot will be placed on the unoccupied
 neutral spot furthest from the ball, facing its own goal.
 
 A referee can waive the penalty if the robot was accidentally pushed out of
-bounds by {~~any other~>an opposing~~} robot. In such a case, the referee may
+bounds by an opposing robot. In such a case, the referee may
 have to slightly push the robot back onto the Big field.
 
 The ball can leave and bounce back into the Big field. The referee calls
 `*out of reach*`, and will move the ball to the nearest unoccupied neutral spot
 when one of the following condition occurs:
 
-1.  the ball remains outside the Big field too long, after a visible and
-loud count footnote:[usually a count of three, the length of
-the count could be decided by the OC before a competition as long as it’s the
-same length within a sub-league],
+1. the ball remains outside the Big field too long, after a visible and
+loud count footnote:[usually a count of three],
 
-2.  any of the robots are unable to return it into the Big field (without
+2. any of the robots are unable to return it into the Big field (without
 their whole body leaving the Big field), or
 
-3.  the referee determines that the ball will not come back into the Big
+3. the referee determines that the ball will not come back into the Big
 field.
 
 [[damaged-robots]]
 === Damaged robots
 
-If a robot is damaged, it has to be taken off the field and must be fixed
-before it can play again. Even if repaired, the robot must remain off the field
-for at least one minute or until the next kick-off is due.
-
-Some examples of a damaged robot include:
-
-* it does not respond to the ball, or is unable to move (it lost pieces,
-power, etc.).
-* it continually moves into the goal or out of the playing field.
-* it turns over on its own accord.
-
-Computers and repair equipment are not permitted in the playing area during
-gameplay. Usually, a SuperTeam member will need to take the damaged robot to an
-"approved repair table" near the playing area. A referee may permit robot
-sensor calibration, computers and other tools in the playing area, only for the
-5 minutes before the start of each half.  Reprogramming of robots during the
-gameplay can only happen when they are out of game (i.e., damaged or out of
-bounds), or when explicitly allowed by the referee.
-
-After a robot has been fixed, it will be placed on the unoccupied neutral spot
-furthest from the ball, facing its own goal. A robot can only be returned to
-the field if the damage has been repaired. If the referee notices that the
-robot was returned to the field with the same original problem, s/he may ask
-the robot to be removed, and proceed with the game as if the robot had not been
-returned.
-
-*Only the referee decides whether a robot is damaged.* A robot can only be
-taken off or returned with the referee’s permission.
-
-If both robots from the same team are deemed damaged at kick-off, gameplay will
-be paused and the remaining team will be awarded 1 goal for each elapsed 30
-seconds that their opponent’s robots remain damaged.  However, these rules only
-apply when none of the two robots from the same team were damaged as the result
-of the opponent team violating the rules.
-
-Whenever a robot is removed from play, its motors must be turned off.
-
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<damaged-robots>>
 
 [[interruption-of-game-ref-interruption]]
 === Interruption of Game
@@ -269,13 +225,13 @@ link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJun
 
 A SuperTeam is a team of 3 or more regular teams with their corresponding
 robots, all from the same sub-league. Regular team is defined on RoboCupJunior
-Soccer Rules rules <<team-regulations>>  and <<number-of-robots-substitution>>.
+Soccer Rules <<team-regulations>> and <<number-of-robots-substitution>>.
 Each regular team is required to provide at least one robot for each SuperTeam
 game.
 
 Each SuperTeam must have a captain. The captain is the person responsible for
 communication with referees. The SuperTeam can replace its captain during
-gameplay. SuperTeam is allowed to have only the fewest possible members beside
+the competition. SuperTeam is allowed to have only the fewest possible members beside
 the field during game play: they will usually be the captain and one member
 from each individual team who has a robot as an active SuperTeam player (see
 Soccer Rules rule <<team-regulations>>).
@@ -330,13 +286,16 @@ link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJun
 [[communication]]
 === Communication
 
-Robots are not allowed to use any kind of communication during game play unless
-the communication between two robots is via Bluetooth class 2 or class 3
-footnote:[range shorter than 20 meters] or via any other device that
-communicates using the 802.15.4 protocol (e.g., ZigBee and XBee).
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<communication>> applies.
 
-Teams are responsible for their communication. The availability of frequencies
-cannot be guaranteed.
+To make SuperTeam games more manageable at present and make
+communication between multiple robots in a SuperTeam easier in the future, the
+Soccer League Committee will provide each team with a communication module. Each
+team will be expected to interface with this module using a single 2.54mm GPIO
+pin at present and the Soccer League Committee plans on extending this to using
+UART or I²C for more complex applications in future years.
+
+More details will be provided by the Soccer League Committee before the competition.
 
 [[agility]]
 === Agility
@@ -361,22 +320,10 @@ link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJun
 [[violations]]
 === Violations
 
-Robots that do not abide by the specifications/regulations (see
-<<regulations>>) are not allowed to play, unless these rules specify otherwise.
-
-If violations are detected during a running game the team is disqualified for
-that game.
-
-If similar violations occur repeatedly, the SuperTeam can be disqualified from
-the tournament.
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<violations>> applies.
 
 [[field]]
 == BIGFIELD
-
-[[kind-of-field]]
-=== Kind of field
-
-There is only one kind of field for all sub-leagues.
 
 [[dimensions-of-the-field]]
 === Dimensions of the field
@@ -391,38 +338,20 @@ The floor near the exterior wall includes a wedge, which is an incline with a
 10 cm base and 2 +/- 1 cm rise for allowing the ball to roll back into play
 when it leaves the playing field.
 
-{--The field is located 70 cm above the floor.--}
-
 [[field-walls]]
 === Walls
 
-Walls are placed all around the Big field, including behind the goals and the
-out-area. The height of the walls is 22 cm. The walls are painted matte black.
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<field-walls>> applies.
 
 [[goals]]
 === Goals
 
-The Big field has two goals, centered on each of the shorter sides of the
-playing field. The goal inner space is 60 cm width, 10 cm high and 74 mm deep,
-box shaped.
-
-{--It has a cross-bar on top (to prevent robots from entering the goal and to
-allow checking if the ball scored).--}
-
-The goal "posts" are positioned over the white line marking the limits of the
-Big field. {--The cross-bar is exactly over the white line. The height of the
-cross-bar is 2 cm.--} The interior walls {--and the cross-bar--} of each goal
-are painted, one goal yellow, the other goal blue. The exterior (including the
-goal post and frame) are painted black.
-
-{++It is recommended that the blue be of a brighter shade
-so that it is different enough from the black exterior.++}
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<goals>> applies.
 
 [[floor]]
 === Floor
 
-The floor consists of dark green carpet on top of a hard level surface.  All
-straight lines on the field should be painted and have a width of 20 mm.
+link:https://robocupjuniortc.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<floor>> applies.
 
 [[neutral-spots]]
 === Neutral spots
@@ -445,10 +374,8 @@ guidance during kick-off.
 
 In front of each goal there is a 35 cm wide and 120 cm long penalty area.
 
-The penalty areas are marked by a {~~black~>white~~} line of 20 mm width. The
+The penalty areas are marked by a white line of 20 mm (±10%) width. The
 line is part of the area.
-
-{--A robot is considered inside the Penalty Area when it is completely inside.--}
 
 [[lighting-and-magnetic-conditions]]
 === Lighting and Magnetic Conditions
