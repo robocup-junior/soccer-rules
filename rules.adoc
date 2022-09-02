@@ -496,11 +496,6 @@ tournament.
 [[field]]
 == FIELD
 
-[[kind-of-field]]
-=== Kind of field
-
-There is only one kind of field for all sub-leagues.
-
 [[dimensions-of-the-field]]
 === Dimensions of the field
 
