@@ -1,4 +1,4 @@
-= RoboCupJunior Soccer Rules 2023 (Draft)
+= RoboCupJunior Soccer Rules 2023
 {docdate}
 :toc: left
 :sectanchors:
@@ -17,14 +17,8 @@ endif::basebackend-html[]
 :icons: font
 :numbered:
 
-IMPORTANT: These are DRAFT rules for 2023 and therefore NOT YET the official
-rules. They may be subject to change. Suggest changes and tell us what you
-think of the rules in the public discussion and feedback thread on the RoboCup
-Junior Forum:
-https://junior.forum.robocup.org/t/2023-draft-rules-public-discussion-soccer-rules-2023/2616
-
 //TODO: revert to official Soccer rules for final release
-These are the draft Soccer rules for RoboCupJunior 2023. They are released
+These are the official Soccer rules for RoboCupJunior 2023. They are released
 by the RoboCupJunior Soccer League Committee. The English version of these
 rules has priority over any translations.
 
@@ -1255,7 +1249,7 @@ participate in.
 {++Kicker Power will be measured by means of an on-field test in Soccer Open
 and by means of the Kicker Power Measuring Device in Soccer Lightweight.++}
 
-==== Soccer Open Kicker Power Measurement
+=== Soccer Open Kicker Power Measurement
 {++Kicker power measurement will be performed on-field in Soccer Open. The test
 will use the tournament ball. It is performed as follows:++}
 
@@ -1267,7 +1261,7 @@ the ball does not return further than the front line of to the penalty area
 it was shot from.++}
 
 [[kicker-power-measure-preamble]]
-==== Soccer Lightweight Kicker Power Measurement Device
+=== Soccer Lightweight Kicker Power Measurement Device
 
 This Kicker Power Measuring Device can measure the power of a robot’s kicker.
 It is easy to build with commonly accessible materials.
@@ -1277,7 +1271,7 @@ This device can measure the power of a robot’s kicker up to a length of 22cm.
 image:media/image8.png[image,scaledwidth=100.0%]
 
 [[materials]]
-===== Materials
+==== Materials
 
 |===
 |Plastic Board            | A4 paper size
@@ -1290,7 +1284,7 @@ size of the ball. For the Lightweight league, please use **40mm** spacer and
 for the open league please use **25mm** spacer.
 
 [[device-schematics]]
-===== Device schematics
+==== Device schematics
 
 The device schematics can be printed out from the diagram located at the end of
 the document. Please be advised to check that the software you use to print the
@@ -1303,7 +1297,7 @@ lines are acceptable, but a curved line will request more difficult cutting and
 the attached device schematic is simple enough for quick construction.
 
 [[example-of-device-construction]]
-===== Example of device construction
+==== Example of device construction
 
 a.  Print out the device schematics.
 b.  Paste the paper on a plastic board. The incline line (red lines)
@@ -1314,7 +1308,7 @@ d.  The two boards should be connected using the 40mm (Lightweight) or 25mm (Ope
 NOTE: You can find the image of the schematic at https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.png
 
 [[inspection]]
-===== Soccer Lightweight Kicker Power Measurement Procedure
+==== Soccer Lightweight Kicker Power Measurement Procedure
 
 a.  Place a ball at the bottom of the ramp run of the device, and put the robot
     in front of the ball, aiming the kicker towards the top of the ramp.
