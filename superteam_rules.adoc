@@ -52,10 +52,6 @@ been analyzed and are ruled here. For all other situations that do not change
 from the regular game rules, normally they have been only mentioned here as
 being the same regular game rule.**
 
-
-{+-~TOC-CHANGES~-+}
-
-
 [[gameplay]]
 == GAMEPLAY
 
