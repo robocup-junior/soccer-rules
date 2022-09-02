@@ -899,11 +899,6 @@ regulations, for example, by a detailed documentation or logbook. Teams may be
 interviewed about their robots and the development process at any time during a
 tournament.
 
-See an example of the inspection sheet that tournament organizers will use in
-<<inspections-sheet-example>>. Note that the sheet will be updated by tournament organizers
-members before the competition to match this year’s rules, but the important
-aspects which are checked will stay the same.
-
 [[international-competition]]
 == INTERNATIONAL COMPETITION
 
