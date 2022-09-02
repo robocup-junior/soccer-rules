@@ -1074,7 +1074,6 @@ communication between multiple robots in a SuperTeam easier in the future, the
 Soccer League Committee will provide each team with a communication module. Each
 team will be expected to interface with this module using a single 2.54mm GPIO
 pin at present and the Soccer League Committee plans on extending this to using
-pin at present and the Soccer League Committee plans on extending this to using
 UART or I²C for more complex applications in future years. More details will be
 provided by the Soccer League Committee before the competition.++}
 
