@@ -490,11 +490,6 @@ tournament.
 [[field]]
 == FIELD
 
-[[kind-of-field]]
-=== Kind of field
-
-There is only one kind of field for all sub-leagues.
-
 [[dimensions-of-the-field]]
 === Dimensions of the field
 
@@ -898,11 +893,6 @@ regulations, for example, by a detailed documentation or logbook. Teams may be
 interviewed about their robots and the development process at any time during a
 tournament.
 
-See an example of the inspection sheet that tournament organizers will use in
-<<inspections-sheet-example>>. Note that the sheet will be updated by tournament organizers
-members before the competition to match this year’s rules, but the important
-aspects which are checked will stay the same.
-
 [[international-competition]]
 == INTERNATIONAL COMPETITION
 
@@ -911,9 +901,9 @@ aspects which are checked will stay the same.
 
 Maximum team size is 4 members for RoboCupJunior Soccer.
 
-Starting in 2017, Soccer Lightweight team members can participate in the World
+Soccer Lightweight team members can participate in the World
 Championship only twice. After their second participation, they need to move to
-Soccer Open. Note that counting starts with the 2017 World Championship.
+Soccer Open.
 
 [[interviews]]
 === Interviews
