@@ -95,7 +95,8 @@ teams abide by <<league-regulations>>, especially <<regulations-construction>>
 and <<regulations-programming>>, and all other competitor’s rules.
 
 If in doubt, please consult with your Regional Representative before
-registering your team.
+registering your team. footnote:[see https://junior.robocup.org/community/ for names
+and contact details]
 
 [[gameplay]]
 == GAMEPLAY
@@ -244,7 +245,7 @@ detection or reach capability of all robots on the field.
 After a visible and loud count footnote:[usually a count of three],
 a referee will call `*lack of progress*` and
 will move the ball to the nearest unoccupied neutral spot. If this does not
-solve the lack of progress, the referee can move the ball to a different
+solve the lack of progress, the referee may move the ball to a different
 neutral spot.
 
 [[out-of-bounds]]
@@ -508,7 +509,7 @@ Total dimensions of the field, including the outer area, are 182 cm by 243 cm.
 === Walls
 
 Walls are placed all around the field, including behind the goals and the
-out-area. The height of the walls is 22 cm. The walls are painted matte black.
+out-area. The height of the walls is 22 cm. The walls are colored matte black.
 
 [[goals]]
 === Goals
@@ -701,7 +702,7 @@ organizers.
 [[rule-clarification]]
 === Rule clarification
 
-Rule clarification may be made by members of the tournament organizers
+Rule clarification may be made by the tournament organizers
 and the Soccer League Committee, if necessary even during a tournament.
 
 [[rule-modification]]
@@ -717,7 +718,7 @@ necessary even during a tournament.
 Each RoboCupJunior competition may have its own regulatory statutes to define
 the procedure of the tournament (for example the SuperTeam system, game modes,
 the inspection of robots, interviews, schedules, etc.). Regulatory statutes
-become a part of this rule.
+become a part of this ruleset.
 
 
 
@@ -790,7 +791,7 @@ allowed and tournament organizers will require such devices to be removed or
 covered up.~~}
 
 In Lightweight, infrared light reflecting materials must not be visible.
-If robots are painted, they must be painted matte. Minor parts that
+If robots are colored, they must be colored matte. Minor parts that
 reflect infrared light could be used as long as other robots are not affected.
 
 [[regulations-limitations]]
