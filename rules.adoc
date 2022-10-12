@@ -1294,7 +1294,7 @@ b.  Paste the paper on a plastic board. The incline line (red lines)
 c.  Cut out along the lines and drill the holes.
 d.  The two boards should be connected using the 40mm (Lightweight) or 25mm (Open) spacers.
 
-NOTE: You can find the image of the schematic at https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.png
+NOTE: You can find the image of the schematic at https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.png and print it out as PDF from https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.pdf
 
 [[inspection]]
 ==== Soccer Lightweight Kicker Power Measurement Procedure
@@ -1304,5 +1304,3 @@ a.  Place a ball at the bottom of the ramp run of the device, and put the robot
 b.  Activate the robot’s kicker for a single shot.
 c.  Measure the distance that the ball traveled on the device. The distance
     should not exceed 22 cm.
-
-image:media/image9.png[image,scaledwidth=100.0%]
