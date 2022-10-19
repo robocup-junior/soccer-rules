@@ -781,6 +781,9 @@ not enter the convex hull of a robot by more than the specified depth.
 Furthermore, it must be possible for another robot to take possession of the
 ball.
 
+.Think of the convex hull requirement as a rubber band that must fit around all points of the robot, i.e. the ball may not go inside the convex hull (red line) more than allowed
+image::media/Convex_Hull_Robot.png[scaledwidth=80%]
+
 [[regulations-inference-in-lightweight]]
 ==== Infrared interference in Lightweight
 
