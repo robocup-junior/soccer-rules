@@ -584,7 +584,7 @@ relying on compass sensors or specific lightning conditions).
 
 image:media/SoccerFieldWedgeNoWedge.jpg[image,scaledwidth=90.0%]
 
-image:media/SoccerFieldDrawings.jpg[image,scaledwidth=90.0%]
+image:media/SoccerFieldDrawings.png[image,scaledwidth=90.0%]
 
 
 [[ball]]
