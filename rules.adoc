@@ -203,6 +203,19 @@ Other players must be able to access the ball.
 The ball needs to stay within the bounds of the field, as defined by the
 walls. If a robot moves the ball outside of the field (that is, beyond the walls
 or above their height), it is deemed damaged. (<<damaged-robots>>)
+<<<<<<< HEAD
+=======
+
+{~~A robot must touch the ball that is placed no further than 20 cm from any point
+on its convex hull within 10 seconds. If a robot does not do so within the time
+limit, it is deemed to be damaged. ~>
+Any robot must approach and touch the ball when it is placed on the nearest
+neutral spot before lack of progress is called. When on its own side of the field,
+any robot must be able to move the ball from the nearest neutral spot to the
+opponent's side of the field. If a robot does not do these things, it is deemed to be damaged.
+(See <<damaged-robots, Damaged Robots>>.) However, this rule does not apply if the robot
+is hindered from detecting or playing the ball by the opponent.~~}
+>>>>>>> 32e1a77 (Add rule regarding ball play on the nearest neutral spot)
 
 [[scoring]]
 === Scoring
@@ -426,16 +439,12 @@ Robots must be constructed and programmed in a way that their movement is not
 limited to only one dimension (defined as a single axis, such as only moving in
 a straight line). They must move in all directions, for example by turning.
 
-Robots must respond to the ball in a direct forward movement towards it. For
+{--Robots must respond to the ball in a direct forward movement towards it. For
 example, it is not enough to basically just move left and right in front of
 their own goal, it must also move directly towards the ball in a forward
-movement. At least one team robot must be able to seek and approach the ball
+movement.--}At least one team robot must be able to seek and approach the ball
 anywhere on the field, unless the team has only one robot on the field at that
 time.
-
-A robot must touch the ball that is placed no further than 20 cm from any point
-on its convex hull within 10 seconds. If a robot does not do so within the time
-limit, it is deemed to be damaged. (See <<damaged-robots, Damaged Robots>>.)
 
 [[handle]]
 === Handle
