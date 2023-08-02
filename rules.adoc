@@ -203,8 +203,6 @@ Other players must be able to access the ball.
 The ball needs to stay within the bounds of the field, as defined by the
 walls. If a robot moves the ball outside of the field (that is, beyond the walls
 or above their height), it is deemed damaged. (<<damaged-robots>>)
-<<<<<<< HEAD
-=======
 
 {~~A robot must touch the ball that is placed no further than 20 cm from any point
 on its convex hull within 10 seconds. If a robot does not do so within the time
@@ -215,7 +213,6 @@ any robot must be able to move the ball from the nearest neutral spot to the
 opponent's side of the field. If a robot does not do these things, it is deemed to be damaged.
 (See <<damaged-robots, Damaged Robots>>.) However, this rule does not apply if the robot
 is hindered from detecting or playing the ball by the opponent.~~}
->>>>>>> 32e1a77 (Add rule regarding ball play on the nearest neutral spot)
 
 [[scoring]]
 === Scoring
