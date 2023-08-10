@@ -77,6 +77,14 @@ at the referee’s discretion.
 The final game score will be trimmed so that there is at most 10-goal
 difference between the losing and the winning team.
 
+[[tournament-mode-byes]]
+=== Tournament mode and Bye games
+{++In some cases (e.g. uneven number of teams) not every team can play every round.
+In threse cases the team that is free from play is awarded a Bye. In SuperTeam
+matches where fewer goals are scored the Bye is awarded as a 3:0 victory instead
+of the usual 10:0. Contact your regional/super-regional tournament organizers for
+details at tournaments other than the international RoboCupJunior tournament.++}
+
 [[pre-match-meeting]]
 === Pre-match meeting
 
