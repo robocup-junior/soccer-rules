@@ -1,4 +1,4 @@
-= RoboCupJunior Soccer Rules 2023
+= RoboCupJunior Soccer Rules 2024
 {docdate}
 :toc: left
 :sectanchors:
@@ -18,19 +18,21 @@ endif::basebackend-html[]
 :numbered:
 
 //TODO: revert to official Soccer rules for final release
-These are the official Soccer rules for RoboCupJunior 2023. They are released
+These are the *draft* Soccer rules for RoboCupJunior 2024. They are released
 by the RoboCupJunior Soccer League Committee. The English version of these
 rules has priority over any translations.
 
 Teams are advised to check the RoboCupJunior Soccer site
-https://junior.forum.robocup.org/ for procedures and requirements for the
+https://junior.robocup.org/ and Soccer forum 
+https://junior.forum.robocup.org/c/robocupjunior-soccer/5
+for procedures and requirements for the
 international competition and with local tournament organizers for local,
 regional and super-regional competitions. Each team is responsible
-for verifying the latest version of the rules prior to competition. {++Teams
-should ask for clarifications on the Forum where necessary.++}
+for verifying the latest version of the rules prior to competition. Teams
+should ask for clarifications on the Forum where necessary.
 footnote:[The current version of these rules can be found at
-https://robocupjuniortc.github.io/soccer-rules/master/rules.html in HTML form
-and at https://robocupjuniortc.github.io/soccer-rules/master/rules.pdf in PDF
+https://robocup-junior.github.io/soccer-rules/master/rules.html in HTML form
+and at https://robocup-junior.github.io/soccer-rules/master/rules.pdf in PDF
 form.]
 
 [title="Two teams of two robots with an orange ball on a RoboCupJunior Soccer field."]
@@ -72,13 +74,12 @@ Unless specified otherwise, all parts of these rules are released under the
 terms of the Creative Commons Attribution-ShareAlike License.
 
 [discrete]
-=== Changes from the 2022 RoboCupJunior Soccer Rules
+=== Changes from the 2023 RoboCupJunior Soccer Rules
 
+// TODO: Summarize changes here
 The rule changes developed by the Soccer League Committee in cooperation with the
 RoboCup Junior Soccer Community (please continue to post ideas for the future on
-the forum any time) aim to improve general gameplay by reducing lack of progress
-and out of reach situations (increased playing area size) and for Open League easing
-optics requirements and permitting more kicker power.
+the forum any time) aim to improve gameplay.
 
 Detailed changes are listed below and link to the corresponding place in the rule.
 
@@ -199,9 +200,9 @@ imparts dynamic back spin on the ball to keep the ball on its surface.
 
 Other players must be able to access the ball.
 
-{++The ball needs to stay within the bounds of the field, as defined by the
+The ball needs to stay within the bounds of the field, as defined by the
 walls. If a robot moves the ball outside of the field (that is, beyond the walls
-or above their height), it is deemed damaged. (<<damaged-robots>>)++}
+or above their height), it is deemed damaged. (<<damaged-robots>>)
 
 [[scoring]]
 === Scoring
@@ -250,9 +251,8 @@ neutral spot.
 [[out-of-bounds]]
 === Out of bounds
 
-{~~If a robot’s entire body moves out beyond the white line of the field, it
-will~>If a robot touches a wall or moves completely into the penalty area it
-will~~} be called for being `*out of bounds*`. When this situation arises, the
+If a robot touches a wall or moves completely into the penalty area it
+will be called for being `*out of bounds*`. When this situation arises, the
 robot is given a one-minute penalty, and the team is asked to remove the robot
 from the field. There is no time stoppage for the game itself. The robot is
 allowed to return if a kick-off occurs before the penalty has elapsed.
@@ -359,13 +359,10 @@ assistant team member.
 
 Teams that do not abide by the rules are not allowed to participate.
 
-{~~Any person close to the playing field is not allowed to wear any orange, yellow
-or blue clothes that can be seen by the robots (to avoid interference). A
-referee can require a team member to change clothes or to be replaced by
-another team member if interference is suspected.~>Robots are expected to be
+Robots are expected to be
 capable of dealing with any colors above the walls (e.g. blue, yellow,
 green or orange shirts) either in hardware (e.g. limiting the field of view from looking up) or
-in software (e.g. masking the input image).~~}
+in software (e.g. masking the input image).
 
 The referee can interrupt a game in progress if any kind of interference from
 spectators is suspected (IR emitters, camera flashes, mobile
@@ -493,10 +490,10 @@ tournament.
 [[dimensions-of-the-field]]
 === Dimensions of the field
 
-The playing field is {~~132 cm by 193 cm~>158 cm by 219 cm~~}. The field is
+The playing field is 158 cm by 219 cm. The field is
 marked by a white line which is part of the playing field. Around the
 playing field, beyond the white line, there is an outer area
-of {~~25 cm in width~>12 cm in width~~}.
+of 12 cm in width.
 
 The floor near the exterior wall includes a wedge, which is an incline with a
 10 cm base and 2 +/- 1 cm rise for allowing the ball to roll back into play
@@ -527,18 +524,18 @@ it is different enough from the black exterior.
 [[floor]]
 === Floor
 
-{~~The floor consists of dark green carpet on top of a hard level surface~>The floor
+The floor
 consists of green carpet ideally of darker shade on top of a hard level surface. Teams
 should be prepared to adjust to different levels of contrast between the green carpet
-and lines as some events may be restricted to using lighter shades of green~~}  All
-{~~straight lines~>lines~~} on the field should be {~~painted~>painted, marked with tape,
-or installed as white carpet and be somewhat resistant to tearing or ripping.~~}
-{~~and have a width of 20 mm.~>Lines should have a width of 20mm (±10%).~~}
+and lines as some events may be restricted to using lighter shades of green. All
+lines on the field should be painted, marked with tape,
+or installed as white carpet and be somewhat resistant to tearing or ripping.
+Lines should have a width of 20mm (±10%).
 
 It is impractical to set international constraints on carpet other than it
-being {~~dark green~>green~~}. In the spirit of the competition, teams should design robots
+being green. In the spirit of the competition, teams should design robots
 to be tolerant or adaptable to different fibers, textures, construction,
-density, {~~and~>shades, and~~} designs of carpet especially when competing amongst different
+density, shades, and designs of carpet especially when competing amongst different
 regions. Teams are encouraged to visit regional resources or reach out to Local
 Organization Committee for suggestions if desiring to build their own practice
 field(s).
@@ -547,11 +544,9 @@ field(s).
 === Neutral spots
 
 There are five neutral spots defined in the field. One is in the center of the
-field. {~~The other four are adjacent to each corner, located 45 cm along the long
-edge of the field, aligned with each goal post towards the middle of the field
-(from the goal post)~>The other four are adjacent to each corner, located 45 cm
+field. The other four are adjacent to each corner, located 45 cm
 along the long edge of the field. They align with the sides of the penalty
-areas.~~}. The neutral spots can be drawn with a thin black marker.
+areas. The neutral spots can be drawn with a thin black marker.
 The neutral spots ought to be of circular shape measuring 1 cm in diameter.
 
 [[center-circle]]
@@ -564,7 +559,7 @@ during kick-off.
 [[penalty-areas]]
 === Penalty areas
 
-In front of each goal there is a 25 cm wide and {~~70 cm long~>80 cm long~~} penalty
+In front of each goal there is a 25 cm wide and 80 cm long penalty
 area with rounded front corners (15cm radius).
 
 The penalty areas are marked by a white line of 20 mm (±10%) width. The
@@ -763,7 +758,7 @@ robot’s dimensions must not exceed the following limits:
 |voltage | 15.0 V ^[3]^ ^[4]^ | 12.0 V ^[3]^ ^[4]^ +
 |===
 
-TIP: [0] Robot must fit {++smoothly++} into a cylinder of this diameter
+TIP: [0] Robot must fit smoothly into a cylinder of this diameter
 
 TIP: [1] The handle and the top markers of a robot may exceed the height.
 
@@ -784,10 +779,10 @@ ball.
 [[regulations-inference-in-lightweight]]
 ==== Infrared interference in Lightweight
 
-{~~In Lightweight, the robot must not emit infrared light.~>Components designed
+Components designed
 to emit IR (e.g. ToF, LiDAR, IR distance sensors, IR LEDs/LASERs etc.) are not
 allowed and tournament organizers will require such devices to be removed or
-covered up.~~}
+covered up.
 
 In Lightweight, infrared light reflecting materials must not be visible.
 If robots are painted, they must be painted matte. Minor parts that
@@ -796,22 +791,14 @@ reflect infrared light could be used as long as other robots are not affected.
 [[regulations-limitations]]
 ==== Limitations
 
-{~~A single robot can only use one camera. All commercial omnidirectional
-lenses/cameras are not permitted. Only omnidirectional lenses/cameras made by
-students are permitted, meaning that their construction needs to be primarily
-and substantially the original work of a team. Teams using them on their robots
-must prove how they made them on their presentation poster and at an interview.
-For the purpose of these rules omnidirectional is defined as having a
-field-of-view of more than 140 degrees horizontally and more than 80 degrees
-vertically (these values reflect the optical system of the human eye).~>A
-robot may use any number of cameras without restrictions on lenses,
+A robot may use any number of cameras without restrictions on lenses,
 optical parts, optical systems, and total field of view. Components may be
-sourced in any way the team sees fit.~~}
+sourced in any way the team sees fit.
 
-Voltage pump circuits are permitted only for a kicker drive. {++No voltage may
+Voltage pump circuits are permitted only for a kicker drive. No voltage may
 exceed 48V at any time and maximum boost voltage must be available for
 demonstration and measurement at inspections. When not in use measurement
-contacts must be protected from accidental touches or short circuits.++} All
+contacts must be protected from accidental touches or short circuits. All
 other
 electrical circuits inside the robot cannot exceed 15.0 V for Soccer Open and
 12.0 V for Soccer Lightweight. Each robot must be designed to allow verifying
@@ -1051,15 +1038,15 @@ or any other RoboCup official.
 There will also be a SuperTeam competition, in which various teams from around
 the world share their robots in one "SuperTeam" and play against other
 SuperTeams on a so called "Big Field". The full rules of this challenge can be found at
-https://robocupjuniortc.github.io/soccer-rules/master/superteam_rules.html
+https://robocup-junior.github.io/soccer-rules/master/superteam_rules.html
 
-NOTE: {++To make SuperTeam games more manageable at present and make
+NOTE: To make SuperTeam games more manageable at present and make
 communication between multiple robots in a SuperTeam easier in the future, the
 Soccer League Committee will provide each team with a communication module. Each
 team will be expected to interface with this module using a single 2.54mm GPIO
 pin at present and the Soccer League Committee plans on extending this to using
 UART or I²C for more complex applications in future years. More details will be
-provided by the Soccer League Committee before the competition.++}
+provided by the Soccer League Committee before the competition.
 
 Teams competing in the international competition can receive awards for their
 performance. These awards are decided and introduced by the Soccer League
@@ -1080,8 +1067,8 @@ international competition, the Soccer League Committee still believes that it is
 worthwhile to make it part of regional and super-regional competitions. To this end,
 the Soccer League Committee has prepared a suggested ruleset. footnote:[Avaliable
 as HTML and PDF at
-https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.html and
-https://robocupjuniortc.github.io/soccer-rules-entry/master/rules.pdf respectively]
+https://robocup-junior.github.io/soccer-rules-entry/master/rules.html and
+https://robocup-junior.github.io/soccer-rules-entry/master/rules.pdf respectively]
 Some regional and super-regional competitions already have rulesets and will likely
 make changes to the suggested rulesets or replace them entirely for their events.
 footnote:[Examples:
@@ -1212,17 +1199,17 @@ meters onto a hardwood table or floor.
 The ball shall be of orange color. Since the definition of the orange color in
 general is not easy, any color that a human would deem to be orange and is
 substantially different from the other colors used on the field is acceptable.
-{++While tournament organizers may supply matte balls to improve camera vision,
+While tournament organizers may supply matte balls to improve camera vision,
 teams must still be prepared to play with the balls supplied by
-tournament organizers.++}
+tournament organizers.
 
 [[passive-surface]]
 ==== Surface
 
-Engravings {++and printed labels++} on the ball’s surface are tolerated.
-{~~The inside of the ball should be hollow ~>The the ball should not have
+Engravings and printed labels on the ball’s surface are tolerated.
+The the ball should not have
 a soft-touch finish. Teams must be prepared to play with balls as supplied
-by tournament organizers.~~}
+by tournament organizers.
 
 [[passive-weight]]
 ==== Weight
@@ -1235,19 +1222,19 @@ The weight of the ball should be 46 grams (+- 1 gram).
 
 All robot kickers will be tested with the ball used in the sub-league they
 participate in.
-{++Kicker Power will be measured by means of an on-field test in Soccer Open
-and by means of the Kicker Power Measuring Device in Soccer Lightweight.++}
+Kicker Power will be measured by means of an on-field test in Soccer Open
+and by means of the Kicker Power Measuring Device in Soccer Lightweight.
 
 === Soccer Open Kicker Power Measurement
-{++Kicker power measurement will be performed on-field in Soccer Open. The test
-will use the tournament ball. It is performed as follows:++}
+Kicker power measurement will be performed on-field in Soccer Open. The test
+will use the tournament ball. It is performed as follows:
 
 
-1.  {++Place robot inside the left corner of a goal.++}
-2.  {++Perform a kick into the opposing goal++}
-3.  {++The kicker power test is passed if after bouncing off of the opposite goal
+1.  Place robot inside the left corner of a goal.
+2.  Perform a kick into the opposing goal
+3.  The kicker power test is passed if after bouncing off of the opposite goal
 the ball does not return further than the front line of to the penalty area
-it was shot from.++}
+it was shot from.
 
 [[kicker-power-measure-preamble]]
 === Soccer Lightweight Kicker Power Measurement Device
@@ -1294,7 +1281,7 @@ b.  Paste the paper on a plastic board. The incline line (red lines)
 c.  Cut out along the lines and drill the holes.
 d.  The two boards should be connected using the 40mm (Lightweight) or 25mm (Open) spacers.
 
-NOTE: You can find the image of the schematic at https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.png and print it out as PDF from https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.pdf
+NOTE: You can find the image of the schematic at https://github.com/robocup-junior/soccer-rules/blob/master/kicker_testing_schematics.png and print it out as PDF from https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.pdf
 
 [[inspection]]
 ==== Soccer Lightweight Kicker Power Measurement Procedure

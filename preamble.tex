@@ -26,6 +26,7 @@
 \usepackage{lastpage}
 \usepackage{changes}
 \usepackage{etoolbox}
+\usepackage{draftwatermark}
 
 \let\openbox\relax
 \usepackage[letterpaper, margin=1in, headheight=47pt]{geometry}
@@ -41,6 +42,9 @@
 \usepackage[defaultsans]{droidsans}
 \renewcommand{\familydefault}{\sfdefault}
 
+\SetWatermarkText{Draft}
+\SetWatermarkScale{2.3}
+\SetWatermarkAngle{70}
 
 % Set paragraph numbers correctly (skip susubsection)
 \setcounter{secnumdepth}{4}
@@ -74,7 +78,7 @@
 %\renewcommand{\topmargin}{-20pt}
 
 \rfoot{Page \textbf{\thepage} of \textbf{\pageref{LastPage}}}
-\lfoot{\textit{Final rules as of \today}}
+\lfoot{\textit{Draft rules as of \today}}
 \cfoot{}
 
 % First page
@@ -84,7 +88,7 @@
   \fancyfoot[R]{Page \textbf{\thepage} of \textbf{\pageref{LastPage}}}
 }
 
-\title{\vspace{-5ex}RoboCupJunior Soccer Rules 2023\vspace{-5ex}}
+\title{\vspace{-5ex}RoboCupJunior Soccer Rules 2024 (Draft)\vspace{-5ex}}
 \date{\vspace{-2ex}}
 
 \definecolor{color-1}{rgb}{1,1,1}
