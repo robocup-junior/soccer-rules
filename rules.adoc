@@ -206,8 +206,8 @@ or above their height), it is deemed damaged. (<<damaged-robots>>)
 
 {~~A robot must touch the ball that is placed no further than 20 cm from any point
 on its convex hull within 10 seconds. If a robot does not do so within the time
-limit, it is deemed to be damaged. ~>
-Any robot must approach and touch the ball when it is placed on the nearest
+limit, it is deemed to be damaged.
+~>Any robot must approach and touch the ball when it is placed on the nearest
 neutral spot before lack of progress is called. When on its own side of the field,
 any robot must be able to move the ball from the nearest neutral spot to the
 opponent's side of the field. If a robot does not do these things, it is deemed to be damaged.
