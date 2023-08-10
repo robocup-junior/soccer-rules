@@ -573,6 +573,12 @@ magnetic interference. However, the robots need to be constructed in a way
 which allows them to work in conditions that are not perfect (i.e. by not
 relying on compass sensors or specific lightning conditions).
 
+IMPORTANT: At RCJ Eindhoven 2013 at the same location that 2024 will be magnetic fields
+were quite uneven in the venue. This can not be fixed and teams participating in the
+international tournament should prepare accordingly by relying more on technologies like
+gyroscopes, cameras, range finders, sensor fusion or whatever else is not reliant on
+consistent magnetic fields.
+
 [discrete]
 [[field-diagrams]]
 == FIELD DIAGRAMS
