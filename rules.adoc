@@ -1220,74 +1220,17 @@ The weight of the ball should be 46 grams (+- 1 gram).
 [[kicker-power-measuring]]
 == Kicker Power Measuring Procedures
 
-All robot kickers will be tested with the ball used in the sub-league they
+All robot kickers will be tested with the tournament ball used in the sub-league they
 participate in.
-Kicker Power will be measured by means of an on-field test in Soccer Open
-and by means of the Kicker Power Measuring Device in Soccer Lightweight.
+Kicker Power will be measured by means of an on-field test{-- in Soccer Open
+and by means of the Kicker Power Measuring Device in Soccer Lightweight--}.
 
-=== Soccer Open Kicker Power Measurement
-Kicker power measurement will be performed on-field in Soccer Open. The test
-will use the tournament ball. It is performed as follows:
+The test is performed as follows:
 
-
-1.  Place robot inside the left corner of a goal.
-2.  Perform a kick into the opposing goal
-3.  The kicker power test is passed if after bouncing off of the opposite goal
+.  Place robot inside the left corner of a goal.
+.  Perform a kick into the opposing goal
+..  The {++Open++} League kicker power test is passed if after bouncing off of the opposite goal
 the ball does not return further than the front line of to the penalty area
 it was shot from.
-
-[[kicker-power-measure-preamble]]
-=== Soccer Lightweight Kicker Power Measurement Device
-
-This Kicker Power Measuring Device can measure the power of a robot’s kicker.
-It is easy to build with commonly accessible materials.
-
-This device can measure the power of a robot’s kicker up to a length of 22cm.
-
-image:media/image8.png[image,scaledwidth=100.0%]
-
-[[materials]]
-==== Materials
-
-|===
-|Plastic Board            | A4 paper size
-|M3 Spacers               | 5
-|M3 Screw                 | 10
-|===
-
-NOTE: The M3 spacers are different for each league, due to the different
-size of the ball. For the Lightweight league, please use **40mm** spacer and
-for the open league please use **25mm** spacer.
-
-[[device-schematics]]
-==== Device schematics
-
-The device schematics can be printed out from the diagram located at the end of
-the document. Please be advised to check that the software you use to print the
-schematic does not have a *scale to fit* option activated (i.e. check that it
-is configured to print at 100% or *actual size* scale).
-
-TIP: The device schematics shows a straight line past the 22cm mark, while the
-photo shows the line at that point to be curved. Either straight or curved
-lines are acceptable, but a curved line will request more difficult cutting and
-the attached device schematic is simple enough for quick construction.
-
-[[example-of-device-construction]]
-==== Example of device construction
-
-a.  Print out the device schematics.
-b.  Paste the paper on a plastic board. The incline line (red lines)
-    should be straight.
-c.  Cut out along the lines and drill the holes.
-d.  The two boards should be connected using the 40mm (Lightweight) or 25mm (Open) spacers.
-
-NOTE: You can find the image of the schematic at https://github.com/robocup-junior/soccer-rules/blob/master/kicker_testing_schematics.png and print it out as PDF from https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.pdf
-
-[[inspection]]
-==== Soccer Lightweight Kicker Power Measurement Procedure
-
-a.  Place a ball at the bottom of the ramp run of the device, and put the robot
-    in front of the ball, aiming the kicker towards the top of the ramp.
-b.  Activate the robot’s kicker for a single shot.
-c.  Measure the distance that the ball traveled on the device. The distance
-    should not exceed 22 cm.
+..  {++The Light Weight League power test is passed if after bouncing off of the opposite goal
+the ball does not leave the penalty area of the opposing goal after bouncing back.++}
