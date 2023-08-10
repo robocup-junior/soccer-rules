@@ -57,7 +57,7 @@ Lightweight*. These rules apply for both sub-leagues. There are two main
 differences between the two leagues.
 
 * *Soccer Lightweight* is played using a special ball that emits an IR
-signal ball. Robots may weigh up to 1.1 kg, may have a ball-capturing zone of
+signal. Robots may weigh up to {~~1.1~>1.4~~} kg, may have a ball-capturing zone of
 up to 3.0 cm{--, and may use batteries up to 12.0 V nominal voltage--}.
 
 * *Soccer Open* is played using a passive, brightly colored orange
@@ -759,7 +759,7 @@ robot’s dimensions must not exceed the following limits:
 |sub-league | *Soccer* *Open* | *Soccer Lightweight*
 |size ^[0]^  | 18.0 cm | 22.0 cm +
 |height | 18.0 cm ^[1]^ | 22.0 cm ^[1]^ +
-|weight | 2200 g ^[2]^ | 1100 g ^[2]^ +
+|weight | 2200 g ^[2]^ | {~~1100~>1400~~} g ^[2]^ +
 |ball-capturing zone | 1.5 cm | 3.0 cm +
 |voltage | {~~15.0~>48~~} V ^[3]^ ^[4]^ | {~~12.0~>48~~} V ^[3]^ ^[4]^ +
 |===
