@@ -208,11 +208,16 @@ or above their height), it is deemed damaged. (<<damaged-robots>>)
 on its convex hull within 10 seconds. If a robot does not do so within the time
 limit, it is deemed to be damaged.
 ~>Any robot must approach and touch the ball when it is placed on the nearest
-neutral spot before lack of progress is called. When on its own side of the field,
-any robot must be able to move the ball from the nearest neutral spot to the
-opponent's side of the field. If a robot does not do these things, it is deemed to be damaged.
-(See <<damaged-robots, Damaged Robots>>.) However, this rule does not apply if the robot
+neutral spot. It must do this before lack of progress is called. When on its
+own side of the field, any robot must be able to move the ball from the nearest
+neutral spot to the opponent's side of the field. If a robot does not do these
+things, referees may deem it damaged at their discretion.
+(See <<damaged-robots, Damaged Robots>>.) This rule does not apply if the robot
 is hindered from detecting or playing the ball by the opponent.~~}
+
+TIP: If placing the ball on a neutral spot would confer a gameplay advantage to
+one team or referees don't place the ball on the closest neutral spot for other
+reasons a robot is not required to approach the robot at further away neutral spots.
 
 [[scoring]]
 === Scoring
