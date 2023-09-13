@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.20">
-<meta name="author" content="2023-08-10">
+<meta name="author" content="2023-09-13">
 <title>RoboCupJunior Soccer Rules 2024</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -438,7 +438,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>RoboCupJunior Soccer Rules 2024</h1>
 <div class="details">
-<span id="author" class="author">2023-08-10</span><br>
+<span id="author" class="author">2023-09-13</span><br>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -542,12 +542,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#specifications">B.2. Specifications</a></li>
 </ul>
 </li>
-<li><a href="#kicker-power-measuring">Appendix C: Kicker Power Measuring Procedures</a>
-<ul class="sectlevel2">
-<li><a href="#_soccer_open_kicker_power_measurement">C.1. Soccer Open Kicker Power Measurement</a></li>
-<li><a href="#kicker-power-measure-preamble">C.2. Soccer Lightweight Kicker Power Measurement Device</a></li>
-</ul>
-</li>
+<li><a href="#kicker-power-measuring">Appendix C: Kicker Power Measuring Procedures</a></li>
 </ul>
 </div>
 </div>
@@ -601,15 +596,17 @@ differences between the two leagues.</p>
 <ul>
 <li>
 <p><strong>Soccer Lightweight</strong> is played using a special ball that emits an IR
-signal ball. Robots may weigh up to <a id="substitution-1"></a>
+signal. Robots may weigh up to <a id="substitution-1"></a>
 <span class="red"><strong>1.4</strong></span>
 <sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup> kg, may have a ball-capturing zone of
-up to 3.0 cm, and may use batteries up to 12.0 V nominal voltage.</p>
+up to 3.0 cm<a id="deletion-1"></a>
+<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup>.</p>
 </li>
 <li>
 <p><strong>Soccer Open</strong> is played using a passive, brightly colored orange
 ball. Robots may weigh up to 2.2 kg, may have a ball-capturing zone of up to
-1.5 cm, and may use batteries up to 15.0 V nominal voltage.</p>
+1.5 cm<a id="deletion-2"></a>
+<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup>.</p>
 </li>
 </ul>
 </div>
@@ -637,10 +634,43 @@ the forum any time) aim to improve gameplay.</p>
 <div class="ulist">
 <ul>
 <li>
+<p><a href="#deletion-1">Deleted ", and may use batteries up to 12.0 V nominal voltage"</a></p>
+</li>
+<li>
+<p><a href="#deletion-2">Deleted ", and may use batteries up to 15.0 V nominal voltage"</a></p>
+</li>
+<li>
+<p><a href="#deletion-3">Deleted "Voltage pump circuits are permitted only for a kicker drive. "</a></p>
+</li>
+<li>
+<p><a href="#deletion-4">Deleted " All other electrical circuits inside the robot cannot exceed 15.0 V for Soccer Open and 12.0 V for Soccer Lightweight. "</a></p>
+</li>
+<li>
+<p><a href="#deletion-5">Deleted ", unless the nominal voltage is obvious by looking at the robot, its power packs and connections"</a></p>
+</li>
+<li>
+<p><a href="#deletion-6">Deleted " in Soccer Open and by means of the Kicker Power Measuring Device in Soccer Lightweight"</a></p>
+</li>
+<li>
+<p><a href="#addition-1">[addition-1]</a></p>
+</li>
+<li>
+<p><a href="#addition-2">Added "The Light Weight League power test is passed if after bouncing off of the opposite goal the ball does not leave the penalty area of the opposing goal after bouncing back."</a></p>
+</li>
+<li>
 <p><a href="#substitution-1">Changed "1.1" to "1.4"</a></p>
 </li>
 <li>
 <p><a href="#substitution-2">Changed "1100" to "1400"</a></p>
+</li>
+<li>
+<p><a href="#substitution-3">Changed "15.0" to "48"</a></p>
+</li>
+<li>
+<p><a href="#substitution-4">Changed "12.0" to "48"</a></p>
+</li>
+<li>
+<p><a href="#substitution-5">Changed "Voltage limits relate to the <strong>nominal values</strong>, deviations at the power pack due to the fact that charged will be tolerated" to "The voltage limit relates to the maximum voltage at any point and any time on the robot, <strong>not nominal voltages</strong>"</a></p>
 </li>
 </ul>
 </div>
@@ -829,7 +859,7 @@ there is no change in ball and robot’s positions, or when the ball is beyond
 detection or reach capability of all robots on the field.</p>
 </div>
 <div class="paragraph">
-<p>After a visible and loud count <sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup>,
+<p>After a visible and loud count <sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup>,
 a referee will call <code><strong>lack of progress</strong></code> and
 will move the ball to the nearest unoccupied neutral spot. If this does not
 solve the lack of progress, the referee can move the ball to a different
@@ -869,7 +899,7 @@ when one of the following conditions occurs:</p>
 <ol class="arabic">
 <li>
 <p>the ball remains outside the playing field too long, after a visible and
-loud count <sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup>,</p>
+loud count <sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup>,</p>
 </li>
 <li>
 <p>any of the robots are unable to return it into the playing field (without
@@ -1047,7 +1077,7 @@ must be started and stopped manually by humans and be controlled autonomously.</
 <div class="paragraph">
 <p>Robots are not allowed to use any kind of communication during gameplay unless
 the communication between robots is via Bluetooth class 2 or class 3
-<sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup> or via any other device that
+<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup> or via any other device that
 communicates using the 802.15.4 protocol (e.g., ZigBee and XBee).</p>
 </div>
 <div class="paragraph">
@@ -1238,6 +1268,22 @@ magnetic interference. However, the robots need to be constructed in a way
 which allows them to work in conditions that are not perfect (i.e. by not
 relying on compass sensors or specific lightning conditions).</p>
 </div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+At RCJ Eindhoven 2013 at the same location that 2024 will be magnetic fields
+were quite uneven in the venue. This can not be fixed and teams participating in the
+international tournament should prepare accordingly by relying more on technologies like
+gyroscopes, cameras, range finders, sensor fusion or whatever else is not reliant on
+consistent magnetic fields.
+</td>
+</tr>
+</table>
+</div>
 <h2 id="field-diagrams" class="discrete">FIELD DIAGRAMS</h2>
 <div class="paragraph">
 <p><span class="image"><img src="media/SoccerFieldWedgeNoWedge.jpg" alt="image"></span></p>
@@ -1420,7 +1466,7 @@ own additional regulations. They become a part of the rules.</p>
 </div>
 <div class="paragraph">
 <p>For RoboCupJunior , there are two sub-leagues as follows
-<sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup>:</p>
+<sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup>:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1479,7 +1525,7 @@ robot’s dimensions must not exceed the following limits:</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2200 g <sup>[2]</sup></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a id="substitution-2"></a>
 <span class="red"><strong>1400</strong></span>
-<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup> g <sup>[2]</sup><br></p></td>
+<sup class="footnote">[<a id="_footnoteref_9" class="footnote" href="#_footnotedef_9" title="View footnote.">9</a>]</sup> g <sup>[2]</sup><br></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ball-capturing zone</p></td>
@@ -1488,8 +1534,12 @@ robot’s dimensions must not exceed the following limits:</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">voltage</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">15.0 V <sup>[3]</sup> <sup>[4]</sup></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">12.0 V <sup>[3]</sup> <sup>[4]</sup><br></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="substitution-3"></a>
+<span class="red"><strong>48</strong></span>
+<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup> V <sup>[3]</sup> <sup>[4]</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="substitution-4"></a>
+<span class="red"><strong>48</strong></span>
+<sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnotedef_11" title="View footnote.">11</a>]</sup> V <sup>[3]</sup> <sup>[4]</sup><br></p></td>
 </tr>
 </tbody>
 </table>
@@ -1549,8 +1599,9 @@ batteries
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-[4] Voltage limits relate to the <strong>nominal values</strong>, deviations at the
-power pack due to the fact that charged will be tolerated.
+[4] <a id="substitution-5"></a>
+<span class="red"><strong>The voltage limit relates to the maximum voltage at any point and any time on the robot, *not nominal voltages</strong>*</span>
+<sup class="footnote">[<a id="_footnoteref_12" class="footnote" href="#_footnotedef_12" title="View footnote.">12</a>]</sup>.
 </td>
 </tr>
 </table>
@@ -1584,16 +1635,14 @@ reflect infrared light could be used as long as other robots are not affected.</
 optical parts, optical systems, and total field of view. Components may be
 sourced in any way the team sees fit.</p>
 </div>
-<div class="paragraph">
-<p>Voltage pump circuits are permitted only for a kicker drive. No voltage may
-exceed 48V at any time and maximum boost voltage must be available for
+<div id="deletion-3" class="paragraph">
+<p><sup class="footnote">[<a id="_footnoteref_13" class="footnote" href="#_footnotedef_13" title="View footnote.">13</a>]</sup>No voltage may
+exceed 48V at any time and maximum voltage must be available for
 demonstration and measurement at inspections. When not in use measurement
-contacts must be protected from accidental touches or short circuits. All
-other
-electrical circuits inside the robot cannot exceed 15.0 V for Soccer Open and
-12.0 V for Soccer Lightweight. Each robot must be designed to allow verifying
-the voltage of power packs and its circuits, unless the nominal voltage is
-obvious by looking at the robot, its power packs and connections.</p>
+contacts must be protected from accidental touches or short circuits.<a id="deletion-4"></a>
+<sup class="footnote">[<a id="_footnoteref_14" class="footnote" href="#_footnotedef_14" title="View footnote.">14</a>]</sup>Each robot must be designed to allow verifying
+the voltage of power packs and its circuits<a id="deletion-5"></a>
+<sup class="footnote">[<a id="_footnoteref_15" class="footnote" href="#_footnotedef_15" title="View footnote.">15</a>]</sup>.</p>
 </div>
 <div class="paragraph">
 <p>Pneumatic devices are allowed to use ambient air only.</p>
@@ -1981,10 +2030,10 @@ Soccer League Committee would like to encourage competitions to include
 a so called "Entry League". Although such a league will not be part of the
 international competition, the Soccer League Committee still believes that it is
 worthwhile to make it part of regional and super-regional competitions. To this end,
-the Soccer League Committee has prepared a suggested ruleset. <sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup>
+the Soccer League Committee has prepared a suggested ruleset. <sup class="footnote">[<a id="_footnoteref_16" class="footnote" href="#_footnotedef_16" title="View footnote.">16</a>]</sup>
 Some regional and super-regional competitions already have rulesets and will likely
 make changes to the suggested rulesets or replace them entirely for their events.
-<sup class="footnote">[<a id="_footnoteref_9" class="footnote" href="#_footnotedef_9" title="View footnote.">9</a>]</sup>
+<sup class="footnote">[<a id="_footnoteref_17" class="footnote" href="#_footnotedef_17" title="View footnote.">17</a>]</sup>
 Teams should ask their local/regional/super-regional tournament organizers for
 details on what Entry leagues (if any) will be running in their region.</p>
 </div>
@@ -2104,7 +2153,7 @@ considered to be approved by the Soccer League Committee.</p>
 <p>In order to push the state of the art in the Soccer competition forward,
 while also trying to bridge the gap between the Junior and Major leagues, the
 Soccer League Committee chose a standard orange golf ball as the "passive" ball.
-This is the same choice as the Small Size League makes <sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup> and since
+This is the same choice as the Small Size League makes <sup class="footnote">[<a id="_footnoteref_18" class="footnote" href="#_footnotedef_18" title="View footnote.">18</a>]</sup> and since
 these balls are standardized, they should be cheap and easy to get anywhere
 around the globe.</p>
 </div>
@@ -2158,16 +2207,13 @@ by tournament organizers.</p>
 <h2 id="kicker-power-measuring"><a class="anchor" href="#kicker-power-measuring"></a><a class="link" href="#kicker-power-measuring">Appendix C: Kicker Power Measuring Procedures</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>All robot kickers will be tested with the ball used in the sub-league they
+<p>All robot kickers will be tested with the tournament ball used in the sub-league they
 participate in.
-Kicker Power will be measured by means of an on-field test in Soccer Open
-and by means of the Kicker Power Measuring Device in Soccer Lightweight.</p>
+Kicker Power will be measured by means of an on-field test<a id="deletion-6"></a>
+<sup class="footnote">[<a id="_footnoteref_19" class="footnote" href="#_footnotedef_19" title="View footnote.">19</a>]</sup>.</p>
 </div>
-<div class="sect2">
-<h3 id="_soccer_open_kicker_power_measurement"><a class="anchor" href="#_soccer_open_kicker_power_measurement"></a><a class="link" href="#_soccer_open_kicker_power_measurement">C.1. Soccer Open Kicker Power Measurement</a></h3>
 <div class="paragraph">
-<p>Kicker power measurement will be performed on-field in Soccer Open. The test
-will use the tournament ball. It is performed as follows:</p>
+<p>The test is performed as follows:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -2176,138 +2222,22 @@ will use the tournament ball. It is performed as follows:</p>
 </li>
 <li>
 <p>Perform a kick into the opposing goal</p>
-</li>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
 <li>
-<p>The kicker power test is passed if after bouncing off of the opposite goal
+<p>The <a id="addition-1"></a>
+<span class="red"><strong>Open</strong></span> League kicker power test is passed if after bouncing off of the opposite goal
 the ball does not return further than the front line of to the penalty area
 it was shot from.</p>
 </li>
-</ol>
-</div>
-</div>
-<div class="sect2">
-<h3 id="kicker-power-measure-preamble"><a class="anchor" href="#kicker-power-measure-preamble"></a><a class="link" href="#kicker-power-measure-preamble">C.2. Soccer Lightweight Kicker Power Measurement Device</a></h3>
-<div class="paragraph">
-<p>This Kicker Power Measuring Device can measure the power of a robot’s kicker.
-It is easy to build with commonly accessible materials.</p>
-</div>
-<div class="paragraph">
-<p>This device can measure the power of a robot’s kicker up to a length of 22cm.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="media/image8.png" alt="image"></span></p>
-</div>
-<div class="sect3">
-<h4 id="materials"><a class="anchor" href="#materials"></a><a class="link" href="#materials">C.2.1. Materials</a></h4>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Plastic Board</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A4 paper size</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">M3 Spacers</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">M3 Screw</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
-</tr>
-</tbody>
-</table>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-The M3 spacers are different for each league, due to the different
-size of the ball. For the Lightweight league, please use <strong>40mm</strong> spacer and
-for the open league please use <strong>25mm</strong> spacer.
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="device-schematics"><a class="anchor" href="#device-schematics"></a><a class="link" href="#device-schematics">C.2.2. Device schematics</a></h4>
-<div class="paragraph">
-<p>The device schematics can be printed out from the diagram located at the end of
-the document. Please be advised to check that the software you use to print the
-schematic does not have a <strong>scale to fit</strong> option activated (i.e. check that it
-is configured to print at 100% or <strong>actual size</strong> scale).</p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-The device schematics shows a straight line past the 22cm mark, while the
-photo shows the line at that point to be curved. Either straight or curved
-lines are acceptable, but a curved line will request more difficult cutting and
-the attached device schematic is simple enough for quick construction.
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="example-of-device-construction"><a class="anchor" href="#example-of-device-construction"></a><a class="link" href="#example-of-device-construction">C.2.3. Example of device construction</a></h4>
-<div class="olist loweralpha">
-<ol class="loweralpha">
 <li>
-<p>Print out the device schematics.</p>
-</li>
-<li>
-<p>Paste the paper on a plastic board. The incline line (red lines)
-should be straight.</p>
-</li>
-<li>
-<p>Cut out along the lines and drill the holes.</p>
-</li>
-<li>
-<p>The two boards should be connected using the 40mm (Lightweight) or 25mm (Open) spacers.</p>
+<p><a id="addition-2"></a>
+<span class="red"><strong>The Light Weight League power test is passed if after bouncing off of the opposite goal the ball does not leave the penalty area of the opposing goal after bouncing back.</strong></span></p>
 </li>
 </ol>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-You can find the image of the schematic at <a href="https://github.com/robocup-junior/soccer-rules/blob/master/kicker_testing_schematics.png" class="bare">https://github.com/robocup-junior/soccer-rules/blob/master/kicker_testing_schematics.png</a> and print it out as PDF from <a href="https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.pdf" class="bare">https://github.com/RoboCupJuniorTC/soccer-rules/blob/master/kicker_testing_schematics.pdf</a>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="inspection"><a class="anchor" href="#inspection"></a><a class="link" href="#inspection">C.2.4. Soccer Lightweight Kicker Power Measurement Procedure</a></h4>
-<div class="olist loweralpha">
-<ol class="loweralpha">
-<li>
-<p>Place a ball at the bottom of the ramp run of the device, and put the robot
-in front of the ball, aiming the kicker towards the top of the ramp.</p>
-</li>
-<li>
-<p>Activate the robot’s kicker for a single shot.</p>
-</li>
-<li>
-<p>Measure the distance that the ball traveled on the device. The distance
-should not exceed 22 cm.</p>
 </li>
 </ol>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -2321,33 +2251,60 @@ should not exceed 22 cm.</p>
 <a href="#_footnoteref_2">2</a>. In previous version this said "1.1"
 </div>
 <div class="footnote" id="_footnotedef_3">
-<a href="#_footnoteref_3">3</a>. usually a count of three
+<a href="#_footnoteref_3">3</a>. In previous version this said ", and may use batteries up to 12.0 V nominal voltage"
 </div>
 <div class="footnote" id="_footnotedef_4">
-<a href="#_footnoteref_4">4</a>. usually a count of three
+<a href="#_footnoteref_4">4</a>. In previous version this said ", and may use batteries up to 15.0 V nominal voltage"
 </div>
 <div class="footnote" id="_footnotedef_5">
-<a href="#_footnoteref_5">5</a>. range shorter than 20 meters
+<a href="#_footnoteref_5">5</a>. usually a count of three
 </div>
 <div class="footnote" id="_footnotedef_6">
-<a href="#_footnoteref_6">6</a>. biggest differences are described in <a href="#dimensions">Rule 8.2.1, &#8220;Dimensions&#8221;</a>
+<a href="#_footnoteref_6">6</a>. usually a count of three
 </div>
 <div class="footnote" id="_footnotedef_7">
-<a href="#_footnoteref_7">7</a>. In previous version this said "1100"
+<a href="#_footnoteref_7">7</a>. range shorter than 20 meters
 </div>
 <div class="footnote" id="_footnotedef_8">
-<a href="#_footnoteref_8">8</a>. Avaliable as HTML and PDF at <a href="https://robocup-junior.github.io/soccer-rules-entry/master/rules.html" class="bare">https://robocup-junior.github.io/soccer-rules-entry/master/rules.html</a> and <a href="https://robocup-junior.github.io/soccer-rules-entry/master/rules.pdf" class="bare">https://robocup-junior.github.io/soccer-rules-entry/master/rules.pdf</a> respectively
+<a href="#_footnoteref_8">8</a>. biggest differences are described in <a href="#dimensions">Rule 8.2.1, &#8220;Dimensions&#8221;</a>
 </div>
 <div class="footnote" id="_footnotedef_9">
-<a href="#_footnoteref_9">9</a>. Examples: <a href="https://www.robocupjunior.org.au/wp-content/uploads/2021/02/RCJASoccer-SimpleSimon2021.pdf" class="bare">https://www.robocupjunior.org.au/wp-content/uploads/2021/02/RCJASoccer-SimpleSimon2021.pdf</a>, <a href="https://rcj2019.eu/sites/default/files/Soccer%201-1%20Standard%20Kit%20Rules%202019%20Final.pdf" class="bare">https://rcj2019.eu/sites/default/files/Soccer%201-1%20Standard%20Kit%20Rules%202019%20Final.pdf</a>
+<a href="#_footnoteref_9">9</a>. In previous version this said "1100"
 </div>
 <div class="footnote" id="_footnotedef_10">
-<a href="#_footnoteref_10">10</a>. See the SSL rules at <a href="https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball" class="bare">https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball</a>
+<a href="#_footnoteref_10">10</a>. In previous version this said "15.0"
+</div>
+<div class="footnote" id="_footnotedef_11">
+<a href="#_footnoteref_11">11</a>. In previous version this said "12.0"
+</div>
+<div class="footnote" id="_footnotedef_12">
+<a href="#_footnoteref_12">12</a>. In previous version this said "Voltage limits relate to the <strong>nominal values</strong>, deviations at the power pack due to the fact that charged will be tolerated"
+</div>
+<div class="footnote" id="_footnotedef_13">
+<a href="#_footnoteref_13">13</a>. In previous version this said "Voltage pump circuits are permitted only for a kicker drive. "
+</div>
+<div class="footnote" id="_footnotedef_14">
+<a href="#_footnoteref_14">14</a>. In previous version this said " All other electrical circuits inside the robot cannot exceed 15.0 V for Soccer Open and 12.0 V for Soccer Lightweight. "
+</div>
+<div class="footnote" id="_footnotedef_15">
+<a href="#_footnoteref_15">15</a>. In previous version this said ", unless the nominal voltage is obvious by looking at the robot, its power packs and connections"
+</div>
+<div class="footnote" id="_footnotedef_16">
+<a href="#_footnoteref_16">16</a>. Avaliable as HTML and PDF at <a href="https://robocup-junior.github.io/soccer-rules-entry/master/rules.html" class="bare">https://robocup-junior.github.io/soccer-rules-entry/master/rules.html</a> and <a href="https://robocup-junior.github.io/soccer-rules-entry/master/rules.pdf" class="bare">https://robocup-junior.github.io/soccer-rules-entry/master/rules.pdf</a> respectively
+</div>
+<div class="footnote" id="_footnotedef_17">
+<a href="#_footnoteref_17">17</a>. Examples: <a href="https://www.robocupjunior.org.au/wp-content/uploads/2021/02/RCJASoccer-SimpleSimon2021.pdf" class="bare">https://www.robocupjunior.org.au/wp-content/uploads/2021/02/RCJASoccer-SimpleSimon2021.pdf</a>, <a href="https://rcj2019.eu/sites/default/files/Soccer%201-1%20Standard%20Kit%20Rules%202019%20Final.pdf" class="bare">https://rcj2019.eu/sites/default/files/Soccer%201-1%20Standard%20Kit%20Rules%202019%20Final.pdf</a>
+</div>
+<div class="footnote" id="_footnotedef_18">
+<a href="#_footnoteref_18">18</a>. See the SSL rules at <a href="https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball" class="bare">https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball</a>
+</div>
+<div class="footnote" id="_footnotedef_19">
+<a href="#_footnoteref_19">19</a>. In previous version this said " in Soccer Open and by means of the Kicker Power Measuring Device in Soccer Lightweight"
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-08-10 17:35:57 UTC
+Last updated 2023-09-13 11:21:36 UTC
 </div>
 </div>
 </body>
