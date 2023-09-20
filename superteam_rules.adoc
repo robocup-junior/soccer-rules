@@ -342,7 +342,8 @@ each SuperTeam by a black line.
 
 The floor near the exterior wall includes a wedge, which is an incline with a
 10 cm base and 2 +/- 1 cm rise for allowing the ball to roll back into play
-when it leaves the playing field.
+when it leaves the playing field. Note that the goal should not contain the
+wedge.
 
 [[field-walls]]
 === Walls
