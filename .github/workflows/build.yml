@@ -5,16 +5,22 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: 'common'
 
       - name: build the rules
         run: |
-          docker run -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh rules
-          docker run -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh rules
-          docker run -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh superteam_rules
-          docker run -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh superteam_rules
+          git submodule init
+          git submodule update
+          ls common
+          cd common
+          git status
+          cd ..
           mkdir -p dist/${GITHUB_REF#refs/heads/}/
-          rm tmp_*
-          cp -R ./media *.html *.pdf dist/${GITHUB_REF#refs/heads/}/
+          ./common/ci/000_build_rules.sh rules.adoc
+          cp -R build/results/rules_html/* build/results/rules.pdf dist/${GITHUB_REF#refs/heads/}/
+          ./common/ci/000_build_rules.sh superteam_rules.adoc
+          cp -R build/results/superteam_rules_html/* build/results/superteam_rules.pdf dist/${GITHUB_REF#refs/heads/}/
 
       - name: publish the rules
         uses: peaceiris/actions-gh-pages@v3
