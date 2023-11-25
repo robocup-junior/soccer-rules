@@ -17,8 +17,7 @@ endif::basebackend-html[]
 :icons: font
 :numbered:
 
-//TODO: revert to official Soccer rules for final release
-These are the *draft* Soccer rules for RoboCupJunior 2024. They are released
+These are the Soccer rules for RoboCupJunior 2024. They are released
 by the RoboCupJunior Soccer League Committee. The English version of these
 rules has priority over any translations.
 
@@ -584,12 +583,6 @@ The tournament organizers will do their best to limit the amount of external lig
 magnetic interference. However, the robots need to be constructed in a way
 which allows them to work in conditions that are not perfect (i.e. by not
 relying on compass sensors or specific lightning conditions).
-
-IMPORTANT: At RCJ Eindhoven 2013 at the same location that 2024 will be magnetic fields
-were quite uneven in the venue. This can not be fixed and teams participating in the
-international tournament should prepare accordingly by relying more on technologies like
-gyroscopes, cameras, range finders, sensor fusion or whatever else is not reliant on
-consistent magnetic fields.
 
 [discrete]
 [[field-diagrams]]
