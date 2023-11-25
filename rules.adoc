@@ -63,6 +63,11 @@ up to 3.0 cm{--, and may use batteries up to 12.0 V nominal voltage--}.
 ball. Robots may weigh up to 2.2 kg, may have a ball-capturing zone of up to
 1.5 cm{--, and may use batteries up to 15.0 V nominal voltage--}.
 
+IMPORTANT: A large part of the overall ranking is determined by the judged
+categories. These award points for documentation, design, innovation, achievement.
+Rubrics and other teams' documentation can be access through this forum thread:
+https://junior.forum.robocup.org/t/2024-awards-rubric-draft/3500
+
 Please see <<ball>> for ball specifications and <<league-regulations>> for
 more details for specifications/regulations.
 
