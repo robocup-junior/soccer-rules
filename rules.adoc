@@ -83,7 +83,7 @@ terms of the Creative Commons Attribution-ShareAlike License.
 
 // TODO: Summarize changes here
 The rule changes developed by the Soccer League Committee in cooperation with the
-RoboCup Junior Soccer Community (please continue to post ideas for the future on
+RoboCupJunior Soccer Community (please continue to post ideas for the future on
 the forum any time) aim to improve gameplay.
 
 Detailed changes are listed below and link to the corresponding place in the rule.
@@ -1176,7 +1176,7 @@ goals, or the field itself.
 Currently, there is one ball that has been approved by the
 Soccer League Committee:
 
-- RoboCup Junior Soccer ball operating in MODE A (pulsed) made by EK Japan/Elekit (https://elekit.co.jp/en/product/RCJ-05R)
+- RoboCupJunior Soccer ball operating in MODE A (pulsed) made by EK Japan/Elekit (https://elekit.co.jp/en/product/RCJ-05R)
 
 Note that this ball was previously called RCJ-05. While you may not be able to
 find a ball with this name anymore, any IR ball produced by EK Japan/Elekit is
