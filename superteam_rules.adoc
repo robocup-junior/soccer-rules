@@ -34,6 +34,9 @@ https://robocup-junior.github.io/soccer-rules/master/superteam_rules.html in HTM
 and at https://robocup-junior.github.io/soccer-rules/master/superteam_rules.pdf in PDF
 form.]
 
+[title="Two teams of two robots with an orange ball on a RoboCupJunior Soccer field."]
+image::media/field_with_two_teams.jpg[]
+
 [discrete]
 == Preface
 
@@ -60,27 +63,12 @@ being the same regular game rule.**
 [[game-procedure-and-length-of-a-game]]
 === Game procedure and length of a game
 
-RCJ Soccer SuperTeam games consist of two teams of robots playing soccer
-against each other. Each team has five autonomous robots. The game will consist
-of two halves. The duration of each half is 10-minutes. There will be a
-5-minute break in between the halves.
-
-The game clock will run for the duration of the halves without stopping (except
-when a referee wants to consult another official). The game clock will be
-run by a referee or a referee assistant.
-
-SuperTeams are expected to be at the field 5 minutes before their game starts. Being
-at the inspection table does not count in favor of this time limit. Teams that
-are late for the start of the game may be penalized one goal *per 30 seconds*
-at the referee’s discretion.
-
-The final game score will be trimmed so that there is at most 10-goal
-difference between the losing and the winning team.
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<game-procedure-and-length-of-a-game>> applies.
 
 [[tournament-mode-byes]]
 === Tournament mode and Bye games
 {++In some cases (e.g. uneven number of teams) not every team can play every round.
-In threse cases the team that is free from play is awarded a Bye. In SuperTeam
+In these cases the team that is free from play is awarded a Bye. In SuperTeam
 matches where fewer goals are scored the Bye is awarded as a 3:0 victory instead
 of the usual 10:0. Contact your regional/super-regional tournament organizers for
 details at tournaments other than the international RoboCupJunior tournament.++}
@@ -88,17 +76,8 @@ details at tournaments other than the international RoboCupJunior tournament.++}
 [[pre-match-meeting]]
 === Pre-match meeting
 
-At the start of the first half of the game, a referee will toss a coin. The
-team mentioned first in the draw shall call the coin. The winner of the toss
-can choose either which end to kick towards, or to kick off first. The loser of
-the toss chooses the other option. After the first half, teams switch sides.
-The SuperTeam not kicking off in the first half of the game will kick off to
-begin the second half of the game.
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<pre-match-meeting>> applies.
 
-During the pre-match meeting the referee or their assistant may check whether
-the robots are capable of playing (i.e., whether they are at least able to
-follow and react to the ball). If none of the robots is capable of playing, the
-game will not be played and zero goals will be awarded to both SuperTeams.
 
 [[kick-off]]
 === Kick-off
@@ -107,14 +86,10 @@ Each half of the game begins with a kick-off. All robots must be located on
 their own side of the field. All robots must be halted. The ball is positioned
 by a referee in the center of the field.
 
-The team kicking off places their robots on the Big field first and the rest of
-the robots can be located anywhere on their side of the playing field, as long
-as they are at a maximum distance of 10 cm from any white line.
+The SuperTeam kicking off places their robots on the field first.
 
-The SuperTeam not kicking off will now place their robots on the defensive end of
-the Big field.
-
-Robots cannot be placed behind the goal line or out of bounds. Robots cannot be
+Robots cannot be placed behind the goal line or out of bounds. All robots must be located on
+their own side of the field and no more than 10cm from any white line. Robots cannot be
 repositioned once they have been placed, except if the referee requests to
 adjust their placement to make sure that the robots are placed properly within
 the field positions.
@@ -134,27 +109,18 @@ discarded and the match resumes with a <<neutral-kickoff>>.
 ==== Neutral kick-off
 
 A neutral kick-off is the same as the one described in <<kick-off>> with a
-small change: all robots must be at least 30 cm away from the ball
-(outside of the center circle).
+small change: all robots can be place at the same time.
 
 [[human-interference]]
 === Human interference
 
-Except for the kick-off, human interference from SuperTeam members (e.g.
-touching the robots) during the game is not allowed unless explicitly permitted
-by a referee. Violating SuperTeam(s) / SuperTeam member(s) may be disqualified from
-the game.
-
-The referee or a referee assistant can help robots get unstuck if the ball is
-not being disputed near them and if the situation was created from normal
-interaction between robots (i.e. it was not a design or programming flaw of the
-robot alone). The referee or a referee assistant will pull back the robots just
-enough for them to be able to move freely again.
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<human-interference>> applies.
 
 [[ball-movement]]
 === Ball movement
 
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<ball-movement>> applies.
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<ball-movement>> 
+applies with the exception of requirement to approach the ball at the nearest neutral spot.
 
 [[scoring]]
 === Scoring
@@ -261,9 +227,9 @@ it is suggested that the SuperTeam establish positions for the robots inside
 the playing field (goalkeeper, backs, midfielders, forwards, etc.), by
 adjusting robot's mechanics and programming.
 
-The substitution of robots during the competition with other SuperTeam is
+The substitution of robots during the competition with other SuperTeams is
 forbidden. Robots will be issued a special code that will distinguish them from
-other SuperTeams. Each robot that belongs to a superteam will receive an ID
+other SuperTeams. Each robot that belongs to a SuperTeam will receive an ID
 identifying the robot as being a member of a team.
 
 Example: Robot A-2: the referee would identify robot with sticker A-2 as robot
@@ -341,7 +307,7 @@ the outer area, are 600 cm by 400 cm. The playing area is divided in sides for
 each SuperTeam by a black line.
 
 The floor near the exterior wall includes a wedge, which is an incline with a
-10 cm base and 2 +/- 1 cm rise for allowing the ball to roll back into play
+10 cm base and 2 ± 1 cm rise for allowing the ball to roll back into play
 when it leaves the playing field. Note that the goal should not contain the
 wedge.
 
@@ -409,4 +375,4 @@ link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJuni
 [[big-field-diagram]]
 == BIG FIELD DIAGRAM
 
-image:media/bigfield.png[image,scaledwidth=85.0%]
+image:media/bigfield.png[image,scaledwidth=80.0%]
