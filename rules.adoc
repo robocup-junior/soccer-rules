@@ -434,7 +434,9 @@ must be started and stopped manually by humans and be controlled autonomously.
 Robots are not allowed to use any kind of communication during gameplay unless
 the communication between robots is via Bluetooth class 2 or class 3
 footnote:[range shorter than 20 meters] or via any other device that
-communicates using the 802.15.4 protocol (e.g., ZigBee and XBee).
+communicates using the 802.15.4 protocol (e.g., ZigBee and XBee)
+{++ or 802.11ax (WiFi 6E) or 802.11be (WiFi 7) *exclusively on the
+6GHz spectrum.* ++}
 
 Teams are responsible for their communication. The availability of frequencies
 cannot be guaranteed.
