@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.20">
-<meta name="author" content="2023-11-27">
+<meta name="generator" content="Asciidoctor 2.0.22">
+<meta name="author" content="2024-04-06">
 <title>RoboCupJunior Soccer Rules 2024</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -141,7 +141,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #content::before{content:none}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
-#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
 #header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
@@ -163,6 +163,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toctitle{color:#7a2518;font-size:1.2em}
 @media screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
 #toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
 #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
 #toc.toc2>ul{font-size:.9em;margin-bottom:0}
@@ -328,7 +329,7 @@ a.image{text-decoration:none;display:inline-block}
 a.image object{pointer-events:none}
 sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
 sup.footnote a,sup.footnoteref a{text-decoration:none}
-sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
 #footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
 #footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
 #footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
@@ -438,7 +439,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>RoboCupJunior Soccer Rules 2024</h1>
 <div class="details">
-<span id="author" class="author">2023-11-27</span><br>
+<span id="author" class="author">2024-04-06</span><br>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -680,7 +681,7 @@ the forum any time) aim to improve gameplay.</p>
 <p><a href="#substitution-1">Changed "1.1" to "1.4"</a></p>
 </li>
 <li>
-<p><a href="#substitution-2">Changed "A robot must touch the ball that is placed no further than 20 cm from any point on its convex hull within 10 seconds. If a robot does not do so within the time limit, it is deemed to be damaged. " to "Any robot must approach and touch the ball when it is placed on the nearest neutral spot. It must do this before lack of progress is called. When on its own side of the field, any robot must be able to move the ball from the nearest neutral spot to the opponent&#8217;s side of the field. If a specific robot does act this way, referees may deem it damaged at their discretion. (See &lt;&lt;damaged-robots, Damaged Robots&gt;&gt;.) This rule does not apply if the robot is hindered from detecting or playing the ball by the opponent."</a></p>
+<p><a href="#substitution-2">Changed "A robot must touch the ball that is placed no further than 20 cm from any point on its convex hull within 10 seconds. If a robot does not do so within the time limit, it is deemed to be damaged. " to "Any robot must approach and touch the ball when it is placed on the nearest neutral spot. It must do this before lack of progress is called. When on its own side of the field, any robot must be able to move the ball from the nearest neutral spot to the opponent&#8217;s side of the field. If a specific robot does not act this way, referees may deem it damaged at their discretion. (See &lt;&lt;damaged-robots, Damaged Robots&gt;&gt;.) This rule does not apply if the robot is hindered from detecting or playing the ball by the opponent."</a></p>
 </li>
 <li>
 <p><a href="#substitution-3">Changed "1100" to "1400"</a></p>
@@ -837,7 +838,7 @@ walls. If a robot moves the ball outside of the field (that is, beyond the walls
 or above their height), it is deemed damaged. (<a href="#damaged-robots">Rule 1.10, &#8220;Damaged robots&#8221;</a>)</p>
 </div>
 <div id="substitution-2" class="paragraph">
-<p><span class="red"><strong>Any robot must approach and touch the ball when it is placed on the nearest neutral spot. It must do this before lack of progress is called. When on its own side of the field, any robot must be able to move the ball from the nearest neutral spot to the opponent&#8217;s side of the field. If a specific robot does act this way, referees may deem it damaged at their discretion. (See <a href="#damaged-robots">Damaged Robots</a>.) This rule does not apply if the robot is hindered from detecting or playing the ball by the opponent.</strong></span>
+<p><span class="red"><strong>Any robot must approach and touch the ball when it is placed on the nearest neutral spot. It must do this before lack of progress is called. When on its own side of the field, any robot must be able to move the ball from the nearest neutral spot to the opponent&#8217;s side of the field. If a specific robot does not act this way, referees may deem it damaged at their discretion. (See <a href="#damaged-robots">Damaged Robots</a>.) This rule does not apply if the robot is hindered from detecting or playing the ball by the opponent.</strong></span>
 <sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p>
 </div>
 <div class="admonitionblock tip">
@@ -2327,7 +2328,7 @@ it was shot from.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-11-27 07:48:40 UTC
+Last updated 2024-04-06 20:37:05 UTC
 </div>
 </div>
 </body>
