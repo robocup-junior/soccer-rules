@@ -303,10 +303,18 @@ UART or I²C for more complex applications in future years.
 
 More details will be provided by the Soccer League Committee before the competition.
 
+The link:https://raw.githubusercontent.com/robocup-junior/soccer-communication-module/master/RCJ%202024%20communication%20modules.pdf[Communications Module Spec Sheet] 
+provides information on how to read the "Stop" and "Go" states from the module.
+
 [[agility]]
 === Agility
 
 link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<agility>> applies.
+
+[[kicker-power-measuring]]
+=== Kicker Power Measuring Procedures
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<kicker-power-measuring>> applies.
 
 [[handle]]
 === Handle
