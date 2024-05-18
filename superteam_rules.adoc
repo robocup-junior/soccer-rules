@@ -54,6 +54,11 @@ been analyzed and are ruled here. For all other situations that do not change
 from the regular game rules, normally they have been only mentioned here as
 being the same regular game rule.**
 
+TIP: This ruleset is available at https://github.com/robocup-junior/soccer-rules/
+including a full history of changes made. During the rules development process
+new changes are also collected there as pull requests. Feedback and contributions
+are welcome there as well as on the forum (https://junior.forum.robocup.org/).
+
 [[gameplay]]
 == GAMEPLAY
 

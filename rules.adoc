@@ -78,6 +78,11 @@ organizer of your regional RoboCupJunior competition and ask them about_ <<entry
 Unless specified otherwise, all parts of these rules are released under the
 terms of the Creative Commons Attribution-ShareAlike License.
 
+TIP: This ruleset is available at https://github.com/robocup-junior/soccer-rules/
+including a full history of changes made. During the rules development process
+new changes are also collected there as pull requests. Feedback and contributions
+are welcome there as well as on the forum (https://junior.forum.robocup.org/).
+
 [discrete]
 === Changes from the 2023 RoboCupJunior Soccer Rules
 
