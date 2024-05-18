@@ -301,7 +301,7 @@ team will be expected to interface with this module using a single 2.54mm GPIO
 pin at present and the Soccer League Committee plans on extending this to using
 UART or I²C for more complex applications in future years.
 
-More details will be provided by the Soccer League Committee before the competition.
+Use of the communications modules will be mandatory for SuperTeam games starting at the 2024 international competition.
 
 The link:https://raw.githubusercontent.com/robocup-junior/soccer-communication-module/master/RCJ%202024%20communication%20modules.pdf[Communications Module Spec Sheet] 
 provides information on how to read the "Stop" and "Go" states from the module.
