@@ -56,12 +56,12 @@ Lightweight*. These rules apply for both sub-leagues. There are two main
 differences between the two leagues.
 
 * *Soccer Lightweight* is played using a special ball that emits an IR
-signal. Robots may weigh up to {~~1.1~>1.4~~} kg, may have a ball-capturing zone of
-up to 3.0 cm{--, and may use batteries up to 12.0 V nominal voltage--}.
+signal. Robots may weigh up to 1.4 kg, may have a ball-capturing zone of
+up to 3.0 cm.
 
 * *Soccer Open* is played using a passive, brightly colored orange
 ball. Robots may weigh up to 2.2 kg, may have a ball-capturing zone of up to
-1.5 cm{--, and may use batteries up to 15.0 V nominal voltage--}.
+1.5 cm.
 
 IMPORTANT: A large part of the overall ranking (for the international tournament,
 ask you regional tournament organizers) is determined by the judged
@@ -209,16 +209,13 @@ The ball needs to stay within the bounds of the field, as defined by the
 walls. If a robot moves the ball outside of the field (that is, beyond the walls
 or above their height), it is deemed damaged. (<<damaged-robots>>)
 
-{~~A robot must touch the ball that is placed no further than 20 cm from any point
-on its convex hull within 10 seconds. If a robot does not do so within the time
-limit, it is deemed to be damaged.
-~>Any robot must approach and touch the ball when it is placed on the nearest
+Any robot must approach and touch the ball when it is placed on the nearest
 neutral spot. It must do this before lack of progress is called. When on its
 own side of the field, any robot must be able to move the ball from the nearest
 neutral spot to the opponent's side of the field. If a specific robot does not act
 this way, referees may deem it damaged at their discretion.
 (See <<damaged-robots, Damaged Robots>>.) This rule does not apply if the robot
-is hindered from detecting or playing the ball by the opponent.~~}
+is hindered from detecting or playing the ball by the opponent.
 
 TIP: If placing the ball on a neutral spot would confer a gameplay advantage to
 one team or referees don't place the ball on the closest neutral spot for other
@@ -446,10 +443,7 @@ Robots must be constructed and programmed in a way that their movement is not
 limited to only one dimension (defined as a single axis, such as only moving in
 a straight line). They must move in all directions, for example by turning.
 
-{--Robots must respond to the ball in a direct forward movement towards it. For
-example, it is not enough to basically just move left and right in front of
-their own goal, it must also move directly towards the ball in a forward
-movement.--}At least one team robot must be able to seek and approach the ball
+At least one team robot must be able to seek and approach the ball
 anywhere on the field, unless the team has only one robot on the field at that
 time.
 
@@ -770,9 +764,9 @@ robot’s dimensions must not exceed the following limits:
 |sub-league | *Soccer* *Open* | *Soccer Lightweight*
 |size ^[0]^  | 18.0 cm | 22.0 cm +
 |height | 18.0 cm ^[1]^ | 22.0 cm ^[1]^ +
-|weight | 2200 g ^[2]^ | {~~1100~>1400~~} g ^[2]^ +
+|weight | 2200 g ^[2]^ | 1400 g ^[2]^ +
 |ball-capturing zone | 1.5 cm | 3.0 cm +
-|voltage | {~~15.0 V~>48V DC / 25V AC RMS~~} ^[3]^ ^[4]^ | {~~12.0 V~>48V DC / 25V AC RMS~~} ^[3]^ ^[4]^ +
+|voltage | 48V DC / 25V AC RMS ^[3]^ ^[4]^ +
 |===
 
 TIP: [0] Robot must fit smoothly into a cylinder of this diameter
@@ -784,10 +778,9 @@ TIP: [2] The weight of the robot includes that of the handle.
 IMPORTANT: [3] We *strongly* encourage teams to include protection circuits for Lithium-based
 batteries
 
-NOTE: [4] {~~Voltage limits relate to the *nominal values*, deviations at the
-power pack due to the fact that charged will be tolerated~>The voltage limit
+NOTE: [4] The voltage limit
 relates to the maximum voltage at any point and any time on the robot, *not
-nominal voltages*~~}.
+nominal voltages*.
 
 Ball-capturing zone is defined as any internal space created when a straight
 edge is placed on the protruding points of a robot. This means the ball must
@@ -814,15 +807,11 @@ A robot may use any number of cameras without restrictions on lenses,
 optical parts, optical systems, and total field of view. Components may be
 sourced in any way the team sees fit.
 
-{--Voltage pump circuits are permitted only for a kicker drive. --}No voltage may
+No voltage may
 exceed 48V DC or 25V  AC RMS at any time and maximum voltage must be available for
 demonstration and measurement at inspections. When not in use measurement
-contacts must be protected from accidental touches or short circuits.{-- All
-other
-electrical circuits inside the robot cannot exceed 15.0 V for Soccer Open and
-12.0 V for Soccer Lightweight. --}Each robot must be designed to allow verifying
-the voltage of power packs and its circuits{--, unless the nominal voltage is
-obvious by looking at the robot, its power packs and connections--}.
+contacts must be protected from accidental touches or short circuits. Each robot
+must be designed to allow verifying the voltage of power packs and its circuits.
 
 Pneumatic devices are allowed to use ambient air only.
 
@@ -1241,15 +1230,14 @@ The weight of the ball should be 46 grams (+- 1 gram).
 
 All robot kickers will be tested with the tournament ball used in the sub-league they
 participate in.
-Kicker Power will be measured by means of an on-field test{-- in Soccer Open
-and by means of the Kicker Power Measuring Device in Soccer Lightweight--}.
+Kicker Power will be measured by means of an on-field test.
 
 The test is performed as follows:
 
 .  Place robot inside the left corner of a goal.
 .  Perform a kick into the opposing goal
-..  The {++Open++} League kicker power test is passed if after bouncing off of the opposite goal
+..  The Open League kicker power test is passed if after bouncing off of the opposite goal
 the ball does not return further than the front line of to the penalty area
 it was shot from.
-..  {++The Light Weight League power test is passed if after bouncing off of the opposite goal
-the ball does not leave the penalty area of the opposing goal after bouncing back.++}
+..  The Light Weight League power test is passed if after bouncing off of the opposite goal
+the ball does not leave the penalty area of the opposing goal after bouncing back.
