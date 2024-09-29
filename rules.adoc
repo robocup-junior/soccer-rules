@@ -79,7 +79,7 @@ Unless specified otherwise, all parts of these rules are released under the
 terms of the Creative Commons Attribution-ShareAlike License.
 
 [discrete]
-=== Changes from the 2023 RoboCupJunior Soccer Rules
+=== Changes from the 2024 RoboCupJunior Soccer Rules
 
 // TODO: Summarize changes here
 The rule changes developed by the Soccer League Committee in cooperation with the
