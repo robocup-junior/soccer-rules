@@ -177,18 +177,13 @@ A neutral kick-off is the same as the one described in <<kick-off>> with a
 small change: all robots must be at least 30 cm away from the ball
 (outside of the center circle).
 
-[[human-interference]]
-=== Human interference
+[[scoring]]
+=== Scoring
 
-Except for the kick-off, human interference from the teams (e.g. touching the
-robots) during the game is not allowed unless explicitly permitted by a
-referee. Violating team(s)/team member(s) may be disqualified from the game.
-
-The referee or a referee assistant can help robots get unstuck if the ball is
-not being disputed near them and if the situation was created from normal
-interaction between robots (i.e. it was not a design or programming flaw of the
-robot alone). The referee or a referee assistant will pull back the robots just
-enough for them to be able to move freely again.
+A goal is scored when the ball strikes or touches the back wall of the goal.
+Goals scored by any robot have the same end result: they give one goal to the
+team on the opposite side. After a goal, the game will be restarted with a
+kick-off from the team who was scored against.
 
 [[ball-movement]]
 === Ball movement
@@ -220,14 +215,6 @@ is hindered from detecting or playing the ball by the opponent.
 TIP: If placing the ball on a neutral spot would confer a gameplay advantage to
 one team or referees don't place the ball on the closest neutral spot for other
 reasons a robot is not required to approach the robot at further away neutral spots.
-
-[[scoring]]
-=== Scoring
-
-A goal is scored when the ball strikes or touches the back wall of the goal.
-Goals scored by any robot have the same end result: they give one goal to the
-team on the opposite side. After a goal, the game will be restarted with a
-kick-off from the team who was scored against.
 
 [[inside-penalty-area]]
 === Inside the Penalty Area
@@ -338,6 +325,19 @@ of the opponent team violating the rules.
 Whenever a robot is removed from play, its motors must be turned off.
 
 
+[[human-interference]]
+=== Human interference
+
+Except for the kick-off, human interference from the teams (e.g. touching the
+robots) during the game is not allowed unless explicitly permitted by a
+referee. Violating team(s)/team member(s) may be disqualified from the game.
+
+The referee or a referee assistant can help robots get unstuck if the ball is
+not being disputed near them and if the situation was created from normal
+interaction between robots (i.e. it was not a design or programming flaw of the
+robot alone). The referee or a referee assistant will pull back the robots just
+enough for them to be able to move freely again.
+
 [[interruption-of-game-ref-interruption]]
 === Interruption of Game
 
@@ -371,25 +371,6 @@ the competition. Each team is allowed to have at most two members beside the
 field during gameplay: they will usually be the captain and an
 assistant team member.
 
-[[team-violations]]
-=== Violations
-
-Teams that do not abide by the rules are not allowed to participate.
-
-Robots are expected to be
-capable of dealing with any colors above the walls (e.g. blue, yellow,
-green or orange shirts) either in hardware (e.g. limiting the field of view from looking up) or
-in software (e.g. masking the input image).
-
-The referee can interrupt a game in progress if any kind of interference from
-spectators is suspected (IR emitters, camera flashes, mobile
-phones, radios, computers, etc.).
-
-This needs to be confirmed by the tournament organizers if a claim is placed by the other
-team. A team claiming that their robot is affected by colors has to show the
-proof/evidence of the interference.
-
-
 [[robots]]
 == ROBOTS
 
@@ -415,18 +396,22 @@ playing when placed on a flat surface. Any part of a robot that produces light
 that may interfere with the opposing robot’s vision system must be covered.
 For Lightweight-specific regulations see <<regulations-inference-in-lightweight>>
 
+The referee can interrupt a game in progress if any kind of interference from
+spectators is suspected (IR emitters, camera flashes, mobile
+phones, radios, computers, etc.). However, robots are expected to be capable
+of dealing with any visible colors above the walls (e.g. blue, yellow, green
+or orange shirts) either in hardware (e.g. limiting the field of view from
+looking up) or in software (e.g. masking the input image).
+
 A team claiming that their robot is affected by the other team’s robot in any
 way must show the proof/evidence of the interference. Any interference needs to
 be confirmed by the tournament organizers if a claim is placed by the other team.
 
 [[robots-control]]
-=== Control
+=== Control & Communication
 
 The use of remote control of any kind is not allowed during the match. Robots
 must be started and stopped manually by humans and be controlled autonomously.
-
-[[communication]]
-=== Communication
 
 Robots are not allowed to use any kind of communication during gameplay unless
 the communication between robots is via Bluetooth class 2 or class 3
@@ -436,16 +421,16 @@ communicates using the 802.15.4 protocol (e.g., ZigBee and XBee).
 Teams are responsible for their communication. The availability of frequencies
 cannot be guaranteed.
 
+{++For the World Championship starting in Brazil 2025, use of a Communications
+Module is required for referees to control the robots. 
+See <<international-competition-gameplay>>++}
+
 [[agility]]
 === Agility
 
 Robots must be constructed and programmed in a way that their movement is not
 limited to only one dimension (defined as a single axis, such as only moving in
 a straight line). They must move in all directions, for example by turning.
-
-At least one team robot must be able to seek and approach the ball
-anywhere on the field, unless the team has only one robot on the field at that
-time.
 
 [[handle]]
 === Handle
@@ -458,6 +443,8 @@ The dimensions of the handle may exceed the robot height
 limitation, but the part of the handle that exceeds this
 limit cannot be used to mount components of the robot.
 
+The weight of the robot includes that of the handle. 
+
 [[top-markers]]
 === Top Markers
 
@@ -465,7 +452,8 @@ A robot must have markings in order to be distinguished by the referee. Each
 robot must have a white plastic circle with a diameter of at least 4 cm mounted
 horizontally on top. This white circle will be used by the referee to write
 numbers on the robots using markers, therefore the white circles must be
-accessible and visible.
+accessible and visible. The top markers do not need to be within the size
+limit of the robot.
 
 Before the game, the referee will designate the numbers for each robot and will
 write them on the top white circle. Robots not carrying the top white circle
@@ -473,14 +461,6 @@ are not eligible to play.
 
 .A visualization of the top marker
 image::media/image4.jpeg[scaledwidth=50.0%]
-
-[[additional-regulations-of-the-sub-leagues]]
-=== Additional regulations of the sub-leagues
-
-A tournament may be organized in different sub-leagues. Each sub-league (e.g.
-*Soccer Open* and *Soccer Lightweight*) has its own additional regulations,
-including regulations affecting the construction of robots. They are outlined
-in <<league-regulations>>.
 
 [[violations]]
 === Violations
@@ -497,101 +477,10 @@ tournament.
 [[field]]
 == FIELD
 
-[[dimensions-of-the-field]]
-=== Dimensions of the field
+[[specification-for-soccer-field]]
+=== Specification for Soccer Field
 
-The playing field is 158 cm by 219 cm. The field is
-marked by a white line which is part of the playing field. Around the
-playing field, beyond the white line, there is an outer area
-of 12 cm in width.
-
-The floor near the exterior wall includes a wedge, which is an incline with a
-10 cm base and 2 +/- 1 cm rise for allowing the ball to roll back into play
-when it leaves the playing field. Note that the goal should not contain the
-wedge.
-
-Total dimensions of the field, including the outer area, are 182 cm by 243 cm.
-
-[[field-walls]]
-=== Walls
-
-Walls are placed all around the field, including behind the goals and the
-out-area. The height of the walls is 22 cm. The walls are painted matte black.
-
-[[goals]]
-=== Goals
-
-The field has two goals, centered on each of the shorter sides of the playing
-field. The goal inner space is 60 cm wide, 10 cm high and 74 mm deep, box
-shaped.
-
-The goal "posts" are positioned over the white line marking the limits of the
-field.
-
-The interior walls and of each goal are colored matte, one goal yellow and the
-other goal blue. It is recommended that the blue be of a brighter shade so that
-it is different enough from the black exterior.
-
-[[floor]]
-=== Floor
-
-The floor
-consists of green carpet ideally of darker shade on top of a hard level surface. Teams
-should be prepared to adjust to different levels of contrast between the green carpet
-and lines as some events may be restricted to using lighter shades of green. All
-lines on the field should be painted, marked with tape,
-or installed as white carpet and be somewhat resistant to tearing or ripping.
-Lines should have a width of 20mm (±10%).
-
-It is impractical to set international constraints on carpet other than it
-being green. In the spirit of the competition, teams should design robots
-to be tolerant or adaptable to different fibers, textures, construction,
-density, shades, and designs of carpet especially when competing amongst different
-regions. Teams are encouraged to visit regional resources or reach out to Local
-Organization Committee for suggestions if desiring to build their own practice
-field(s).
-
-[[neutral-spots]]
-=== Neutral spots
-
-There are five neutral spots defined in the field. One is in the center of the
-field. The other four are adjacent to each corner, located 45 cm
-along the long edge of the field. They align with the sides of the penalty
-areas. The neutral spots can be drawn with a thin black marker.
-The neutral spots ought to be of circular shape measuring 1 cm in diameter.
-
-[[center-circle]]
-=== Center circle
-
-A center circle will be drawn on the field. It is 60 cm in diameter. It is a
-thin black marker line. It is there for Referees and Captains as guidance
-during kick-off.
-
-[[penalty-areas]]
-=== Penalty areas
-
-In front of each goal there is a 25 cm wide and 80 cm long penalty
-area with rounded front corners (15cm radius).
-
-The penalty areas are marked by a white line of 20 mm (±10%) width. The
-line is part of the area.
-
-[[lighting-and-magnetic-conditions]]
-=== Lighting and Magnetic Conditions
-
-The tournament organizers will do their best to limit the amount of external lightning and
-magnetic interference. However, the robots need to be constructed in a way
-which allows them to work in conditions that are not perfect (i.e. by not
-relying on compass sensors or specific lightning conditions).
-
-[discrete]
-[[field-diagrams]]
-== FIELD DIAGRAMS
-
-image:media/SoccerFieldWedgeNoWedge.jpg[image,scaledwidth=90.0%]
-
-image:media/SoccerFieldDrawings.png[image,scaledwidth=90.0%]
-
+See <<technical-specification-for-soccer-field>>.
 
 [[ball]]
 == BALL
@@ -634,6 +523,8 @@ tournament organizer's discretion.
 
 Humans are not allowed to cause deliberate interference with robots or damage
 to the field or the ball.
+
+Teams that do not abide by the rules are not allowed to participate.
 
 [[behavior]]
 === Behavior
@@ -771,14 +662,10 @@ robot’s dimensions must not exceed the following limits:
 
 TIP: [0] Robot must fit smoothly into a cylinder of this diameter
 
-TIP: [1] The handle and the top markers of a robot may exceed the height.
-
-TIP: [2] The weight of the robot includes that of the handle.
-
-IMPORTANT: [3] We *strongly* encourage teams to include protection circuits for Lithium-based
+IMPORTANT: [2] We *strongly* encourage teams to include protection circuits for Lithium-based
 batteries
 
-NOTE: [4] The voltage limit
+NOTE: [3] The voltage limit
 relates to the maximum voltage at any point and any time on the robot, *not
 nominal voltages*.
 
@@ -813,7 +700,7 @@ demonstration and measurement at inspections. When not in use measurement
 contacts must be protected from accidental touches or short circuits. Each robot
 must be designed to allow verifying the voltage of power packs and its circuits.
 
-Pneumatic devices are allowed to use ambient air only.
+{--Pneumatic devices are allowed to use ambient air only.--}
 
 Kicker strength is subject to compliance check at any time during the
 competition. During gameplay, a referee can ask to see a sample kick on the
@@ -928,8 +815,9 @@ competitions as well, but this is not mandatory.
 === Technical Challenges
 
 Inspired by the major leagues and the need for further technological
-advancement of the leagues, the Soccer League Committee has decided to introduce so
-called *Technical Challenges*.
+advancement of the leagues, the Soccer League Committee runs what are
+called *Technical Challenges*. New challenges are added each year, and
+are unknown until during the International Competition.
 
 The idea of these challenges is to give the teams an opportunity to show off
 various abilities of their robots which may not get noticed during the regular
@@ -940,93 +828,6 @@ shape the competition.
 Any RoboCupJunior Soccer team will be eligible to try to tackle these
 challenges. Unless otherwise stated, any robot taking part in these challenges
 needs to abide by these rules in order to successfully complete it.
-
-[[precision-shooter]]
-==== Precision shooter
-
-_The results in soccer are evaluated by the number of scored goals. History
-usually does not care how they were scored. For the spectators, however, this
-usually makes all the difference._
-
-This challenge consists of six rounds. In each round, the robot starts from its
-own penalty area oriented towards the goal. The ball is placed randomly (by
-rolling a die) inside this half of the field on one of the following spots:
-
-1.  Left neutral spot
-2.  Right neutral spot
-3.  Left corner of the penalty area
-4.  Right corner of the penalty area
-5.  Left corner of the field
-6.  Right corner of the field
-
-The robot needs to locate the ball and score a goal while staying on its own
-half of the field. Each round takes at most 20 seconds.
-
-* The team is free to pick which side to kick from.
-* The same robot must be used for all rounds.
-* The robot must stay on its half of the field for the goal to count,
-  but ”out of bounds” rules do not apply.
-
-[[goal_parts]]
-.Partitioning of the goal into 6 parts.
-image::media/goal_parts.png[align="center"]
-
-Initially, the opposite goal is completely open (see <<goal_parts>>). After
-each scored goal a member of the team rolls a die and the part of the goal that
-corresponds to the number on the dice will be covered with a black box. If this
-part of the goal is already covered, the die will be rolled again. See
-<<goal_parts_filled>>, where the number 3 and number 5 were rolled on a die
-after each round and the respective parts of the goal are covered. Note that if
-number 3 or 5 will get rolled in the next rounds, a new roll of a die will
-follow.
-
-The result of this challenge is the number of scored goals.
-
-[[goal_parts_filled]]
-.An example state of the goal after two rounds
-image::media/goal_parts_filled.png[align="center"]
-
-[[penalty-kick]]
-==== Penalty Kick
-
-In Soccer, a penalty kick takes place after a grave offense happens. The aim
-of this technical challenge is to see whether something similar can be done
-within the limits of RoboCupJunior Soccer.
-
-The kicking procedure consists of the following steps:
-
-1. All robots as well as the ball are removed from the field.
-
-2. The offending ("kicking") team places a robot inside its own penalty area,
-    rotated towards its own goal. A ball is placed at the central neutral spot.
-
-3. The offending ("kicking") team turns their robot on. The robot needs to stay
-    still for the next 5 seconds.
-
-4. During these 5 seconds the defending team places a robot which is turned off
-    inside its own penalty area.
-
-5. In order to score a goal, the offending team's robot needs to move the ball
-    inside the opponent's goal. It needs to do so in at most 15 seconds and while
-    staying within the center circle once it touches the ball.
-
-If the offending team's robot moves before the 5 seconds pass, the result is
-automatically no goal. Once the penalty kick finishes, the game continues with
-a <<kick-off>>, with the defending team kicking-off.
-
-[[vertical-kick]]
-==== Vertical kick
-
-The introduction of an orange golf ball in Open should open up new options for
-gameplay. Given the smaller size and weight of golf balls, it should be
-possible to kick them not just horizontally (as if in "2D") but also vertically
-(that is, to get the ball into the air).
-
-The task in this technical challenge is to score into the open yellow goal from
-the other (blue) half of the field. In order to pass the challenge, the ball
-can only touch the other (yellow) half of the field inside the penalty area and
-the goal itself. Note that a golf ball (not necessarily orange) needs to be
-used.
 
 
 [[further-information-on-international-competition]]
@@ -1088,6 +889,107 @@ details on what Entry leagues (if any) will be running in their region.
 The Soccer League Committee will additionally post what it knows on the news
 thread on the forum
 (https://junior.forum.robocup.org/t/soccer-entry-league-news-feed/2677).
+
+[appendix]
+[[technical-specification-for-soccer-field]]
+== Technical Specification For Soccer Field
+
+[[dimensions-of-the-field]]
+=== Dimensions of the field
+
+The playing field is 158 cm by 219 cm. The field is
+marked by a white line which is part of the playing field. Around the
+playing field, beyond the white line, there is an outer area
+of 12 cm in width.
+
+The floor near the exterior wall includes a wedge, which is an incline with a
+10 cm base and 2 +/- 1 cm rise for allowing the ball to roll back into play
+when it leaves the playing field. Note that the goal should not contain the
+wedge.
+
+Total dimensions of the field, including the outer area, are 182 cm by 243 cm.
+
+[[field-walls]]
+=== Walls
+
+Walls are placed all around the field, including behind the goals and the
+out-area. The height of the walls is 22 cm. The walls are painted matte black.
+
+[[goals]]
+=== Goals
+
+The field has two goals, centered on each of the shorter sides of the playing
+field. The goal inner space is 60 cm wide, 10 cm high and 74 mm deep, box
+shaped.
+
+The goal "posts" are positioned over the white line marking the limits of the
+field.
+
+The interior walls and of each goal are colored matte, one goal yellow and the
+other goal blue. It is recommended that the blue be of a brighter shade so that
+it is different enough from the black exterior.
+
+[[floor]]
+=== Floor
+
+The floor
+consists of green carpet ideally of darker shade on top of a hard level surface. Teams
+should be prepared to adjust to different levels of contrast between the green carpet
+and lines as some events may be restricted to using lighter shades of green. All
+lines on the field should be painted, marked with tape,
+or installed as white carpet and be somewhat resistant to tearing or ripping.
+Lines should have a width of 20mm (±10%).
+
+It is impractical to set international constraints on carpet other than it
+being green. In the spirit of the competition, teams should design robots
+to be tolerant or adaptable to different fibers, textures, construction,
+density, shades, and designs of carpet especially when competing amongst different
+regions. Teams are encouraged to visit regional resources or reach out to Local
+Organization Committee for suggestions if desiring to build their own practice
+field(s).
+
+[[neutral-spots]]
+=== Neutral spots
+
+There are five neutral spots defined in the field. One is in the center of the
+field. The other four are adjacent to each corner, located 45 cm
+along the long edge of the field. They align with the sides of the penalty
+areas. The neutral spots can be drawn with a thin black marker.
+The neutral spots ought to be of circular shape measuring 1 cm in diameter.
+
+[[center-circle]]
+=== Center circle
+
+A center circle will be drawn on the field. It is 60 cm in diameter. It is a
+thin black marker line. It is there for Referees and Captains as guidance
+during kick-off.
+
+[[penalty-areas]]
+=== Penalty areas
+
+In front of each goal there is a 25 cm wide and 80 cm long penalty
+area with rounded front corners (15cm radius).
+
+The penalty areas are marked by a white line of 20 mm (±10%) width. The
+line is part of the area.
+
+[[lighting-and-magnetic-conditions]]
+=== Lighting and Magnetic Conditions
+
+The tournament organizers will do their best to limit the amount of external lightning and
+magnetic interference. However, the robots need to be constructed in a way
+which allows them to work in conditions that are not perfect (i.e. by not
+relying on compass sensors or specific lightning conditions).
+
+[discrete]
+[[field-diagrams]]
+== FIELD DIAGRAMS
+
+[.text-center]
+image:media/SoccerFieldWedgeNoWedge.jpg[image,align=center,width=35.0%]
+
+[.text-center]
+image:media/SoccerFieldDrawings.png[image,width=18.0%]
 
 [appendix]
 [[technical-specification-for-pulsed-soccer-ball]]
