@@ -900,6 +900,9 @@ Soccer Lightweight team members can participate in the World
 Championship only twice. After their second participation, they need to move to
 Soccer Open.
 
+[[international-competition-gameplay]]
+=== Competition Gameplay
+
 {++Starting from the 2025 International Competition in Brazil, the Soccer League
 Committee will provide each team with a Communication Module. This allow for 
 easier co-ordination of games and referee control of robots during matches. Each
