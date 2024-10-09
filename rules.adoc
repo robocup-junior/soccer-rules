@@ -1236,8 +1236,10 @@ The test is performed as follows:
 
 .  Place robot inside the left corner of a goal.
 .  Perform a kick into the opposing goal
-..  The Open League kicker power test is passed if after bouncing off of the opposite goal
+.  {~~The Open League kicker power test is passed if after bouncing off of the opposite goal
 the ball does not return further than the front line of to the penalty area
 it was shot from.
-..  The Light Weight League power test is passed if after bouncing off of the opposite goal
-the ball does not leave the penalty area of the opposing goal after bouncing back.
+The Light Weight League power test is passed if after bouncing off of the opposite goal
+the ball does not leave the penalty area of the opposing goal after bouncing back.~>The
+kick power test is passed if after bouncing off the opposite goal the ball does not
+hit the back wall of the own goal.~~}
