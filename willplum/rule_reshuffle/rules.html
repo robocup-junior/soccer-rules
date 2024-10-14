@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<meta name="author" content="2024-10-09">
+<meta name="author" content="2024-10-14">
 <title>RoboCupJunior Soccer Rules 2024</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -439,7 +439,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>RoboCupJunior Soccer Rules 2024</h1>
 <div class="details">
-<span id="author" class="author">2024-10-09</span><br>
+<span id="author" class="author">2024-10-14</span><br>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -517,9 +517,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#interviews">9.2. Interviews</a></li>
 <li><a href="#technical-challenges">9.3. Technical Challenges</a></li>
 <li><a href="#further-information-on-international-competition">9.4. Further information on International Competition</a></li>
-<li><a href="#entry-league">9.5. Entry League</a></li>
 </ul>
 </li>
+<li><a href="#entry-league">10. ENTRY LEAGUE</a></li>
 <li><a href="#technical-specification-for-soccer-field">Appendix A: Technical Specification For Soccer Field</a>
 <ul class="sectlevel2">
 <li><a href="#dimensions-of-the-field">A.1. Dimensions of the field</a></li>
@@ -631,7 +631,7 @@ more details for specifications/regulations.</p>
 </div>
 <div class="paragraph">
 <p><em>If you would like to start with RoboCupJunior Soccer, please contact the
-organizer of your regional RoboCupJunior competition and ask them about</em> <a href="#entry-league">Rule 9.5, &#8220;Entry League&#8221;</a>.</p>
+organizer of your regional RoboCupJunior competition and ask them about</em> <a href="#entry-league">Rule 10, &#8220;ENTRY LEAGUE&#8221;</a>.</p>
 </div>
 <div class="paragraph">
 <p>Unless specified otherwise, all parts of these rules are released under the
@@ -652,7 +652,7 @@ the forum any time) aim to improve gameplay.</p>
 <p><a href="#deletion-1">Deleted "Pneumatic devices are allowed to use ambient air only."</a></p>
 </li>
 <li>
-<p><a href="#addition-1">Added "For the World Championship starting in Brazil 2025, use of a Communications Module is required for referees to control the robots.  See &lt;&lt;international-competition-gameplay&gt;&gt;"</a></p>
+<p><a href="#addition-1">Added "For only the World Championships, starting in Brazil 2025, use of a Communications Module is required for referees to control the robots.  See &lt;&lt;international-competition-gameplay&gt;&gt;"</a></p>
 </li>
 </ul>
 </div>
@@ -1073,7 +1073,7 @@ communicates using the 802.15.4 protocol (e.g., ZigBee and XBee).</p>
 cannot be guaranteed.</p>
 </div>
 <div id="addition-1" class="paragraph">
-<p><span class="red"><strong>For the World Championship starting in Brazil 2025, use of a Communications Module is required for referees to control the robots.  See <a href="#international-competition-gameplay">[international-competition-gameplay]</a></strong></span></p>
+<p><span class="red"><strong>For only the World Championships, starting in Brazil 2025, use of a Communications Module is required for referees to control the robots.  See <a href="#international-competition-gameplay">[international-competition-gameplay]</a></strong></span></p>
 </div>
 </div>
 <div class="sect2">
@@ -1678,26 +1678,10 @@ or any other RoboCup official.</p>
 <div class="paragraph">
 <p>There will also be a SuperTeam competition, in which various teams from around
 the world share their robots in one "SuperTeam" and play against other
-SuperTeams on a so called "Big Field". The full rules of this challenge can be found at
+SuperTeams on a so called "Big Field". Teams could utilise different camera
+lenses or sensors optimised for the larger playing fields to improve their
+performance. The full rules of this challenge can be found at
 <a href="https://robocup-junior.github.io/soccer-rules/master/superteam_rules.html" class="bare">https://robocup-junior.github.io/soccer-rules/master/superteam_rules.html</a></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-To make SuperTeam games more manageable at present and make
-communication between multiple robots in a SuperTeam easier in the future, the
-Soccer League Committee will provide each team with a communication module. Each
-team will be expected to interface with this module using a single 2.54mm GPIO
-pin at present and the Soccer League Committee plans on extending this to using
-UART or I²C for more complex applications in future years. More details will be
-provided by the Soccer League Committee before the competition.
-</td>
-</tr>
-</table>
 </div>
 <div class="paragraph">
 <p>Teams competing in the international competition can receive awards for their
@@ -1711,8 +1695,11 @@ design, team spirit and individual games.</p>
 much you learn that counts!</em></strong></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="entry-league"><a class="anchor" href="#entry-league"></a><a class="link" href="#entry-league">9.5. Entry League</a></h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="entry-league"><a class="anchor" href="#entry-league"></a><a class="link" href="#entry-league">10. ENTRY LEAGUE</a></h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>In order to help newcomers experience the RoboCupJunior Soccer competition, the
 Soccer League Committee would like to encourage competitions to include
@@ -1730,7 +1717,6 @@ details on what Entry leagues (if any) will be running in their region.</p>
 <p>The Soccer League Committee will additionally post what it knows on the news
 thread on the forum
 (<a href="https://junior.forum.robocup.org/t/soccer-entry-league-news-feed/2677" class="bare">https://junior.forum.robocup.org/t/soccer-entry-league-news-feed/2677</a>).</p>
-</div>
 </div>
 </div>
 </div>
@@ -2074,7 +2060,7 @@ the ball does not leave the penalty area of the opposing goal after bouncing bac
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-10-09 12:27:17 UTC
+Last updated 2024-10-14 07:25:20 UTC
 </div>
 </div>
 </body>
