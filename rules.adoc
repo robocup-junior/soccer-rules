@@ -787,6 +787,18 @@ Maximum team size is 4 members for RoboCupJunior Soccer.
 Championship only twice. After their second participation, they need to move to
 Soccer Open.~>This rule has been removed from 2025 onwards.~~}
 
+[[international-competition-gameplay]]
+=== Competition Gameplay
+
+{++Starting from the 2025 International Competition in Brazil, the Soccer League
+Committee will provide each team with a Communication Module. This allow for 
+easier co-ordination of games and referee control of robots during matches. Each
+team will be expected to interface with this module using a single 2.54mm GPIO
+pin at present to start and stop the robots. The Soccer League Committee plans 
+on extending this to using UART or I²C for more complex applications in future
+years. Please see the GitHub page for more information on the module:
+https://github.com/robocup-junior/soccer-communication-module++}
+
 [[interviews]]
 === Interviews
 
