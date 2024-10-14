@@ -491,6 +491,13 @@ See <<technical-specification-for-soccer-field>>.
 
 See <<technical-specification-for-pulsed-soccer-ball>>.
 
+{++Starting in 2026, Lightweight Soccer will be moving to a new IR Ball. The key
+difference with this ball is the size change from 74mm to 42mm diameter,
+which is the same size as the Open League's Passive ball. More information
+will be released during the 2025 season by the Committee. This ball is
+Open-Source, so anyone can produce one from the files & instructions on the
+GitHub Page here: https://github.com/robocup-junior/ir-golf-ball++}
+
 [[specification-for-soccer-open-ball]]
 === Specification for Soccer Open Ball
 
