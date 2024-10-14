@@ -421,7 +421,7 @@ communicates using the 802.15.4 protocol (e.g., ZigBee and XBee).
 Teams are responsible for their communication. The availability of frequencies
 cannot be guaranteed.
 
-{++For the World Championship starting in Brazil 2025, use of a Communications
+{++For only the World Championships, starting in Brazil 2025, use of a Communications
 Module is required for referees to control the robots. 
 See <<international-competition-gameplay>>++}
 
@@ -846,16 +846,11 @@ or any other RoboCup official.
 
 There will also be a SuperTeam competition, in which various teams from around
 the world share their robots in one "SuperTeam" and play against other
-SuperTeams on a so called "Big Field". The full rules of this challenge can be found at
+SuperTeams on a so called "Big Field". Teams could utilise different camera 
+lenses or sensors optimised for the larger playing fields to improve their
+performance. The full rules of this challenge can be found at
 https://robocup-junior.github.io/soccer-rules/master/superteam_rules.html
 
-NOTE: To make SuperTeam games more manageable at present and make
-communication between multiple robots in a SuperTeam easier in the future, the
-Soccer League Committee will provide each team with a communication module. Each
-team will be expected to interface with this module using a single 2.54mm GPIO
-pin at present and the Soccer League Committee plans on extending this to using
-UART or I²C for more complex applications in future years. More details will be
-provided by the Soccer League Committee before the competition.
 
 Teams competing in the international competition can receive awards for their
 performance. These awards are decided and introduced by the Soccer League
@@ -867,7 +862,7 @@ Note that as stated in <<spirit>>, *_it is not whether you win or lose, but how
 much you learn that counts!_*
 
 [[entry-league]]
-=== Entry League
+== ENTRY LEAGUE
 
 In order to help newcomers experience the RoboCupJunior Soccer competition, the
 Soccer League Committee would like to encourage competitions to include
