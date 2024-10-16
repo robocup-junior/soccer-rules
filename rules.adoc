@@ -1,4 +1,4 @@
-= RoboCupJunior Soccer Rules 2024
+= RoboCupJunior Soccer Rules 2025
 {docdate}
 :toc: left
 :sectanchors:
@@ -17,7 +17,7 @@ endif::basebackend-html[]
 :icons: font
 :numbered:
 
-These are the Soccer rules for RoboCupJunior 2024. They are released
+These are the Soccer rules for RoboCupJunior 2025. They are released
 by the RoboCupJunior Soccer League Committee. The English version of these
 rules has priority over any translations.
 
