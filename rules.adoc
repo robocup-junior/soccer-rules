@@ -1,4 +1,4 @@
-= RoboCupJunior Soccer Rules 2024
+= RoboCupJunior Soccer Rules 2025
 {docdate}
 :toc: left
 :sectanchors:
