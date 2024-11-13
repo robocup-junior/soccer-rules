@@ -78,6 +78,8 @@ organizer of your regional RoboCupJunior competition and ask them about_ <<entry
 Unless specified otherwise, all parts of these rules are released under the
 terms of the Creative Commons Attribution-ShareAlike License.
 
+include::general-rules/general-rules.adoc[]
+
 [discrete]
 === Changes from the 2024 RoboCupJunior Soccer Rules
 
