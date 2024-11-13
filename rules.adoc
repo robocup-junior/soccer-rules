@@ -17,7 +17,7 @@ endif::basebackend-html[]
 :icons: font
 :numbered:
 
-These are the Soccer rules for RoboCupJunior 2024. They are released
+These are the Soccer rules for RoboCupJunior 2025. They are released
 by the RoboCupJunior Soccer League Committee. The English version of these
 rules has priority over any translations.
 
@@ -78,7 +78,7 @@ organizer of your regional RoboCupJunior competition and ask them about_ <<entry
 Unless specified otherwise, all parts of these rules are released under the
 terms of the Creative Commons Attribution-ShareAlike License.
 
-[discrete]
+[[general-rules]]
 include::general-rules/general-rules.adoc[]
 
 [discrete]
