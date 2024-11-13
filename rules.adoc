@@ -34,6 +34,13 @@ https://robocup-junior.github.io/soccer-rules/master/rules.html in HTML form
 and at https://robocup-junior.github.io/soccer-rules/master/rules.pdf in PDF
 form.]
 
+TIP: Teams are encouraged to get in touch with the RoboCupJunior community on
+our Discord. Show what you're working on, ask questions or join the weekly
+discussions on future rules and league design. You can join the server at
+https://robocup-junior.github.io/soccer-rules/discord/
+You can also reach the Soccer League Committee directly via email at
+robocupjunior-soccer [ at ] robocup [ dot ] org
+
 [title="Two teams of two robots with an orange ball on a RoboCupJunior Soccer field."]
 image::media/field_with_two_teams.jpg[]
 
