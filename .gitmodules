@@ -1,0 +1,3 @@
+[submodule "general-rules"]
+	path = general-rules
+	url = git@github.com:robocup-junior/general-rules.git
