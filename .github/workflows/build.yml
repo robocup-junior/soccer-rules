@@ -14,6 +14,12 @@ jobs:
           docker run -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh rules
           docker run -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh superteam_rules
           docker run -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh superteam_rules
+          docker run -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh ball_specification
+          docker run -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh ball_specification
+          docker run -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh field_specification
+          docker run -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh field_specification
+          docker run -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh scoring
+          docker run -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh scoring
           mkdir -p dist/${GITHUB_REF#refs/heads/}/
           rm tmp_*
           cp -R ./media *.html *.pdf dist/${GITHUB_REF#refs/heads/}/

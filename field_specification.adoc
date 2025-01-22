@@ -1,0 +1,99 @@
+[appendix]
+[[technical-specification-for-soccer-field]]
+== Technical Specification For Soccer Field
+
+[[dimensions-of-the-field]]
+=== Dimensions of the field
+
+The playing field is 158 cm by 219 cm. The field is
+marked by a white line which is part of the playing field. Around the
+playing field, beyond the white line, there is an outer area
+of 12 cm in width.
+
+The floor near the exterior wall includes a wedge, which is an incline with a
+10 cm base and 2 +/- 1 cm rise for allowing the ball to roll back into play
+when it leaves the playing field. Note that the goal should not contain the
+wedge.
+
+Total dimensions of the field, including the outer area, are 182 cm by 243 cm.
+
+[[field-walls]]
+=== Walls
+
+Walls are placed all around the field, including behind the goals and the
+out-area. The height of the walls is 22 cm. The walls are painted matte black.
+
+[[goals]]
+=== Goals
+
+The field has two goals, centered on each of the shorter sides of the playing
+field. The goal inner space is 60 cm wide, 10 cm high and 74 mm deep, box
+shaped.
+
+The goal "posts" are positioned over the white line marking the limits of the
+field.
+
+The interior walls and of each goal are colored matte, one goal yellow and the
+other goal blue. It is recommended that the blue be of a brighter shade so that
+it is different enough from the black exterior.
+
+[[floor]]
+=== Floor
+
+The floor
+consists of green carpet ideally of darker shade on top of a hard level surface. Teams
+should be prepared to adjust to different levels of contrast between the green carpet
+and lines as some events may be restricted to using lighter shades of green. All
+lines on the field should be painted, marked with tape,
+or installed as white carpet and be somewhat resistant to tearing or ripping.
+Lines should have a width of 20mm (±10%).
+
+It is impractical to set international constraints on carpet other than it
+being green. In the spirit of the competition, teams should design robots
+to be tolerant or adaptable to different fibers, textures, construction,
+density, shades, and designs of carpet especially when competing amongst different
+regions. Teams are encouraged to visit regional resources or reach out to Local
+Organization Committee for suggestions if desiring to build their own practice
+field(s).
+
+[[neutral-spots]]
+=== Neutral spots
+
+There are five neutral spots defined in the field. One is in the center of the
+field. The other four are adjacent to each corner, located 45 cm
+along the long edge of the field. They align with the sides of the penalty
+areas. The neutral spots can be drawn with a thin black marker.
+The neutral spots ought to be of circular shape measuring 1 cm in diameter.
+
+[[center-circle]]
+=== Center circle
+
+A center circle will be drawn on the field. It is 60 cm in diameter. It is a
+thin black marker line. It is there as guidance during kick-off.
+
+[[penalty-areas]]
+=== Penalty areas
+
+In front of each goal there is a 25 cm wide and 80 cm long penalty
+area with rounded front corners (15cm radius).
+
+The penalty areas are marked by a white line of 20 mm (±10%) width. The
+line is part of the area.
+
+[[lighting-and-magnetic-conditions]]
+=== Lighting and Magnetic Conditions
+
+The tournament organizers will do their best to limit the amount of external lightning and
+magnetic interference. However, the robots need to be constructed in a way
+which allows them to work in conditions that are not perfect (i.e. by not
+relying on compass sensors or specific lightning conditions).
+
+[discrete]
+[[field-diagrams]]
+== FIELD DIAGRAMS
+
+[.text-center]
+image:media/SoccerFieldWedgeNoWedge.jpg[image,align=center,width=35.0%]
+
+[.text-center]
+image:media/SoccerFieldDrawings.png[image,width=18.0%]
