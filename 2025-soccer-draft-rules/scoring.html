@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<title>Technical Specification for pulsed Soccer Ball</title>
+<title>Untitled</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -438,180 +438,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 </div>
 <div id="content">
-<div class="sect1">
-<h2 id="technical-specification-for-pulsed-soccer-ball">Appendix A: Technical Specification for pulsed Soccer Ball</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="pulsed-preamble">Preamble</h3>
-<div class="paragraph">
-<p>Answering to the request for a soccer ball for RCJ tournaments that would be
-more robust to interfering lights, less energy consuming and mechanically more
-resistant, the Soccer League Committee defined the following technical
-specifications with the special collaboration from EK Japan and HiTechnic.</p>
-</div>
-<div class="paragraph">
-<p>Producers of these balls must apply for a certification process upon which they
-can exhibit the RCJ-compliant label and their balls used in RCJ tournaments.</p>
-</div>
-<div class="paragraph">
-<p>Balls with these specifications can be detected using specific sensors but
-also common IR remote control receivers (TSOP1140, TSOP31140, GP1UX511QS,
-etc. - on-off detection with a possible gross indication of distance).</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="pulsed-golf-2026">Switch to golf-ball sized pulsed ball in 2026</h3>
-<div id="addition-1" class="paragraph">
-<p><span class="red"><strong>Starting in 2026, Lightweight Soccer will be moving to a new IR Ball. The key difference with this ball is the size change from 74mm to 42mm diameter, which is the same size as the Open League&#8217;s Passive ball. More information will be released during the 2025 season by the Committee. This ball is Open-Source, so anyone can produce one from the files &amp; instructions on the GitHub Page here: <a href="https://github.com/robocup-junior/ir-golf-ball" class="bare">https://github.com/robocup-junior/ir-golf-ball</a></strong></span></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="pulsed-specifications">Specifications</h3>
-<div class="sect3">
-<h4 id="ir-light">IR light</h4>
-<div class="paragraph">
-<p>The ball emits infra-red (IR) light of wavelengths in the range 920nm - 960nm,
-pulsed at a square-wave carrier frequency of 40 kHz. The ball should have
-enough ultra-bright, wide-angle LEDs to minimize unevenness of the IR output.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="pulsed-diameter">Diameter</h4>
-<div class="paragraph">
-<p>The diameter of the ball is required to be 74mm. A well-balanced ball shall be
-used.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="pulsed-drop-test">Drop Test</h4>
-<div class="paragraph">
-<p>The ball must be able to resist normal gameplay. As an indication of its
-durability, it should be able to survive, undamaged, a free-fall from 1.5
-meters onto a hardwood table or floor.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="pulsed-modulation">Modulation</h4>
-<div class="paragraph">
-<p>The 40 kHz carrier output of the ball shall be modulated with a trapezoidal
-(stepped) waveform of frequency 1.2 kHz. Each 833-microsecond cycle of the
-modulation waveform shall comprise 8 carrier pulses at full intensity, followed
-(in turn) by 4 carrier pulses at 1/4 of full intensity, four pulses at 1/16 of
-full intensity and four pulses at 1/64 of full intensity, followed by a space
-(i.e. zero intensity) of about 346 microseconds. The peak current level in the
-LEDs shall be within the range 45-55mA. The radiant intensity shall be more
-than 20mW/sr per LED.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="pulsed-battery-life">Battery Life</h4>
-<div class="paragraph">
-<p>If the ball has an embedded rechargeable battery, when new and fully charged it
-should last for more than 3 hours of continuous use before the brightness of
-the LEDs drops to 90% of the initial value. If the ball uses replaceable
-batteries, a set of new high-quality alkaline batteries should last for more
-than 8 hours of continuous use before the brightness of the LEDs drops to 90%
-of the initial value.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="pulsed-coloration">Coloration</h4>
-<div class="paragraph">
-<p>The ball must not have any marks or discoloration that can be confused with
-goals, or the field itself.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="official-suppliers-for-pulsed-balls">Official suppliers for pulsed balls</h3>
-<div class="paragraph">
-<p>Currently, there is one ball that has been approved by the
-Soccer League Committee:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>RoboCup Junior Soccer ball operating in MODE A (pulsed) made by EK Japan/Elekit (<a href="https://elekit.co.jp/en/product/RCJ-05R" class="bare">https://elekit.co.jp/en/product/RCJ-05R</a>)</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Note that this ball was previously called RCJ-05. While you may not be able to
-find a ball with this name anymore, any IR ball produced by EK Japan/Elekit is
-considered to be approved by the Soccer League Committee.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="passive-ball-spec">Appendix B: Technical Specification for passive Soccer Ball</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="passive-ball-spec-preamble">Preamble</h3>
-<div class="paragraph">
-<p>In order to push the state of the art in the Soccer competition forward,
-while also trying to bridge the gap between the Junior and Major leagues, the
-Soccer League Committee chose a standard orange golf ball as the "passive" ball.
-This is the same choice as the Small Size League makes <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> and since
-these balls are standardized, they should be cheap and easy to get anywhere
-around the globe.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="specifications">Specifications</h3>
-<div class="sect3">
-<h4 id="passive-diameter">Diameter</h4>
-<div class="paragraph">
-<p>The diameter of the ball is required to be 42mm +- 1mm.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="passive-drop-test">Drop Test</h4>
-<div class="paragraph">
-<p>The ball must be able to resist normal gameplay. As an indication of its
-durability, it should be able to survive, undamaged, a free-fall from 1.5
-meters onto a hardwood table or floor.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="passive-coloration">Coloration</h4>
-<div class="paragraph">
-<p>The ball shall be of orange color. Since the definition of the orange color in
-general is not easy, any color that a human would deem to be orange and is
-substantially different from the other colors used on the field is acceptable.
-While tournament organizers may supply matte balls to improve camera vision,
-teams must still be prepared to play with the balls supplied by
-tournament organizers.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="passive-surface">Surface</h4>
-<div class="paragraph">
-<p>Engravings and printed labels on the ball’s surface are tolerated.
-The the ball should not have
-a soft-touch finish. Teams must be prepared to play with balls as supplied
-by tournament organizers.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="passive-weight">Weight</h4>
-<div class="paragraph">
-<p>The weight of the ball should be 46 grams (+- 1 gram).</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="footnotes">
-<hr>
-<div class="footnote" id="_footnotedef_1">
-<a href="#_footnoteref_1">1</a>. See the SSL rules at <a href="https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball" class="bare">https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball</a>
-</div>
+
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-01-22 18:39:53 UTC
+Last updated 2025-01-22 18:40:00 UTC
 </div>
 </div>
 </body>
