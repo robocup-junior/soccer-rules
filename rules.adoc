@@ -250,7 +250,7 @@ detection or reach capability of all robots on the field.
 After a visible and loud count footnote:[usually a count of three],
 a referee will call `*lack of progress*` and
 will move the ball to the nearest unoccupied neutral spot. If this does not
-solve the lack of progress, the referee can move the ball to a different
+solve the lack of progress, the referee may move the ball to a different
 neutral spot.
 
 [[out-of-bounds]]
@@ -501,7 +501,7 @@ both teams. Disputes need to be settled before signing.
 [[rule-clarification]]
 === Rule clarification
 
-Rule clarification may be made by members of the tournament organizers
+Rule clarification may be made by the tournament organizers
 and the Soccer League Committee, if necessary even during a tournament.
 
 [[rule-modification]]
