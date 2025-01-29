@@ -1,4 +1,25 @@
-[appendix]
+= RoboCupJunior Soccer Ball specifications
+{docdate}
+:toc: left
+:sectanchors:
+:sectlinks:
+:xrefstyle: full
+:section-refsig: Rule
+:sectnums:
+
+ifdef::basebackend-html[]
+++++
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script src="https://hypothes.is/embed.js" async></script>
+++++
+endif::basebackend-html[]
+
+:icons: font
+:numbered:
+
+This document contains specifications for the passive ball (Open League, 
+orange golf ball), the large infrared ball (LightWeight and Entry League).
+
 [[technical-specification-for-pulsed-soccer-ball]]
 == Technical Specification for pulsed Soccer Ball
 
@@ -19,12 +40,17 @@ etc. - on-off detection with a possible gross indication of distance).
 
 [[pulsed-golf-2026]]
 === Switch to golf-ball sized pulsed ball in 2026
-{++Starting in 2026, Lightweight Soccer will be moving to a new IR Ball. The key
+Starting in 2026, Lightweight Soccer will be moving to a new IR Ball. The key
 difference with this ball is the size change from 74mm to 42mm diameter,
-which is the same size as the Open League's Passive ball. More information
+which is the same size as the Open League's passive ball. More information
 will be released during the 2025 season by the Committee. This ball is
 Open-Source, so anyone can produce one from the files & instructions on the
-GitHub Page here: https://github.com/robocup-junior/ir-golf-ball++}
+GitHub Page here: https://github.com/robocup-junior/ir-golf-ball . 
+
+Entry Leagues will continue to use the large infrared ball.
+footnote:[Entry Leagues frequently use Lego, FischerTechnik, Vex or other
+robotics kits with which handling a small ball is more difficult, especially
+for beginners.]
 
 [[pulsed-specifications]]
 === Specifications

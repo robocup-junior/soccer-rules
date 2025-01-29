@@ -39,7 +39,7 @@ our Discord. Show what you're working on, ask questions or join the weekly
 discussions on future rules and league design. footnote:[You can join the server at
 https://robocup-junior.github.io/soccer-rules/discord/]
 You can also reach the Soccer League Committee directly via email
-footnote:[robocupjunior-soccer \[ at \] robocup \[ dot \] org]
+footnote:[robocupjunior-soccer [ at \] robocup [ dot \] org]
 
 [title="Two teams of two robots with an orange ball on a RoboCupJunior Soccer field."]
 image::media/field_with_two_teams.jpg[RCJASoccer, 288, 210]
@@ -71,17 +71,16 @@ ball. Robots have no weight restriction and may have a ball-capturing zone of up
 1.5 cm.
 
 IMPORTANT: A large part of the overall ranking (for the international tournament,
-ask you regional tournament organizers) is determined by the judged
-categories. These award points for documentation, design, innovation, achievement.
-Rubrics and other teams' documentation can be access through this forum thread:
-https://junior.forum.robocup.org/t/2024-awards-rubric-draft/3500
-
-Please see here
-footnote:[
-https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/ball_specification.pdf
-or https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/ball_specification.html]
-for ball specifications and <<league-regulations>> for
-more details for league specifics.
+other tournaments operate differently) is determined by the judged
+categories. There are points for documentation, inteview performance etc.
+footnote:[see https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/rubrics.pdf
+or https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/rubrics.html]
+The method for calculation of the overall scores will be published on the
+RoboCupJunior Soccer Website at a later date but before the international
+competition. footnote:[
+see https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/scoring.pdf
+or https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/scoring.html
+]
 
 _If you would like to start with RoboCupJunior Soccer, please contact the
 organizer of your regional RoboCupJunior competition and ask them about_ <<entry-league>>.
@@ -96,11 +95,11 @@ include::general-rules/general-rules.adoc[]
 === Changes from the 2024 RoboCupJunior Soccer Rules
 
 // TODO: Summarize changes here
-The rule changes developed by the Soccer League Committee in cooperation with the
-RoboCup Junior Soccer Community (please continue to post ideas for the future on
-the forum any time) aim to improve gameplay.
+// The rule changes developed by the Soccer League Committee in cooperation with the
+// RoboCup Junior Soccer Community (please continue to post ideas for the future on
+// the forum any time) aim to improve gameplay.
 
-Detailed changes are listed below and link to the corresponding place in the rule.
+Detailed changes are listed below and link to the corresponding place in the rules.
 
 {+-~TOC-CHANGES~-+}
 
@@ -114,11 +113,6 @@ RCJ Soccer games consist of two teams of robots playing soccer against each
 other. Each team has two autonomous robots. The game will consist of two
 halves. The duration of each half is 10-minutes. There will be a 5-minute break
 in between the halves.
-
-The game clock will run for the duration of the halves without stopping (except
-when a referee wants to consult another official). The game clock will be
-run by a referee (see <<referees>>
-for more information on their roles).
 
 Teams are expected to be at the field 5 minutes before their game starts. Being
 at the inspection table does not count in favor of this time limit. Teams that
@@ -221,8 +215,8 @@ reasons a robot is not required to approach the robot at further away neutral sp
 === Inside the Penalty Area
 
 No robots are allowed to be fully inside the penalty area. As the penalty
-areas are marked with a white line, the Out of Bounds and Out of Reach rules
-apply as well. (<<out-of-bounds>>)
+areas are marked with a white line, the Out of Bounds rule
+applies as well. (<<out-of-bounds>>)
 
 If two robots from the same team are at least partially in a penalty area,
 the robot further from the ball will be moved to the _furthest unoccupied
@@ -288,11 +282,6 @@ power, etc.).
 * it continually moves into the penalty area or out of bounds.
 * it turns over on its own accord.
 
-Computers and repair equipment are not permitted in the playing area during
-gameplay. A referee may permit robot
-sensor calibration, computers and other tools in the playing area, only for the
-5 minutes before the start of each half.
-
 After a robot has been fixed, it will be placed on the unoccupied neutral spot
 furthest from the ball, facing its own goal.
 
@@ -333,7 +322,7 @@ ball malfunctions and a replacement is not readily available.
 When the referee has stopped the game, all robots must be stopped and remain on
 the field untouched. The referee may decide whether the game will be
 continued/resumed from the situation in which the game was stopped or by a
-kick-off.
+neutral kick-off.
 
 [[robots]]
 == ROBOTS
@@ -386,7 +375,9 @@ a straight line). They must move in all directions, for example by turning.
 
 All robots must have a stable and easily noticeable handle to hold and to lift
 them. The handle must be easily accessible and allow the robot to be picked up
-from at least 5 cm above the highest structure of the robot.
+from at least 5 cm above the highest structure of the robot. {++ There must be a
+minimum clearance of 5 cm for hands between the highes non-handle part of the
+robot and the handle. ++}
 
 The dimensions of the handle may exceed the robot height
 limitation, but the part of the handle that exceeds this
@@ -423,34 +414,28 @@ that game.
 If similar violations occur repeatedly, the team may be disqualified from the
 tournament.
 
-[[field]]
-== FIELD
+[[specifications]]
+=== Material specifications
 
-[[specification-for-soccer-field]]
-=== Specification for Soccer Field
-
-See here
+Detailed specifications of the ball and fields can be found here
 footnote:[
 https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/field_specification.pdf
-or https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/field_specification.html]
+or https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/field_specification.html and https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/ball_specification.pdf
+or https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/ball_specification.html respectively].
 
-[[ball]]
-== BALL
-
-For detailled ball specifications see here
-footnote:[
-https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/ball_specification.pdf
-or https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/ball_specification.html]
-
-[[specification-for-soccer-lightweight-ball]]
+[[lightweight-ball-change]]
 === Soccer Lightweight Ball change 2026
 
 {++Starting in 2026, Lightweight Soccer will be moving to a new IR Ball. The key
 difference with this ball is the size change from 74mm to 42mm diameter,
-which is the same size as the Open League's Passive ball. More information
+which is the same size as the Open League's passive ball. More information
 will be released during the 2025 season by the Committee. This ball is
 Open-Source, so anyone can produce one from the files & instructions on the
-GitHub Page here: https://github.com/robocup-junior/ir-golf-ball++}
+GitHub Page here: https://github.com/robocup-junior/ir-golf-ball . Entry
+Leagues will continue to use the large infrared ball.++}
+footnote:[Entry Leagues frequently use Lego, FischerTechnik, Vex or other
+robotics kits with which handling a small ball is more difficult, especially
+for beginners.]
 
 [[tournament-balls]]
 === Tournament balls
@@ -525,7 +510,6 @@ etc.). Check with organizers of each tournament you participate in.
 === Preamble
 
 For RoboCupJunior , there are two sub-leagues as follows
-footnote:[biggest differences are described in <<dimensions>>]:
 
 * Soccer Lightweight
 * Soccer Open
@@ -533,9 +517,7 @@ footnote:[biggest differences are described in <<dimensions>>]:
 The matches in the Soccer Open
 sub-league are conducted using a passive ball, whereas the matches in the
 Soccer Lightweight sub-league are played using the IR ball.
-footnote:[ for detailled ball specifications see:
-https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/ball_specification.pdf
-or https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/ball_specification.html]
+footnote:[ for detailled ball specifications see: <<specifications>>]
 
 [[regulations]]
 === Regulations
@@ -633,7 +615,11 @@ team will be expected to interface with this module using a single 2.54mm GPIO
 pin at present to start and stop the robots. The Soccer League Committee plans 
 on extending this to using UART for more complex applications in future
 years. Please see the GitHub page for more information on the module:
-https://github.com/robocup-junior/soccer-communication-module++}
+https://github.com/robocup-junior/soccer-communication-module
+
+The module itself may exceed the maximum height of the robot. It must
+be placed at least 1cm away from the outside and protected from impact
+damage.++}
 
 [[interviews]]
 === Interviews
@@ -643,13 +629,13 @@ interview teams during the Setup Day of the event. This means that the teams
 need to be already present early on this day.
 
 Details on what is required for and what to expect from interviews can be
-found in the scoring document available at:
+found in the scoring document available here footnote:[
 https://robocup-junior.github.io/soccer-rules-entry/master/scoring.pdf or 
-https://robocup-junior.github.io/soccer-rules-entry/master/scoring.html
+https://robocup-junior.github.io/soccer-rules-entry/master/scoring.html].
 
 The Soccer League Committee recommends the implementation of interviews in regional
 competitions as well, but this is not mandatory. Teams should check with tournament
-organizers if and what kind of interview to expect.
+organizers if they hold interviews and if so and what kind of interview to expect.
 
 [[technical-challenges]]
 === Technical Challenges
@@ -666,9 +652,7 @@ place for testing new ideas that may make it to the future rules, or otherwise
 shape the competition.
 
 Any RoboCupJunior Soccer team will be eligible to try to tackle these
-challenges. Unless otherwise stated, any robot taking part in these challenges
-needs to abide by these rules in order to successfully complete it.
-
+challenges.
 
 [[further-information-on-international-competition]]
 === Further information on International Competition
@@ -691,12 +675,13 @@ lenses or sensors optimised for the larger playing fields to improve their
 performance. The full rules of this challenge can be found at
 https://robocup-junior.github.io/soccer-rules/master/superteam_rules.html
 
-
 Teams competing in the international competition can receive awards for their
 performance. These awards are decided and introduced by the Soccer League
 Committee, which publishes all necessary details well before the actual event.
 In the past years they were awarded for best poster, presentation, robot
-design, team spirit and individual games.
+design, team spirit and individual games. footnote:[for details see
+https://robocup-junior.github.io/soccer-rules-entry/master/scoring.pdf or 
+https://robocup-junior.github.io/soccer-rules-entry/master/scoring.html]
 
 [[entry-league]]
 == ENTRY LEAGUE
@@ -725,6 +710,8 @@ details on what Entry leagues (if any) will be running in their region.
 All robot kickers will be tested with the tournament ball used in the sub-league they
 participate in.
 Kicker Power will be measured by means of an on-field test.
+The bounce off the walls can change depending on field consturction. Teams
+should make sure they can adjust the power of their kicker if necessary.
 
 The test is performed as follows:
 
@@ -737,10 +724,3 @@ The Light Weight League power test is passed if after bouncing off of the opposi
 the ball does not leave the penalty area of the opposing goal after bouncing back.~>The
 kick power test is passed if after bouncing off the opposite goal the ball does not
 hit the back wall of the goal the robot performed the kick power test from.~~}
-
-[[field-specification]]
-
-Details on the size and construction of the field can be found in the
-field specification document. footnote:[
-https://robocup-junior.github.io/soccer-rules-entry/master/field_specification.html and
-https://robocup-junior.github.io/soccer-rules-entry/master/field_specification.pdf]
