@@ -73,8 +73,6 @@ ball. Robots have no weight restriction and may have a ball-capturing zone of up
 IMPORTANT: A large part of the overall ranking (for the international tournament,
 other tournaments operate differently) is determined by the judged
 categories. There are points for documentation, inteview performance etc.
-footnote:[see https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/rubrics.pdf
-or https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/rubrics.html]
 The method for calculation of the overall scores will be published on the
 RoboCupJunior Soccer Website at a later date but before the international
 competition. footnote:[
@@ -361,7 +359,7 @@ must be controlled autonomously.
 
 {++For only the World Championships, starting in Brazil 2025, use of a Communications
 Module is required for referees to control the robots. 
-See <<international-competition-gameplay>>++}
+See <<international-competition-specifics>>++}
 
 [[agility]]
 === Agility
@@ -464,8 +462,6 @@ tournament organizer's discretion.
 
 Humans are not allowed to cause deliberate interference with robots or damage
 to the field or the ball.
-
-Teams that do not abide by the rules are not allowed to participate.
 
 [[conflict-resolution]]
 == CONFLICT RESOLUTION
@@ -605,8 +601,8 @@ including random inspections which may happen at any time.
 Championship only twice. After their second participation, they need to move to
 Soccer Open.~>This rule has been removed from 2025 onwards.~~}
 
-[[international-competition-gameplay]]
-=== Competition Gameplay
+[[international-competition-specifics]]
+=== International Competition Specifics
 
 {++Starting from the 2025 International Competition in Brazil, the Soccer League
 Committee will provide each team with a Communication Module. This allow for 
