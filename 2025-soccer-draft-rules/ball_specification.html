@@ -5,7 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<title>Technical Specification for pulsed Soccer Ball</title>
+<meta name="author" content="2025-01-29">
+<title>RoboCupJunior Soccer Ball specifications</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -434,15 +435,48 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 </head>
-<body class="article">
+<body class="article toc2 toc-left">
 <div id="header">
+<h1>RoboCupJunior Soccer Ball specifications</h1>
+<div class="details">
+<span id="author" class="author">2025-01-29</span><br>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#technical-specification-for-pulsed-soccer-ball">1. Technical Specification for pulsed Soccer Ball</a>
+<ul class="sectlevel2">
+<li><a href="#pulsed-preamble">1.1. Preamble</a></li>
+<li><a href="#pulsed-golf-2026">1.2. Switch to golf-ball sized pulsed ball in 2026</a></li>
+<li><a href="#pulsed-specifications">1.3. Specifications</a></li>
+<li><a href="#official-suppliers-for-pulsed-balls">1.4. Official suppliers for pulsed balls</a></li>
+</ul>
+</li>
+<li><a href="#passive-ball-spec">Appendix A: Technical Specification for passive Soccer Ball</a>
+<ul class="sectlevel2">
+<li><a href="#passive-ball-spec-preamble">A.1. Preamble</a></li>
+<li><a href="#specifications">A.2. Specifications</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 <div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script src="https://hypothes.is/embed.js" async></script>
+<div class="paragraph">
+<p>This document contains specifications for the passive ball (Open League,
+orange golf ball), the large infrared ball (LightWeight and Entry League).</p>
+</div>
+</div>
+</div>
 <div class="sect1">
-<h2 id="technical-specification-for-pulsed-soccer-ball">Appendix A: Technical Specification for pulsed Soccer Ball</h2>
+<h2 id="technical-specification-for-pulsed-soccer-ball"><a class="anchor" href="#technical-specification-for-pulsed-soccer-ball"></a><a class="link" href="#technical-specification-for-pulsed-soccer-ball">1. Technical Specification for pulsed Soccer Ball</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="pulsed-preamble">Preamble</h3>
+<h3 id="pulsed-preamble"><a class="anchor" href="#pulsed-preamble"></a><a class="link" href="#pulsed-preamble">1.1. Preamble</a></h3>
 <div class="paragraph">
 <p>Answering to the request for a soccer ball for RCJ tournaments that would be
 more robust to interfering lights, less energy consuming and mechanically more
@@ -460,15 +494,24 @@ etc. - on-off detection with a possible gross indication of distance).</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="pulsed-golf-2026">Switch to golf-ball sized pulsed ball in 2026</h3>
-<div id="addition-1" class="paragraph">
-<p><span class="red"><strong>Starting in 2026, Lightweight Soccer will be moving to a new IR Ball. The key difference with this ball is the size change from 74mm to 42mm diameter, which is the same size as the Open League&#8217;s Passive ball. More information will be released during the 2025 season by the Committee. This ball is Open-Source, so anyone can produce one from the files &amp; instructions on the GitHub Page here: <a href="https://github.com/robocup-junior/ir-golf-ball" class="bare">https://github.com/robocup-junior/ir-golf-ball</a></strong></span></p>
+<h3 id="pulsed-golf-2026"><a class="anchor" href="#pulsed-golf-2026"></a><a class="link" href="#pulsed-golf-2026">1.2. Switch to golf-ball sized pulsed ball in 2026</a></h3>
+<div class="paragraph">
+<p>Starting in 2026, Lightweight Soccer will be moving to a new IR Ball. The key
+difference with this ball is the size change from 74mm to 42mm diameter,
+which is the same size as the Open League&#8217;s passive ball. More information
+will be released during the 2025 season by the Committee. This ball is
+Open-Source, so anyone can produce one from the files &amp; instructions on the
+GitHub Page here: <a href="https://github.com/robocup-junior/ir-golf-ball" class="bare">https://github.com/robocup-junior/ir-golf-ball</a> .</p>
+</div>
+<div class="paragraph">
+<p>Entry Leagues will continue to use the large infrared ball.
+<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="pulsed-specifications">Specifications</h3>
+<h3 id="pulsed-specifications"><a class="anchor" href="#pulsed-specifications"></a><a class="link" href="#pulsed-specifications">1.3. Specifications</a></h3>
 <div class="sect3">
-<h4 id="ir-light">IR light</h4>
+<h4 id="ir-light"><a class="anchor" href="#ir-light"></a><a class="link" href="#ir-light">1.3.1. IR light</a></h4>
 <div class="paragraph">
 <p>The ball emits infra-red (IR) light of wavelengths in the range 920nm - 960nm,
 pulsed at a square-wave carrier frequency of 40 kHz. The ball should have
@@ -476,14 +519,14 @@ enough ultra-bright, wide-angle LEDs to minimize unevenness of the IR output.</p
 </div>
 </div>
 <div class="sect3">
-<h4 id="pulsed-diameter">Diameter</h4>
+<h4 id="pulsed-diameter"><a class="anchor" href="#pulsed-diameter"></a><a class="link" href="#pulsed-diameter">1.3.2. Diameter</a></h4>
 <div class="paragraph">
 <p>The diameter of the ball is required to be 74mm. A well-balanced ball shall be
 used.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="pulsed-drop-test">Drop Test</h4>
+<h4 id="pulsed-drop-test"><a class="anchor" href="#pulsed-drop-test"></a><a class="link" href="#pulsed-drop-test">1.3.3. Drop Test</a></h4>
 <div class="paragraph">
 <p>The ball must be able to resist normal gameplay. As an indication of its
 durability, it should be able to survive, undamaged, a free-fall from 1.5
@@ -491,7 +534,7 @@ meters onto a hardwood table or floor.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="pulsed-modulation">Modulation</h4>
+<h4 id="pulsed-modulation"><a class="anchor" href="#pulsed-modulation"></a><a class="link" href="#pulsed-modulation">1.3.4. Modulation</a></h4>
 <div class="paragraph">
 <p>The 40 kHz carrier output of the ball shall be modulated with a trapezoidal
 (stepped) waveform of frequency 1.2 kHz. Each 833-microsecond cycle of the
@@ -504,7 +547,7 @@ than 20mW/sr per LED.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="pulsed-battery-life">Battery Life</h4>
+<h4 id="pulsed-battery-life"><a class="anchor" href="#pulsed-battery-life"></a><a class="link" href="#pulsed-battery-life">1.3.5. Battery Life</a></h4>
 <div class="paragraph">
 <p>If the ball has an embedded rechargeable battery, when new and fully charged it
 should last for more than 3 hours of continuous use before the brightness of
@@ -515,7 +558,7 @@ of the initial value.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="pulsed-coloration">Coloration</h4>
+<h4 id="pulsed-coloration"><a class="anchor" href="#pulsed-coloration"></a><a class="link" href="#pulsed-coloration">1.3.6. Coloration</a></h4>
 <div class="paragraph">
 <p>The ball must not have any marks or discoloration that can be confused with
 goals, or the field itself.</p>
@@ -523,7 +566,7 @@ goals, or the field itself.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="official-suppliers-for-pulsed-balls">Official suppliers for pulsed balls</h3>
+<h3 id="official-suppliers-for-pulsed-balls"><a class="anchor" href="#official-suppliers-for-pulsed-balls"></a><a class="link" href="#official-suppliers-for-pulsed-balls">1.4. Official suppliers for pulsed balls</a></h3>
 <div class="paragraph">
 <p>Currently, there is one ball that has been approved by the
 Soccer League Committee:</p>
@@ -544,29 +587,29 @@ considered to be approved by the Soccer League Committee.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="passive-ball-spec">Appendix B: Technical Specification for passive Soccer Ball</h2>
+<h2 id="passive-ball-spec"><a class="anchor" href="#passive-ball-spec"></a><a class="link" href="#passive-ball-spec">Appendix A: Technical Specification for passive Soccer Ball</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="passive-ball-spec-preamble">Preamble</h3>
+<h3 id="passive-ball-spec-preamble"><a class="anchor" href="#passive-ball-spec-preamble"></a><a class="link" href="#passive-ball-spec-preamble">A.1. Preamble</a></h3>
 <div class="paragraph">
 <p>In order to push the state of the art in the Soccer competition forward,
 while also trying to bridge the gap between the Junior and Major leagues, the
 Soccer League Committee chose a standard orange golf ball as the "passive" ball.
-This is the same choice as the Small Size League makes <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> and since
+This is the same choice as the Small Size League makes <sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup> and since
 these balls are standardized, they should be cheap and easy to get anywhere
 around the globe.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="specifications">Specifications</h3>
+<h3 id="specifications"><a class="anchor" href="#specifications"></a><a class="link" href="#specifications">A.2. Specifications</a></h3>
 <div class="sect3">
-<h4 id="passive-diameter">Diameter</h4>
+<h4 id="passive-diameter"><a class="anchor" href="#passive-diameter"></a><a class="link" href="#passive-diameter">A.2.1. Diameter</a></h4>
 <div class="paragraph">
 <p>The diameter of the ball is required to be 42mm +- 1mm.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="passive-drop-test">Drop Test</h4>
+<h4 id="passive-drop-test"><a class="anchor" href="#passive-drop-test"></a><a class="link" href="#passive-drop-test">A.2.2. Drop Test</a></h4>
 <div class="paragraph">
 <p>The ball must be able to resist normal gameplay. As an indication of its
 durability, it should be able to survive, undamaged, a free-fall from 1.5
@@ -574,7 +617,7 @@ meters onto a hardwood table or floor.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="passive-coloration">Coloration</h4>
+<h4 id="passive-coloration"><a class="anchor" href="#passive-coloration"></a><a class="link" href="#passive-coloration">A.2.3. Coloration</a></h4>
 <div class="paragraph">
 <p>The ball shall be of orange color. Since the definition of the orange color in
 general is not easy, any color that a human would deem to be orange and is
@@ -585,7 +628,7 @@ tournament organizers.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="passive-surface">Surface</h4>
+<h4 id="passive-surface"><a class="anchor" href="#passive-surface"></a><a class="link" href="#passive-surface">A.2.4. Surface</a></h4>
 <div class="paragraph">
 <p>Engravings and printed labels on the ball’s surface are tolerated.
 The the ball should not have
@@ -594,7 +637,7 @@ by tournament organizers.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="passive-weight">Weight</h4>
+<h4 id="passive-weight"><a class="anchor" href="#passive-weight"></a><a class="link" href="#passive-weight">A.2.5. Weight</a></h4>
 <div class="paragraph">
 <p>The weight of the ball should be 46 grams (+- 1 gram).</p>
 </div>
@@ -606,12 +649,15 @@ by tournament organizers.</p>
 <div id="footnotes">
 <hr>
 <div class="footnote" id="_footnotedef_1">
-<a href="#_footnoteref_1">1</a>. See the SSL rules at <a href="https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball" class="bare">https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball</a>
+<a href="#_footnoteref_1">1</a>. Entry Leagues frequently use Lego, FischerTechnik, Vex or other robotics kits with which handling a small ball is more difficult, especially for beginners.
+</div>
+<div class="footnote" id="_footnotedef_2">
+<a href="#_footnoteref_2">2</a>. See the SSL rules at <a href="https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball" class="bare">https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball</a>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-01-25 10:33:28 UTC
+Last updated 2025-01-29 19:55:03 UTC
 </div>
 </div>
 </body>
