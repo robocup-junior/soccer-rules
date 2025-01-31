@@ -1,4 +1,4 @@
-= RoboCupJunior Soccer SuperTeam Rules 2024
+= RoboCupJunior Soccer SuperTeam Rules 2025
 {docdate}
 :toc: left
 :sectanchors:
@@ -17,7 +17,7 @@ endif::basebackend-html[]
 :icons: font
 :numbered:
 
-These are the draft SuperTeam Soccer rules for RoboCupJunior 2024. They are
+These are the draft SuperTeam Soccer rules for RoboCupJunior 2025. They are
 released by the RoboCupJunior Soccer League Committee. The English version
 of these rules has priority over any translations.
 
@@ -33,6 +33,13 @@ footnote:[The current version of these rules can be found at
 https://robocup-junior.github.io/soccer-rules/master/superteam_rules.html in HTML form
 and at https://robocup-junior.github.io/soccer-rules/master/superteam_rules.pdf in PDF
 form.]
+
+TIP: Teams are encouraged to get in touch with the RoboCupJunior community on
+our Discord. Show what you're working on, ask questions or join the weekly
+discussions on future rules and league design. You can join the server at
+https://robocup-junior.github.io/soccer-rules/discord/
+You can also reach the Soccer League Committee directly via email at
+robocupjunior-soccer [ at ] robocup [ dot ] org
 
 [discrete]
 == Preface
@@ -53,6 +60,18 @@ a change is needed because of the difference with regular games, situation have
 been analyzed and are ruled here. For all other situations that do not change
 from the regular game rules, normally they have been only mentioned here as
 being the same regular game rule.**
+
+[discrete]
+=== Changes from the 2024 RoboCupJunior Soccer SuperTeam Rules
+
+// TODO: Summarize changes here
+The rule changes developed by the Soccer League Committee in cooperation with the
+RoboCup Junior Soccer Community (please continue to post ideas for the future on
+the forum any time) aim to improve gameplay.
+
+Detailed changes are listed below and link to the corresponding place in the rule.
+
+{+-~TOC-CHANGES~-+}
 
 [[gameplay]]
 == GAMEPLAY
@@ -79,11 +98,11 @@ difference between the losing and the winning team.
 
 [[tournament-mode-byes]]
 === Tournament mode and Bye games
-{++In some cases (e.g. uneven number of teams) not every team can play every round.
+In some cases (e.g. uneven number of teams) not every team can play every round.
 In threse cases the team that is free from play is awarded a Bye. In SuperTeam
 matches where fewer goals are scored the Bye is awarded as a 3:0 victory instead
 of the usual 10:0. Contact your regional/super-regional tournament organizers for
-details at tournaments other than the international RoboCupJunior tournament.++}
+details at tournaments other than the international RoboCupJunior tournament.
 
 [[pre-match-meeting]]
 === Pre-match meeting
@@ -294,7 +313,7 @@ link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJuni
 
 link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<communication>> applies.
 
-To make SuperTeam games more manageable at present and make
+{++To make SuperTeam games more manageable at present and make
 communication between multiple robots in a SuperTeam easier in the future, the
 Soccer League Committee will provide each team with a communication module. Each
 team will be expected to interface with this module using a single 2.54mm GPIO
@@ -302,6 +321,7 @@ pin at present and the Soccer League Committee plans on extending this to using
 UART or I²C for more complex applications in future years.
 
 More details will be provided by the Soccer League Committee before the competition.
+~>Communication module rule moved to main rules.++}
 
 [[agility]]
 === Agility

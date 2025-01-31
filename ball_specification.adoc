@@ -1,0 +1,169 @@
+= RoboCupJunior Soccer Ball specifications
+{docdate}
+:toc: left
+:sectanchors:
+:sectlinks:
+:xrefstyle: full
+:section-refsig: Rule
+:sectnums:
+
+ifdef::basebackend-html[]
+++++
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script src="https://hypothes.is/embed.js" async></script>
+++++
+endif::basebackend-html[]
+
+:icons: font
+:numbered:
+
+This document contains specifications for the passive ball (Open League, 
+orange golf ball), the large infrared ball (LightWeight and Entry League).
+
+[[technical-specification-for-pulsed-soccer-ball]]
+== Technical Specification for pulsed Soccer Ball
+
+[[pulsed-preamble]]
+=== Preamble
+
+Answering to the request for a soccer ball for RCJ tournaments that would be
+more robust to interfering lights, less energy consuming and mechanically more
+resistant, the Soccer League Committee defined the following technical
+specifications with the special collaboration from EK Japan and HiTechnic.
+
+Producers of these balls must apply for a certification process upon which they
+can exhibit the RCJ-compliant label and their balls used in RCJ tournaments.
+
+Balls with these specifications can be detected using specific sensors but
+also common IR remote control receivers (TSOP1140, TSOP31140, GP1UX511QS,
+etc. - on-off detection with a possible gross indication of distance).
+
+[[pulsed-golf-2026]]
+=== Switch to golf-ball sized pulsed ball in 2026
+Starting in 2026, Lightweight Soccer will be moving to a new IR Ball. The key
+difference with this ball is the size change from 74mm to 42mm diameter,
+which is the same size as the Open League's passive ball. More information
+will be released during the 2025 season by the Committee. This ball is
+Open-Source, so anyone can produce one from the files & instructions on the
+GitHub Page here: https://github.com/robocup-junior/ir-golf-ball . 
+
+Entry Leagues will continue to use the large infrared ball.
+footnote:[Entry Leagues frequently use Lego, FischerTechnik, Vex or other
+robotics kits with which handling a small ball is more difficult, especially
+for beginners.]
+
+[[pulsed-specifications]]
+=== Specifications
+
+[[ir-light]]
+==== IR light
+
+The ball emits infra-red (IR) light of wavelengths in the range 920nm - 960nm,
+pulsed at a square-wave carrier frequency of 40 kHz. The ball should have
+enough ultra-bright, wide-angle LEDs to minimize unevenness of the IR output.
+
+[[pulsed-diameter]]
+==== Diameter
+
+The diameter of the ball is required to be 74mm. A well-balanced ball shall be
+used.
+
+[[pulsed-drop-test]]
+==== Drop Test
+
+The ball must be able to resist normal gameplay. As an indication of its
+durability, it should be able to survive, undamaged, a free-fall from 1.5
+meters onto a hardwood table or floor.
+
+[[pulsed-modulation]]
+==== Modulation
+
+The 40 kHz carrier output of the ball shall be modulated with a trapezoidal
+(stepped) waveform of frequency 1.2 kHz. Each 833-microsecond cycle of the
+modulation waveform shall comprise 8 carrier pulses at full intensity, followed
+(in turn) by 4 carrier pulses at 1/4 of full intensity, four pulses at 1/16 of
+full intensity and four pulses at 1/64 of full intensity, followed by a space
+(i.e. zero intensity) of about 346 microseconds. The peak current level in the
+LEDs shall be within the range 45-55mA. The radiant intensity shall be more
+than 20mW/sr per LED.
+
+[[pulsed-battery-life]]
+==== Battery Life
+
+If the ball has an embedded rechargeable battery, when new and fully charged it
+should last for more than 3 hours of continuous use before the brightness of
+the LEDs drops to 90% of the initial value. If the ball uses replaceable
+batteries, a set of new high-quality alkaline batteries should last for more
+than 8 hours of continuous use before the brightness of the LEDs drops to 90%
+of the initial value.
+
+[[pulsed-coloration]]
+==== Coloration
+
+The ball must not have any marks or discoloration that can be confused with
+goals, or the field itself.
+
+[[official-suppliers-for-pulsed-balls]]
+=== Official suppliers for pulsed balls
+
+Currently, there is one ball that has been approved by the
+Soccer League Committee:
+
+- RoboCup Junior Soccer ball operating in MODE A (pulsed) made by EK Japan/Elekit (https://elekit.co.jp/en/product/RCJ-05R)
+
+Note that this ball was previously called RCJ-05. While you may not be able to
+find a ball with this name anymore, any IR ball produced by EK Japan/Elekit is
+considered to be approved by the Soccer League Committee.
+
+[appendix]
+[[passive-ball-spec]]
+== Technical Specification for passive Soccer Ball
+
+[[passive-ball-spec-preamble]]
+=== Preamble
+
+In order to push the state of the art in the Soccer competition forward,
+while also trying to bridge the gap between the Junior and Major leagues, the
+Soccer League Committee chose a standard orange golf ball as the "passive" ball.
+This is the same choice as the Small Size League makes footnote:[See the SSL
+rules at https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball] and since
+these balls are standardized, they should be cheap and easy to get anywhere
+around the globe.
+
+[[specifications]]
+=== Specifications
+
+[[passive-diameter]]
+==== Diameter
+
+The diameter of the ball is required to be 42mm +- 1mm.
+
+[[passive-drop-test]]
+==== Drop Test
+
+The ball must be able to resist normal gameplay. As an indication of its
+durability, it should be able to survive, undamaged, a free-fall from 1.5
+meters onto a hardwood table or floor.
+
+[[passive-coloration]]
+==== Coloration
+
+The ball shall be of orange color. Since the definition of the orange color in
+general is not easy, any color that a human would deem to be orange and is
+substantially different from the other colors used on the field is acceptable.
+While tournament organizers may supply matte balls to improve camera vision,
+teams must still be prepared to play with the balls supplied by
+tournament organizers.
+
+[[passive-surface]]
+==== Surface
+
+Engravings and printed labels on the ball’s surface are tolerated.
+The the ball should not have
+a soft-touch finish. Teams must be prepared to play with balls as supplied
+by tournament organizers.
+
+[[passive-weight]]
+==== Weight
+
+The weight of the ball should be 46 grams (+- 1 gram).

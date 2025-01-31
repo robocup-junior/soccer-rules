@@ -1,0 +1,23 @@
+= Scoring Rubrics, Documentation and Sharing Requirements and Interview guidelines
+
+= RoboCupJunior Soccer Rules 2025
+{docdate}
+:toc: left
+:sectanchors:
+:sectlinks:
+:xrefstyle: full
+:section-refsig: Rule
+:sectnums:
+
+ifdef::basebackend-html[]
+++++
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script src="https://hypothes.is/embed.js" async></script>
+++++
+endif::basebackend-html[]
+
+:icons: font
+:numbered:
+
+This document is under construction. Its release will be announced on the
+RoboCupJunior Forum and Discord channels.
