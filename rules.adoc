@@ -76,8 +76,8 @@ categories. There are points for documentation, inteview performance etc.
 The method for calculation of the overall scores will be published on the
 RoboCupJunior Soccer Website at a later date but before the international
 competition. footnote:[
-see https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/scoring.pdf
-or https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/scoring.html
+see https://robocup-junior.github.io/soccer-rules/master/scoring.pdf
+or https://robocup-junior.github.io/soccer-rules/master/scoring.html
 ]
 
 _If you would like to start with RoboCupJunior Soccer, please contact the
@@ -417,9 +417,10 @@ tournament.
 
 Detailed specifications of the ball and fields can be found here
 footnote:[
-https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/field_specification.pdf
-or https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/field_specification.html and https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/ball_specification.pdf
-or https://robocup-junior.github.io/soccer-rules/2025-soccer-draft-rules/ball_specification.html respectively].
+https://robocup-junior.github.io/soccer-rules/master/field_specification.pdf
+or https://robocup-junior.github.io/soccer-rules/master/field_specification.html 
+and https://robocup-junior.github.io/soccer-rules/master/ball_specification.pdf
+or https://robocup-junior.github.io/soccer-rules/master/ball_specification.html respectively].
 
 [[lightweight-ball-change]]
 === Soccer Lightweight Ball change 2026
@@ -626,8 +627,8 @@ need to be already present early on this day.
 
 Details on what is required for and what to expect from interviews can be
 found in the scoring document available here footnote:[
-https://robocup-junior.github.io/soccer-rules-entry/master/scoring.pdf or 
-https://robocup-junior.github.io/soccer-rules-entry/master/scoring.html].
+https://robocup-junior.github.io/soccer-rules/master/scoring.pdf or 
+https://robocup-junior.github.io/soccer-rules/master/scoring.html].
 
 The Soccer League Committee recommends the implementation of interviews in regional
 competitions as well, but this is not mandatory. Teams should check with tournament
@@ -669,15 +670,16 @@ the world share their robots in one "SuperTeam" and play against other
 SuperTeams on a so called "Big Field". Teams could utilise different camera 
 lenses or sensors optimised for the larger playing fields to improve their
 performance. The full rules of this challenge can be found at
-https://robocup-junior.github.io/soccer-rules/master/superteam_rules.html
+https://robocup-junior.github.io/soccer-rules/master/superteam_rules.html or 
+https://robocup-junior.github.io/soccer-rules/master/superteam_rules.pdf 
 
 Teams competing in the international competition can receive awards for their
 performance. These awards are decided and introduced by the Soccer League
 Committee, which publishes all necessary details well before the actual event.
 In the past years they were awarded for best poster, presentation, robot
 design, team spirit and individual games. footnote:[for details see
-https://robocup-junior.github.io/soccer-rules-entry/master/scoring.pdf or 
-https://robocup-junior.github.io/soccer-rules-entry/master/scoring.html]
+https://robocup-junior.github.io/soccer-rules/master/scoring.pdf or 
+https://robocup-junior.github.io/soccer-rules/master/scoring.html]
 
 [[entry-league]]
 == ENTRY LEAGUE
