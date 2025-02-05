@@ -205,16 +205,12 @@ this way, referees may deem it damaged at their discretion.
 (See <<damaged-robots, Damaged Robots>>.) This rule does not apply if the robot
 is hindered from detecting or playing the ball by the opponent.
 
-TIP: If placing the ball on a neutral spot would confer a gameplay advantage to
-one team or referees don't place the ball on the closest neutral spot for other
-reasons a robot is not required to approach the robot at further away neutral spots.
-
 [[inside-penalty-area]]
 === Inside the Penalty Area
 
 No robots are allowed to be fully inside the penalty area. As the penalty
 areas are marked with a white line, the Out of Bounds rule
-applies as well. (<<out-of-bounds>>)
+applies. (<<out-of-bounds>>)
 
 If two robots from the same team are at least partially in a penalty area,
 the robot further from the ball will be moved to the _furthest unoccupied
@@ -340,15 +336,17 @@ playing when placed on a flat surface. Any part of a robot that produces light
 that may interfere with the opposing robot’s vision system must be covered.
 For Lightweight-specific regulations see <<regulations-inference-in-lightweight>>
 
+Robots are expected to be capable of dealing with any visible colors above the
+walls (e.g. blue, yellow, green or orange shirts) either in hardware (e.g. 
+limiting the field of view from looking up) or in software (e.g. masking
+the input image).
+
 The referee can interrupt a game in progress if any kind of interference from
 spectators is suspected (IR emitters, camera flashes, mobile
-phones, radios, computers, etc.). However, robots are expected to be capable
-of dealing with any visible colors above the walls (e.g. blue, yellow, green
-or orange shirts) either in hardware (e.g. limiting the field of view from
-looking up) or in software (e.g. masking the input image).
+phones, radios, computers, etc.).
 
 A team claiming that their robot is affected by the other team’s robot in any
-way must show the proof/evidence of the interference. Any interference needs to
+way must provide proof or evidence of the interference. Any interference needs to
 be confirmed by the tournament organizers if a claim is placed by the other team.
 
 [[robots-control]]
@@ -374,7 +372,7 @@ a straight line). They must move in all directions, for example by turning.
 All robots must have a stable and easily noticeable handle to hold and to lift
 them. The handle must be easily accessible and allow the robot to be picked up
 from at least 5 cm above the highest structure of the robot. {++ There must be a
-minimum clearance of 5 cm for hands between the highes non-handle part of the
+minimum clearance of 5 cm for hands between the highest non-handle part of the
 robot and the handle. ++}
 
 The dimensions of the handle may exceed the robot height
@@ -563,26 +561,6 @@ field before each half when a damaged robot is returned to the field or when
 the game is about to be restarted after a goal. If the referee strongly
 suspects that a kicker exceeds the power limit, they can require an official
 measurement. See <<kicker-power-measuring>> for more details.
-
-[[regulations-construction-programming]]
-==== Construction and Programming
-
-Use of robot kits is allowed only if the "soccer playing" part is done only
-by the students. Kits not specifically made for Soccer can be used without
-restriction but hard- or software specifically made to play soccer cannot be
-used if it is not developed by the team. 
-
-Current team members must have done a majority of the development on hard-
-and software of the robot. Parts done by former team members must be
-outweighed by contributions from current team members.
-
-Since a contact with an opponent robot and/or dribbler that might damage some
-parts of robots cannot be fully anticipated, *robots must have all its active
-elements properly protected with resistant materials*. For example, electrical
-circuits and pneumatic devices, such as pipelines and bottles, must be
-protected from all human contact and direct contact with other robots.
-
-IMPORTANT: All dribbler gears must be covered with metal or hard plastic.
 
 [[regulations-inspections]]
 ==== Inspections
