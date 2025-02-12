@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<meta name="author" content="2025-01-31">
+<meta name="author" content="2025-02-12">
 <title>RoboCupJunior Soccer Rules 2025</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -439,7 +439,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>RoboCupJunior Soccer Rules 2025</h1>
 <div class="details">
-<span id="author" class="author">2025-01-31</span><br>
+<span id="author" class="author">2025-02-12</span><br>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -880,7 +880,7 @@ league documentation submissions for the international competition.</p>
 <p><a href="#addition-1">Added "For only the World Championships, starting in Brazil 2025, use of a Communications Module is required for referees to control the robots.  See &lt;&lt;international-competition-specifics&gt;&gt;"</a></p>
 </li>
 <li>
-<p><a href="#addition-2">Added " There must be a minimum clearance of 5 cm for hands between the highes non-handle part of the robot and the handle. "</a></p>
+<p><a href="#addition-2">Added " There must be a minimum clearance of 5 cm for hands between the highest non-handle part of the robot and the handle. "</a></p>
 </li>
 <li>
 <p><a href="#addition-3">Added "Starting in 2026, Lightweight Soccer will be moving to a new IR Ball. The key difference with this ball is the size change from 74mm to 42mm diameter, which is the same size as the Open League&#8217;s passive ball. More information will be released during the 2025 season by the Committee. This ball is Open-Source, so anyone can produce one from the files &amp; instructions on the GitHub Page here: https://github.com/robocup-junior/ir-golf-ball . Entry Leagues will continue to use the large infrared ball."</a></p>
@@ -1027,27 +1027,13 @@ this way, referees may deem it damaged at their discretion.
 (See <a href="#damaged-robots">Damaged Robots</a>.) This rule does not apply if the robot
 is hindered from detecting or playing the ball by the opponent.</p>
 </div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-If placing the ball on a neutral spot would confer a gameplay advantage to
-one team or referees don&#8217;t place the ball on the closest neutral spot for other
-reasons a robot is not required to approach the robot at further away neutral spots.
-</td>
-</tr>
-</table>
-</div>
 </div>
 <div class="sect2">
 <h3 id="inside-penalty-area"><a class="anchor" href="#inside-penalty-area"></a><a class="link" href="#inside-penalty-area">2.6. Inside the Penalty Area</a></h3>
 <div class="paragraph">
 <p>No robots are allowed to be fully inside the penalty area. As the penalty
 areas are marked with a white line, the Out of Bounds rule
-applies as well. (<a href="#out-of-bounds">Rule 2.8, &#8220;Out of bounds&#8221;</a>)</p>
+applies. (<a href="#out-of-bounds">Rule 2.8, &#8220;Out of bounds&#8221;</a>)</p>
 </div>
 <div class="paragraph">
 <p>If two robots from the same team are at least partially in a penalty area,
@@ -1207,16 +1193,19 @@ that may interfere with the opposing robot’s vision system must be covered.
 For Lightweight-specific regulations see <a href="#regulations-inference-in-lightweight">Rule 6.2.2, &#8220;Infrared interference in Lightweight&#8221;</a></p>
 </div>
 <div class="paragraph">
+<p>Robots are expected to be capable of dealing with any visible colors above the
+walls (e.g. blue, yellow, green or orange shirts) either in hardware (e.g.
+limiting the field of view from looking up) or in software (e.g. masking
+the input image).</p>
+</div>
+<div class="paragraph">
 <p>The referee can interrupt a game in progress if any kind of interference from
 spectators is suspected (IR emitters, camera flashes, mobile
-phones, radios, computers, etc.). However, robots are expected to be capable
-of dealing with any visible colors above the walls (e.g. blue, yellow, green
-or orange shirts) either in hardware (e.g. limiting the field of view from
-looking up) or in software (e.g. masking the input image).</p>
+phones, radios, computers, etc.).</p>
 </div>
 <div class="paragraph">
 <p>A team claiming that their robot is affected by the other team’s robot in any
-way must show the proof/evidence of the interference. Any interference needs to
+way must provide proof or evidence of the interference. Any interference needs to
 be confirmed by the tournament organizers if a claim is placed by the other team.</p>
 </div>
 </div>
@@ -1244,7 +1233,7 @@ a straight line). They must move in all directions, for example by turning.</p>
 <p>All robots must have a stable and easily noticeable handle to hold and to lift
 them. The handle must be easily accessible and allow the robot to be picked up
 from at least 5 cm above the highest structure of the robot. <a id="addition-2"></a>
-<span class="red">* There must be a minimum clearance of 5 cm for hands between the highes non-handle part of the robot and the handle. *</span></p>
+<span class="red">* There must be a minimum clearance of 5 cm for hands between the highest non-handle part of the robot and the handle. *</span></p>
 </div>
 <div class="paragraph">
 <p>The dimensions of the handle may exceed the robot height
@@ -1507,40 +1496,7 @@ measurement. See <a href="#kicker-power-measuring">Appendix A, <em>Kicker Power 
 </div>
 </div>
 <div class="sect3">
-<h4 id="regulations-construction-programming"><a class="anchor" href="#regulations-construction-programming"></a><a class="link" href="#regulations-construction-programming">6.2.4. Construction and Programming</a></h4>
-<div class="paragraph">
-<p>Use of robot kits is allowed only if the "soccer playing" part is done only
-by the students. Kits not specifically made for Soccer can be used without
-restriction but hard- or software specifically made to play soccer cannot be
-used if it is not developed by the team.</p>
-</div>
-<div class="paragraph">
-<p>Current team members must have done a majority of the development on hard-
-and software of the robot. Parts done by former team members must be
-outweighed by contributions from current team members.</p>
-</div>
-<div class="paragraph">
-<p>Since a contact with an opponent robot and/or dribbler that might damage some
-parts of robots cannot be fully anticipated, <strong>robots must have all its active
-elements properly protected with resistant materials</strong>. For example, electrical
-circuits and pneumatic devices, such as pipelines and bottles, must be
-protected from all human contact and direct contact with other robots.</p>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-All dribbler gears must be covered with metal or hard plastic.
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="regulations-inspections"><a class="anchor" href="#regulations-inspections"></a><a class="link" href="#regulations-inspections">6.2.5. Inspections</a></h4>
+<h4 id="regulations-inspections"><a class="anchor" href="#regulations-inspections"></a><a class="link" href="#regulations-inspections">6.2.4. Inspections</a></h4>
 <div class="paragraph">
 <p>Robots must be inspected and certified every day before the first game is
 played. The tournament organizers may request other inspections if necessary,
@@ -1750,7 +1706,7 @@ should make sure they can adjust the power of their kicker if necessary.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-01-31 11:16:13 UTC
+Last updated 2025-02-12 21:03:07 UTC
 </div>
 </div>
 </body>
