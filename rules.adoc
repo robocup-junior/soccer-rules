@@ -413,7 +413,7 @@ tournament.
 [[specifications]]
 === Material specifications
 
-Detailed specifications of the ball and fields can be found here
+Detailed specifications of the ball and fields can be found in the footnote
 footnote:[
 https://robocup-junior.github.io/soccer-rules/master/field_specification.pdf
 or https://robocup-junior.github.io/soccer-rules/master/field_specification.html 
