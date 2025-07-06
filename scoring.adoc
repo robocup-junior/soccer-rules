@@ -23,8 +23,6 @@ endif::basebackend-html[]
 RoboCupJunior Soccer  
 Award Criteria and Rubrics 2025  
 
-Final Draft – expect only minor changes  
-
 These are the official award guidelines for the International RoboCupJunior Soccer League, issued by 
 the RoboCupJunior Soccer League Committee. The English version takes precedence over all 
 translations. For questions or suggestions, visit the https://junior.forum.robocup.org/c/robocupjunior-soccer/5[*RoboCupJunior Soccer Forum*] or 
@@ -39,9 +37,11 @@ version they are using.
 *Changelog*  
   
 |===
-|Change                                                | Date
+|Change                                                 | Date
 |Initial Document Creation for 2024 Season              | 2024-04-01 +
 |Rubric and Criteria Document rework for 2025 Season    | 2025-05-08 +
+|Addition of 3 bonus points mentioned in TDP form       | 2025-06-18 +
+|Corrected 3 bonus points for mention in TDP form       | 2025-06-18 +
 |===
 
 
@@ -55,10 +55,9 @@ Certificate awards will be awarded to every team that meets excellence criteria 
 [[award-criteria]]
 == Award Criteria
  
-Teams will be evaluated based on the following criteria:
-
+.Teams will be evaluated based on the following criteria:
 *1.*	*Individual Gameplay Tournament* (Maximum of 30 Points) +
-*2.*	*Technical Documentation Paper Form* (TDP Form) (Maximum of 5 Points) +
+*2.*	*Technical Documentation Paper Form* (TDP Form) (Maximum of 8 Points) +
 *3.*	*Poster Design & Presentation* (Maximum of 5 Points) +
 *4.*	*Group Team Interview* (Maximum of 5 Points) +
 *5.*	*Sportsmanship* (Maximum of 3 Points) +
@@ -95,7 +94,7 @@ Individual Gameplay Tournament place turns into overall ranking points as follow
 
 The TDP Form is an online questionnaire to complete prior to the competition. It consists of 
 a series of prompts designed to help create a structured document similar to a 
-Technical Description Paper.
+Technical Description Paper. Note there are three bonus points mentioned within the TDP form.
 
 .TDP Form Scoring Values
 |===
@@ -130,7 +129,7 @@ Teams should bring their Robots, Laptops and programming equipment to the interv
 and expect the interviews to contain these elements:
 *	Show and Tell: Show your robot to everyone, explain it’s basic design and what you regard as the most interesting feature 
 *	Teamwork-Task: Program your robot to solve a task set by the interview judges on the spot. This is where you demonstrate your understanding of the robot and how you work together as a team.
-*	Questions: Other teams and judges may want to know things about how your robot works, how you designed it, why you made the design choices you made etc.
+*	Questions: Other teams and judges may want to know things about how your robot works, how you designed it, why you made the design choices you made, etc.
 
 Judges have a standard list of questions they can ask with some modifications to help 
 minimize translation issues. Please see <<group-interview-questions>>. If your team 
@@ -425,34 +424,34 @@ Judges may ask questions from the following list and may ask followup questions 
 Judges should focus questions on items that may need clarification or were missing from a team’s 
 presentation or design document. No more than one question from each category should be asked.
 
-General: +
-●	Which of your design decisions are influenced by which testing/experience? +
-●	What other work (other RCJ or Major teams, other robotics things) did you draw inspiration from? OR How did you learn how to do <this>? +
+.General: +
+-	Which of your design decisions are influenced by which testing/experience? +
+-	What other work (other RCJ or Major teams, other robotics things) did you draw inspiration from? OR How did you learn how to do <this>? +
 
-Electrical: +
-●	Why/how did you pick <this component/circuit>? +
-●	What did you blow up? OR Can you give an example of how you troubleshooted your circuit? +
-●	What was a challenge you had building or designing <this part> of your circuit? OR what benefits do you see from making the circuit <this> way? +
+.Electrical: +
+-	Why/how did you pick <this component/circuit>? +
+-	What did you blow up? OR Can you give an example of how you troubleshooted your circuit? +
+-	What was a challenge you had building or designing <this part> of your circuit? OR what benefits do you see from making the circuit <this> way? +
 
-Mechanical: +
-●	Why did you or did you not include <Kicker/Dribbler/Camera/360°View/other particular feature>? +
-●	Why did you opt for <material> to construct <mechanical system>? +
-●	How did you manufacture <this custom part>? +
+.Mechanical: +
+-	Why did you or did you not include <Kicker/Dribbler/Camera/360°View/other particular feature>? +
+-	Why did you opt for <material> to construct <mechanical system>? +
+-	How did you manufacture <this custom part>? +
 
-Strategy: +
-●	If your robots are <here> on the field and the ball is <here>, what will your robots do? +
-●	How do your robots deal with <occluded goal/ball not in view/other challenging gameplay situations>? +
-●	What are some tactics you use? (e.g. hiding the ball, passing the ball, tactical positioning etc.) +
-●	How did you <develop/test> tactics and strategies? +
+.Strategy: +
+-	If your robots are <here> on the field and the ball is <here>, what will your robots do? +
+-	How do your robots deal with <occluded goal/ball not in view/other challenging gameplay situations>? +
+-	What are some tactics you use? (e.g. hiding the ball, passing the ball, tactical positioning etc.) +
+-	How did you <develop/test> tactics and strategies? +
 
-Software: +
-●	How does your robot make sense of sensor inputs? +
-●	How do you avoid <going out of bounds/getting stuck/multiple defense/pushing/other problem>? +
-●	How do your robots <communicate/perform this function> in software? +
-●	How do you <debug/calibrate/> your robots? +
+.Software: +
+-	How does your robot make sense of sensor inputs? +
+-	How do you avoid <going out of bounds/getting stuck/multiple defense/pushing/other problem>? +
+-	How do your robots <communicate/perform this function> in software? +
+-	How do you <debug/calibrate/> your robots? +
 
-Development and Documentation: +
-●	What other robots/posters/papers did you take ideas from? +
-●	How did you keep track of ideas? (both your own ideas and materials you read) +
-●	How did you keep track of what you have already tested? +
-●	What kinds of testing did you do? (e.g. testing individual components, testing a full robot, testing both robots together) How did you do this testing? +
+.Development and Documentation: +
+-	What other robots/posters/papers did you take ideas from? +
+-	How did you keep track of ideas? (both your own ideas and materials you read) +
+-	How did you keep track of what you have already tested? +
+-	What kinds of testing did you do? (e.g. testing individual components, testing a full robot, testing both robots together) How did you do this testing? +
