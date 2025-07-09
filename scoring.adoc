@@ -426,29 +426,29 @@ presentation or design document. No more than one question from each category sh
 
 .General: +
 -	Which of your design decisions are influenced by which testing/experience? +
--	What other work (other RCJ or Major teams, other robotics things) did you draw inspiration from? OR How did you learn how to do <this>? +
+-	What other work (other RCJ or Major teams, other robotics things) did you draw inspiration from? OR How did you learn how to do \<this\>? +
 
 .Electrical: +
--	Why/how did you pick <this component/circuit>? +
+-	Why/how did you pick \<this component/circuit\>? +
 -	What did you blow up? OR Can you give an example of how you troubleshooted your circuit? +
--	What was a challenge you had building or designing <this part> of your circuit? OR what benefits do you see from making the circuit <this> way? +
+-	What was a challenge you had building or designing \<this part\> of your circuit? OR what benefits do you see from making the circuit \<this\> way? +
 
 .Mechanical: +
--	Why did you or did you not include <Kicker/Dribbler/Camera/360°View/other particular feature>? +
--	Why did you opt for <material> to construct <mechanical system>? +
--	How did you manufacture <this custom part>? +
+-	Why did you or did you not include \<Kicker/Dribbler/Camera/360°View/other particular feature\>? +
+-	Why did you opt for \<material\> to construct \<mechanical system\>? +
+-	How did you manufacture \<this custom part\>? +
 
 .Strategy: +
--	If your robots are <here> on the field and the ball is <here>, what will your robots do? +
--	How do your robots deal with <occluded goal/ball not in view/other challenging gameplay situations>? +
+-	If your robots are \<here\> on the field and the ball is \<here\>, what will your robots do? +
+-	How do your robots deal with \<occluded goal/ball not in view/other challenging gameplay situations\>? +
 -	What are some tactics you use? (e.g. hiding the ball, passing the ball, tactical positioning etc.) +
--	How did you <develop/test> tactics and strategies? +
+-	How did you \<develop/test\> tactics and strategies? +
 
 .Software: +
 -	How does your robot make sense of sensor inputs? +
--	How do you avoid <going out of bounds/getting stuck/multiple defense/pushing/other problem>? +
--	How do your robots <communicate/perform this function> in software? +
--	How do you <debug/calibrate/> your robots? +
+-	How do you avoid \<going out of bounds/getting stuck/multiple defense/pushing/other problem\>? +
+-	How do your robots \<communicate/perform this function\> in software? +
+-	How do you \<debug/calibrate/\> your robots? +
 
 .Development and Documentation: +
 -	What other robots/posters/papers did you take ideas from? +
