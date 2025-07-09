@@ -10,7 +10,13 @@
 \usepackage{graphicx}
 \usepackage{multirow}
 \usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{ltxtable}
 \usepackage{color}
+\usepackage{xcolor}
+\usepackage{colortbl}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsxtra}
@@ -98,6 +104,19 @@
 \definecolor{color-4}{rgb}{0.13,0.13,0.13}
 \definecolor{red}{rgb}{1,0,0}
 \definecolor{color-6}{rgb}{0,0,1}
+
+% Table styling improvements
+\definecolor{table-header}{rgb}{0.9,0.9,0.9}
+\definecolor{table-row-even}{rgb}{0.95,0.95,0.95}
+
+% Better table defaults
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{8pt}
+
+% Custom table commands for better formatting
+\newcommand{\tableheader}[1]{\rowcolor{table-header}\textbf{#1}}
+\newcommand{\tablerow}[1]{#1}
+\newcommand{\tablerowodd}[1]{\rowcolor{table-row-even}#1}
 
 
 
