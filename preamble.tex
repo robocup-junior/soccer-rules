@@ -62,14 +62,14 @@
     \thesubsection.\Alph{subsubsection}\relax
 \fi}
 
-\newcommand*{\p}{\paragraph{}}
+\newcommand*{\p}{\par\noindent}
 
 \newlength\titleindent
 \setlength\titleindent{1.2cm}
 
 \definecolor{mygray}{gray}{0.55}
 \titleformat{\paragraph}[runin]
-{\normalfont\normalsize\bfseries}{\llap{\parbox{\titleindent}{\textcolor{mygray}{\theparagraph}\hfill}}}{0em}{}
+{\normalfont\normalsize}{\llap{\parbox{\titleindent}{\normalfont\textcolor{mygray}{\theparagraph}\hfill}}}{0em}{\bfseries}
 
 \titlespacing{\paragraph}{0pt}{0.5em}{0.5em}
 
