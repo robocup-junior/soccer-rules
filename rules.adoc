@@ -58,15 +58,15 @@ advancement of the community as a whole by sharing their discoveries with other
 participants and by engaging in good sportsmanship, regardless of culture, age
 or result in the competition. *All are expected to compete, learn, have fun, and grow.*
 
-RoboCupJunior Soccer consist of two sub-leagues: *Soccer Open* and *Soccer
-Lightweight*. These rules apply for both sub-leagues. There are two main
+RoboCupJunior Soccer consist of two sub-leagues: *Soccer Vision* and *Soccer
+Infrared*. These rules apply for both sub-leagues. There are two main
 differences between the two leagues.
 
-* *Soccer Lightweight* is played using a special ball that emits an IR
+* *Soccer Infrared* is played using a special ball that emits an IR
 signal. Robots may weigh up to 1.4 kg, may have a ball-capturing zone of
 up to 3.0 cm.
 
-* *Soccer Open* is played using a passive, brightly colored orange golf
+* *Soccer Vision* is played using a passive, brightly colored orange golf
 ball. Robots have no weight restriction and may have a ball-capturing zone of up to
 1.5 cm.
 
@@ -334,7 +334,7 @@ Robots must not produce magnetic interference in other robots on the field.
 Robots must not produce visible light that may prevent the opposing team from
 playing when placed on a flat surface. Any part of a robot that produces light
 that may interfere with the opposing robot’s vision system must be covered.
-For Lightweight-specific regulations see <<regulations-inference-in-lightweight>>
+For Infrared-specific regulations see <<regulations-inference-in-Infrared>>
 
 Robots are expected to be capable of dealing with any visible colors above the
 walls (e.g. blue, yellow, green or orange shirts) either in hardware (e.g. 
@@ -420,14 +420,14 @@ or https://robocup-junior.github.io/soccer-rules/master/field_specification.html
 and https://robocup-junior.github.io/soccer-rules/master/ball_specification.pdf
 or https://robocup-junior.github.io/soccer-rules/master/ball_specification.html respectively].
 
-[[lightweight-ball-change]]
-=== Soccer Lightweight Ball change 2026
+[[Infrared-ball-change]]
+=== Soccer Infrared Ball change 2026
 
-{++Starting in 2026, Lightweight Soccer will be moving to a new IR Ball. The key
+{++Starting in 2026, Infrared Soccer will be moving to a new IR Ball. The key
 difference with this ball is the size change from 74mm to 42mm diameter,
-which is the same size as the Open League's passive ball. More information
+which is the same size as the Vision League's passive ball. More information
 will be released during the 2025 season by the Committee. This ball is
-Open-Source, so anyone can produce one from the files & instructions on the
+Vision-Source, so anyone can produce one from the files & instructions on the
 GitHub Page here: https://github.com/robocup-junior/ir-golf-ball . Entry
 Leagues will continue to use the large infrared ball.++}
 footnote:[Entry Leagues frequently use Lego, FischerTechnik, Vex or other
@@ -506,12 +506,12 @@ etc.). Check with organizers of each tournament you participate in.
 
 For RoboCupJunior , there are two sub-leagues as follows
 
-* Soccer Lightweight
-* Soccer Open
+* Soccer Infrared
+* Soccer Vision
 
-The matches in the Soccer Open
+The matches in the Soccer Vision
 sub-league are conducted using a passive ball, whereas the matches in the
-Soccer Lightweight sub-league are played using the IR ball.
+Soccer Infrared sub-league are played using the IR ball.
 footnote:[ for detailled ball specifications see: <<specifications>>]
 
 [[regulations]]
@@ -524,7 +524,7 @@ Robots will be measured in an upright position with all parts extended. A
 robot’s dimensions must not exceed the following limits:
 
 |===
-|sub-league | *Soccer* *Open* | *Soccer Lightweight*
+|sub-league | *Soccer* *Vision* | *Soccer Infrared*
 |size ^[0]^  | 18.0 cm | 22.0 cm +
 |height | 18.0 cm | 22.0 cm +
 |weight | {~~2200 g~>No limit~~} | 1400 g +
@@ -539,8 +539,8 @@ not enter the convex hull of a robot by more than the specified depth.
 Furthermore, it must be possible for another robot to take possession of the
 ball.
 
-[[regulations-inference-in-lightweight]]
-==== Infrared interference in Lightweight
+[[regulations-inference-in-Infrared]]
+==== Infrared interference in Infrared
 
 Components designed
 to emit IR (e.g. ToF, LiDAR, IR distance sensors, IR LEDs/LASERs etc.) are not
@@ -576,9 +576,9 @@ including random inspections which may happen at any time.
 [[international-competition-team]]
 === Team
 
-{~~Soccer Lightweight team members can participate in the World
+{~~Soccer Infrared team members can participate in the World
 Championship only twice. After their second participation, they need to move to
-Soccer Open.~>This rule has been removed from 2025 onwards.~~}
+Soccer Vision.~>This rule has been removed from 2025 onwards.~~}
 
 [[international-competition-specifics]]
 === International Competition Specifics
@@ -693,7 +693,7 @@ The test is performed as follows:
 
 .  {~~Place robot inside the goal.~>Place robot inside a goal with the robot touching the back goal wall.~~}
 .  Perform a kick into the opposing goal
-.  {~~The Open League kicker power test is passed if after bouncing off of the opposite goal
+.  {~~The Vision League kicker power test is passed if after bouncing off of the opposite goal
 the ball does not return further than the front line of to the penalty area
 it was shot from.
 The Light Weight League power test is passed if after bouncing off of the opposite goal
