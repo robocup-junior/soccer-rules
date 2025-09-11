@@ -594,7 +594,7 @@ for every member of a 5-member-team to be able to sit. It may not be possible
 to register all 5 team members as regular team members. Certificates and awards
 will be issue to all 5 actual members but depending on fire safety an space
 limitations measures like limiting access to the team area to 4 team members
-at a time and/or other "creative solutions" may habe to be employed.
+at a time and/or other "creative solutions" may have to be employed.
 
 [[communications-module]]
 === Communications Module
