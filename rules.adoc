@@ -87,6 +87,14 @@ terms of the Creative Commons Attribution-ShareAlike License.
 [[general-rules]]
 include::general-rules/general-rules.adoc[]
 
+TIP: The Soccer league is planning to increase the team size to 5. For
+logistical reasons only 4 members per team can be guaranteed for the Incheon
+competition as of 2025-09-17. We recommend this team size for SuperRegional and
+where organizers find it practical also regional and local competitions. Ask
+check with the organizers for each tournament you attend what exact rules they
+are using - tournament organizers are encouraged to adapt rules to fit with
+their situation.
+
 [discrete]
 === Changes from the 2025 RoboCupJunior Soccer Rules
 
