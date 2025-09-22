@@ -107,6 +107,14 @@ Detailed changes are listed below and link to the corresponding place in the rul
 
 {+-~TOC-CHANGES~-+}
 
+* A notable change that cannot be highlighted the same way as others is the
+maximum team size: We're changing the default from 4 to 5 members maximum.
+Regions are free to remain at 4 (or any other number they may want to set) if
+that is what is best in their situation so please as always check with your
+tournaments' organizers what rules they will be running. If you haven't yet
+shared your thoughts on this change in the rules discussion phase we're still
+interested to hear them, come talk to us on the Forum or the Discord.
+
 [[gameplay]]
 == GAMEPLAY
 
@@ -582,11 +590,22 @@ Robots must be inspected and certified every day before the first game is
 played. The tournament organizers may request other inspections if necessary,
 including random inspections which may happen at any time.
 
-[[international-competition]]
-== INTERNATIONAL COMPETITION
-
 [[international-competition-specifics]]
-=== International Competition Specifics
+== International Competition Specifics
+
+[[team-size]]
+=== Team Size
+
+Because the international competition is in a different location every year it
+can not be guaranteed that there will be enough seats in the Junior Soccer area
+for every member of a 5-member-team to be able to sit. It may not be possible
+to register all 5 team members as regular team members. Certificates and awards
+will be issue to all 5 actual members but depending on fire safety an space
+limitations measures like limiting access to the team area to 4 team members
+at a time and/or other "creative solutions" may have to be employed.
+
+[[communications-module]]
+=== Communications Module
 
 At the international competition (for others ask organizers) the Soccer League
 Committee will provide each team with a Communication Module. This allow for 
