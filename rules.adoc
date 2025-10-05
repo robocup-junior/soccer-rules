@@ -68,7 +68,7 @@ that emits an IR signal and robots may weigh up to {~~1.4 kg~>1.5 kg~~}, and be
 up to 22cm in size.
 
 * {~~Soccer Open~>Soccer Vision~~} is played using a brightly colored orange
-golf ball, robots have no weight restriction and may be up to 10cm in size.
+golf ball, robots have no weight restriction and may be up to 18cm in size.
 
 IMPORTANT: A large part of the overall ranking (for the international tournament,
 other tournaments operate differently) is determined by the judged
