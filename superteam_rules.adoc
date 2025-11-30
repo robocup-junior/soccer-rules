@@ -76,6 +76,11 @@ Detailed changes are listed below and link to the corresponding place in the rul
 
 {+-~TOC-CHANGES~-+}
 
+[[general-rules]]
+== RoboCupJunior International 2026 General Rules
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<general-rules>> applies.
+
 [[gameplay]]
 == GAMEPLAY
 
@@ -96,13 +101,7 @@ SuperTeam teammates show up for the game.
 The final game score will be trimmed so that there is at most 10-goal
 difference between the losing and the winning team.
 
-[[tournament-mode-byes]]
-=== Tournament mode and Bye games
-In some cases (e.g. uneven number of teams) not every team can play every round.
-In threse cases the team that is free from play is awarded a Bye. In SuperTeam
-matches where fewer goals are scored the Bye is awarded as a 3:0 victory instead
-of the usual 10:0. Contact your regional/super-regional tournament organizers for
-details at tournaments other than the international RoboCupJunior tournament.
+
 
 [[pre-match-meeting]]
 === Pre-match meeting
@@ -155,22 +154,22 @@ small change: all robots must be at least 30 cm away from the ball
 [[scoring]]
 === Scoring
 
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<scoring>> applies.
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<scoring>> applies.
 
 [[ball-movement]]
 === Ball movement
 
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<ball-movement>> applies.
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<ball-movement>> applies.
 
 [[inside-penalty-area]]
 === Inside the Penalty Area (Pushing and Multiple defense)
 
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<inside-penalty-area>> applies.
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<inside-penalty-area>> applies.
 
 [[lack-of-progress]]
 === Lack of progress
 
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<lack-of-progress>> applies.
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<lack-of-progress>> applies.
 
 [[out-of-bounds]]
 === Out of bounds
@@ -196,20 +195,75 @@ out"++} and may slightly push the robot back onto the field.
 [[damaged-robots]]
 === Damaged robots
 
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<damaged-robots>>
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<damaged-robots>>
 
 [[human-interference]]
 === Human interference
 
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<human-interference>> applies.
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<human-interference>> applies.
 
 [[interruption-of-game-ref-interruption]]
 === Interruption of Game
 
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<interruption-of-game-ref-interruption>> applies.
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<interruption-of-game-ref-interruption>> applies.
+
+[[tournament-mode-byes]]
+=== Tournament mode and Bye games
+In some cases (e.g. uneven number of teams) not every team can play every round.
+In threse cases the team that is free from play is awarded a Bye. In SuperTeam
+matches where fewer goals are scored the Bye is awarded as a 3:0 victory instead
+of the usual 10:0. Contact your regional/super-regional tournament organizers for
+details at tournaments other than the international RoboCupJunior tournament.
 
 [[robots]]
 == ROBOTS
+
+[[robots-interference]]
+=== Interference
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<robots-interference>> applies.
+
+
+[[robots-control]]
+=== Control & Communication
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<robots-control>> applies.
+
+[[agility]]
+=== Agility
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<agility>> applies.
+
+[[handle]]
+=== Handle
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<handle>> applies.
+
+[[top-markers]]
+=== Top Markers
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<top-markers>> applies.
+
+[[violations]]
+=== Violations
+
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<violations>> applies.
+
+[[specifications]]
+=== Material specifications
+
+link:https://robocup-junior,github.io/soccer-rules/master.rules.html[RoboCupJunior Soccer Rules] <<specifications>> applies.
+
+[[infrared-ball-change]]
+=== Soccer Infrared League Ball Change 2026
+
+link:https://robocup-junior.github.io/soccer-rules/master.rules.html[RoboCupJunior Soccer Rules] <<infrared-ball-change>> applies.
+
+[[tournament-balls]]
+=== Tournament Balls
+
+link://https://robocup-junior.github.io/soccer-rules/master.rules.html[RoboCupJunior Soccer Rules] <<tournament-balls>> applies.
+
 
 [[number-of-robots-substitution]]
 === Number of robots / substitution
@@ -229,7 +283,7 @@ identifying the robot as being a member of a team.
 
 Example: Robot A-2: the referee would identify robot with sticker A-2 as robot
 number 2 belonging to team A. These IDs will be written on the Top Markers of
-robots (see link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<top-markers>>).
+robots (see link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<top-markers>>).
 
 Each individual team is required to have at least one of its robots as an
 active player, with the exception of a sixth team in which case SuperTeam is
@@ -238,39 +292,27 @@ individual teams evenly. SuperTeam members can decide freely how to substitute
 robots between the current players and the reserve players during gameplay, but
 the captain is required to ask a referee for robot substitution authorization.
 
-Substitutions are allowed only at every kick-off (see rule <<kick-off>>).
+Substitutions are allowed only at every kick-off (see <<kick-off>>).
 
+[[code-of-conduct]]
+== CODE OF CONDUCT
 
-[[robots-interference]]
-=== Interference
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<code-of-conduct>> and its subsections apply.
 
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<robots-interference>> applies.
+[[conflict-resolution]]
+== CONFLICT RESOLUTION
 
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<conflict-resolution>> and its subsections apply.
 
-[[robots-control]]
-=== Control & Communication
+[[league-regulations]]
+== LEAGUE REGULATIONS
 
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<robots-control>> applies.
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<league-regulations>> and its subsections apply.
 
-[[agility]]
-=== Agility
+[[kicker-power-measuring]]
+== Kicker Power Measuring Procedures
 
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<agility>> applies.
-
-[[handle]]
-=== Handle
-
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<handle>> applies.
-
-[[top-markers]]
-=== Top Markers
-
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<top-markers>> applies.
-
-[[violations]]
-=== Violations
-
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<violations>> applies.
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<kicker-power-measuring>> and its subsections apply.
 
 [[field]]
 == BIGFIELD
@@ -313,37 +355,7 @@ In front of each goal there is a 35 cm wide and 120 cm long penalty area.
 The penalty areas are marked by a white line of 20 mm (±10%) width. The
 line is part of the area.
 
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<specifications>> and its subsections apply with the above exceptions.
-
-[[infrared-ball-change]]
-=== Soccer Infrared League New Ball (starting 2026)
-
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<infraded-ball-change>> and its subsections apply.
-
-[[tournament-balls]]
-=== Tournament balls
-
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<tournament-balls>> and its subsections apply.
-
-[[code-of-conduct]]
-== CODE OF CONDUCT
-
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<code-of-conduct>> and its subsections apply.
-
-[[conflict-resolution]]
-== CONFLICT RESOLUTION
-
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<conflict-resolution>> and its subsections apply.
-
-[[league-regulations]]
-== LEAGUE REGULATIONS
-
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<league-regulations>> and its subsections apply.
-
-[[kicker-power-measuring]]
-== Kicker Power Measuring Procedures
-
-link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] rule <<kicker-power-measuring>> and its subsections apply.
+link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<specifications>> and its subsections apply with the above exceptions.
 
 [discrete]
 [[big-field-diagram]]
