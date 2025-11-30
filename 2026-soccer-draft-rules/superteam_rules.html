@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.23">
-<meta name="author" content="2025-10-05">
+<meta name="generator" content="Asciidoctor 2.0.26">
+<meta name="author" content="2025-11-30">
 <title>RoboCupJunior Soccer SuperTeam Draft Rules 2026</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -117,7 +117,6 @@ h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title str
 :not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
 pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
 pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
-pre>code{display:block}
 pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
 em em{font-style:normal}
 strong strong{font-weight:400}
@@ -220,6 +219,7 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
 .literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
 .listingblock>.content{position:relative}
+.listingblock pre>code{display:block}
 .listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
 .listingblock:hover code[data-lang]::before{display:block}
 .listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
@@ -439,52 +439,54 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>RoboCupJunior Soccer SuperTeam Draft Rules 2026</h1>
 <div class="details">
-<span id="author" class="author">2025-10-05</span><br>
+<span id="author" class="author">2025-11-30</span><br>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#gameplay">1. GAMEPLAY</a>
+<li><a href="#general-rules">1. RoboCupJunior International 2026 General Rules</a></li>
+<li><a href="#gameplay">2. GAMEPLAY</a>
 <ul class="sectlevel2">
-<li><a href="#game-procedure-and-length-of-a-game">1.1. Game procedure and length of a game</a></li>
-<li><a href="#tournament-mode-byes">1.2. Tournament mode and Bye games</a></li>
-<li><a href="#pre-match-meeting">1.3. Pre-match meeting</a></li>
-<li><a href="#kick-off">1.4. Kick-off</a></li>
-<li><a href="#scoring">1.5. Scoring</a></li>
-<li><a href="#ball-movement">1.6. Ball movement</a></li>
-<li><a href="#inside-penalty-area">1.7. Inside the Penalty Area (Pushing and Multiple defense)</a></li>
-<li><a href="#lack-of-progress">1.8. Lack of progress</a></li>
-<li><a href="#out-of-bounds">1.9. Out of bounds</a></li>
-<li><a href="#damaged-robots">1.10. Damaged robots</a></li>
-<li><a href="#human-interference">1.11. Human interference</a></li>
-<li><a href="#interruption-of-game-ref-interruption">1.12. Interruption of Game</a></li>
+<li><a href="#game-procedure-and-length-of-a-game">2.1. Game procedure and length of a game</a></li>
+<li><a href="#pre-match-meeting">2.2. Pre-match meeting</a></li>
+<li><a href="#kick-off">2.3. Kick-off</a></li>
+<li><a href="#scoring">2.4. Scoring</a></li>
+<li><a href="#ball-movement">2.5. Ball movement</a></li>
+<li><a href="#inside-penalty-area">2.6. Inside the Penalty Area (Pushing and Multiple defense)</a></li>
+<li><a href="#lack-of-progress">2.7. Lack of progress</a></li>
+<li><a href="#out-of-bounds">2.8. Out of bounds</a></li>
+<li><a href="#damaged-robots">2.9. Damaged robots</a></li>
+<li><a href="#human-interference">2.10. Human interference</a></li>
+<li><a href="#interruption-of-game-ref-interruption">2.11. Interruption of Game</a></li>
+<li><a href="#tournament-mode-byes">2.12. Tournament mode and Bye games</a></li>
 </ul>
 </li>
-<li><a href="#robots">2. ROBOTS</a>
+<li><a href="#robots">3. ROBOTS</a>
 <ul class="sectlevel2">
-<li><a href="#number-of-robots-substitution">2.1. Number of robots / substitution</a></li>
-<li><a href="#robots-interference">2.2. Interference</a></li>
-<li><a href="#robots-control">2.3. Control &amp; Communication</a></li>
-<li><a href="#agility">2.4. Agility</a></li>
-<li><a href="#handle">2.5. Handle</a></li>
-<li><a href="#top-markers">2.6. Top Markers</a></li>
-<li><a href="#violations">2.7. Violations</a></li>
-</ul>
-</li>
-<li><a href="#field">3. BIGFIELD</a>
-<ul class="sectlevel2">
-<li><a href="#dimensions-of-the-field">3.1. Dimensions of the field</a></li>
-<li><a href="#neutral-spots">3.2. Neutral spots</a></li>
-<li><a href="#center-circle">3.3. Center circle</a></li>
-<li><a href="#penalty-areas">3.4. Penalty areas</a></li>
-<li><a href="#infrared-ball-change">3.5. Soccer Infrared League New Ball (starting 2026)</a></li>
-<li><a href="#tournament-balls">3.6. Tournament balls</a></li>
+<li><a href="#robots-interference">3.1. Interference</a></li>
+<li><a href="#robots-control">3.2. Control &amp; Communication</a></li>
+<li><a href="#agility">3.3. Agility</a></li>
+<li><a href="#handle">3.4. Handle</a></li>
+<li><a href="#top-markers">3.5. Top Markers</a></li>
+<li><a href="#violations">3.6. Violations</a></li>
+<li><a href="#specifications">3.7. Material specifications</a></li>
+<li><a href="#infrared-ball-change">3.8. Soccer Infrared League Ball Change 2026</a></li>
+<li><a href="#tournament-balls">3.9. Tournament Balls</a></li>
+<li><a href="#number-of-robots-substitution">3.10. Number of robots / substitution</a></li>
 </ul>
 </li>
 <li><a href="#code-of-conduct">4. CODE OF CONDUCT</a></li>
 <li><a href="#conflict-resolution">5. CONFLICT RESOLUTION</a></li>
 <li><a href="#league-regulations">6. LEAGUE REGULATIONS</a></li>
 <li><a href="#kicker-power-measuring">7. Kicker Power Measuring Procedures</a></li>
+<li><a href="#field">8. BIGFIELD</a>
+<ul class="sectlevel2">
+<li><a href="#dimensions-of-the-field">8.1. Dimensions of the field</a></li>
+<li><a href="#neutral-spots">8.2. Neutral spots</a></li>
+<li><a href="#center-circle">8.3. Center circle</a></li>
+<li><a href="#penalty-areas">8.4. Penalty areas</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -571,10 +573,18 @@ any time) aim to improve gameplay.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="gameplay"><a class="anchor" href="#gameplay"></a><a class="link" href="#gameplay">1. GAMEPLAY</a></h2>
+<h2 id="general-rules"><a class="anchor" href="#general-rules"></a><a class="link" href="#general-rules">1. RoboCupJunior International 2026 General Rules</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#general-rules">Rule 1, &#8220;RoboCupJunior International 2026 General Rules&#8221;</a> applies.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="gameplay"><a class="anchor" href="#gameplay"></a><a class="link" href="#gameplay">2. GAMEPLAY</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="game-procedure-and-length-of-a-game"><a class="anchor" href="#game-procedure-and-length-of-a-game"></a><a class="link" href="#game-procedure-and-length-of-a-game">1.1. Game procedure and length of a game</a></h3>
+<h3 id="game-procedure-and-length-of-a-game"><a class="anchor" href="#game-procedure-and-length-of-a-game"></a><a class="link" href="#game-procedure-and-length-of-a-game">2.1. Game procedure and length of a game</a></h3>
 <div class="paragraph">
 <p>RCJ Soccer SuperTeam games consist of two teams of robots playing soccer
 against each other. Each team has five autonomous robots. The game will consist
@@ -594,17 +604,7 @@ difference between the losing and the winning team.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="tournament-mode-byes"><a class="anchor" href="#tournament-mode-byes"></a><a class="link" href="#tournament-mode-byes">1.2. Tournament mode and Bye games</a></h3>
-<div class="paragraph">
-<p>In some cases (e.g. uneven number of teams) not every team can play every round.
-In threse cases the team that is free from play is awarded a Bye. In SuperTeam
-matches where fewer goals are scored the Bye is awarded as a 3:0 victory instead
-of the usual 10:0. Contact your regional/super-regional tournament organizers for
-details at tournaments other than the international RoboCupJunior tournament.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="pre-match-meeting"><a class="anchor" href="#pre-match-meeting"></a><a class="link" href="#pre-match-meeting">1.3. Pre-match meeting</a></h3>
+<h3 id="pre-match-meeting"><a class="anchor" href="#pre-match-meeting"></a><a class="link" href="#pre-match-meeting">2.2. Pre-match meeting</a></h3>
 <div class="paragraph">
 <p>At the start of the first half of the game, a referee will toss a coin. The
 team mentioned first in the draw shall call the coin. The winner of the toss
@@ -621,7 +621,7 @@ game will not be played and zero goals will be awarded to both SuperTeams.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="kick-off"><a class="anchor" href="#kick-off"></a><a class="link" href="#kick-off">1.4. Kick-off</a></h3>
+<h3 id="kick-off"><a class="anchor" href="#kick-off"></a><a class="link" href="#kick-off">2.3. Kick-off</a></h3>
 <div class="paragraph">
 <p>Each half of the game begins with a kick-off. All robots must be located on
 their own side of the field. All robots must be halted. The ball is positioned
@@ -652,40 +652,40 @@ early will be removed by the referee from the field and deemed damaged.</p>
 the playing field immediately if they are <em>ready and fully functional</em>.</p>
 </div>
 <div class="sect3">
-<h4 id="neutral-kickoff"><a class="anchor" href="#neutral-kickoff"></a><a class="link" href="#neutral-kickoff">1.4.1. Neutral kick-off</a></h4>
+<h4 id="neutral-kickoff"><a class="anchor" href="#neutral-kickoff"></a><a class="link" href="#neutral-kickoff">2.3.1. Neutral kick-off</a></h4>
 <div class="paragraph">
-<p>A neutral kick-off is the same as the one described in <a href="#kick-off">Rule 1.4, &#8220;Kick-off&#8221;</a> with a
+<p>A neutral kick-off is the same as the one described in <a href="#kick-off">Rule 2.3, &#8220;Kick-off&#8221;</a> with a
 small change: all robots must be at least 30 cm away from the ball
 (outside of the center circle).</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="scoring"><a class="anchor" href="#scoring"></a><a class="link" href="#scoring">1.5. Scoring</a></h3>
+<h3 id="scoring"><a class="anchor" href="#scoring"></a><a class="link" href="#scoring">2.4. Scoring</a></h3>
 <div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#scoring">Rule 1.5, &#8220;Scoring&#8221;</a> applies.</p>
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#scoring">Rule 2.4, &#8220;Scoring&#8221;</a> applies.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="ball-movement"><a class="anchor" href="#ball-movement"></a><a class="link" href="#ball-movement">1.6. Ball movement</a></h3>
+<h3 id="ball-movement"><a class="anchor" href="#ball-movement"></a><a class="link" href="#ball-movement">2.5. Ball movement</a></h3>
 <div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#ball-movement">Rule 1.6, &#8220;Ball movement&#8221;</a> applies.</p>
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#ball-movement">Rule 2.5, &#8220;Ball movement&#8221;</a> applies.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="inside-penalty-area"><a class="anchor" href="#inside-penalty-area"></a><a class="link" href="#inside-penalty-area">1.7. Inside the Penalty Area (Pushing and Multiple defense)</a></h3>
+<h3 id="inside-penalty-area"><a class="anchor" href="#inside-penalty-area"></a><a class="link" href="#inside-penalty-area">2.6. Inside the Penalty Area (Pushing and Multiple defense)</a></h3>
 <div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#inside-penalty-area">Rule 1.7, &#8220;Inside the Penalty Area (Pushing and Multiple defense)&#8221;</a> applies.</p>
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#inside-penalty-area">Rule 2.6, &#8220;Inside the Penalty Area (Pushing and Multiple defense)&#8221;</a> applies.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="lack-of-progress"><a class="anchor" href="#lack-of-progress"></a><a class="link" href="#lack-of-progress">1.8. Lack of progress</a></h3>
+<h3 id="lack-of-progress"><a class="anchor" href="#lack-of-progress"></a><a class="link" href="#lack-of-progress">2.7. Lack of progress</a></h3>
 <div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#lack-of-progress">Rule 1.8, &#8220;Lack of progress&#8221;</a> applies.</p>
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#lack-of-progress">Rule 2.7, &#8220;Lack of progress&#8221;</a> applies.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="out-of-bounds"><a class="anchor" href="#out-of-bounds"></a><a class="link" href="#out-of-bounds">1.9. Out of bounds</a></h3>
+<h3 id="out-of-bounds"><a class="anchor" href="#out-of-bounds"></a><a class="link" href="#out-of-bounds">2.8. Out of bounds</a></h3>
 <div class="paragraph">
 <p>If a robot’s entire body moves out beyond the white line of the Big field, it
 will be called for being out of bounds. When this situation arises, the robot
@@ -697,7 +697,7 @@ is allowed to return if a kick-off occurs before the penalty has elapsed.</p>
 <p>The one-minute penalty starts when the robot is removed from play.
 Furthermore, any goal scored by the penalized SuperTeam while the penalized
 robot is on the Big field will not be granted. Out-of-bounds robots can be
-fixed if the SuperTeam needs to do so, as described in <a href="#damaged-robots">Rule 1.10, &#8220;Damaged robots&#8221;</a>.</p>
+fixed if the SuperTeam needs to do so, as described in <a href="#damaged-robots">Rule 2.9, &#8220;Damaged robots&#8221;</a>.</p>
 </div>
 <div class="paragraph">
 <p>After the penalty time has passed, robot will be placed on the unoccupied
@@ -710,30 +710,94 @@ bounds by an opposing robot. In such a case, the referee <a id="addition-1"></a>
 </div>
 </div>
 <div class="sect2">
-<h3 id="damaged-robots"><a class="anchor" href="#damaged-robots"></a><a class="link" href="#damaged-robots">1.10. Damaged robots</a></h3>
+<h3 id="damaged-robots"><a class="anchor" href="#damaged-robots"></a><a class="link" href="#damaged-robots">2.9. Damaged robots</a></h3>
 <div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#damaged-robots">Rule 1.10, &#8220;Damaged robots&#8221;</a></p>
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#damaged-robots">Rule 2.9, &#8220;Damaged robots&#8221;</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="human-interference"><a class="anchor" href="#human-interference"></a><a class="link" href="#human-interference">1.11. Human interference</a></h3>
+<h3 id="human-interference"><a class="anchor" href="#human-interference"></a><a class="link" href="#human-interference">2.10. Human interference</a></h3>
 <div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#human-interference">Rule 1.11, &#8220;Human interference&#8221;</a> applies.</p>
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#human-interference">Rule 2.10, &#8220;Human interference&#8221;</a> applies.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="interruption-of-game-ref-interruption"><a class="anchor" href="#interruption-of-game-ref-interruption"></a><a class="link" href="#interruption-of-game-ref-interruption">1.12. Interruption of Game</a></h3>
+<h3 id="interruption-of-game-ref-interruption"><a class="anchor" href="#interruption-of-game-ref-interruption"></a><a class="link" href="#interruption-of-game-ref-interruption">2.11. Interruption of Game</a></h3>
 <div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#interruption-of-game-ref-interruption">Rule 1.12, &#8220;Interruption of Game&#8221;</a> applies.</p>
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#interruption-of-game-ref-interruption">Rule 2.11, &#8220;Interruption of Game&#8221;</a> applies.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="tournament-mode-byes"><a class="anchor" href="#tournament-mode-byes"></a><a class="link" href="#tournament-mode-byes">2.12. Tournament mode and Bye games</a></h3>
+<div class="paragraph">
+<p>In some cases (e.g. uneven number of teams) not every team can play every round.
+In threse cases the team that is free from play is awarded a Bye. In SuperTeam
+matches where fewer goals are scored the Bye is awarded as a 3:0 victory instead
+of the usual 10:0. Contact your regional/super-regional tournament organizers for
+details at tournaments other than the international RoboCupJunior tournament.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="robots"><a class="anchor" href="#robots"></a><a class="link" href="#robots">2. ROBOTS</a></h2>
+<h2 id="robots"><a class="anchor" href="#robots"></a><a class="link" href="#robots">3. ROBOTS</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="number-of-robots-substitution"><a class="anchor" href="#number-of-robots-substitution"></a><a class="link" href="#number-of-robots-substitution">2.1. Number of robots / substitution</a></h3>
+<h3 id="robots-interference"><a class="anchor" href="#robots-interference"></a><a class="link" href="#robots-interference">3.1. Interference</a></h3>
+<div class="paragraph">
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#robots-interference">Rule 3.1, &#8220;Interference&#8221;</a> applies.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="robots-control"><a class="anchor" href="#robots-control"></a><a class="link" href="#robots-control">3.2. Control &amp; Communication</a></h3>
+<div class="paragraph">
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#robots-control">Rule 3.2, &#8220;Control &amp; Communication&#8221;</a> applies.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="agility"><a class="anchor" href="#agility"></a><a class="link" href="#agility">3.3. Agility</a></h3>
+<div class="paragraph">
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#agility">Rule 3.3, &#8220;Agility&#8221;</a> applies.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="handle"><a class="anchor" href="#handle"></a><a class="link" href="#handle">3.4. Handle</a></h3>
+<div class="paragraph">
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#handle">Rule 3.4, &#8220;Handle&#8221;</a> applies.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="top-markers"><a class="anchor" href="#top-markers"></a><a class="link" href="#top-markers">3.5. Top Markers</a></h3>
+<div class="paragraph">
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#top-markers">Rule 3.5, &#8220;Top Markers&#8221;</a> applies.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="violations"><a class="anchor" href="#violations"></a><a class="link" href="#violations">3.6. Violations</a></h3>
+<div class="paragraph">
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#violations">Rule 3.6, &#8220;Violations&#8221;</a> applies.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="specifications"><a class="anchor" href="#specifications"></a><a class="link" href="#specifications">3.7. Material specifications</a></h3>
+<div class="paragraph">
+<p><a href="https://robocup-junior,github.io/soccer-rules/master.rules.html">RoboCupJunior Soccer Rules</a> <a href="#specifications">Rule 3.7, &#8220;Material specifications&#8221;</a> applies.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="infrared-ball-change"><a class="anchor" href="#infrared-ball-change"></a><a class="link" href="#infrared-ball-change">3.8. Soccer Infrared League Ball Change 2026</a></h3>
+<div class="paragraph">
+<p><a href="https://robocup-junior.github.io/soccer-rules/master.rules.html">RoboCupJunior Soccer Rules</a> <a href="#infrared-ball-change">Rule 3.8, &#8220;Soccer Infrared League Ball Change 2026&#8221;</a> applies.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="tournament-balls"><a class="anchor" href="#tournament-balls"></a><a class="link" href="#tournament-balls">3.9. Tournament Balls</a></h3>
+<div class="paragraph">
+<p><a href="//https://robocup-junior.github.io/soccer-rules/master.rules.html">RoboCupJunior Soccer Rules</a> <a href="#tournament-balls">Rule 3.9, &#8220;Tournament Balls&#8221;</a> applies.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="number-of-robots-substitution"><a class="anchor" href="#number-of-robots-substitution"></a><a class="link" href="#number-of-robots-substitution">3.10. Number of robots / substitution</a></h3>
 <div class="paragraph">
 <p>The SuperTeam will have all the robots from their respective individual teams
 available to play. In the playing field, the SuperTeam is allowed to use a
@@ -752,7 +816,7 @@ identifying the robot as being a member of a team.</p>
 <div class="paragraph">
 <p>Example: Robot A-2: the referee would identify robot with sticker A-2 as robot
 number 2 belonging to team A. These IDs will be written on the Top Markers of
-robots (see <a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#top-markers">Rule 2.6, &#8220;Top Markers&#8221;</a>).</p>
+robots (see <a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#top-markers">Rule 3.5, &#8220;Top Markers&#8221;</a>).</p>
 </div>
 <div class="paragraph">
 <p>Each individual team is required to have at least one of its robots as an
@@ -763,52 +827,48 @@ robots between the current players and the reserve players during gameplay, but
 the captain is required to ask a referee for robot substitution authorization.</p>
 </div>
 <div class="paragraph">
-<p>Substitutions are allowed only at every kick-off (see rule <a href="#kick-off">Rule 1.4, &#8220;Kick-off&#8221;</a>).</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="robots-interference"><a class="anchor" href="#robots-interference"></a><a class="link" href="#robots-interference">2.2. Interference</a></h3>
-<div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#robots-interference">Rule 2.2, &#8220;Interference&#8221;</a> applies.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="robots-control"><a class="anchor" href="#robots-control"></a><a class="link" href="#robots-control">2.3. Control &amp; Communication</a></h3>
-<div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#robots-control">Rule 2.3, &#8220;Control &amp; Communication&#8221;</a> applies.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="agility"><a class="anchor" href="#agility"></a><a class="link" href="#agility">2.4. Agility</a></h3>
-<div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#agility">Rule 2.4, &#8220;Agility&#8221;</a> applies.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="handle"><a class="anchor" href="#handle"></a><a class="link" href="#handle">2.5. Handle</a></h3>
-<div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#handle">Rule 2.5, &#8220;Handle&#8221;</a> applies.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="top-markers"><a class="anchor" href="#top-markers"></a><a class="link" href="#top-markers">2.6. Top Markers</a></h3>
-<div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#top-markers">Rule 2.6, &#8220;Top Markers&#8221;</a> applies.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="violations"><a class="anchor" href="#violations"></a><a class="link" href="#violations">2.7. Violations</a></h3>
-<div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#violations">Rule 2.7, &#8220;Violations&#8221;</a> applies.</p>
+<p>Substitutions are allowed only at every kick-off (see <a href="#kick-off">Rule 2.3, &#8220;Kick-off&#8221;</a>).</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="field"><a class="anchor" href="#field"></a><a class="link" href="#field">3. BIGFIELD</a></h2>
+<h2 id="code-of-conduct"><a class="anchor" href="#code-of-conduct"></a><a class="link" href="#code-of-conduct">4. CODE OF CONDUCT</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#code-of-conduct">Rule 4, &#8220;CODE OF CONDUCT&#8221;</a> and its subsections apply.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="conflict-resolution"><a class="anchor" href="#conflict-resolution"></a><a class="link" href="#conflict-resolution">5. CONFLICT RESOLUTION</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#conflict-resolution">Rule 5, &#8220;CONFLICT RESOLUTION&#8221;</a> and its subsections apply.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="league-regulations"><a class="anchor" href="#league-regulations"></a><a class="link" href="#league-regulations">6. LEAGUE REGULATIONS</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#league-regulations">Rule 6, &#8220;LEAGUE REGULATIONS&#8221;</a> and its subsections apply.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="kicker-power-measuring"><a class="anchor" href="#kicker-power-measuring"></a><a class="link" href="#kicker-power-measuring">7. Kicker Power Measuring Procedures</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#kicker-power-measuring">Rule 7, &#8220;Kicker Power Measuring Procedures&#8221;</a> and its subsections apply.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="field"><a class="anchor" href="#field"></a><a class="link" href="#field">8. BIGFIELD</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="dimensions-of-the-field"><a class="anchor" href="#dimensions-of-the-field"></a><a class="link" href="#dimensions-of-the-field">3.1. Dimensions of the field</a></h3>
+<h3 id="dimensions-of-the-field"><a class="anchor" href="#dimensions-of-the-field"></a><a class="link" href="#dimensions-of-the-field">8.1. Dimensions of the field</a></h3>
 <div class="paragraph">
 <p>The Big field is 540 cm by 340 cm. The Big field is marked by a white line that
 is part of the playing field. Around the playing field, beyond the white line,
@@ -824,7 +884,7 @@ wedge.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="neutral-spots"><a class="anchor" href="#neutral-spots"></a><a class="link" href="#neutral-spots">3.2. Neutral spots</a></h3>
+<h3 id="neutral-spots"><a class="anchor" href="#neutral-spots"></a><a class="link" href="#neutral-spots">8.2. Neutral spots</a></h3>
 <div class="paragraph">
 <p>There are five neutral spots defined in the Big field. One is in the center of
 the Big field. The other four are located over the diagonals that go through
@@ -834,7 +894,7 @@ The neutral spots ought to be of circular shape measuring 1 cm in diameter.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="center-circle"><a class="anchor" href="#center-circle"></a><a class="link" href="#center-circle">3.3. Center circle</a></h3>
+<h3 id="center-circle"><a class="anchor" href="#center-circle"></a><a class="link" href="#center-circle">8.3. Center circle</a></h3>
 <div class="paragraph">
 <p>A center circle will be drawn on the Big field. It is 80 cm in diameter. It is
 a thin black marker line. It is there for Referees and SuperTeam members as
@@ -842,7 +902,7 @@ guidance during kick-off.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="penalty-areas"><a class="anchor" href="#penalty-areas"></a><a class="link" href="#penalty-areas">3.4. Penalty areas</a></h3>
+<h3 id="penalty-areas"><a class="anchor" href="#penalty-areas"></a><a class="link" href="#penalty-areas">8.4. Penalty areas</a></h3>
 <div class="paragraph">
 <p>In front of each goal there is a 35 cm wide and 120 cm long penalty area.</p>
 </div>
@@ -851,56 +911,12 @@ guidance during kick-off.</p>
 line is part of the area.</p>
 </div>
 <div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#specifications">[specifications]</a> and its subsections apply with the above exceptions.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="infrared-ball-change"><a class="anchor" href="#infrared-ball-change"></a><a class="link" href="#infrared-ball-change">3.5. Soccer Infrared League New Ball (starting 2026)</a></h3>
-<div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#infraded-ball-change">[infraded-ball-change]</a> and its subsections apply.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="tournament-balls"><a class="anchor" href="#tournament-balls"></a><a class="link" href="#tournament-balls">3.6. Tournament balls</a></h3>
-<div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#tournament-balls">Rule 3.6, &#8220;Tournament balls&#8221;</a> and its subsections apply.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="code-of-conduct"><a class="anchor" href="#code-of-conduct"></a><a class="link" href="#code-of-conduct">4. CODE OF CONDUCT</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#code-of-conduct">Rule 4, &#8220;CODE OF CONDUCT&#8221;</a> and its subsections apply.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="conflict-resolution"><a class="anchor" href="#conflict-resolution"></a><a class="link" href="#conflict-resolution">5. CONFLICT RESOLUTION</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#conflict-resolution">Rule 5, &#8220;CONFLICT RESOLUTION&#8221;</a> and its subsections apply.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="league-regulations"><a class="anchor" href="#league-regulations"></a><a class="link" href="#league-regulations">6. LEAGUE REGULATIONS</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#league-regulations">Rule 6, &#8220;LEAGUE REGULATIONS&#8221;</a> and its subsections apply.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="kicker-power-measuring"><a class="anchor" href="#kicker-power-measuring"></a><a class="link" href="#kicker-power-measuring">7. Kicker Power Measuring Procedures</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> rule <a href="#kicker-power-measuring">Rule 7, &#8220;Kicker Power Measuring Procedures&#8221;</a> and its subsections apply.</p>
+<p><a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">RoboCupJunior Soccer Rules</a> <a href="#specifications">Rule 3.7, &#8220;Material specifications&#8221;</a> and its subsections apply with the above exceptions.</p>
 </div>
 <h2 id="big-field-diagram" class="discrete">BIG FIELD DIAGRAM</h2>
 <div class="paragraph">
 <p><span class="image"><img src="media/bigfield.png" alt="image"></span></p>
+</div>
 </div>
 </div>
 </div>
@@ -925,7 +941,7 @@ line is part of the area.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-10-05 23:49:08 UTC
+Last updated 2025-11-30 08:40:12 UTC
 </div>
 </div>
 </body>
