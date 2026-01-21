@@ -9,5 +9,5 @@ cp $OUTPUT_PREFIX.adoc _$OUTPUT_PREFIX.adoc
 python3 .ci/criticmarkup_to_adoc.py _$OUTPUT_PREFIX.adoc > $OUTPUT_PREFIX.adoc
 rm _$OUTPUT_PREFIX.adoc
 
-asciidoctor $OUTPUT_PREFIX.adoc
-asciidoctor -b docbook $OUTPUT_PREFIX.adoc
+asciidoctor --failure-level ERROR $OUTPUT_PREFIX.adoc
+asciidoctor --failure-level ERROR -b docbook $OUTPUT_PREFIX.adoc

@@ -1,6 +1,4 @@
 = Scoring Rubrics, Documentation and Sharing Requirements and Interview guidelines
-
-= RoboCupJunior Soccer Rules 2025
 {docdate}
 :toc: left
 :sectanchors:
