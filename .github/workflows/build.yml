@@ -23,6 +23,7 @@ jobs:
           mkdir -p dist/${GITHUB_REF#refs/heads/}/
           rm tmp_*
           cp -R ./media *.html *.pdf dist/${GITHUB_REF#refs/heads/}/
+          cp index.html dist/index.html
 
       - name: publish the rules
         uses: peaceiris/actions-gh-pages@v3
