@@ -19,7 +19,7 @@ endif::basebackend-html[]
 
 
 RoboCupJunior Soccer  
-Award Criteria and Rubrics 2025  
+Award Criteria and Rubrics 2026  
 
 These are the official award guidelines for the International RoboCupJunior Soccer League, issued by 
 the RoboCupJunior Soccer League Committee. The English version takes precedence over all 
@@ -35,11 +35,12 @@ version they are using.
 *Changelog*  
   
 |===
-|Change                                                 | Date
-|Initial Document Creation for 2024 Season              | 2024-04-01 +
-|Rubric and Criteria Document rework for 2025 Season    | 2025-05-08 +
-|Addition of 3 bonus points mentioned in TDP form       | 2025-06-18 +
-|Corrected 3 bonus points for mention in TDP form       | 2025-06-18 +
+|Change                                                                           | Date
+|Initial Document Creation for 2024 Season                                        | 2024-04-01 +
+|Rubric and Criteria Document rework for 2025 Season                              | 2025-05-08 +
+|Addition of 3 bonus points mentioned in TDP form                                 | 2025-06-18 +
+|Corrected 3 bonus points for mention in TDP form                                 | 2025-06-18 +
+|Update 2026/Added rules and point system regarding the short video form TDP      | 2026-04-10 +
 |===
 
 
@@ -60,12 +61,14 @@ Certificate awards will be awarded to every team that meets excellence criteria 
 *4.*	*Group Team Interview* (Maximum of 5 Points) +
 *5.*	*Sportsmanship* (Maximum of 3 Points) +
 *6.*	*Documentation and Community Contribution* (Maximum of 5 Points) +
+*7.*	*Short form video TDP* (Maximum of 1 Point) +
 
 [[trophy-winners]]
 === Trophy Winners
 
 There are 3 *Individual Team Trophies* for 1st, 2nd and 3rd place overall, based on the results of the 
 Individual *Gameplay Tournament combined with the Award Criteria* described in this document.
+This explanation is broken down into two parts, first a short explanation in this section and then a more thorough explanation in the next part of this document.
 The final score of a team will be the sum of the scores over all the *Award Criteria*. If there are any 
 equal teams in scores, the order of teams in the *Individual Gameplay Tournament* will be the tie breaker.
 
@@ -92,7 +95,7 @@ Individual Gameplay Tournament place turns into overall ranking points as follow
 
 The TDP Form is an online questionnaire to complete prior to the competition. It consists of 
 a series of prompts designed to help create a structured document similar to a 
-Technical Description Paper. Note there are three bonus points mentioned within the TDP form.
+Technical Description Paper. You will receive this form via official communication after signing up for the international competitions. Note there are two bonus points mentioned within the TDP form.
 
 .TDP Form Scoring Values
 |===
@@ -106,6 +109,7 @@ Technical Description Paper. Note there are three bonus points mentioned within 
 Before the competition, teams will create a poster about their robot and team. During the 
 competition, there will be a poster session where teams will show their own and view each 
 others’ posters and help explain parts of their robots to share their innovations and designs.
+You will receive official communication about how and when to submit this poster.
 
 https://github.com/robocup-junior/awesome-rcj-soccer[*Click here to see the Awesome RCJ Soccer GitHub Repository past Team Posters!*]
 
@@ -175,6 +179,19 @@ Doing this is required for an “Outstanding Documentation” award certificate.
 | 0 | 1 | 3 | 5 +
 |===
 
+[[short-form-video-tdp]]
+==== Short Form Video TDP
+
+RoboCupJunior puts a lot of emphasis on innovation, and this section is specifically designed to give teams the opportunity to show the feature they are most proud of in a nutshell. 
+What we want you to do is to create a video shorter than 3 minutes about this feature. 
+This section is scored based on if you managed to explain clearly what this feature is, and why you find it the most interesting.
+
+.Short Form Video TDP Scoring Values
+|===
+| Developing   | Satisfactory  +
+| 0 | 1  +
+|===
+
 [[community-award]]
 ==== Community Award
 
@@ -229,7 +246,7 @@ To qualify, all of the follow must be met:
 Teams recognized for outstanding design have fielded robots that are great examples of what can 
 be done through the application of the engineering design process. To qualify, all of the follow must 
 be met:
-*	Elements of the TDP Form, Group Interview, and Poster exceeded expectations
+*	Elements of the TDP Form, Short Form Video TDP, Group Interview, and Poster exceeded expectations
 *	Earned an overall rating of proficient or better.
 *	Team performs well in either the tournament, SuperTeam challenge, OR technical challenges.
 
@@ -238,7 +255,7 @@ be met:
 
 Teams recognized for an outstanding innovation created a design that is both novel and effective 
 for others to learn from. To qualify, all of the follow must be met:
-*	The TDP Form, Group Interview, and Poster clearly describe an innovation that is potentially effective and instructive.
+*	The TDP Form, Short Form Video TDP, Group Interview, and Poster clearly describe an innovation that is potentially effective and instructive.
 *	The innovation’s effectiveness is apparent during either the tournament, technical challenges, OR SuperTeam matches.
 *	The same innovation has not been recognized in previous seasons or the team has made significant improvements.
 
@@ -247,7 +264,7 @@ for others to learn from. To qualify, all of the follow must be met:
 
 Teams recognized for outstanding documentation have demonstrated excellence in capturing and 
 communicating their engineering process. To qualify, all of the following must be met:
-*	The TDP Form, Group Interview, and Poster is comprehensive, well-organised and clearly explains the team’s engineering decisions and iterations.
+*	The TDP Form, Short Form Video TDP, Group Interview, and Poster is comprehensive, well-organised and clearly explains the team’s engineering decisions and iterations.
 *	The documentation includes several of: testing results, design processes, challenges and future recommendations to future teams to learn from, published designs.
 *	The documentation has been made available online for other teams to learn from.
 
@@ -295,7 +312,7 @@ A team’s Technical Description Paper should provide evidence of student center
 mechanical, software, and strategy development and is a resource for everyone, including the publishing 
 team and all future teams. The Soccer Committee has chosen to implement this through a Google Form 
 document to simplify the process for teams & educators. The answers in these sheets will be compiled into 
-TDP documents and published.
+TDP documents and published. There are 2 bonus points available through the TDP Form, *1 bonus point* for Open-Sourcing the CAD files, PCB and Schematic files, and *1 bonus point* for Open-Sourcing Software repositories.
 
 |===
 | *Rubrics* | Developing | Satisfactory | Proficient | Excellence
@@ -412,6 +429,17 @@ source code, circuit diagrams or CAD files.
 | TDP | TDP was not filled, not nearly complete or not filled with any meaningful information. | TDP was filled with all required information. No or little care was taken to present information so it is easy to understand. | TDP was filled with all available information and presented in a helpful and easy to understand way. | TDP was filled with all available info, presented well, supplemented with sources and links to more helpful material and easy to understand. +
 | Poster, Presentation & Interview | Poster was not created, poster session not attended or information was not shared during the interview. | A poster was created but lacked a lot of information poster session was attended, information was shared on request in the interview. | An informative poster was created and questions answered well during the poster session. Design highlights shown at interview on own initiative. | Poster was informative, detailed, well presented Design highlights shown in interview on own initiative. Both in a way that helps others replicate and build on their success. +
 | Open Source and published materials | Nothing was shared publicly. Note: This alone will not result in a “developing” - although we expect things that can be of use to the community to be shared in the academic spirit. | Nothing except the poster and TDP were shared publicly. | At least one or two of Testing data, design drawings or -files, code, explanations or sources for materials were shared publicly for other teams to benefit from. | Everything needed for others to learn from the team's design published (see “Proficient” for examples), contact details for questions available (Forum or Discord name(s) encouraged). +
+|===
+
+[[short-form-video-tdp]]
+=== Short Form Video TDP
+
+Technical difficulties or facing a very tough opponent during the international competition can be reasons for a lot of teams to not be able to demonstrate all the amazing capabilities their robots can do. 
+For this reason we have added this section for teams to truly be able to demonstrate the feature they are most proud of.
+
+|===
+| *Rubrics*     | Developing | Satisfactory
+| Short Form Video TDP | The explanation is not easy to follow and other teams cannot figure out what has gone into this feature inside the robot. | The video is easy to follow and a fellow competitor can understand how this feature has been done and why it can be impactful in the robot. +
 |===
 
 [appendix]
