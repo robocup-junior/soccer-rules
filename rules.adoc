@@ -93,7 +93,7 @@ accomodate - tournament organizers are encouraged to adapt rules to fit with
 their situation. Contact information for the world championships is: robocupjunior-soccer [ at \] robocup [ dot \] org
 
 [[general-rules]]
-//include::general-rules/general-rules.adoc[]
+include::general-rules/general-rules.adoc[]
 
 [discrete]
 === Changes from the 2025 RoboCupJunior Soccer Rules
