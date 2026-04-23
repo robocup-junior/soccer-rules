@@ -39,7 +39,7 @@ our Discord. Show what you're working on, ask questions or join the weekly
 discussions on future rules and league design. footnote:[You can join the server at
 https://robocup-junior.github.io/soccer-rules/discord/]
 You can also reach the Soccer League Committee directly via email
-footnote:[robocupjunior-soccer [at\] robocup [dot\] org]
+footnote:[robocupjunior-soccer [ at \] robocup [ dot \] org]
 
 [title="Two teams of two robots with an orange ball on a RoboCupJunior Soccer field."]
 image::media/field_with_two_teams.jpg[RCJASoccer, 288, 210]
@@ -90,7 +90,7 @@ within one team for the Incheon competition. We recommend team size 5 for SuperR
 where organizers find it practical also for regional and local competitions.
 Ask the organizers for each tournament you attend what team size they can
 accomodate - tournament organizers are encouraged to adapt rules to fit with
-their situation. Contact information for the world championships is: robocupjunior-soccer [at\] robocup [dot\] org
+their situation. Contact information for the world championships is: robocupjunior-soccer [ at \] robocup [ dot \] org
 
 [[general-rules]]
 //include::general-rules/general-rules.adoc[]
