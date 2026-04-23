@@ -342,6 +342,13 @@ playing when placed on a flat surface. Any part of a robot that produces light
 that may interfere with the opposing robot’s vision system must be covered.
 For Infrared league specific regulations see <<regulations-inference-in-infrared>>
 
+IMPORTANT: {++These interference rules mean that often red lights (e.g. line
+sensors) are detected by other teams's camera system as th orange ball and
+therefore must be covered up for the robot to be allowed to play. This has been
+the case in Vision for may years but may be new to Infrared teams. Teams are
+advised to make sure their robots do not have these bright red lights/lights
+to avoid having to make surprise adjustments at the competition.++}
+
 Robots are expected to be capable of dealing with any visible colors above the
 walls (e.g. blue, yellow, green or orange shirts) either in hardware (e.g. 
 limiting the field of view from looking up) or in software (e.g. masking
