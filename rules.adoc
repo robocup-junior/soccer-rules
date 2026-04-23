@@ -39,7 +39,7 @@ our Discord. Show what you're working on, ask questions or join the weekly
 discussions on future rules and league design. footnote:[You can join the server at
 https://robocup-junior.github.io/soccer-rules/discord/]
 You can also reach the Soccer League Committee directly via email
-footnote:[robocupjunior-soccer [ at \] robocup [ dot \] org]
+footnote:[robocupjunior-soccer [at\] robocup [dot\] org]
 
 [title="Two teams of two robots with an orange ball on a RoboCupJunior Soccer field."]
 image::media/field_with_two_teams.jpg[RCJASoccer, 288, 210]
@@ -84,16 +84,16 @@ organizer of your regional RoboCupJunior competition and ask them about_ <<entry
 Unless specified otherwise, all parts of these rules are released under the
 terms of the Creative Commons Attribution-ShareAlike License.
 
-TIP: The Soccer league is planning to increase the team size to 5. For
-logistical reasons only 4 members per team can be guaranteed for the Incheon
-competition as of 2026-01-21. We recommend team size 5 for SuperRegionals and
+TIP: The Soccer league is planning to increase the team size to 5. As of 2026-04-23
+it is confirmed that a team size of 4 members will be the maximum amount of allowed team members 
+within one team for the Incheon competition. We recommend team size 5 for SuperRegionals and
 where organizers find it practical also for regional and local competitions.
 Ask the organizers for each tournament you attend what team size they can
 accomodate - tournament organizers are encouraged to adapt rules to fit with
-their situation.
+their situation. Contact information for the world championships is: robocupjunior-soccer [at\] robocup [dot\] org
 
 [[general-rules]]
-include::general-rules/general-rules.adoc[]
+//include::general-rules/general-rules.adoc[]
 
 [discrete]
 === Changes from the 2025 RoboCupJunior Soccer Rules
