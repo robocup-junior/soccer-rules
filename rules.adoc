@@ -342,7 +342,7 @@ playing when placed on a flat surface. Any part of a robot that produces light
 that may interfere with the opposing robot’s vision system must be covered.
 For Infrared league specific regulations see <<regulations-inference-in-infrared>>
 
-IMPORTANT: {++These interference rules mean that often red lights (e.g. line
+IMPORTANT: {++These interference rules mean that often when red lights (e.g. line
 sensors) are detected by other teams' camera systems as the orange ball and
 therefore must be covered up for the robot to be allowed to play. This has been
 the case in Vision for many years but may be new to Infrared teams. Teams are
