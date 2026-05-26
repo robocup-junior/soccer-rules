@@ -76,7 +76,7 @@ field(s).
 
 There are five neutral spots defined in the field. One is in the center of the
 field. The other four are adjacent to each corner, located 45 cm
-along the long edge of the field. They align with the sides of the penalty
+away from the short edge of the field. They align with the sides of the penalty
 areas. The neutral spots can be drawn with a thin black marker.
 The neutral spots ought to be of circular shape measuring 1 cm in diameter.
 
