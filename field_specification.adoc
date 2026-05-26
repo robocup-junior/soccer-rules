@@ -119,6 +119,7 @@ There are STEP and IGES files available that contain a model of the fields.
 These are _not authorithative_ and exist mostly for illustration purposes.
 footnote:[they can be found at 
 https://github.com/robocup-junior/soccer-rules/tree/master/media/CAD]
+You can preview the STEP file with https://3dviewer.net/#model=https://raw.githubusercontent.com/robocup-junior/soccer-rules/refs/heads/master/media/CAD/SoccerField_202605.step[Online 3D Viewer]
 
 == Notes on building soccer fields
 
