@@ -56,7 +56,7 @@ Certificate awards will be awarded to every team that meets excellence criteria 
  
 .Teams will be evaluated based on the following criteria:
 *1.*	*Individual Gameplay Tournament* (Maximum of 30 Points) +
-*2.*	*Technical Documentation Paper Form* (TDP Form) (Maximum of 8 Points) +
+*2.*	*Technical Documentation Paper Form* (TDP Form) (Maximum of 7 Points) +
 *3.*	*Poster Design & Presentation* (Maximum of 5 Points) +
 *4.*	*Group Team Interview* (Maximum of 5 Points) +
 *5.*	*Sportsmanship* (Maximum of 3 Points) +
