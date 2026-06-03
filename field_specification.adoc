@@ -76,7 +76,7 @@ field(s).
 
 There are five neutral spots defined in the field. One is in the center of the
 field. The other four are adjacent to each corner, located 45 cm
-along the long edge of the field. They align with the sides of the penalty
+away from the short edge of the field. They align with the sides of the penalty
 areas. The neutral spots can be drawn with a thin black marker.
 The neutral spots ought to be of circular shape measuring 1 cm in diameter.
 
@@ -119,6 +119,7 @@ There are STEP and IGES files available that contain a model of the fields.
 These are _not authorithative_ and exist mostly for illustration purposes.
 footnote:[they can be found at 
 https://github.com/robocup-junior/soccer-rules/tree/master/media/CAD]
+You can preview the STEP file with https://3dviewer.net/#model=https://raw.githubusercontent.com/robocup-junior/soccer-rules/refs/heads/master/media/CAD/SoccerField_202605.step[Online 3D Viewer]
 
 == Suggestions for getting started with building fields
 
