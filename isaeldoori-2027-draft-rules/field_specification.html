@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.26">
+<meta name="author" content="2026-09-02">
+<title>Technical Specification For Soccer Fields</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment the following line when using as a custom stylesheet */
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
+html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+b,strong{font-weight:bold}
+abbr{font-size:.9em}
+abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
+dfn{font-style:italic}
+hr{height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type=checkbox],input[type=radio]{padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,::before,::after{box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre).nobreak{word-wrap:normal}
+:not(pre).nowrap{white-space:nowrap}
+:not(pre).pre-wrap{white-space:pre-wrap}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details{margin-left:1.25rem}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
+details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
+details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock pre>code{display:block}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>*>tr>*{border-width:1px}
+table.grid-cols>*>tr>*{border-width:0 1px}
+table.grid-rows>*>tr>*{border-width:1px 0}
+table.frame-all{border-width:1px}
+table.frame-ends{border-width:1px 0}
+table.frame-sides{border-width:0 1px}
+table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
+table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
+table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
+table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
+ul.checklist>li>p:first-child{margin-left:-1em}
+ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
+ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+td.hdlist2{word-wrap:anywhere}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]{border-bottom:1px dotted}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#header,#content,#footnotes,#footer{max-width:none}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>Technical Specification For Soccer Fields</h1>
+<div class="details">
+<span id="author" class="author">2026-09-02</span><br>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#dimensions-of-the-field">1. Dimensions of the field</a></li>
+<li><a href="#field-walls">2. Walls</a></li>
+<li><a href="#goals">3. Goals</a></li>
+<li><a href="#floor">4. Floor</a></li>
+<li><a href="#neutral-spots">5. Neutral spots</a></li>
+<li><a href="#center-circle">6. Center circle</a></li>
+<li><a href="#penalty-areas">7. Penalty areas</a></li>
+<li><a href="#lighting-and-magnetic-conditions">8. Lighting and Magnetic Conditions</a></li>
+<li><a href="#_field_cad_models">9. Field CAD models</a></li>
+<li><a href="#_suggestions_for_getting_started_with_building_fields">10. Suggestions for getting started with building fields</a>
+<ul class="sectlevel2">
+<li><a href="#_getting_your_first_field_starting_small">10.1. Getting your first field - starting small</a></li>
+<li><a href="#_converting_existing_equipment_esp_for_entry_leagues">10.2. Converting existing equipment (esp. for Entry Leagues)</a></li>
+<li><a href="#_building_competition_fields">10.3. Building Competition Fields</a></li>
+<li><a href="#_competition_conditions">10.4. Competition conditions</a></li>
+</ul>
+</li>
+<li><a href="#appendix-1">Appendix A: How to Start Building a Field</a>
+<ul class="sectlevel2">
+<li><a href="#_mobility_criteria">A.1. Mobility Criteria</a></li>
+<li><a href="#_choosing_the_type_of_materials">A.2. Choosing the type of materials</a></li>
+<li><a href="#_building_the_field">A.3. Building the field</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script src="https://hypothes.is/embed.js" async></script>
+</div>
+</div>
+<div class="sect1">
+<h2 id="dimensions-of-the-field"><a class="anchor" href="#dimensions-of-the-field"></a><a class="link" href="#dimensions-of-the-field">1. Dimensions of the field</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The playing field is 158 cm by 219 cm. The field is
+marked by a white line which is part of the playing field. Around the
+playing field, beyond the white line, there is an outer area
+of 12 cm in width.</p>
+</div>
+<div class="paragraph">
+<p>The floor near the exterior wall includes a wedge, which is an incline with a
+10 cm base and 2 +/- 1 cm rise for allowing the ball to roll back into play
+when it leaves the playing field. Note that the goal should not contain the
+wedge.</p>
+</div>
+<div class="paragraph">
+<p>Total dimensions of the field, including the outer area, are 182 cm by 243 cm.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="field-walls"><a class="anchor" href="#field-walls"></a><a class="link" href="#field-walls">2. Walls</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Walls are placed all around the field, including behind the goals and the
+out-area. The height of the walls is 22 cm. The walls are painted matte black.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="goals"><a class="anchor" href="#goals"></a><a class="link" href="#goals">3. Goals</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The field has two goals, centered on each of the shorter sides of the playing
+field. The goal inner space is 60 cm wide, 10 cm high and 74 mm deep, box
+shaped.</p>
+</div>
+<div class="paragraph">
+<p>The goal "posts" are positioned over the white line marking the limits of the
+field.</p>
+</div>
+<div class="paragraph">
+<p>The interior walls and of each goal are colored matte, one goal yellow and the
+other goal blue. It is recommended that the blue be of a brighter shade so that
+it is different enough from the black exterior.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="floor"><a class="anchor" href="#floor"></a><a class="link" href="#floor">4. Floor</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The floor
+consists of green carpet ideally of darker shade on top of a hard level surface. Teams
+should be prepared to adjust to different levels of contrast between the green carpet
+and lines as some events may be restricted to using lighter shades of green. All
+lines on the field should be painted, marked with tape,
+or installed as white carpet and be somewhat resistant to tearing or ripping.
+Lines should have a width of 20mm (±10%).</p>
+</div>
+<div class="paragraph">
+<p>It is impractical to set international constraints on carpet other than it
+being green. In the spirit of the competition, teams should design robots
+to be tolerant or adaptable to different fibers, textures, construction,
+density, shades, and designs of carpet especially when competing amongst different
+regions. Teams are encouraged to visit regional resources or reach out to Local
+Organization Committee for suggestions if desiring to build their own practice
+field(s).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="neutral-spots"><a class="anchor" href="#neutral-spots"></a><a class="link" href="#neutral-spots">5. Neutral spots</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are five neutral spots defined in the field. One is in the center of the
+field. The other four are adjacent to each corner, located 45 cm
+away from the short edge of the field. They align with the sides of the penalty
+areas. The neutral spots can be drawn with a thin black marker.
+The neutral spots ought to be of circular shape measuring 1 cm in diameter.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="center-circle"><a class="anchor" href="#center-circle"></a><a class="link" href="#center-circle">6. Center circle</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A center circle will be drawn on the field. It is 60 cm in diameter. It is a
+thin black marker line. It is there as guidance during kick-off.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="penalty-areas"><a class="anchor" href="#penalty-areas"></a><a class="link" href="#penalty-areas">7. Penalty areas</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In front of each goal there is a 25 cm wide and 80 cm long penalty
+area with rounded front corners (15cm radius).</p>
+</div>
+<div class="paragraph">
+<p>The penalty areas are marked by a white line of 20 mm (±10%) width. The
+line is part of the area.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="lighting-and-magnetic-conditions"><a class="anchor" href="#lighting-and-magnetic-conditions"></a><a class="link" href="#lighting-and-magnetic-conditions">8. Lighting and Magnetic Conditions</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The tournament organizers will do their best to limit the amount of external lightning and
+magnetic interference. However, the robots need to be constructed in a way
+which allows them to work in conditions that are not perfect (i.e. by not
+relying on compass sensors or specific lightning conditions).</p>
+</div>
+<h2 id="field-diagrams" class="discrete">FIELD DIAGRAMS</h2>
+<div class="paragraph text-center">
+<p><span class="image"><img src="media/SoccerFieldWedgeNoWedge.jpg" alt="image" width="35.0%"></span></p>
+</div>
+<div class="paragraph text-center">
+<p><span class="image"><img src="media/SoccerFieldDrawings.png" alt="image" width="18.0%"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_field_cad_models"><a class="anchor" href="#_field_cad_models"></a><a class="link" href="#_field_cad_models">9. Field CAD models</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are STEP and IGES files available that contain a model of the fields.
+These are <em>not authorithative</em> and exist mostly for illustration purposes.
+<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup>
+You can preview the STEP file with <a href="https://3dviewer.net/#model=https://raw.githubusercontent.com/robocup-junior/soccer-rules/refs/heads/master/media/CAD/SoccerField_202605.step">Online 3D Viewer</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_suggestions_for_getting_started_with_building_fields"><a class="anchor" href="#_suggestions_for_getting_started_with_building_fields"></a><a class="link" href="#_suggestions_for_getting_started_with_building_fields">10. Suggestions for getting started with building fields</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There is <strong>no standard design</strong> for fields - some notes from experience are
+collected below. We will also provide a guidance on how some regions build the fields, in the First appendix. If you have any questions don&#8217;t hesitate to ask on the usual channels (Discord, Forum, Email, all listed in the main rules)</p>
+</div>
+<div class="sect2">
+<h3 id="_getting_your_first_field_starting_small"><a class="anchor" href="#_getting_your_first_field_starting_small"></a><a class="link" href="#_getting_your_first_field_starting_small">10.1. Getting your first field - starting small</a></h3>
+<div class="paragraph">
+<p>If you are a team, school etc. just getting started with RoboCupJunior Soccer
+you can start without building a competition-grade field. Get yourself some green carpet and some white tape for the lines. With just having that, you can start building a simple field that can be use the get things off the ground. You can put the carpet on the ground and start building your robots very quicky. The first upgrade could be adding some
+walls (maybe you have some cardboard or scrap wood that you can spray
+black paint on and put up in a square shape). If you grow out of that it might be
+time to build an actual full field. There are designs that can be stored
+relatively easily (by folding in half or being taken apart into quarters),
+more on that below.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_converting_existing_equipment_esp_for_entry_leagues"><a class="anchor" href="#_converting_existing_equipment_esp_for_entry_leagues"></a><a class="link" href="#_converting_existing_equipment_esp_for_entry_leagues">10.2. Converting existing equipment (esp. for Entry Leagues)</a></h3>
+<div class="paragraph">
+<p>If you are considering starting in one of the Entry Leagues and you or your
+school have existing fields of any kind, you can repurpose that field into a entry soccor field. For example, First Lego League fields can
+be converted to competition-spec entry fields by just laying down carpet and
+installing goals. The Entry rules explicitly have a size range so that
+existing fields with different sizes can be used.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_building_competition_fields"><a class="anchor" href="#_building_competition_fields"></a><a class="link" href="#_building_competition_fields">10.3. Building Competition Fields</a></h3>
+<div class="paragraph">
+<p>If you are hosting a competition, you are probably in one of three situations:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>You had built fields that you have been using for practice and, when the competition time arrives, you repurpose them for the competition. Many local
+competitions that get hosted by schools do this and it is totally to be expected.</p>
+</li>
+<li>
+<p>You are building fields that you only use for the big competitions you are hosting which will not have any use after the competitions are over. In that case we highly recommend building fields that are suitable (i.e. durable, transportable and storable) to be given out to local/regional competition hosts or participating schools in the region to support RoboCupJunior instead of going to waste.</p>
+</li>
+<li>
+<p>You are using fields you already have. This is the most common situation and you can repurpose your existing fields into a competition field by just laying down a new carpet.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>It may of course also be a combination of these cases or something else
+entirely.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_competition_conditions"><a class="anchor" href="#_competition_conditions"></a><a class="link" href="#_competition_conditions">10.4. Competition conditions</a></h3>
+<div class="paragraph">
+<p>If you are hosting competitions it is worth to make sure all
+carpets use the same material, all walls and goals use the same surface finish
+(so no matte/shiny differences between fields, no color shade differences
+between the goals and so on). Teams greatly appreciate this because it makes
+their calibration work a lot better. This also applies to having even lighting.
+Try to minimize natural light as much as possible (as it tends to vary significantly), and arrange the fields so that the lighting is as uniform as possible (smartphones can be used to measure this). Also, ensure there are as few shadows on the fields as possible.</p>
+</div>
+<div class="paragraph">
+<p>If you intend to use your fields for an extended period, avoid using fiberboard (such as MDF), as it is not durable. High-quality plywood is a much more reliable option, although it is more expensive—so it may be worth investing in only after a cheaper field has worn out. Even though the frequency of robots impacting the walls and goals has significantly decreased due to rule changes made between 2022 and 2024, there have still been cases in the past where goals were pulled out of the field structure. Frequently assembling and disassembling the fields can also lead to damage, especially if you have limited storage space and need to transport the fields to tournaments. To address these issues, use fasteners with internal threads rather than screwing directly into the wood. You can also use aluminum brackets on the edges of the baseboard to hold the field together, which makes assembly and disassembly easier.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="appendix-1"><a class="anchor" href="#appendix-1"></a><a class="link" href="#appendix-1">Appendix A: How to Start Building a Field</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In this section, we provide a step-by-step guide on how to build your first full-size, competition grade field. You can find the <a href="https://docs.google.com/spreadsheets/d/17-ZvGeDSZbHwIeh-iJHFqOkcqPsvwN1VsUMdfY3ixr4/edit?usp=sharing">Bill of Material</a> here, however, please read the next section first to make your design choices, and then refer to the bill of material with those design choices in mind.</p>
+</div>
+<div class="sect2">
+<h3 id="_mobility_criteria"><a class="anchor" href="#_mobility_criteria"></a><a class="link" href="#_mobility_criteria">A.1. Mobility Criteria</a></h3>
+<div class="paragraph">
+<p>The main consideration when building a field is how much you need to move the field around. This decision effects what kind of base wood and connections you would choose.
+Starting with the type of wood, if you do not have a permenant location for the field, we highly recommend to use plywood as it is more durable and easier to transport. If you have a permenant location for the field, you can use cheaper and heavier materials such as MDF. We highly recommend you to not use particle wood as it does not have the much needed strenght and durability. We need to add that if you want to assemble and deassemble the field more than 3 times in its life time, we highly recommend using inside threaded screws to hold the field together. This is because the screws will damage the wood after a couple deassemblies, if they are directly screwed into the wood.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_choosing_the_type_of_materials"><a class="anchor" href="#_choosing_the_type_of_materials"></a><a class="link" href="#_choosing_the_type_of_materials">A.2. Choosing the type of materials</a></h3>
+<div class="paragraph">
+<p>You need to choose different materials for different parts of the field. Here, we want to give you some critera to know what to look for when buying the materials.</p>
+</div>
+<div class="sect3">
+<h4 id="_the_woods"><a class="anchor" href="#_the_woods"></a><a class="link" href="#_the_woods">A.2.1. The woods</a></h4>
+<div class="paragraph">
+<p>For the woods, you need different colors for the goals and the walls. If you order all of the wood working to a shop that has different colors in abundance, it would be better to use precoatted wooden boards that have a matt finish. However, it is quite common to not being able to find the exact color and finishing you need. In that case, you can get the bare wood and paint them with an acrylic paint. That process is a bit messier but the result will be the same.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_the_carpet"><a class="anchor" href="#_the_carpet"></a><a class="link" href="#_the_carpet">A.2.2. The carpet</a></h4>
+<div class="paragraph">
+<p>The carpet is the most important part of the field. It is the surface that the robots will be moving on and because all of the contact with the wheels, that is the part of the field which get damaged more often. A good carpet is one that does have very good glue and does not have too many loose fibers. This means that the carpet should not be too soft and should not be fluffy at all. You need a surface that has good contact with the wheels and does not slip.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_the_lines"><a class="anchor" href="#_the_lines"></a><a class="link" href="#_the_lines">A.2.3. The lines</a></h4>
+<div class="paragraph">
+<p>The lines are another part of the field that get run over quite oftenly so they get damaged as well. In the international competitions, we usually aim for using a white and reflective tape as the main goal over there is having the fields in a good shape as quick as possible. However, if you want to build a practice field, it would advisable to use acrylic paint for the lines. This way you can wash them with a cloth when they get dirty and if some part of the paint chips away, you can use a small brush to patch that part up.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_building_the_field"><a class="anchor" href="#_building_the_field"></a><a class="link" href="#_building_the_field">A.3. Building the field</a></h3>
+<div class="paragraph">
+<p>After considering all of the above compromises and gathering all of the needed items from the <a href="https://docs.google.com/spreadsheets/d/17-ZvGeDSZbHwIeh-iJHFqOkcqPsvwN1VsUMdfY3ixr4/edit?usp=sharing">Bill of Material</a>, you can start building the field.</p>
+</div>
+<div class="sect3">
+<h4 id="_building_the_baseboard_and_the_wedges"><a class="anchor" href="#_building_the_baseboard_and_the_wedges"></a><a class="link" href="#_building_the_baseboard_and_the_wedges">A.3.1. building the baseboard and the wedges</a></h4>
+<div class="paragraph">
+<p>The first item in the list is the bottom of the field, the base board. As mentioned in the BOM, you can get a standard 6ft x 4ft piece of board and use that as the base without cutting it. Lay the base on a flat surface preferably a table. Put your wedges on the correct side of the table (wedges should push the ball inside the field) and use a nail gun or screws to hold the wedges in place. You don&#8217;t need to make them too tight in place because carpet will cover them up and the wall will keep them in place. Do not forget that you are not going to have a wedge behind the goals, so cut the wedges according to the BOM to have the right length.<br>
+ The hardest part is to make the wedges itself, as the ratio of base to height is 5 to 1. You can ask a wood working shop to create that for you, as it needs special machinery to cut such a low angle.<br></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>If you want to use a aluminum bracket to have a robuster field, now is the time to do it. Put the brackets under the base and use a small piece of wood with the same thickness of your walls as the guide. screw the brackets to the base board and the wedges. We only recommend using the brackets if you are going to assemble and deassemble the field very often. Otherwise, you are not going to need such a structer at all.</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_laying_down_the_carpet"><a class="anchor" href="#_laying_down_the_carpet"></a><a class="link" href="#_laying_down_the_carpet">A.3.2. Laying down the carpet</a></h4>
+<div class="paragraph">
+<p>Use a vaccum cleaner to clean any dust or debris on the base board and use a glue spreader to apply a thin layer of carpet glue to the base board and the wedges. lay down your carpet face down and apply carpet glue to the back of the carpet. Give both sides 2-3 minutes to dry first and then put the glued carpet on the base board. Press down the carpet to remove any air bubbles and make sure it is in place. Leaving the air bubbles will make your field bumpy and uneven.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_building_the_goals"><a class="anchor" href="#_building_the_goals"></a><a class="link" href="#_building_the_goals">A.3.3. Building the goals</a></h4>
+<div class="paragraph">
+<p>This part does not nee much explaining. Just use regular screws for the type of wood you are using and create a wide H like shape that is going to be your goal. If you are new to wood working, consider that you need to drill a 2.5mm hole into the wood before using the the M3 screws. If you want to make it more beautiful, you can use a countersink drill bit to make the holes look nicer.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_painting_the_walls_and_the_goals_optional"><a class="anchor" href="#_painting_the_walls_and_the_goals_optional"></a><a class="link" href="#_painting_the_walls_and_the_goals_optional">A.3.4. Painting the walls and the goals (optional)</a></h4>
+<div class="paragraph">
+<p>If you need to paint the walls and the goals, now is the time to do it. You can use a single paint brush as the acrylic paint is washable with water and you can just wash your brush after each color. Start with the black and paint all of your wall pieces. Then move paint the outside of the goal posts and back of the goal black. Then mix your Yellow color with white and also create another mix of blue with white. It&#8217;s better to go lighter on the color as it gets darker when it dries and also you can paint another coat of darket color on top of a light color, but the other way around would be much harder. Once you are done painting, let the paint dry for a few hours.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_drawing_the_lines"><a class="anchor" href="#_drawing_the_lines"></a><a class="link" href="#_drawing_the_lines">A.3.5. Drawing the lines</a></h4>
+<div class="paragraph">
+<p>While you are waiting for the paint to dry, you can start drawing the lines. What you have to have in mind is that the outer part of the line is going to be 12cm away from the closest wall. Use a measuring tape or a ruler to mark the outer and inner part of the line in 15cm intervals. If you want to paint the line, the line width should be around 18mm because the paint would usually spill out of the line a little bit. If you use a tape, just follow the outer interval and lay that down.<br>
+The next step would be drawing the penalty areas. The curves outside of the curve is a quarter of a 15cm radius circle and the other lines are straight. Again, if you are new to this, you can use a piece of thread and a screws as the anchoring point to draw the circles. The inner circle is going to have a 13cm radius and you can repeat the same process to draw it.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_connecting_the_walls_and_the_goals_to_the_base_board"><a class="anchor" href="#_connecting_the_walls_and_the_goals_to_the_base_board"></a><a class="link" href="#_connecting_the_walls_and_the_goals_to_the_base_board">A.3.6. Connecting the walls and the goals to the base board</a></h4>
+<div class="paragraph">
+<p>First, you should start with the longer walls. It&#8217;s better if you do it as a teams of 3 people. Two people will hold the wall in place and square the corners with corners of the base board. and another person drills the holes for the screws. If you want to dissassemble the field often, use the inside threaded screws to hold the field together. When you have the long walls in place, do the same with the shorter walls and do not forget to screw the corners of the walls together. If you want the field to hold up better, you can use the 4 inch right angle metal brackets to hold the walls together even tighter.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_placing_the_goals"><a class="anchor" href="#_placing_the_goals"></a><a class="link" href="#_placing_the_goals">A.3.7. Placing the goals</a></h4>
+<div class="paragraph">
+<p>This is the last step of building your field. The middle of the goals and the line are aligned, so find the middle of your line and measure 30cm out of the middle to find the place of the goal posts. Don&#8217;t forget that the white line should be inside the goal. Screw the goals from the back and underneath. After screwing the goals in, your field is fully ready. Try not to use it for a day so all the glue and paint has time to dry.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. they can be found at <a href="https://github.com/robocup-junior/soccer-rules/tree/master/media/CAD" class="bare">https://github.com/robocup-junior/soccer-rules/tree/master/media/CAD</a>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2026-09-02 20:14:28 UTC
+</div>
+</div>
+</body>
+</html>
