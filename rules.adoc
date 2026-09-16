@@ -1,4 +1,4 @@
-= RoboCupJunior Soccer Rules 2026
+= RoboCupJunior Soccer Rules 2027
 {docdate}
 :toc: left
 :sectanchors:
@@ -17,7 +17,7 @@ endif::basebackend-html[]
 :icons: font
 :numbered:
 
-These are the Soccer rules for RoboCupJunior 2026. They are released
+These are the Soccer rules for RoboCupJunior 2027. They are released
 by the RoboCupJunior Soccer League Committee. The English version of these
 rules has priority over any translations.
 
@@ -81,9 +81,9 @@ or https://robocup-junior.github.io/soccer-rules/master/scoring.html
 _If you would like to start with RoboCupJunior Soccer, please contact the
 organizer of your regional RoboCupJunior competition and ask them about_ <<entry-league>>.
 
-TIP: The Soccer league is planning to increase the team size to 5. As of 2026-04-23
-it is confirmed that a team size of 4 members will be the maximum amount of allowed team members 
-within one team for the Incheon competition. We recommend team size 5 for SuperRegionals and
+TIP: The Soccer league is planning to increase the team size to 5. As of 2026 the international 
+competitions can guarentee a team size of 4, but no guarentees can be made for the team size of 5.
+We recommend team size 5 for SuperRegionals and
 where organizers find it practical also for regional and local competitions.
 Ask the organizers for each tournament you attend what team size they can
 accomodate - tournament organizers are encouraged to adapt rules to fit with
@@ -116,9 +116,10 @@ halves. The duration of each half is 10-minutes. There will be a 5-minute break
 in between the halves.
 
 Teams are expected to be at the field 5 minutes before their game starts. Being
-at the inspection table does not count in favor of this time limit. Teams that
-are late for the start of the game may be penalized one goal *per 30 seconds*
-at the referee’s discretion.
+at the inspection table does not count in favor of this time limit. Teams 
+are considered late for the start of the game if they don't show up with at least one working robot. 
+They may be penalized one goal *per 30 seconds* at the referee’s discretion.
+When the penalty has reached 10 - 0, they automatically will lose the game.
 
 The final game score will be trimmed so that there is at most 10-goal
 difference between the losing and the winning team.
@@ -167,7 +168,8 @@ the playing field immediately if they are _ready and fully functional_.
 
 A neutral kick-off is the same as the one described in <<kick-off>> with a
 small change: all robots must be at least 30 cm away from the ball
-(outside of the center circle).
+(outside of the center circle). A neutral kick-off will occur when all robots from both teams are out 
+of the field.
 
 [[scoring]]
 === Scoring
@@ -185,7 +187,9 @@ the ball by removing all of degrees of freedom. Examples for ball holding
 include fixing a ball to the robot’s body, surrounding a ball using the robot’s
 body to prevent access by others, encircling the ball or somehow trapping the
 ball with any part of the robot’s body. If a ball does not roll while a robot
-is moving, it is a good indication that the ball is trapped.
+is moving, it is a good indication that the ball is trapped. If this happens during 
+gameplay, the robot will be deemed damaged and will lose its inspection sticker until 
+the robot complies with this rule.
 
 The only exception to holding is the use of a rotating drum (a "dribbler") that
 imparts dynamic back spin on the ball to keep the ball on its surface.
@@ -211,15 +215,14 @@ No robots are allowed to be fully inside the penalty area. As the penalty
 areas are marked with a white line, the Out of Bounds rule
 applies. (<<out-of-bounds>>)
 
-If two robots from the same team are at least partially in a penalty area,
+If two robots from the same team are at least partially in their own penalty area,
 the robot further from the ball will be moved to the _furthest unoccupied
 neutral spot_ immediately. If this happens repeatedly, a robot may be deemed
 damaged at referee's discretion. (<<damaged-robots>>)
 
-If an attacking and a defending robot touch each other while at least one of
-them is at least partially inside the penalty area, and at least one of them
-has physical contact with the ball, this may be called "pushing" at the
-referee's discretion. In this case, the ball will be moved to the _furthest
+Robot-to-robot or robot-ball-robot contact where the defender reaches the 'pushing'-line is considered pushing.
+The 'pushing'-line will be an extra black line drawn within the penalty area. This line will be shown in an updated version 
+of the field specification document. In this case, the ball will be moved to the _furthest
 unoccupied neutral spot_ immediately.
 
 If a goal is scored as a result of a "pushing" situation, it will not be
@@ -438,9 +441,9 @@ and https://robocup-junior.github.io/soccer-rules/master/ball_specification.pdf
 or https://robocup-junior.github.io/soccer-rules/master/ball_specification.html respectively].
 
 [[infrared-ball-change]]
-=== Soccer Infrared League Ball change 2026
+=== Soccer Infrared League Ball change 2026 and beyond
 
-{++Starting this year (2026), Soccer Infrared is using a new
+{++Starting from the year 2026, Soccer Infrared is using a new
 IR Ball. The key difference with this ball is the size change from 74mm to 42mm
 diameter, which is the same size as the Vision League
 golf ball.++}
@@ -700,14 +703,17 @@ details on what Entry leagues (if any) will be running in their region.
 
 All robot kickers will be tested with the tournament ball used in the sub-league they
 participate in.
-Kicker Power will be measured by means of an on-field test.
-The bounce off the walls can change depending on field consturction. Teams
-should make sure they can adjust the power of their kicker if necessary.
+Starting from the 2027 season we want to pilot a change in the kicker power measuring. We have noticed 
+that different fields (or goal posts) give out different results. With some goal posts the posts absorb much 
+of the bounce, with other goal posts the posts make the ball bounce back a lot. 
+
+We want to try out a vertical kicker test that we feel will be much easier and much more consistent to see the 
+actual kicker power.
 
 The test is performed as follows:
 
-.  Place robot inside a goal with the robot touching the back goal wall.
-.  Perform a kick into the opposing goal
-.  The kick power test is passed if after bouncing off the opposite goal the
-ball does not hit the back wall of the goal the robot performed the kick power
-test from.
+.  Place the robot on its back with the kicker facing up.
+.  Place the ball inside the ball capturing zone.
+.  Perform a vertical kick into the air.
+.  The kick power test is passed if the ball height does not exceed 100 cm. 
+    You can measure this by performing the test near a wall with a measuring tape.
