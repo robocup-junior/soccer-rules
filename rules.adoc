@@ -243,26 +243,32 @@ will move the ball to the nearest unoccupied neutral spot. If this does not
 solve the lack of progress, the referee can call lack of progress again and
 move the ball to a different neutral spot in the same way.
 
+If the situation arises that one or multiple robots for either team are out of bounds
+and their time penalty has passed, as described in <<out-of-bounds>>, the referee will 
+return the out of bounds robot(s) first before moving the ball. If the lack of progress
+does not resolve after the return of the out of bounds robot(s) the previous defined rule
+will kick in.
+
 [[out-of-bounds]]
 === Out of bounds
 
 If a robot touches a wall or moves completely into the penalty area it
 will be called for being `*out of bounds*`. When this situation arises, the
-robot is removed from the field for a one-minute penalty. 
+robot is removed from the field for a minimum of one-minute. 
 There is no time stoppage for the game itself. The robot is
-allowed to return if a kick-off occurs before the penalty has elapsed.
+allowed to return whenever there is a game interruption after the initial one-minute penalty, i.e. kick-off, lack-of-progress, pushing etc.
 
 The one-minute penalty starts when the robot is removed from play.
-Furthermore, any goal scored by the penalized team while the penalized robot is
-on the field will not be granted. Out-of-bounds robots can be fixed if the team
+Furthermore, any goal scored by the penalized robot will not be granted.
+However, if the penalized robot scores an own goal, that goal will be counted against it.
+Out-of-bounds robots can be fixed if the team
 needs to do so, as described in <<damaged-robots>>.
 
-After the penalty time has passed, robot will be placed on the unoccupied
-neutral spot furthest from the ball, facing its own goal.
+After the penalty time has passed, robot will be placed on the general area of its own corner.
 
-A referee can waive the penalty if the robot was accidentally pushed out of
-bounds by an opposing robot. In such a case, the referee {++will call "pushed
-out"++} and may slightly push the robot back onto the field.
+A referee can waive the penalty if the robot was accidentally pushed out of 
+bounds or pushed into the ramp by an opposing robot. In such a case, 
+the referee {++will call "pushed out"++} and may slightly push the robot back onto the field.
 
 [[damaged-robots]]
 === Damaged robots
