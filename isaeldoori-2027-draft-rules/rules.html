@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.26">
-<meta name="author" content="2026-09-02">
-<title>RoboCupJunior Soccer Rules 2026</title>
+<meta name="author" content="2026-09-16">
+<title>RoboCupJunior Soccer Rules 2027</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -437,9 +437,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>RoboCupJunior Soccer Rules 2026</h1>
+<h1>RoboCupJunior Soccer Rules 2027</h1>
 <div class="details">
-<span id="author" class="author">2026-09-02</span><br>
+<span id="author" class="author">2026-09-16</span><br>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -477,7 +477,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#top-markers">3.5. Top Markers</a></li>
 <li><a href="#violations">3.6. Violations</a></li>
 <li><a href="#specifications">3.7. Material specifications</a></li>
-<li><a href="#infrared-ball-change">3.8. Soccer Infrared League Ball change 2026</a></li>
+<li><a href="#infrared-ball-change">3.8. Soccer Infrared League Ball change 2026 and beyond</a></li>
 <li><a href="#tournament-balls">3.9. Tournament balls</a></li>
 </ul>
 </li>
@@ -519,7 +519,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <script src="https://hypothes.is/embed.js" async></script>
 <div class="paragraph">
-<p>These are the Soccer rules for RoboCupJunior 2026. They are released
+<p>These are the Soccer rules for RoboCupJunior 2027. They are released
 by the RoboCupJunior Soccer League Committee. The English version of these
 rules has priority over any translations.</p>
 </div>
@@ -623,9 +623,9 @@ organizer of your regional RoboCupJunior competition and ask them about</em> <a 
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-The Soccer league is planning to increase the team size to 5. As of 2026-04-23
-it is confirmed that a team size of 4 members will be the maximum amount of allowed team members
-within one team for the Incheon competition. We recommend team size 5 for SuperRegionals and
+The Soccer league is planning to increase the team size to 5. As of 2026 the international
+competitions can guarentee a team size of 4, but no guarentees can be made for the team size of 5.
+We recommend team size 5 for SuperRegionals and
 where organizers find it practical also for regional and local competitions.
 Ask the organizers for each tournament you attend what team size they can
 accomodate - tournament organizers are encouraged to adapt rules to fit with
@@ -1012,7 +1012,7 @@ any time) aim to improve gameplay.</p>
 <p><a href="#addition-3">Added "These interference rules mean that often when red lights (e.g. line sensors) are detected by other teams' camera systems as the orange ball and therefore must be covered up for the robot to be allowed to play. This has been the case in Vision for many years but may be new to Infrared teams. Teams are advised to make sure their robots do not have these bright red lights/parts to avoid having to make surprise adjustments at the competition."</a></p>
 </li>
 <li>
-<p><a href="#addition-4">Added "Starting this year (2026), Soccer Infrared is using a new IR Ball. The key difference with this ball is the size change from 74mm to 42mm diameter, which is the same size as the Vision League golf ball."</a></p>
+<p><a href="#addition-4">Added "Starting from the year 2026, Soccer Infrared is using a new IR Ball. The key difference with this ball is the size change from 74mm to 42mm diameter, which is the same size as the Vision League golf ball."</a></p>
 </li>
 <li>
 <p><a href="#addition-5">Added "This ball is Open Source, so anyone can produce one from the files &amp; instructions on the GitHub Page here: https://github.com/robocup-junior/ir-golf-ball ."</a></p>
@@ -1093,9 +1093,10 @@ in between the halves.</p>
 </div>
 <div class="paragraph">
 <p>Teams are expected to be at the field 5 minutes before their game starts. Being
-at the inspection table does not count in favor of this time limit. Teams that
-are late for the start of the game may be penalized one goal <strong>per 30 seconds</strong>
-at the referee’s discretion.</p>
+at the inspection table does not count in favor of this time limit. Teams
+are considered late for the start of the game if they don&#8217;t show up with at least one working robot.
+They may be penalized one goal <strong>per 30 seconds</strong> at the referee’s discretion.
+When the penalty has reached 10 - 0, they automatically will lose the game.</p>
 </div>
 <div class="paragraph">
 <p>The final game score will be trimmed so that there is at most 10-goal
@@ -1153,7 +1154,8 @@ the playing field immediately if they are <em>ready and fully functional</em>.</
 <div class="paragraph">
 <p>A neutral kick-off is the same as the one described in <a href="#kick-off">Rule 2.3, &#8220;Kick-off&#8221;</a> with a
 small change: all robots must be at least 30 cm away from the ball
-(outside of the center circle).</p>
+(outside of the center circle). A neutral kick-off will occur when all robots from both teams are out
+of the field.</p>
 </div>
 </div>
 </div>
@@ -1174,7 +1176,9 @@ the ball by removing all of degrees of freedom. Examples for ball holding
 include fixing a ball to the robot’s body, surrounding a ball using the robot’s
 body to prevent access by others, encircling the ball or somehow trapping the
 ball with any part of the robot’s body. If a ball does not roll while a robot
-is moving, it is a good indication that the ball is trapped.</p>
+is moving, it is a good indication that the ball is trapped. If this happens during
+gameplay, the robot will be deemed damaged and will lose its inspection sticker until
+the robot complies with this rule.</p>
 </div>
 <div class="paragraph">
 <p>The only exception to holding is the use of a rotating drum (a "dribbler") that
@@ -1206,16 +1210,15 @@ areas are marked with a white line, the Out of Bounds rule
 applies. (<a href="#out-of-bounds">Rule 2.8, &#8220;Out of bounds&#8221;</a>)</p>
 </div>
 <div class="paragraph">
-<p>If two robots from the same team are at least partially in a penalty area,
+<p>If two robots from the same team are at least partially in their own penalty area,
 the robot further from the ball will be moved to the <em>furthest unoccupied
 neutral spot</em> immediately. If this happens repeatedly, a robot may be deemed
 damaged at referee&#8217;s discretion. (<a href="#damaged-robots">Rule 2.9, &#8220;Damaged robots&#8221;</a>)</p>
 </div>
 <div class="paragraph">
-<p>If an attacking and a defending robot touch each other while at least one of
-them is at least partially inside the penalty area, and at least one of them
-has physical contact with the ball, this may be called "pushing" at the
-referee&#8217;s discretion. In this case, the ball will be moved to the <em>furthest
+<p>Robot-to-robot or robot-ball-robot contact where the defender reaches the 'pushing'-line is considered pushing.
+The 'pushing'-line will be an extra black line drawn within the penalty area. This line will be shown in an updated version
+of the field specification document. In this case, the ball will be moved to the <em>furthest
 unoccupied neutral spot</em> immediately.</p>
 </div>
 <div class="paragraph">
@@ -1242,29 +1245,37 @@ will move the ball to the nearest unoccupied neutral spot. If this does not
 solve the lack of progress, the referee can call lack of progress again and
 move the ball to a different neutral spot in the same way.</p>
 </div>
+<div class="paragraph">
+<p>If the situation arises that one or multiple robots for either team are out of bounds
+and their time penalty has passed, as described in <a href="#out-of-bounds">Rule 2.8, &#8220;Out of bounds&#8221;</a>, the referee will
+return the out of bounds robot(s) first before moving the ball. If the lack of progress
+does not resolve after the return of the out of bounds robot(s) the previous defined rule
+will kick in.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="out-of-bounds"><a class="anchor" href="#out-of-bounds"></a><a class="link" href="#out-of-bounds">2.8. Out of bounds</a></h3>
 <div class="paragraph">
 <p>If a robot touches a wall or moves completely into the penalty area it
 will be called for being <code><strong>out of bounds</strong></code>. When this situation arises, the
-robot is removed from the field for a one-minute penalty.
+robot is removed from the field for a minimum of one-minute.
 There is no time stoppage for the game itself. The robot is
-allowed to return if a kick-off occurs before the penalty has elapsed.</p>
+allowed to return whenever there is a game interruption after the initial one-minute penalty, i.e. kick-off, lack-of-progress, pushing etc.</p>
 </div>
 <div class="paragraph">
 <p>The one-minute penalty starts when the robot is removed from play.
-Furthermore, any goal scored by the penalized team while the penalized robot is
-on the field will not be granted. Out-of-bounds robots can be fixed if the team
+Furthermore, any goal scored by the penalized robot will not be granted.
+However, if the penalized robot scores an own goal, that goal will be counted against it.
+Out-of-bounds robots can be fixed if the team
 needs to do so, as described in <a href="#damaged-robots">Rule 2.9, &#8220;Damaged robots&#8221;</a>.</p>
 </div>
 <div class="paragraph">
-<p>After the penalty time has passed, robot will be placed on the unoccupied
-neutral spot furthest from the ball, facing its own goal.</p>
+<p>After the penalty time has passed, robot will be placed on the general area of its own corner.</p>
 </div>
 <div class="paragraph">
 <p>A referee can waive the penalty if the robot was accidentally pushed out of
-bounds by an opposing robot. In such a case, the referee <a id="addition-2"></a>
+bounds or pushed into the ramp by an opposing robot. In such a case,
+the referee <a id="addition-2"></a>
 <span class="red"><strong>will call "pushed out"</strong></span> and may slightly push the robot back onto the field.</p>
 </div>
 </div>
@@ -1480,9 +1491,9 @@ tournament.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="infrared-ball-change"><a class="anchor" href="#infrared-ball-change"></a><a class="link" href="#infrared-ball-change">3.8. Soccer Infrared League Ball change 2026</a></h3>
+<h3 id="infrared-ball-change"><a class="anchor" href="#infrared-ball-change"></a><a class="link" href="#infrared-ball-change">3.8. Soccer Infrared League Ball change 2026 and beyond</a></h3>
 <div id="addition-4" class="paragraph">
-<p><span class="red"><strong>Starting this year (2026), Soccer Infrared is using a new IR Ball. The key difference with this ball is the size change from 74mm to 42mm diameter, which is the same size as the Vision League golf ball.</strong></span></p>
+<p><span class="red"><strong>Starting from the year 2026, Soccer Infrared is using a new IR Ball. The key difference with this ball is the size change from 74mm to 42mm diameter, which is the same size as the Vision League golf ball.</strong></span></p>
 </div>
 <div id="addition-5" class="paragraph">
 <p><span class="red"><strong>This ball is Open Source, so anyone can produce one from the files &amp; instructions on the GitHub Page here: <a href="https://github.com/robocup-junior/ir-golf-ball" class="bare">https://github.com/robocup-junior/ir-golf-ball</a> .</strong></span></p>
@@ -1828,9 +1839,13 @@ details on what Entry leagues (if any) will be running in their region.</p>
 <div class="paragraph">
 <p>All robot kickers will be tested with the tournament ball used in the sub-league they
 participate in.
-Kicker Power will be measured by means of an on-field test.
-The bounce off the walls can change depending on field consturction. Teams
-should make sure they can adjust the power of their kicker if necessary.</p>
+Starting from the 2027 season we want to pilot a change in the kicker power measuring. We have noticed
+that different fields (or goal posts) give out different results. With some goal posts the posts absorb much
+of the bounce, with other goal posts the posts make the ball bounce back a lot.</p>
+</div>
+<div class="paragraph">
+<p>We want to try out a vertical kicker test that we feel will be much easier and much more consistent to see the
+actual kicker power.</p>
 </div>
 <div class="paragraph">
 <p>The test is performed as follows:</p>
@@ -1838,15 +1853,17 @@ should make sure they can adjust the power of their kicker if necessary.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Place robot inside a goal with the robot touching the back goal wall.</p>
+<p>Place the robot on its back with the kicker facing up.</p>
 </li>
 <li>
-<p>Perform a kick into the opposing goal</p>
+<p>Place the ball inside the ball capturing zone.</p>
 </li>
 <li>
-<p>The kick power test is passed if after bouncing off the opposite goal the
-ball does not hit the back wall of the goal the robot performed the kick power
-test from.</p>
+<p>Perform a vertical kick into the air.</p>
+</li>
+<li>
+<p>The kick power test is passed if the ball height does not exceed 100 cm.
+You can measure this by performing the test near a wall with a measuring tape.</p>
 </li>
 </ol>
 </div>
@@ -1945,7 +1962,7 @@ test from.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-09-02 20:13:32 UTC
+Last updated 2026-09-16 21:16:57 UTC
 </div>
 </div>
 </body>
