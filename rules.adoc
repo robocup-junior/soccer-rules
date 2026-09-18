@@ -719,8 +719,8 @@ actual kicker power.
 
 The test is performed as follows:
 
-.  Place the robot on its back with the kicker facing up.
-.  Place the ball inside the ball capturing zone.
-.  Perform a vertical kick into the air.
-.  The kick power test is passed if the ball height does not exceed 100 cm. 
+1.  Place the robot on its back with the kicker facing up.
+2.  Place the ball inside the ball capturing zone.
+3.  Perform a vertical kick into the air.
+4.  The kick power test is passed if the ball height does not exceed 100 cm. 
     You can measure this by performing the test near a wall with a measuring tape.++}
