@@ -252,7 +252,7 @@ solve the lack of progress, the referee can call lack of progress again and
 move the ball to a different neutral spot in the same way.
 
 {++If the situation arises that one or multiple robots for either team are out of bounds
-and their time penalty has passed, as described in ++}<<out-of-bounds>>{++, the referee will 
+and their time penalty has passed, as described in ++} <<out-of-bounds>> {++, the referee will 
 return the out of bounds robot(s) first before moving the ball. If the lack of progress
 does not resolve after the return of the out of bounds robot(s) the previous defined rule
 will kick in.++}
@@ -448,7 +448,7 @@ and https://robocup-junior.github.io/soccer-rules/master/ball_specification.pdf
 or https://robocup-junior.github.io/soccer-rules/master/ball_specification.html respectively].
 
 [[infrared-ball-change]]
-=== Soccer Infrared League Ball change 2026 {++and beyond++}
+=== Soccer Infrared League Ball change 2026 and beyond
 
 {~~Starting this year (2026)~>Starting from the year 2026~~}, Soccer Infrared is using a new
 IR Ball. The key difference with this ball is the size change from 74mm to 42mm
