@@ -58,16 +58,16 @@ advancement of the community as a whole by sharing their discoveries with other
 participants and by engaging in good sportsmanship, regardless of culture, age
 or result in the competition. *All are expected to compete, learn, have fun, and grow.*
 
-RoboCupJunior Soccer consist of two sub-leagues: {~~Soccer Open~>Soccer Vision
-(formerly Soccer Open)~~} and {~~Soccer Lightweight~>Soccer Infrared
-(formerly Soccer Lightweight)~~}. These rules apply for both sub-leagues. There
+RoboCupJunior Soccer consist of two sub-leagues: Soccer Open~>Soccer Vision
+(formerly Soccer Open) and Soccer Lightweight~>Soccer Infrared
+(formerly Soccer Lightweight). These rules apply for both sub-leagues. There
 are three main differences between the two leagues.
 
-* {~~Soccer Lightweight~>Soccer Infrared~~} is played using a special ball
-that emits an IR signal and robots may weigh up to {~~1.4 kg~>1.5 kg~~}, and be
+* Soccer Lightweight~>Soccer Infrared is played using a special ball
+that emits an IR signal and robots may weigh up to 1.4 kg~>1.5 kg, and be
 up to 22cm in size.
 
-* {~~Soccer Open~>Soccer Vision~~} is played using a brightly colored orange
+* Soccer Open~>Soccer Vision is played using a brightly colored orange
 golf ball, robots have no weight restriction and may be up to 18cm in size.
 
 IMPORTANT: A large part of the overall ranking (for the international tournament,
@@ -81,8 +81,8 @@ or https://robocup-junior.github.io/soccer-rules/master/scoring.html
 _If you would like to start with RoboCupJunior Soccer, please contact the
 organizer of your regional RoboCupJunior competition and ask them about_ <<entry-league>>.
 
-TIP: The Soccer league is planning to increase the team size to 5. As of 2026 the international 
-competitions can guarentee a team size of 4, but no guarentees can be made for the team size of 5.
+TIP: The Soccer league is planning to increase the team size to 5. {~~As of 2026 the international 
+competitions can guarentee a team size of 4, but no guarentees can be made for the team size of 5.~~}
 We recommend team size 5 for SuperRegionals and
 where organizers find it practical also for regional and local competitions.
 Ask the organizers for each tournament you attend what team size they can
@@ -116,10 +116,10 @@ halves. The duration of each half is 10-minutes. There will be a 5-minute break
 in between the halves.
 
 Teams are expected to be at the field 5 minutes before their game starts. Being
-at the inspection table does not count in favor of this time limit. Teams 
+at the inspection table does not count in favor of this time limit. {~~Teams 
 are considered late for the start of the game if they don't show up with at least one working robot. 
 They may be penalized one goal *per 30 seconds* at the referee’s discretion.
-When the penalty has reached 10 - 0, they automatically will lose the game.
+When the penalty has reached 10 - 0, they automatically will lose the game.~~}
 
 The final game score will be trimmed so that there is at most 10-goal
 difference between the losing and the winning team.
@@ -168,8 +168,8 @@ the playing field immediately if they are _ready and fully functional_.
 
 A neutral kick-off is the same as the one described in <<kick-off>> with a
 small change: all robots must be at least 30 cm away from the ball
-(outside of the center circle). A neutral kick-off will occur when all robots from both teams are out 
-of the field.
+(outside of the center circle). {++A neutral kick-off will occur when all robots from both teams are out 
+of the field.++}
 
 [[scoring]]
 === Scoring
@@ -187,9 +187,9 @@ the ball by removing all of degrees of freedom. Examples for ball holding
 include fixing a ball to the robot’s body, surrounding a ball using the robot’s
 body to prevent access by others, encircling the ball or somehow trapping the
 ball with any part of the robot’s body. If a ball does not roll while a robot
-is moving, it is a good indication that the ball is trapped. If this happens during 
+is moving, it is a good indication that the ball is trapped. {++If this happens during 
 gameplay, the robot will be deemed damaged and will lose its inspection sticker until 
-the robot complies with this rule.
+the robot complies with this rule.++}
 
 The only exception to holding is the use of a rotating drum (a "dribbler") that
 imparts dynamic back spin on the ball to keep the ball on its surface.
@@ -215,21 +215,21 @@ No robots are allowed to be fully inside the penalty area. As the penalty
 areas are marked with a white line, the Out of Bounds rule
 applies. (<<out-of-bounds>>)
 
-If two robots from the same team are at least partially in their own penalty area,
+If two robots from the same team are at least partially in {~~their own~~} penalty area,
 the robot further from the ball will be moved to the _furthest unoccupied
 neutral spot_ immediately. If this happens repeatedly, a robot may be deemed
 damaged at referee's discretion. (<<damaged-robots>>)
 
-Robot-to-robot or robot-ball-robot contact where the defender reaches the 'pushing'-line is considered pushing.
+{~~Robot-to-robot or robot-ball-robot contact where the defender reaches the 'pushing'-line is considered pushing.
 The 'pushing'-line will be an extra black line drawn within the penalty area. This line will be shown in an updated version 
-of the field specification document. In this case, the ball will be moved to the _furthest
+of the field specification document.~~} In this case, the ball will be moved to the _furthest
 unoccupied neutral spot_ immediately.
 
 If a goal is scored as a result of a "pushing" situation, it will not be
 granted.
 
-{++ If pushing and multiple defense happen at the same time the referees
-will call and resolve the pushing situation first, then the multiple defense.++}
+If pushing and multiple defense happen at the same time the referees
+will call and resolve the pushing situation first, then the multiple defense.
 
 [[lack-of-progress]]
 === Lack of progress
@@ -246,32 +246,32 @@ will move the ball to the nearest unoccupied neutral spot. If this does not
 solve the lack of progress, the referee can call lack of progress again and
 move the ball to a different neutral spot in the same way.
 
-If the situation arises that one or multiple robots for either team are out of bounds
+{++If the situation arises that one or multiple robots for either team are out of bounds
 and their time penalty has passed, as described in <<out-of-bounds>>, the referee will 
 return the out of bounds robot(s) first before moving the ball. If the lack of progress
 does not resolve after the return of the out of bounds robot(s) the previous defined rule
-will kick in.
+will kick in.++}
 
 [[out-of-bounds]]
 === Out of bounds
 
 If a robot touches a wall or moves completely into the penalty area it
 will be called for being `*out of bounds*`. When this situation arises, the
-robot is removed from the field for a minimum of one-minute. 
-There is no time stoppage for the game itself. The robot is
-allowed to return whenever there is a game interruption after the initial one-minute penalty, i.e. kick-off, lack-of-progress, pushing etc.
+robot is removed from the field for a {~~minimum of~~} one-minute. 
+There is no time stoppage for the game itself. {~~The robot is
+allowed to return whenever there is a game interruption after the initial one-minute penalty, i.e. kick-off, lack-of-progress, pushing etc.~~}
 
 The one-minute penalty starts when the robot is removed from play.
 Furthermore, any goal scored by the penalized robot will not be granted.
-However, if the penalized robot scores an own goal, that goal will be counted against it.
+{++However, if the penalized robot scores an own goal, that goal will be counted against it.++}
 Out-of-bounds robots can be fixed if the team
 needs to do so, as described in <<damaged-robots>>.
 
-After the penalty time has passed, robot will be placed on the general area of its own corner.
+{~~After the penalty time has passed, the robot will be placed on the general area of its own corner.~~}
 
 A referee can waive the penalty if the robot was accidentally pushed out of 
-bounds or pushed into the ramp by an opposing robot. In such a case, 
-the referee {++will call "pushed out"++} and may slightly push the robot back onto the field.
+bounds {++or pushed into the ramp++} by an opposing robot. In such a case, 
+the referee will call "pushed out" and may slightly push the robot back onto the field.
 
 [[damaged-robots]]
 === Damaged robots
@@ -348,12 +348,12 @@ playing when placed on a flat surface. Any part of a robot that produces light
 that may interfere with the opposing robot’s vision system must be covered.
 For Infrared league specific regulations see <<regulations-inference-in-infrared>>
 
-IMPORTANT: {++These interference rules mean that often when red lights (e.g. line
+IMPORTANT: These interference rules mean that often when red lights (e.g. line
 sensors) are detected by other teams' camera systems as the orange ball and
 therefore must be covered up for the robot to be allowed to play. This has been
 the case in Vision for many years but may be new to Infrared teams. Teams are
 advised to make sure their robots do not have these bright red lights/parts
-to avoid having to make surprise adjustments at the competition.++}
+to avoid having to make surprise adjustments at the competition.
 
 Robots are expected to be capable of dealing with any visible colors above the
 walls (e.g. blue, yellow, green or orange shirts) either in hardware (e.g. 
@@ -374,8 +374,8 @@ be confirmed by the tournament organizers if a claim is placed by the other team
 The use of remote control of any kind is not allowed during the match. Robots
 must be controlled autonomously.
 
-For {~~only the World Championships, starting in Brazil 2025,~>at least at the
-world championships (ask other competition organizers)~~} use of a Communications
+For only the World Championships, starting in Brazil 2025,~>at least at the
+world championships (ask other competition organizers) use of a Communications
 Module is required for referees to control the robots. 
 See <<international-competition-specifics>>
 
@@ -443,19 +443,19 @@ or https://robocup-junior.github.io/soccer-rules/master/ball_specification.html 
 [[infrared-ball-change]]
 === Soccer Infrared League Ball change 2026 and beyond
 
-{++Starting from the year 2026, Soccer Infrared is using a new
+{~~Starting from the year 2026~~}, Soccer Infrared is using a new
 IR Ball. The key difference with this ball is the size change from 74mm to 42mm
 diameter, which is the same size as the Vision League
-golf ball.++}
-{++This ball is Open Source, so anyone can produce one from
+golf ball.
+This ball is Open Source, so anyone can produce one from
 the files & instructions on the
-GitHub Page here: https://github.com/robocup-junior/ir-golf-ball .++}
-{++If you or someone you know can help by making or distributing balls for one
+GitHub Page here: https://github.com/robocup-junior/ir-golf-ball .
+If you or someone you know can help by making or distributing balls for one
 or more regions the Soccer Committee is interested in helping to make that
 happen and listing you as a source for balls on the official website. Please
-get in touch via Forum, Discord or Email++}
+get in touch via Forum, Discord or Email
 
-{++Entry Leagues will continue to use the large infrared ball.++}
+Entry Leagues will continue to use the large infrared ball.
 footnote:[Entry Leagues frequently use Lego, FischerTechnik, Vex or other
 robotics kits with which handling a small ball is more difficult, especially
 for beginners.]
@@ -531,11 +531,11 @@ etc.). Check with organizers of each tournament you participate in.
 === Preamble
 
 For RoboCupJunior, there are two sub-leagues: Soccer
-{~~Lightweight~>Infrared~~} and Soccer {~~Open~>Vision~~}
+Lightweight~>Infrared and Soccer Open~>Vision
 
-The matches in the Soccer {~~Open~>Vision~~}
+The matches in the Soccer Open~>Vision
 sub-league are conducted using a (passive) orange golf ball, whereas the
-matches in the Soccer {~~Lightweight~>Infrared~~} sub-league are played using
+matches in the Soccer Lightweight~>Infrared sub-league are played using
 the (also orange) IR ball.
 footnote:[ for detailled ball specifications see: <<specifications>>]
 
@@ -549,16 +549,16 @@ Robots will be measured in an upright position with all parts extended. A
 robot’s dimensions must not exceed the following limits:
 
 |===
-|sub-league | Soccer {~~Open~>Vision~~} | Soccer {~~Lightweight~>Infrared~~}
+|sub-league | Soccer Open~>Vision | Soccer Lightweight~>Infrared
 |size ^[0]^  | 18.0 cm | 22.0 cm +
 |height | 18.0 cm | 22.0 cm +
-|weight | No limit | {~~1400 g~>1500g~~} +
-|ball-capturing zone | 1.5 cm | {~~3.0 cm~>1.5 cm~~} +
+|weight | No limit | 1400 g~>1500g +
+|ball-capturing zone | 1.5 cm | 3.0 cm~>1.5 cm +
 |===
 
-TIP: [0] Robot must fit smoothly into a cylinder of this diameter. {++Being
+TIP: [0] Robot must fit smoothly into a cylinder of this diameter. Being
 3mm below the size limit and 50g below the weight limit will usually make
-inspections go more smoothly.++}
+inspections go more smoothly.
 
 Ball-capturing zone is defined as any internal space created when a straight
 edge is placed on the protruding points of a robot. This means the ball must
@@ -569,7 +569,7 @@ ball.
 [[regulations-inference-in-infrared]]
 ==== Infrared interference
 
-{++*FOR THE INFRARED LEAGUE ONLY:*++} Components designed to emit IR (e.g. 
+*FOR THE INFRARED LEAGUE ONLY:* Components designed to emit IR (e.g. 
 ToF, LiDAR, IR distance sensors, IR LEDs/LASERs etc.) are not allowed and 
 tournament organizers will require such devices to be removed or covered up.
 
@@ -581,8 +581,8 @@ optical parts, optical systems, and total field of view. Components may be
 sourced in any way the team sees fit.
 
 Kicker strength is subject to compliance check at any time during the
-competition. During gameplay, a referee can {~~ask to see a sample kick~>test
-the kicker power~~} on the
+competition. During gameplay, a referee can ask to see a sample kick~>test
+the kicker power on the
 field before each half when a damaged robot is returned to the field or when
 the game is about to be restarted after a goal. 
 See <<kicker-power-measuring>> for more details.
@@ -703,7 +703,7 @@ details on what Entry leagues (if any) will be running in their region.
 
 All robot kickers will be tested with the tournament ball used in the sub-league they
 participate in.
-Starting from the 2027 season we want to pilot a change in the kicker power measuring. We have noticed 
+{~~Starting from the 2027 season we want to pilot a change in the kicker power measuring. We have noticed 
 that different fields (or goal posts) give out different results. With some goal posts the posts absorb much 
 of the bounce, with other goal posts the posts make the ball bounce back a lot. 
 
@@ -716,4 +716,4 @@ The test is performed as follows:
 .  Place the ball inside the ball capturing zone.
 .  Perform a vertical kick into the air.
 .  The kick power test is passed if the ball height does not exceed 100 cm. 
-    You can measure this by performing the test near a wall with a measuring tape.
+    You can measure this by performing the test near a wall with a measuring tape.~~}
