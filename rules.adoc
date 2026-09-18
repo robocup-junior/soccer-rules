@@ -93,7 +93,7 @@ their situation. Contact information for the world championships is: robocupjuni
 include::general-rules/general-rules.adoc[]
 
 [discrete]
-=== Changes from the 2025 RoboCupJunior Soccer Rules
+=== Changes from the 2026 RoboCupJunior Soccer Rules
 
 // TODO: Summarize changes here
 The rule changes developed by the Soccer League Committee in cooperation with the
