@@ -252,7 +252,7 @@ solve the lack of progress, the referee can call lack of progress again and
 move the ball to a different neutral spot in the same way.
 
 {++If the situation arises that one or multiple robots for either team are out of bounds
-and their time penalty has passed, as described in ++} <<out-of-bounds>> {++, the referee will 
+and their time penalty has passed, as described in the next section, the referee will 
 return the out of bounds robot(s) first before moving the ball. If the lack of progress
 does not resolve after the return of the out of bounds robot(s) the previous defined rule
 will kick in.++}
