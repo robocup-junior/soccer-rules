@@ -120,7 +120,7 @@ in between the halves.
 Teams are expected to be at the field 5 minutes before their game starts. Being
 at the inspection table does not count in favor of this time limit. {~~Teams that
 are late for the start of the game~>Teams are considered late for the start of the game if they don't show up with at least one working robot.~~>
-{++They++} may be penalized one goal *per 30 seconds* at the referee’s discretion.
+They may be penalized one goal *per 30 seconds* at the referee’s discretion.
 {++When the penalty has reached 10 -- 0, they automatically will lose the game.++}
 
 The final game score will be trimmed so that there is at most 10-goal
