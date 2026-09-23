@@ -1,4 +1,4 @@
-= RoboCupJunior Soccer SuperTeam Rules 2027
+= RoboCupJunior Soccer SuperTeam Rules {rules-year}
 {docdate}
 :toc: left
 :sectanchors:
@@ -17,7 +17,7 @@ endif::basebackend-html[]
 :icons: font
 :numbered:
 
-These are the SuperTeam Soccer rules for RoboCupJunior 2027. They are
+These are the SuperTeam Soccer rules for RoboCupJunior {rules-year}. They are
 released by the RoboCupJunior Soccer League Committee. The English version
 of these rules has priority over any translations.
 
@@ -65,7 +65,7 @@ from the regular game rules, normally they have been only mentioned here as
 being the same regular game rule.**
 
 [discrete]
-=== Changes from the 2026 RoboCupJunior Soccer SuperTeam Rules
+=== Changes from the {previous-rules-year} RoboCupJunior Soccer SuperTeam Rules
 
 // TODO: Summarize changes here
 The rule changes developed by the Soccer League Committee in cooperation with the
@@ -77,7 +77,7 @@ Detailed changes are listed below and link to the corresponding place in the rul
 {+-~TOC-CHANGES~-+}
 
 [[general-rules]]
-== RoboCupJunior International 2027 General Rules
+== RoboCupJunior International {rules-year} General Rules
 
 link:https://robocup-junior.github.io/soccer-rules/master/rules.html[RoboCupJunior Soccer Rules] <<general-rules>> applies.
 

@@ -11,8 +11,9 @@ dblatex -T db2latex $OUTPUT_PREFIX.xml -t tex --texstyle=./manual.sty -p custom.
 # (marked by the \mainmatter command) and create a file without it.
 cat $OUTPUT_PREFIX.tex | awk 'f;/\\mainmatter/{f=1}'  > $OUTPUT_PREFIX"_without_preamble.tex"
 
-# Extract the document title from the .adoc file (first line, removing the "= " prefix)
-DOCUMENT_TITLE=$(head -n 1 "$OUTPUT_FILE.adoc" | sed 's/^= //')
+# Extract the document title from the DocBook output, where attributes such as
+# {rules-year} have already been resolved (the first <title> is the document's)
+DOCUMENT_TITLE=$(awk 'match($0, /<title>[^<]*<\/title>/) { print substr($0, RSTART + 7, RLENGTH - 15); exit }' $OUTPUT_PREFIX.xml)
 
 # Create a preamble with the correct title substituted
 sed "s/@@DOCUMENT_TITLE@@/$DOCUMENT_TITLE/" preamble.tex > $OUTPUT_PREFIX"_preamble.tex"

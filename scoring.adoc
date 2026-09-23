@@ -19,7 +19,7 @@ endif::basebackend-html[]
 
 
 RoboCupJunior Soccer  
-Award Criteria and Rubrics 2027  
+Award Criteria and Rubrics {rules-year}  
 
 These are the official award guidelines for the International RoboCupJunior Soccer League, issued by 
 the RoboCupJunior Soccer League Committee. The English version takes precedence over all 
