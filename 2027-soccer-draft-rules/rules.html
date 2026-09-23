@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.26">
-<meta name="author" content="2026-09-18">
+<meta name="author" content="2026-09-23">
 <title>RoboCupJunior Soccer Rules 2027</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -439,7 +439,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>RoboCupJunior Soccer Rules 2027</h1>
 <div class="details">
-<span id="author" class="author">2026-09-18</span><br>
+<span id="author" class="author">2026-09-23</span><br>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -456,11 +456,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#gameplay">2. GAMEPLAY</a>
 <ul class="sectlevel2">
 <li><a href="#game-procedure-and-length-of-a-game">2.1. Game procedure and length of a game</a></li>
-<li><a href="#lack-of-progress">2.2. Lack of progress</a></li>
-<li><a href="#out-of-bounds">2.3. Out of bounds</a></li>
-<li><a href="#damaged-robots">2.4. Damaged robots</a></li>
-<li><a href="#human-interference">2.5. Human interference</a></li>
-<li><a href="#interruption-of-game-ref-interruption">2.6. Interruption of Game</a></li>
+<li><a href="#pre-match-meeting">2.2. Pre-match meeting</a></li>
+<li><a href="#kick-off">2.3. Kick-off</a></li>
+<li><a href="#scoring">2.4. Scoring</a></li>
+<li><a href="#ball-movement">2.5. Ball movement</a></li>
+<li><a href="#inside-penalty-area">2.6. Inside the Penalty Area (Pushing and Multiple defense)</a></li>
+<li><a href="#lack-of-progress">2.7. Lack of progress</a></li>
+<li><a href="#out-of-bounds">2.8. Out of bounds</a></li>
+<li><a href="#damaged-robots">2.9. Damaged robots</a></li>
+<li><a href="#human-interference">2.10. Human interference</a></li>
+<li><a href="#interruption-of-game-ref-interruption">2.11. Interruption of Game</a></li>
 </ul>
 </li>
 <li><a href="#robots">3. ROBOTS</a>
@@ -1021,16 +1026,19 @@ any time) aim to improve gameplay.</p>
 <p><a href="#substitution-1">Changed "As of 2026-04-23 it is confirmed that a team size of 4 members will be the maximum amount of allowed team members  within one team for the Incheon competition." to "As of 2026 the international  competitions can guarentee a team size of 4, but no guarentees can be made for the team size of 5."</a></p>
 </li>
 <li>
-<p><a href="#substitution-2">Changed "Teams that are late for the start of the game" to "Teams are considered late for the start of the game if they don&#8217;t show up with at least one working robot.~~&gt; They may be penalized one goal <strong>per 30 seconds</strong> at the referee’s discretion. [[addition-1, Added "When the penalty has reached 10&#8201;&#8212;&#8201;0, they automatically will lose the game."</a></p>
+<p><a href="#substitution-2">Changed "Teams that are late for the start of the game" to "Teams are considered late for the start of the game if they don&#8217;t show up with at least one working robot.~~&gt; They may be penalized one goal <strong>per 30 seconds</strong> at the referee’s discretion."</a></p>
 </li>
 <li>
-<p><a href="#substitution-3">Changed "The robot is allowed to return if a kick-off occurs before the penalty has elapsed." to "The robot is allowed to return whenever there is a game interruption after the initial one-minute penalty, i.e. kick-off, lack-of-progress, pushing etc."</a></p>
+<p><a href="#substitution-3">Changed "If an attacking and a defending robot touch each other while at least one of them is at least partially inside the penalty area, and at least one of them has physical contact with the ball, this may be called "pushing" at the referee&#8217;s discretion." to "Robot-to-robot or robot-ball-robot contact where the defender reaches the 'pushing'-line is considered pushing. The 'pushing'-line will be an extra black line drawn within the penalty area. This line will be shown in an updated version  of the field specification document."</a></p>
 </li>
 <li>
-<p><a href="#substitution-4">Changed "After the penalty time has passed, robot will be placed on the unoccupied neutral spot furthest from the ball, facing its own goal." to "After the penalty time has passed, the robot will be placed on the general area of its own corner."</a></p>
+<p><a href="#substitution-4">Changed "The robot is allowed to return if a kick-off occurs before the penalty has elapsed." to "The robot is allowed to return whenever there is a game interruption after the initial one-minute penalty, i.e. kick-off, lack-of-progress, pushing etc."</a></p>
 </li>
 <li>
-<p><a href="#substitution-5">Changed "Starting this year (2026)" to "Starting from the year 2026"</a></p>
+<p><a href="#substitution-5">Changed "After the penalty time has passed, robot will be placed on the unoccupied neutral spot furthest from the ball, facing its own goal." to "After the penalty time has passed, the robot will be placed on the general area of its own corner."</a></p>
+</li>
+<li>
+<p><a href="#substitution-6">Changed "Starting this year (2026)" to "Starting from the year 2026"</a></p>
 </li>
 </ul>
 </div>
@@ -1051,9 +1059,133 @@ in between the halves.</p>
 </div>
 <div class="paragraph">
 <p>Teams are expected to be at the field 5 minutes before their game starts. Being
-at the inspection table does not count in favor of this time limit. <a id="substitution-2"></a> <span class="red"><strong>When the penalty has reached 10&#8201;&#8212;&#8201;0, they automatically will lose the game.</strong></span>  The final game score will be trimmed so that there is at most 10-goal difference between the losing and the winning team.  <a id="pre-match-meeting"></a> === Pre-match meeting  At the start of the first half of the game, a referee will toss a coin. The team mentioned first in the draw shall call the coin. The winner of the toss can choose either which end to kick towards, or to kick off first. The loser of the toss chooses the other option. After the first half, teams switch sides. The team not kicking off in the first half of the game will kick off to begin the second half of the game.  During the pre-match meeting the referee(s) may check whether the robots are capable of playing (i.e., whether they are at least able to follow and react to the ball). If none of the robots is capable of playing, the game will not be played and zero goals will be awarded to both teams.  <a id="kick-off"></a> === Kick-off  Each half of the game begins with a kick-off. All robots must be located on their own side of the field. All robots must be halted. The ball is positioned by a referee in the center of the field.  The team kicking off places their robots on the field first.  The team not kicking off will now place their robots on the defensive end of the field. All robots on the team not kicking off must be at least 30 cm away from the ball (outside of the center circle).  Robots cannot be placed out of bounds. Robots cannot be repositioned once they have been placed, except if the referee requests to adjust their placement to make sure that the robots are placed properly within the field positions.  On the referee’s command (usually by whistle), all robots will be started immediately. Any robots that are started early will be removed by the referee from the field and deemed damaged.  Before a kick-off, <strong>all damaged or out-of-bounds robots</strong> are allowed to return to the playing field immediately if they are <em>ready and fully functional</em>.  <a id="neutral-kickoff"></a> ==== Neutral kick-off  A neutral kick-off is the same as the one described in <a href="#kick-off">[kick-off]</a> with a small change: all robots must be at least 30 cm away from the ball (outside of the center circle). <a id="addition-2"></a> <span class="red"><strong>A neutral kick-off will occur when all robots from both teams are out  of the field.</strong></span>  <a id="scoring"></a> === Scoring  A goal is scored when the ball strikes or touches the back wall of the goal. Goals scored by any robot have the same end result: they give one goal to the team on the opposite side. After a goal, the game will be restarted with a kick-off from the team who was scored against.  <a id="ball-movement"></a> === Ball movement  A robot cannot hold a ball. Holding a ball is defined as taking full control of the ball by removing all of degrees of freedom. Examples for ball holding include fixing a ball to the robot’s body, surrounding a ball using the robot’s body to prevent access by others, encircling the ball or somehow trapping the ball with any part of the robot’s body. If a ball does not roll while a robot is moving, it is a good indication that the ball is trapped. <a id="addition-3"></a> <span class="red"><strong>If this happens during  gameplay, the robot will be deemed damaged and will lose its inspection sticker until  the robot complies with this rule.</strong></span>  The only exception to holding is the use of a rotating drum (a "dribbler") that imparts dynamic back spin on the ball to keep the ball on its surface.  Other players must be able to access the ball.  The ball needs to stay within the bounds of the field, as defined by the walls. If a robot moves the ball outside of the field (that is, beyond the walls or above their height), it is deemed damaged. (<a href="#damaged-robots">Rule 2.4, &#8220;Damaged robots&#8221;</a>)  Any robot must approach and touch the ball when it is placed on the nearest neutral spot. It must do this before lack of progress is called. When on its own side of the field, any robot must be able to move the ball from the nearest neutral spot to the opponent&#8217;s side of the field. If a specific robot does not act this way, referees may deem it damaged at their discretion. (See <a href="#damaged-robots">Damaged Robots</a>.) This rule does not apply if the robot is hindered from detecting or playing the ball by the opponent.  <a id="inside-penalty-area"></a> === Inside the Penalty Area (Pushing and Multiple defense)  No robots are allowed to be fully inside the penalty area. As the penalty areas are marked with a white line, the Out of Bounds rule applies. (<a href="#out-of-bounds">Rule 2.3, &#8220;Out of bounds&#8221;</a>)  If two robots from the same team are at least partially in <a id="addition-4"></a> <span class="red"><strong>their own</strong></span> penalty area, the robot further from the ball will be moved to the <em>furthest unoccupied neutral spot</em> immediately. If this happens repeatedly, a robot may be deemed damaged at referee&#8217;s discretion. (<a href="#damaged-robots">Rule 2.4, &#8220;Damaged robots&#8221;</a>)  {~~If an attacking and a defending robot touch each other while at least one of them is at least partially inside the penalty area, and at least one of them has physical contact with the ball, this may be called "pushing" at the referee&#8217;s discretion.~&gt;Robot-to-robot or robot-ball-robot contact where the defender reaches the 'pushing'-line is considered pushing. The 'pushing'-line will be an extra black line drawn within the penalty area. This line will be shown in an updated version  of the field specification document."]]
-<span class="red"><strong>Teams are considered late for the start of the game if they don&#8217;t show up with at least one working robot.~~&gt; They may be penalized one goal *per 30 seconds</strong> at the referee’s discretion. <a id="addition-1"></a> [red]</span><strong>When the penalty has reached 10&#8201;&#8212;&#8201;0, they automatically will lose the game.</strong>#  The final game score will be trimmed so that there is at most 10-goal difference between the losing and the winning team.  <a id="pre-match-meeting"></a> === Pre-match meeting  At the start of the first half of the game, a referee will toss a coin. The team mentioned first in the draw shall call the coin. The winner of the toss can choose either which end to kick towards, or to kick off first. The loser of the toss chooses the other option. After the first half, teams switch sides. The team not kicking off in the first half of the game will kick off to begin the second half of the game.  During the pre-match meeting the referee(s) may check whether the robots are capable of playing (i.e., whether they are at least able to follow and react to the ball). If none of the robots is capable of playing, the game will not be played and zero goals will be awarded to both teams.  <a id="kick-off"></a> === Kick-off  Each half of the game begins with a kick-off. All robots must be located on their own side of the field. All robots must be halted. The ball is positioned by a referee in the center of the field.  The team kicking off places their robots on the field first.  The team not kicking off will now place their robots on the defensive end of the field. All robots on the team not kicking off must be at least 30 cm away from the ball (outside of the center circle).  Robots cannot be placed out of bounds. Robots cannot be repositioned once they have been placed, except if the referee requests to adjust their placement to make sure that the robots are placed properly within the field positions.  On the referee’s command (usually by whistle), all robots will be started immediately. Any robots that are started early will be removed by the referee from the field and deemed damaged.  Before a kick-off, <strong>all damaged or out-of-bounds robots</strong> are allowed to return to the playing field immediately if they are <em>ready and fully functional</em>.  <a id="neutral-kickoff"></a> ==== Neutral kick-off  A neutral kick-off is the same as the one described in <a href="#kick-off">[kick-off]</a> with a small change: all robots must be at least 30 cm away from the ball (outside of the center circle). <a id="addition-2"></a> <span class="red"><strong>A neutral kick-off will occur when all robots from both teams are out  of the field.</strong></span>  <a id="scoring"></a> === Scoring  A goal is scored when the ball strikes or touches the back wall of the goal. Goals scored by any robot have the same end result: they give one goal to the team on the opposite side. After a goal, the game will be restarted with a kick-off from the team who was scored against.  <a id="ball-movement"></a> === Ball movement  A robot cannot hold a ball. Holding a ball is defined as taking full control of the ball by removing all of degrees of freedom. Examples for ball holding include fixing a ball to the robot’s body, surrounding a ball using the robot’s body to prevent access by others, encircling the ball or somehow trapping the ball with any part of the robot’s body. If a ball does not roll while a robot is moving, it is a good indication that the ball is trapped. <a id="addition-3"></a> <span class="red"><strong>If this happens during  gameplay, the robot will be deemed damaged and will lose its inspection sticker until  the robot complies with this rule.</strong></span>  The only exception to holding is the use of a rotating drum (a "dribbler") that imparts dynamic back spin on the ball to keep the ball on its surface.  Other players must be able to access the ball.  The ball needs to stay within the bounds of the field, as defined by the walls. If a robot moves the ball outside of the field (that is, beyond the walls or above their height), it is deemed damaged. (<a href="#damaged-robots">Rule 2.4, &#8220;Damaged robots&#8221;</a>)  Any robot must approach and touch the ball when it is placed on the nearest neutral spot. It must do this before lack of progress is called. When on its own side of the field, any robot must be able to move the ball from the nearest neutral spot to the opponent&#8217;s side of the field. If a specific robot does not act this way, referees may deem it damaged at their discretion. (See <a href="#damaged-robots">Damaged Robots</a>.) This rule does not apply if the robot is hindered from detecting or playing the ball by the opponent.  <a id="inside-penalty-area"></a> === Inside the Penalty Area (Pushing and Multiple defense)  No robots are allowed to be fully inside the penalty area. As the penalty areas are marked with a white line, the Out of Bounds rule applies. (<a href="#out-of-bounds">Rule 2.3, &#8220;Out of bounds&#8221;</a>)  If two robots from the same team are at least partially in <a id="addition-4"></a> <span class="red"><strong>their own</strong></span> penalty area, the robot further from the ball will be moved to the <em>furthest unoccupied neutral spot</em> immediately. If this happens repeatedly, a robot may be deemed damaged at referee&#8217;s discretion. (<a href="#damaged-robots">Rule 2.4, &#8220;Damaged robots&#8221;</a>)  {~~If an attacking and a defending robot touch each other while at least one of them is at least partially inside the penalty area, and at least one of them has physical contact with the ball, this may be called "pushing" at the referee&#8217;s discretion.~&gt;Robot-to-robot or robot-ball-robot contact where the defender reaches the 'pushing'-line is considered pushing. The 'pushing'-line will be an extra black line drawn within the penalty area. This line will be shown in an updated version  of the field specification document.*#
-<sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup> In this case, the ball will be moved to the <em>furthest
+at the inspection table does not count in favor of this time limit. <a id="substitution-2"></a>
+<span class="red"><strong>Teams are considered late for the start of the game if they don&#8217;t show up with at least one working robot.~~&gt; They may be penalized one goal *per 30 seconds</strong> at the referee’s discretion.*</span>
+<sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup></p>
+</div>
+<div id="addition-1" class="paragraph">
+<p><span class="red"><strong>When the penalty has reached 10&#8201;&#8212;&#8201;0, they automatically will lose the game.</strong></span></p>
+</div>
+<div class="paragraph">
+<p>The final game score will be trimmed so that there is at most 10-goal
+difference between the losing and the winning team.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="pre-match-meeting"><a class="anchor" href="#pre-match-meeting"></a><a class="link" href="#pre-match-meeting">2.2. Pre-match meeting</a></h3>
+<div class="paragraph">
+<p>At the start of the first half of the game, a referee will toss a coin. The
+team mentioned first in the draw shall call the coin. The winner of the toss
+can choose either which end to kick towards, or to kick off first. The loser of
+the toss chooses the other option. After the first half, teams switch sides.
+The team not kicking off in the first half of the game will kick off to begin
+the second half of the game.</p>
+</div>
+<div class="paragraph">
+<p>During the pre-match meeting the referee(s) may check whether
+the robots are capable of playing (i.e., whether they are at least able to
+follow and react to the ball). If none of the robots is capable of playing, the
+game will not be played and zero goals will be awarded to both teams.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="kick-off"><a class="anchor" href="#kick-off"></a><a class="link" href="#kick-off">2.3. Kick-off</a></h3>
+<div class="paragraph">
+<p>Each half of the game begins with a kick-off. All robots must be located on
+their own side of the field. All robots must be halted. The ball is positioned
+by a referee in the center of the field.</p>
+</div>
+<div class="paragraph">
+<p>The team kicking off places their robots on the field first.</p>
+</div>
+<div class="paragraph">
+<p>The team not kicking off will now place their robots on the defensive end of
+the field. All robots on the team not kicking off must be at least 30 cm away
+from the ball (outside of the center circle).</p>
+</div>
+<div class="paragraph">
+<p>Robots cannot be placed out of bounds. Robots cannot be repositioned once they
+have been placed, except if the referee requests to adjust their placement to
+make sure that the robots are placed properly within the field positions.</p>
+</div>
+<div class="paragraph">
+<p>On the referee’s command (usually by whistle), all robots will be started
+immediately. Any robots that are started early will be removed
+by the referee from the field and deemed damaged.</p>
+</div>
+<div class="paragraph">
+<p>Before a kick-off, <strong>all damaged or out-of-bounds robots</strong> are allowed to return to
+the playing field immediately if they are <em>ready and fully functional</em>.</p>
+</div>
+<div class="sect3">
+<h4 id="neutral-kickoff"><a class="anchor" href="#neutral-kickoff"></a><a class="link" href="#neutral-kickoff">2.3.1. Neutral kick-off</a></h4>
+<div class="paragraph">
+<p>A neutral kick-off is the same as the one described in <a href="#kick-off">Rule 2.3, &#8220;Kick-off&#8221;</a> with a
+small change: all robots must be at least 30 cm away from the ball
+(outside of the center circle). <a id="addition-2"></a>
+<span class="red"><strong>A neutral kick-off will occur when all robots from both teams are out  of the field.</strong></span></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="scoring"><a class="anchor" href="#scoring"></a><a class="link" href="#scoring">2.4. Scoring</a></h3>
+<div class="paragraph">
+<p>A goal is scored when the ball strikes or touches the back wall of the goal.
+Goals scored by any robot have the same end result: they give one goal to the
+team on the opposite side. After a goal, the game will be restarted with a
+kick-off from the team who was scored against.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ball-movement"><a class="anchor" href="#ball-movement"></a><a class="link" href="#ball-movement">2.5. Ball movement</a></h3>
+<div class="paragraph">
+<p>A robot cannot hold a ball. Holding a ball is defined as taking full control of
+the ball by removing all of degrees of freedom. Examples for ball holding
+include fixing a ball to the robot’s body, surrounding a ball using the robot’s
+body to prevent access by others, encircling the ball or somehow trapping the
+ball with any part of the robot’s body. If a ball does not roll while a robot
+is moving, it is a good indication that the ball is trapped. <a id="addition-3"></a>
+<span class="red"><strong>If this happens during  gameplay, the robot will be deemed damaged and will lose its inspection sticker until  the robot complies with this rule.</strong></span></p>
+</div>
+<div class="paragraph">
+<p>The only exception to holding is the use of a rotating drum (a "dribbler") that
+imparts dynamic back spin on the ball to keep the ball on its surface.</p>
+</div>
+<div class="paragraph">
+<p>Other players must be able to access the ball.</p>
+</div>
+<div class="paragraph">
+<p>The ball needs to stay within the bounds of the field, as defined by the
+walls. If a robot moves the ball outside of the field (that is, beyond the walls
+or above their height), it is deemed damaged. (<a href="#damaged-robots">Rule 2.9, &#8220;Damaged robots&#8221;</a>)</p>
+</div>
+<div class="paragraph">
+<p>Any robot must approach and touch the ball when it is placed on the nearest
+neutral spot. It must do this before lack of progress is called. When on its
+own side of the field, any robot must be able to move the ball from the nearest
+neutral spot to the opponent&#8217;s side of the field. If a specific robot does not act
+this way, referees may deem it damaged at their discretion.
+(See <a href="#damaged-robots">Damaged Robots</a>.) This rule does not apply if the robot
+is hindered from detecting or playing the ball by the opponent.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="inside-penalty-area"><a class="anchor" href="#inside-penalty-area"></a><a class="link" href="#inside-penalty-area">2.6. Inside the Penalty Area (Pushing and Multiple defense)</a></h3>
+<div class="paragraph">
+<p>No robots are allowed to be fully inside the penalty area. As the penalty
+areas are marked with a white line, the Out of Bounds rule
+applies. (<a href="#out-of-bounds">Rule 2.8, &#8220;Out of bounds&#8221;</a>)</p>
+</div>
+<div class="paragraph">
+<p>If two robots from the same team are at least partially in <a id="addition-4"></a>
+<span class="red"><strong>their own</strong></span> penalty area,
+the robot further from the ball will be moved to the <em>furthest unoccupied
+neutral spot</em> immediately. If this happens repeatedly, a robot may be deemed
+damaged at referee&#8217;s discretion. (<a href="#damaged-robots">Rule 2.9, &#8220;Damaged robots&#8221;</a>)</p>
+</div>
+<div id="substitution-3" class="paragraph">
+<p><span class="red"><strong>Robot-to-robot or robot-ball-robot contact where the defender reaches the 'pushing'-line is considered pushing. The 'pushing'-line will be an extra black line drawn within the penalty area. This line will be shown in an updated version  of the field specification document.</strong></span>
+<sup class="footnote">[<a id="_footnoteref_9" class="footnote" href="#_footnotedef_9" title="View footnote.">9</a>]</sup> In this case, the ball will be moved to the <em>furthest
 unoccupied neutral spot</em> immediately.</p>
 </div>
 <div class="paragraph">
@@ -1066,7 +1198,7 @@ will call and resolve the pushing situation first, then the multiple defense.</p
 </div>
 </div>
 <div class="sect2">
-<h3 id="lack-of-progress"><a class="anchor" href="#lack-of-progress"></a><a class="link" href="#lack-of-progress">2.2. Lack of progress</a></h3>
+<h3 id="lack-of-progress"><a class="anchor" href="#lack-of-progress"></a><a class="link" href="#lack-of-progress">2.7. Lack of progress</a></h3>
 <div class="paragraph">
 <p>Lack of progress occurs if there is no progress in the gameplay for a
 reasonable period of time and the situation is not likely to change. Typical
@@ -1075,7 +1207,7 @@ there is no change in ball and robot’s positions, or when the ball is beyond
 detection or reach capability of all robots on the field.</p>
 </div>
 <div class="paragraph">
-<p>After a visible and loud count <sup class="footnote">[<a id="_footnoteref_9" class="footnote" href="#_footnotedef_9" title="View footnote.">9</a>]</sup>,
+<p>After a visible and loud count <sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup>,
 a referee will call <code><strong>lack of progress</strong></code> and
 will move the ball to the nearest unoccupied neutral spot. If this does not
 solve the lack of progress, the referee can call lack of progress again and
@@ -1086,15 +1218,15 @@ move the ball to a different neutral spot in the same way.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="out-of-bounds"><a class="anchor" href="#out-of-bounds"></a><a class="link" href="#out-of-bounds">2.3. Out of bounds</a></h3>
+<h3 id="out-of-bounds"><a class="anchor" href="#out-of-bounds"></a><a class="link" href="#out-of-bounds">2.8. Out of bounds</a></h3>
 <div class="paragraph">
 <p>If a robot touches a wall or moves completely into the penalty area it
 will be called for being <code><strong>out of bounds</strong></code>. When this situation arises, the
 robot is removed from the field for a <a id="addition-6"></a>
 <span class="red"><strong>minimum of</strong></span> one-minute.
-There is no time stoppage for the game itself. <a id="substitution-3"></a>
+There is no time stoppage for the game itself. <a id="substitution-4"></a>
 <span class="red"><strong>The robot is allowed to return whenever there is a game interruption after the initial one-minute penalty, i.e. kick-off, lack-of-progress, pushing etc.</strong></span>
-<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup></p>
+<sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnotedef_11" title="View footnote.">11</a>]</sup></p>
 </div>
 <div class="paragraph">
 <p>The one-minute penalty starts when the robot is removed from play.
@@ -1103,11 +1235,11 @@ Furthermore, any goal scored by the penalized robot will not be granted.</p>
 <div id="addition-7" class="paragraph">
 <p><span class="red"><strong>However, if the penalized robot scores an own goal, that goal will be counted against it.</strong></span>
 Out-of-bounds robots can be fixed if the team
-needs to do so, as described in <a href="#damaged-robots">Rule 2.4, &#8220;Damaged robots&#8221;</a>.</p>
+needs to do so, as described in <a href="#damaged-robots">Rule 2.9, &#8220;Damaged robots&#8221;</a>.</p>
 </div>
-<div id="substitution-4" class="paragraph">
+<div id="substitution-5" class="paragraph">
 <p><span class="red"><strong>After the penalty time has passed, the robot will be placed on the general area of its own corner.</strong></span>
-<sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnotedef_11" title="View footnote.">11</a>]</sup></p>
+<sup class="footnote">[<a id="_footnoteref_12" class="footnote" href="#_footnotedef_12" title="View footnote.">12</a>]</sup></p>
 </div>
 <div class="paragraph">
 <p>A referee can waive the penalty if the robot was accidentally pushed out of
@@ -1117,7 +1249,7 @@ the referee will call "pushed out" and may slightly push the robot back onto the
 </div>
 </div>
 <div class="sect2">
-<h3 id="damaged-robots"><a class="anchor" href="#damaged-robots"></a><a class="link" href="#damaged-robots">2.4. Damaged robots</a></h3>
+<h3 id="damaged-robots"><a class="anchor" href="#damaged-robots"></a><a class="link" href="#damaged-robots">2.9. Damaged robots</a></h3>
 <div class="paragraph">
 <p>If a robot is damaged, it has to be taken off the field and must be fixed
 before it can play again. Even if repaired, the robot must remain off the field
@@ -1160,7 +1292,7 @@ of the opponent team violating the rules.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="human-interference"><a class="anchor" href="#human-interference"></a><a class="link" href="#human-interference">2.5. Human interference</a></h3>
+<h3 id="human-interference"><a class="anchor" href="#human-interference"></a><a class="link" href="#human-interference">2.10. Human interference</a></h3>
 <div class="paragraph">
 <p>Except for the kick-off, human interference from the teams (e.g. touching the
 robots) during the game is not allowed unless explicitly permitted by a
@@ -1175,7 +1307,7 @@ enough for them to be able to move freely again.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="interruption-of-game-ref-interruption"><a class="anchor" href="#interruption-of-game-ref-interruption"></a><a class="link" href="#interruption-of-game-ref-interruption">2.6. Interruption of Game</a></h3>
+<h3 id="interruption-of-game-ref-interruption"><a class="anchor" href="#interruption-of-game-ref-interruption"></a><a class="link" href="#interruption-of-game-ref-interruption">2.11. Interruption of Game</a></h3>
 <div class="paragraph">
 <p>In principle, a game will not be stopped.</p>
 </div>
@@ -1327,14 +1459,14 @@ tournament.</p>
 <h3 id="specifications"><a class="anchor" href="#specifications"></a><a class="link" href="#specifications">3.7. Material specifications</a></h3>
 <div class="paragraph">
 <p>Detailed specifications of the ball and fields can be found in the footnote
-<sup class="footnote">[<a id="_footnoteref_12" class="footnote" href="#_footnotedef_12" title="View footnote.">12</a>]</sup>.</p>
+<sup class="footnote">[<a id="_footnoteref_13" class="footnote" href="#_footnotedef_13" title="View footnote.">13</a>]</sup>.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="infrared-ball-change"><a class="anchor" href="#infrared-ball-change"></a><a class="link" href="#infrared-ball-change">3.8. Soccer Infrared League Ball change 2026 and beyond</a></h3>
-<div id="substitution-5" class="paragraph">
+<div id="substitution-6" class="paragraph">
 <p><span class="red"><strong>Starting from the year 2026</strong></span>
-<sup class="footnote">[<a id="_footnoteref_13" class="footnote" href="#_footnotedef_13" title="View footnote.">13</a>]</sup>, Soccer Infrared is using a new
+<sup class="footnote">[<a id="_footnoteref_14" class="footnote" href="#_footnotedef_14" title="View footnote.">14</a>]</sup>, Soccer Infrared is using a new
 IR Ball. The key difference with this ball is the size change from 74mm to 42mm
 diameter, which is the same size as the Vision League
 golf ball.
@@ -1348,7 +1480,7 @@ get in touch via Forum, Discord or Email</p>
 </div>
 <div class="paragraph">
 <p>Entry Leagues will continue to use the large infrared ball.
-<sup class="footnote">[<a id="_footnoteref_14" class="footnote" href="#_footnotedef_14" title="View footnote.">14</a>]</sup></p>
+<sup class="footnote">[<a id="_footnoteref_15" class="footnote" href="#_footnotedef_15" title="View footnote.">15</a>]</sup></p>
 </div>
 </div>
 <div class="sect2">
@@ -1448,7 +1580,7 @@ Infrared and Soccer Vision</p>
 sub-league are conducted using a (passive) orange golf ball, whereas the
 matches in the Soccer Infrared sub-league are played using
 the (also orange) IR ball.
-<sup class="footnote">[<a id="_footnoteref_15" class="footnote" href="#_footnotedef_15" title="View footnote.">15</a>]</sup></p>
+<sup class="footnote">[<a id="_footnoteref_16" class="footnote" href="#_footnotedef_16" title="View footnote.">16</a>]</sup></p>
 </div>
 </div>
 <div class="sect2">
@@ -1580,7 +1712,7 @@ need to be already present early on this day.</p>
 </div>
 <div class="paragraph">
 <p>Details on what is required for and what to expect from interviews can be
-found in the scoring document available here <sup class="footnote">[<a id="_footnoteref_16" class="footnote" href="#_footnotedef_16" title="View footnote.">16</a>]</sup>.</p>
+found in the scoring document available here <sup class="footnote">[<a id="_footnoteref_17" class="footnote" href="#_footnotedef_17" title="View footnote.">17</a>]</sup>.</p>
 </div>
 <div class="paragraph">
 <p>The Soccer League Committee recommends the implementation of interviews in regional
@@ -1636,7 +1768,7 @@ performance. The full rules of this challenge can be found at
 <p>Teams competing in the international competition can receive awards for their
 performance. These awards are decided and introduced by the Soccer League
 Committee, which publishes all necessary details well before the actual event.
-<sup class="footnote">[<a id="_footnoteref_17" class="footnote" href="#_footnotedef_17" title="View footnote.">17</a>]</sup></p>
+<sup class="footnote">[<a id="_footnoteref_18" class="footnote" href="#_footnotedef_18" title="View footnote.">18</a>]</sup></p>
 </div>
 </div>
 </div>
@@ -1652,10 +1784,10 @@ international competition, it is run in many regions and at the SuperRegional
 competitions (RoboCupJunior SuperRegional Americas, EMEA (Europe, Middle East,
 Africa) and RoboCup Asia Pacific).
 To this end,
-the Soccer League Committee has prepared a suggested ruleset. <sup class="footnote">[<a id="_footnoteref_18" class="footnote" href="#_footnotedef_18" title="View footnote.">18</a>]</sup>
+the Soccer League Committee has prepared a suggested ruleset. <sup class="footnote">[<a id="_footnoteref_19" class="footnote" href="#_footnotedef_19" title="View footnote.">19</a>]</sup>
 Some regional and super-regional competitions already have rulesets and will likely
 make changes to the suggested rulesets or replace them entirely for their events.
-<sup class="footnote">[<a id="_footnoteref_19" class="footnote" href="#_footnotedef_19" title="View footnote.">19</a>]</sup>
+<sup class="footnote">[<a id="_footnoteref_20" class="footnote" href="#_footnotedef_20" title="View footnote.">20</a>]</sup>
 Teams should ask their local/regional/super-regional tournament organizers for
 details on what Entry leagues (if any) will be running in their region.</p>
 </div>
@@ -1701,42 +1833,45 @@ participate in.</p>
 <a href="#_footnoteref_8">8</a>. In previous version this said "Teams that are late for the start of the game"
 </div>
 <div class="footnote" id="_footnotedef_9">
-<a href="#_footnoteref_9">9</a>. usually a count of three
+<a href="#_footnoteref_9">9</a>. In previous version this said "If an attacking and a defending robot touch each other while at least one of them is at least partially inside the penalty area, and at least one of them has physical contact with the ball, this may be called "pushing" at the referee&#8217;s discretion."
 </div>
 <div class="footnote" id="_footnotedef_10">
-<a href="#_footnoteref_10">10</a>. In previous version this said "The robot is allowed to return if a kick-off occurs before the penalty has elapsed."
+<a href="#_footnoteref_10">10</a>. usually a count of three
 </div>
 <div class="footnote" id="_footnotedef_11">
-<a href="#_footnoteref_11">11</a>. In previous version this said "After the penalty time has passed, robot will be placed on the unoccupied neutral spot furthest from the ball, facing its own goal."
+<a href="#_footnoteref_11">11</a>. In previous version this said "The robot is allowed to return if a kick-off occurs before the penalty has elapsed."
 </div>
 <div class="footnote" id="_footnotedef_12">
-<a href="#_footnoteref_12">12</a>. <a href="https://robocup-junior.github.io/soccer-rules/master/field_specification.pdf" class="bare">https://robocup-junior.github.io/soccer-rules/master/field_specification.pdf</a> or <a href="https://robocup-junior.github.io/soccer-rules/master/field_specification.html" class="bare">https://robocup-junior.github.io/soccer-rules/master/field_specification.html</a> and <a href="https://robocup-junior.github.io/soccer-rules/master/ball_specification.pdf" class="bare">https://robocup-junior.github.io/soccer-rules/master/ball_specification.pdf</a> or <a href="https://robocup-junior.github.io/soccer-rules/master/ball_specification.html" class="bare">https://robocup-junior.github.io/soccer-rules/master/ball_specification.html</a> respectively
+<a href="#_footnoteref_12">12</a>. In previous version this said "After the penalty time has passed, robot will be placed on the unoccupied neutral spot furthest from the ball, facing its own goal."
 </div>
 <div class="footnote" id="_footnotedef_13">
-<a href="#_footnoteref_13">13</a>. In previous version this said "Starting this year (2026)"
+<a href="#_footnoteref_13">13</a>. <a href="https://robocup-junior.github.io/soccer-rules/master/field_specification.pdf" class="bare">https://robocup-junior.github.io/soccer-rules/master/field_specification.pdf</a> or <a href="https://robocup-junior.github.io/soccer-rules/master/field_specification.html" class="bare">https://robocup-junior.github.io/soccer-rules/master/field_specification.html</a> and <a href="https://robocup-junior.github.io/soccer-rules/master/ball_specification.pdf" class="bare">https://robocup-junior.github.io/soccer-rules/master/ball_specification.pdf</a> or <a href="https://robocup-junior.github.io/soccer-rules/master/ball_specification.html" class="bare">https://robocup-junior.github.io/soccer-rules/master/ball_specification.html</a> respectively
 </div>
 <div class="footnote" id="_footnotedef_14">
-<a href="#_footnoteref_14">14</a>. Entry Leagues frequently use Lego, FischerTechnik, Vex or other robotics kits with which handling a small ball is more difficult, especially for beginners.
+<a href="#_footnoteref_14">14</a>. In previous version this said "Starting this year (2026)"
 </div>
 <div class="footnote" id="_footnotedef_15">
-<a href="#_footnoteref_15">15</a>. for detailled ball specifications see: <a href="#specifications">Rule 3.7, &#8220;Material specifications&#8221;</a>
+<a href="#_footnoteref_15">15</a>. Entry Leagues frequently use Lego, FischerTechnik, Vex or other robotics kits with which handling a small ball is more difficult, especially for beginners.
 </div>
 <div class="footnote" id="_footnotedef_16">
-<a href="#_footnoteref_16">16</a>. <a href="https://robocup-junior.github.io/soccer-rules/master/scoring.pdf" class="bare">https://robocup-junior.github.io/soccer-rules/master/scoring.pdf</a> or <a href="https://robocup-junior.github.io/soccer-rules/master/scoring.html" class="bare">https://robocup-junior.github.io/soccer-rules/master/scoring.html</a>
+<a href="#_footnoteref_16">16</a>. for detailled ball specifications see: <a href="#specifications">Rule 3.7, &#8220;Material specifications&#8221;</a>
 </div>
 <div class="footnote" id="_footnotedef_17">
-<a href="#_footnoteref_17">17</a>. for details see <a href="https://robocup-junior.github.io/soccer-rules/master/scoring.pdf" class="bare">https://robocup-junior.github.io/soccer-rules/master/scoring.pdf</a> or <a href="https://robocup-junior.github.io/soccer-rules/master/scoring.html" class="bare">https://robocup-junior.github.io/soccer-rules/master/scoring.html</a>
+<a href="#_footnoteref_17">17</a>. <a href="https://robocup-junior.github.io/soccer-rules/master/scoring.pdf" class="bare">https://robocup-junior.github.io/soccer-rules/master/scoring.pdf</a> or <a href="https://robocup-junior.github.io/soccer-rules/master/scoring.html" class="bare">https://robocup-junior.github.io/soccer-rules/master/scoring.html</a>
 </div>
 <div class="footnote" id="_footnotedef_18">
-<a href="#_footnoteref_18">18</a>. Avaliable as HTML and PDF at <a href="https://robocup-junior.github.io/soccer-rules-entry/master/rules.html" class="bare">https://robocup-junior.github.io/soccer-rules-entry/master/rules.html</a> and <a href="https://robocup-junior.github.io/soccer-rules-entry/master/rules.pdf" class="bare">https://robocup-junior.github.io/soccer-rules-entry/master/rules.pdf</a> respectively
+<a href="#_footnoteref_18">18</a>. for details see <a href="https://robocup-junior.github.io/soccer-rules/master/scoring.pdf" class="bare">https://robocup-junior.github.io/soccer-rules/master/scoring.pdf</a> or <a href="https://robocup-junior.github.io/soccer-rules/master/scoring.html" class="bare">https://robocup-junior.github.io/soccer-rules/master/scoring.html</a>
 </div>
 <div class="footnote" id="_footnotedef_19">
-<a href="#_footnoteref_19">19</a>. Examples: <a href="https://www.robocupjunior.org.au/wp-content/uploads/2021/02/RCJASoccer-SimpleSimon2021.pdf" class="bare">https://www.robocupjunior.org.au/wp-content/uploads/2021/02/RCJASoccer-SimpleSimon2021.pdf</a>, <a href="https://rcj2019.eu/sites/default/files/Soccer%201-1%20Standard%20Kit%20Rules%202019%20Final.pdf" class="bare">https://rcj2019.eu/sites/default/files/Soccer%201-1%20Standard%20Kit%20Rules%202019%20Final.pdf</a>
+<a href="#_footnoteref_19">19</a>. Avaliable as HTML and PDF at <a href="https://robocup-junior.github.io/soccer-rules-entry/master/rules.html" class="bare">https://robocup-junior.github.io/soccer-rules-entry/master/rules.html</a> and <a href="https://robocup-junior.github.io/soccer-rules-entry/master/rules.pdf" class="bare">https://robocup-junior.github.io/soccer-rules-entry/master/rules.pdf</a> respectively
+</div>
+<div class="footnote" id="_footnotedef_20">
+<a href="#_footnoteref_20">20</a>. Examples: <a href="https://www.robocupjunior.org.au/wp-content/uploads/2021/02/RCJASoccer-SimpleSimon2021.pdf" class="bare">https://www.robocupjunior.org.au/wp-content/uploads/2021/02/RCJASoccer-SimpleSimon2021.pdf</a>, <a href="https://rcj2019.eu/sites/default/files/Soccer%201-1%20Standard%20Kit%20Rules%202019%20Final.pdf" class="bare">https://rcj2019.eu/sites/default/files/Soccer%201-1%20Standard%20Kit%20Rules%202019%20Final.pdf</a>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-09-18 15:06:37 UTC
+Last updated 2026-09-23 20:15:26 UTC
 </div>
 </div>
 </body>
