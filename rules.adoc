@@ -120,8 +120,7 @@ in between the halves.
 Teams are expected to be at the field 5 minutes before their game starts. Being
 at the inspection table does not count in favor of this time limit. {~~Teams that
 are late for the start of the game~>Teams are considered late for the start of the game if they don't show up with at least one working robot.~~}
-They may be penalized one goal *per 30 seconds* at the referee’s discretion.
-{++When the penalty has reached 10 -- 0, they automatically will lose the game.++}
+They may be penalized one goal *per 30 seconds* at the referee’s discretion. {++When the penalty has reached 10 -- 0, they automatically will lose the game.++}
 
 The final game score will be trimmed so that there is at most 10-goal
 difference between the losing and the winning team.
@@ -225,7 +224,7 @@ damaged at referee's discretion. (<<damaged-robots>>)
 {~~If an attacking and a defending robot touch each other while at least one of
 them is at least partially inside the penalty area, and at least one of them
 has physical contact with the ball, this may be called "pushing" at the
-referee's discretion.~>Robot-to-robot or robot-ball-robot contact where the defender reaches the 'pushing'-line is considered pushing.
+referee's discretion.~>NOTE: THIS IMPLEMENTATION COULD CHANGE. PLEASE DO NOT DRAW THIS LINE FOR YOUR FIELD YET. Robot-to-robot or robot-ball-robot contact where the defender reaches the 'pushing'-line is considered pushing.
 The 'pushing'-line will be an extra black line drawn within the penalty area. This line will be shown in an updated version 
 of the field specification document.~~} In this case, the ball will be moved to the _furthest
 unoccupied neutral spot_ immediately.
@@ -254,8 +253,7 @@ move the ball to a different neutral spot in the same way.
 {++If the situation arises that one or multiple robots for either team are out of bounds
 and their time penalty has passed, as described in the next section, the referee will 
 return the out of bounds robot(s) first before moving the ball. If the lack of progress
-does not resolve after the return of the out of bounds robot(s) the previous defined rule
-will kick in.++}
+does not resolve after the return of the out of bounds robot(s) then the referee wil move the ball.++}
 
 [[out-of-bounds]]
 === Out of bounds
@@ -269,12 +267,13 @@ allowed to return whenever there is a game interruption after the initial one-mi
 
 The one-minute penalty starts when the robot is removed from play.
 Furthermore, any goal scored by the penalized robot will not be granted.
-{++However, if the penalized robot scores an own goal, that goal will be counted against it.++}
+{++However, if the penalized robot scores an own goal, that goal will be awarded to the opposing team.++}
 Out-of-bounds robots can be fixed if the team
 needs to do so, as described in <<damaged-robots>>.
 
 {~~After the penalty time has passed, robot will be placed on the unoccupied
-neutral spot furthest from the ball, facing its own goal.~>After the penalty time has passed, the robot will be placed on the general area of its own corner.~~}
+neutral spot furthest from the ball, facing its own goal.~>After the penalty time has passed, 
+the robot will be placed on the general area of one of its own corners, while not touching the white lines and facing its own goal.~~}
 
 A referee can waive the penalty if the robot was accidentally pushed out of 
 bounds {++or pushed into the ramp++} by an opposing robot. In such a case, 
