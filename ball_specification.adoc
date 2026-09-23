@@ -39,11 +39,10 @@ also common IR remote control receivers (TSOP1140, TSOP31140, GP1UX511QS,
 etc. - on-off detection with a possible gross indication of distance).
 
 [[pulsed-golf-2026]]
-=== Switch to golf-ball sized pulsed ball in 2026
-Starting in 2026, Lightweight Soccer will be moving to a new IR Ball. The key
+=== Golf-ball sized pulsed ball since 2026
+Since 2026, Soccer Infrared has been using a new IR Ball. The key
 difference with this ball is the size change from 74mm to 42mm diameter,
-which is the same size as the Open League's passive ball. More information
-will be released during the 2025 season by the Committee. This ball is
+which is the same size as the Soccer Vision League's passive ball. This ball is
 Open-Source, so anyone can produce one from the files & instructions on the
 GitHub Page here: https://github.com/robocup-junior/ir-golf-ball . 
 
