@@ -17,6 +17,11 @@ DOCUMENT_TITLE=$(head -n 1 "$OUTPUT_FILE.adoc" | sed 's/^= //')
 # Create a preamble with the correct title substituted
 sed "s/@@DOCUMENT_TITLE@@/$DOCUMENT_TITLE/" preamble.tex > $OUTPUT_PREFIX"_preamble.tex"
 
+# On draft builds, enable the (commented out) draft watermark in the preamble
+if [ -n "${DRAFT:-}" ]; then
+  sed -i -E 's/^% (\\usepackage\{draftwatermark\}|\\SetWatermark)/\1/' $OUTPUT_PREFIX"_preamble.tex"
+fi
+
 # Concat the customized preamble with the "without_preamble" version of the file
 cat $OUTPUT_PREFIX"_preamble.tex" $OUTPUT_PREFIX"_without_preamble.tex" > $OUTPUT_PREFIX.tex
 texliveonfly $OUTPUT_PREFIX.tex

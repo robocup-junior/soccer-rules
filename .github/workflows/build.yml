@@ -10,16 +10,19 @@ jobs:
 
       - name: build the rules
         run: |
-          docker run -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh rules
-          docker run -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh rules
-          docker run -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh superteam_rules
-          docker run -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh superteam_rules
-          docker run -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh ball_specification
-          docker run -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh ball_specification
-          docker run -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh field_specification
-          docker run -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh field_specification
-          docker run -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh scoring
-          docker run -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh scoring
+          # Branches with "draft" in their name get a DRAFT watermark (PDF)
+          # and watermark + banner (HTML); everything else builds clean.
+          case "$GITHUB_REF_NAME" in *draft*) export DRAFT=1 ;; *) export DRAFT= ;; esac
+          docker run -e DRAFT -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh rules
+          docker run -e DRAFT -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh rules
+          docker run -e DRAFT -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh superteam_rules
+          docker run -e DRAFT -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh superteam_rules
+          docker run -e DRAFT -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh ball_specification
+          docker run -e DRAFT -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh ball_specification
+          docker run -e DRAFT -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh field_specification
+          docker run -e DRAFT -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh field_specification
+          docker run -e DRAFT -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh scoring
+          docker run -e DRAFT -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh scoring
           mkdir -p dist/${GITHUB_REF#refs/heads/}/
           rm tmp_*
           cp -R ./media *.html *.pdf dist/${GITHUB_REF#refs/heads/}/
