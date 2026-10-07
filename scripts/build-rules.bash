@@ -49,11 +49,11 @@ done
 
 # Run Docker containers for processing
 print_info "Converting Asciidoc to LaTeX..."
-docker run -v "$(pwd)":/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh "$TARGET"
+docker run -e DRAFT -v "$(pwd)":/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh "$TARGET"
 print_success "Asciidoc conversion complete."
 
 print_info "Converting LaTeX to PDF..."
-docker run -v "$(pwd)":/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh "$TARGET"
+docker run -e DRAFT -v "$(pwd)":/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh "$TARGET"
 print_success "PDF conversion complete."
 
 # Serve the files using Python's HTTP server
