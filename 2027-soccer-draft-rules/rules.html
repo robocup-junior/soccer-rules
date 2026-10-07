@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.26">
-<meta name="author" content="2026-09-24">
-<title>RoboCupJunior Soccer Rules 2027</title>
+<meta name="author" content="2026-10-07">
+<title>RoboCupJunior Soccer Rules {rules-year}</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -434,12 +434,52 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<!--
+  Draft marking for the HTML rules. Asciidoctor only injects this file when
+  built with `-a docinfo=shared`, which .ci/adoc-to-tex.sh does when the
+  DRAFT environment variable is set (see .github/workflows/build.yml).
+-->
+<style>
+:root { --draft-bar: 2.5rem; }
+html { scroll-padding-top: calc(var(--draft-bar) + .5rem); }
+body { padding-top: var(--draft-bar); }
+#toc.toc2 { top: var(--draft-bar) !important; height: calc(100% - var(--draft-bar)) !important; }
+
+.draft-bar {
+  position: fixed; inset: 0 0 auto 0; height: var(--draft-bar); z-index: 10000;
+  display: flex; align-items: center; justify-content: center; gap: .6em; padding: 0 1rem;
+  background: #b3261e; color: #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+  font: 600 .95rem/1.2 "Open Sans", "DejaVu Sans", sans-serif;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.draft-bar strong { letter-spacing: .12em; background: #fff; color: #b3261e; padding: .1em .45em; border-radius: 3px; }
+.draft-bar a { color: #fff; text-decoration: underline; }
+
+/* Large diagonal watermark, mirroring the draftwatermark package in the PDF.
+   Offsets use rem: em would resolve against the watermark's own font size. */
+body::after {
+  content: "DRAFT"; position: fixed; top: 50%; left: 50%;
+  transform: translate(-50%, -50%) rotate(-55deg);
+  font: 700 min(26vw, 40vh)/1 "Open Sans", "DejaVu Sans", sans-serif; letter-spacing: .05em;
+  color: rgba(200, 0, 0, .08); white-space: nowrap; pointer-events: none; z-index: 9999;
+}
+@media (min-width: 768px) { body.toc2::after { left: calc(50% + 7.5rem); } }
+@media (min-width: 1280px) { body.toc2::after { left: calc(50% + 10rem); } }
+
+@media (max-width: 600px) { .draft-bar .long { display: none; } }
+@media print {
+  body { padding-top: 0; }
+  body::after { left: 50% !important; }
+  .draft-bar { position: static; box-shadow: none; }
+  .draft-bar, body::after { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>RoboCupJunior Soccer Rules 2027</h1>
+<h1>RoboCupJunior Soccer Rules {rules-year}</h1>
 <div class="details">
-<span id="author" class="author">2026-09-24</span><br>
+<span id="author" class="author">2026-10-07</span><br>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -519,7 +559,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <script src="https://hypothes.is/embed.js" async></script>
 <div class="paragraph">
-<p>These are the Soccer rules for RoboCupJunior 2027. They are released
+<p>These are the Soccer rules for RoboCupJunior {rules-year}. They are released
 by the RoboCupJunior Soccer League Committee. The English version of these
 rules has priority over any translations.</p>
 </div>
@@ -984,7 +1024,7 @@ can represent the team at registration, setup-day, and have access to the compet
 <p>Teams, Team Mentors/Supporters or Team Members that repeatedly conduct themselves in an unacceptable way or in violation to the General or League Rules may be
 disqualified from the tournament and asked to leave the venue.</p>
 </div>
-<h3 id="_changes_from_the_2026_robocupjunior_soccer_rules" class="discrete">Changes from the 2026 RoboCupJunior Soccer Rules</h3>
+<h3 id="_changes_from_the_previous_rules_year_robocupjunior_soccer_rules" class="discrete">Changes from the {previous-rules-year} RoboCupJunior Soccer Rules</h3>
 <div class="paragraph">
 <p>The rule changes developed by the Soccer League Committee in cooperation with the
 RoboCup Junior Soccer Community (please continue to post ideas for the future at
@@ -1870,8 +1910,9 @@ participate in.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-09-24 06:00:38 UTC
+Last updated 2026-10-07 20:23:05 UTC
 </div>
 </div>
+<div class="draft-bar" role="note"><strong>DRAFT</strong><span>These rules are not in effect<span class="long">. Official rules: <a href="https://robocup-junior.github.io/soccer-rules/master/rules.html">current version</a></span></span></div>
 </body>
 </html>
