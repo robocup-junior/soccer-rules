@@ -1,4 +1,4 @@
-= RoboCupJunior Soccer Rules 2027
+= RoboCupJunior Soccer Rules {rules-year}
 {docdate}
 :toc: left
 :sectanchors:
@@ -17,7 +17,7 @@ endif::basebackend-html[]
 :icons: font
 :numbered:
 
-These are the Soccer rules for RoboCupJunior 2027. They are released
+These are the Soccer rules for RoboCupJunior {rules-year}. They are released
 by the RoboCupJunior Soccer League Committee. The English version of these
 rules has priority over any translations.
 
@@ -95,7 +95,7 @@ their situation. Contact information for the world championships is: robocupjuni
 include::general-rules/general-rules.adoc[]
 
 [discrete]
-=== Changes from the 2026 RoboCupJunior Soccer Rules
+=== Changes from the {previous-rules-year} RoboCupJunior Soccer Rules
 
 // TODO: Summarize changes here
 The rule changes developed by the Soccer League Committee in cooperation with the
