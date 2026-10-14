@@ -1,7 +1,8 @@
 # RoboCupJunior Soccer rules
 
 Welcome to the [RoboCupJunior Soccer](https://junior.robocup.org/) rules
-repository for the 2021 season.
+repository. The season the rules target is set in the [`RULES_YEAR`](RULES_YEAR)
+file.
 
 Although the rules have already been made made final and released, we are
 always on the lookout for changes that may either improve the competition or
@@ -79,6 +80,31 @@ thorugh the build process in two easy steps:
 Which will make the `rules.adoc` file (in the current working directory --
 that's the `$(pwd)` part) go through the build steps above and generate files
 `rules.html` and `rules.pdf` as a result.
+
+## Starting a new season
+
+The target season is configured in one place: the [`RULES_YEAR`](RULES_YEAR)
+file, which contains just the year (e.g. `2027`). The build passes it to
+AsciiDoc as two attributes:
+
+- `{rules-year}` -- the season the rules are for (e.g. `2027`)
+- `{previous-rules-year}` -- the season before it (e.g. `2026`)
+
+Use these attributes instead of writing the year out whenever the text should
+follow the season, such as in document titles or the "Changes from the
+`{previous-rules-year}` rules" sections. Years that refer to a fixed point in
+time (e.g. "the new IR ball was introduced in 2026") should stay written out.
+
+To move to a new season, update `RULES_YEAR`. A few things are not covered by
+it and still need to be updated by hand:
+
+- the committee lists in `preamble.tex`
+- the `general-rules` submodule, which lives in its own repository
+- CriticMarkup from the previous season, which should be accepted so it does
+  not show up as a change in the new one
+
+Note that the attributes are only set by the build scripts in `.ci/`, so
+running `asciidoctor` on a file directly will leave them unresolved.
 
 ## Use GitHub Codespaces to edit these files
 
