@@ -9,7 +9,9 @@ dblatex -T db2latex $OUTPUT_PREFIX.xml -t tex --texstyle=./manual.sty -p custom.
 
 # Go through the generated .tex output, find the place where the preamble ends
 # (marked by the \mainmatter command) and create a file without it.
-cat $OUTPUT_PREFIX.tex | awk 'f;/\\mainmatter/{f=1}'  > $OUTPUT_PREFIX"_without_preamble.tex"
+# dblatex writes Latin-1 (e.g. a raw byte for ©) while preamble.tex loads
+# inputenc with utf8, so convert to UTF-8 on the way.
+cat $OUTPUT_PREFIX.tex | awk 'f;/\\mainmatter/{f=1}' | iconv -f latin1 -t utf-8 > $OUTPUT_PREFIX"_without_preamble.tex"
 
 # Extract the document title from the DocBook output, where attributes such as
 # {rules-year} have already been resolved (the first <title> is the document's)
