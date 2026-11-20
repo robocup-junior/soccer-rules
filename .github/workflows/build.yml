@@ -10,9 +10,14 @@ jobs:
 
       - name: build the rules
         run: |
-          # Branches with "draft" in their name get a DRAFT watermark (PDF)
-          # and watermark + banner (HTML); everything else builds clean.
-          case "$GITHUB_REF_NAME" in *draft*) export DRAFT=1 ;; *) export DRAFT= ;; esac
+          # Only the published (default) branch builds clean; every other
+          # branch is a draft: "Draft <year>" in the title, DRAFT watermark
+          # (PDF) and watermark + banner (HTML).
+          if [ "$GITHUB_REF_NAME" = "${{ github.event.repository.default_branch }}" ]; then
+            export DRAFT=
+          else
+            export DRAFT=1
+          fi
           docker run -e DRAFT -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh rules
           docker run -e DRAFT -v $(pwd):/documents mrshu/texlive-dblatex .ci/tex-to-pdf.sh rules
           docker run -e DRAFT -v $(pwd):/documents asciidoctor/docker-asciidoctor .ci/adoc-to-tex.sh superteam_rules

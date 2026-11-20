@@ -19,8 +19,12 @@ DOCUMENT_TITLE=$(awk 'match($0, /<title>[^<]*<\/title>/) { print substr($0, RSTA
 sed "s/@@DOCUMENT_TITLE@@/$DOCUMENT_TITLE/" preamble.tex > $OUTPUT_PREFIX"_preamble.tex"
 
 # On draft builds, enable the (commented out) draft watermark in the preamble
+# and label the footer as draft instead of final rules
 if [ -n "${DRAFT:-}" ]; then
-  sed -i -E 's/^% (\\usepackage\{draftwatermark\}|\\SetWatermark)/\1/' $OUTPUT_PREFIX"_preamble.tex"
+  sed -i -E \
+    -e 's/^% (\\usepackage\{draftwatermark\}|\\SetWatermark)/\1/' \
+    -e 's/Final rules as of/Draft rules as of/' \
+    $OUTPUT_PREFIX"_preamble.tex"
 fi
 
 # Concat the customized preamble with the "without_preamble" version of the file
