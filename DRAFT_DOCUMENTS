@@ -6,3 +6,6 @@
 # One document per line: the name of its .adoc file without the extension,
 # e.g. "scoring" for scoring.adoc. Lines starting with # are ignored.
 scoring
+superteam_rules
+field_specification
+ball_specification
