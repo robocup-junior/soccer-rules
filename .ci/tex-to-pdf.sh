@@ -4,18 +4,33 @@ set -euo pipefail
 OUTPUT_FILE=$1
 OUTPUT_PREFIX=tmp_$1
 
+# Sets DRAFT and DRAFT_LISTED for this document
+source .ci/draft.sh "$1"
+
 # Apply custom styling to DocBook
 dblatex -T db2latex $OUTPUT_PREFIX.xml -t tex --texstyle=./manual.sty -p custom.xsl
 
 # Go through the generated .tex output, find the place where the preamble ends
 # (marked by the \mainmatter command) and create a file without it.
-cat $OUTPUT_PREFIX.tex | awk 'f;/\\mainmatter/{f=1}'  > $OUTPUT_PREFIX"_without_preamble.tex"
+# dblatex writes Latin-1 (e.g. a raw byte for ©) while preamble.tex loads
+# inputenc with utf8, so convert to UTF-8 on the way.
+cat $OUTPUT_PREFIX.tex | awk 'f;/\\mainmatter/{f=1}' | iconv -f latin1 -t utf-8 > $OUTPUT_PREFIX"_without_preamble.tex"
 
-# Extract the document title from the .adoc file (first line, removing the "= " prefix)
-DOCUMENT_TITLE=$(head -n 1 "$OUTPUT_FILE.adoc" | sed 's/^= //')
+# Extract the document title from the DocBook output, where attributes such as
+# {rules-year} have already been resolved (the first <title> is the document's)
+DOCUMENT_TITLE=$(awk 'match($0, /<title>[^<]*<\/title>/) { print substr($0, RSTART + 7, RLENGTH - 15); exit }' $OUTPUT_PREFIX.xml)
 
 # Create a preamble with the correct title substituted
 sed "s/@@DOCUMENT_TITLE@@/$DOCUMENT_TITLE/" preamble.tex > $OUTPUT_PREFIX"_preamble.tex"
+
+# On draft builds, enable the (commented out) draft watermark in the preamble
+# and label the footer as draft instead of final rules
+if [ -n "$DRAFT" ]; then
+  sed -i -E \
+    -e 's/^% (\\usepackage\{draftwatermark\}|\\SetWatermark)/\1/' \
+    -e 's/Final rules as of/Draft rules as of/' \
+    $OUTPUT_PREFIX"_preamble.tex"
+fi
 
 # Concat the customized preamble with the "without_preamble" version of the file
 cat $OUTPUT_PREFIX"_preamble.tex" $OUTPUT_PREFIX"_without_preamble.tex" > $OUTPUT_PREFIX.tex
