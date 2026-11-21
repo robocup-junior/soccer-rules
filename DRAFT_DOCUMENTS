@@ -1,0 +1,8 @@
+# Documents listed here are built as DRAFT (title "Draft <year>", watermark and
+# banner) even on master, the branch the official rules are published from.
+# Use it for a document whose update for the new season is not finished yet,
+# and remove its line to publish it as final.
+#
+# One document per line: the name of its .adoc file without the extension,
+# e.g. "scoring" for scoring.adoc. Lines starting with # are ignored.
+scoring

@@ -106,6 +106,21 @@ it and still need to be updated by hand:
 Note that the attributes are only set by the build scripts in `.ci/`, so
 running `asciidoctor` on a file directly will leave them unresolved.
 
+## Draft and final versions
+
+Every branch except `master` is built as a draft: `{rules-year}` reads e.g.
+"Draft 2027" (so titles say "RoboCupJunior Soccer Rules Draft 2027"), the PDF
+gets a "Draft" watermark and the HTML a watermark and a banner. Builds of
+`master` are the official, final rules.
+
+To keep a document in draft on `master` as well, e.g. because its update for
+the new season is not finished yet, list it in the
+[`DRAFT_DOCUMENTS`](DRAFT_DOCUMENTS) file (one name per line, such as
+`scoring` for `scoring.adoc`). Remove its line again to publish it as final.
+
+To preview a draft build locally, set `DRAFT=1` when running
+`scripts/build-rules.bash`.
+
 ## Use GitHub Codespaces to edit these files
 
 GitHub now has a nice service called [Codespaces](https://github.com/features/codespaces)

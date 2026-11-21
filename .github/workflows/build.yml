@@ -12,7 +12,8 @@ jobs:
         run: |
           # Only the published (default) branch builds clean; every other
           # branch is a draft: "Draft <year>" in the title, DRAFT watermark
-          # (PDF) and watermark + banner (HTML).
+          # (PDF) and watermark + banner (HTML). Documents listed in
+          # DRAFT_DOCUMENTS stay drafts on the published branch too.
           if [ "$GITHUB_REF_NAME" = "${{ github.event.repository.default_branch }}" ]; then
             export DRAFT=
           else
